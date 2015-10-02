@@ -1,9 +1,9 @@
 describe Scrapers::SteamList::DataProcessor do
-  klass = Scrapers::SteamList::DataProcessor
-
-  with_model_extended(:Game, Scrapers::SteamList::GameExtension) do
-    Scrapers::SteamList::Migration::M1.new(table_name: Game.table_name).migrate(:up)
-  end
+  with_model_extended(
+    :Game,
+    Scrapers::SteamList::GameExtension,
+    Scrapers::SteamList::Migration::M1
+  )
 
   it 'should copy the attributes from the data hash to the game' do
     game = Game.create
@@ -20,7 +20,7 @@ describe Scrapers::SteamList::DataProcessor do
       thumbnail: 'http://imgur.com/rsarsa'
     }
 
-    processor = klass.new(data, game)
+    processor = Scrapers::SteamList::DataProcessor.new(data, game)
     expect(processor.process).to eq game
 
     expect(game.steam_id).to eq 1234
@@ -50,7 +50,7 @@ describe Scrapers::SteamList::DataProcessor do
       thumbnail: 'http://imgur.com/rsarsa'
     }
 
-    processor = klass.new(data, nil)
+    processor = Scrapers::SteamList::DataProcessor.new(data, nil)
     game = processor.process
 
     expect(game.steam_id).to eq 1234

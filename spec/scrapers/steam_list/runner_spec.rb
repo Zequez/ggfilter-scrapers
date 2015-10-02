@@ -3,9 +3,11 @@
 describe Scrapers::SteamList::Runner, cassette: true, type: :steam_list do
   klass = Scrapers::SteamList::Runner
 
-  with_model_extended(:Game, Scrapers::SteamList::GameExtension) do
-    Scrapers::SteamList::Migration::M1.new(table_name: Game.table_name).migrate(:up)
-  end
+  with_model_extended(
+    :Game,
+    [Scrapers::SteamList::GameExtension],
+    [Scrapers::SteamList::Migration::M1]
+  )
 
   it 'should accept options as initializer' do
     runner = klass.new(all_games_url: 'potato', on_sale_url: 'salad')

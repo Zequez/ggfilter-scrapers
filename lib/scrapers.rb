@@ -50,6 +50,7 @@ end
 require 'scrapers/version'
 require 'scrapers/base_page_processor'
 require 'scrapers/base_runner'
+require 'scrapers/base_migration'
 require 'scrapers/loader'
 require 'scrapers/steam_game'
 require 'scrapers/steam_game/data_processor'
