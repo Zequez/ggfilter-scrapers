@@ -5,10 +5,22 @@ module Scrapers
     attr_reader :data
 
     def initialize(initial_url, processors, headers = {})
+      if initial_url.kind_of? Hash
+        @initial_urls_data = initial_url
+        @initial_urls = initial_url.keys
+        @multi_urls = true
+      elsif initial_url.kind_of? Array
+        @initial_urls_data = {}
+        @initial_urls = initial_url
+        @multi_urls = true
+      else
+        @initial_urls_data = {}
+        @initial_urls = [initial_url]
+        @multi_urls = false
+      end
+
       @headers = headers
       @processors = Array(processors)
-      @initial_urls = Array(initial_url)
-      @multi_urls = initial_url.kind_of? Array
       @hydra = Typhoeus::Hydra.hydra
       @urls_queued = []
     end
@@ -17,7 +29,6 @@ module Scrapers
       @data = {}
       @yieldBlock = block
       @initial_urls.each do |initial_url|
-        @data[initial_url] = []
         add_to_queue initial_url, initial_url
       end
       @hydra.run
@@ -28,11 +39,16 @@ module Scrapers
     private
 
     def process_response(response, initial_url, processor_class)
-      processor = processor_class.new(response) do |url|
+      request_url = response.request.url
+      data_for_proc = @initial_urls_data[initial_url]
+      initial_request = (request_url == initial_url)
+      processor = processor_class.new(response, initial_request, data_for_proc) do |url|
         add_to_queue(url, initial_url)
       end
       Scrapers.logger.info "Parsing #{response.request.url}"
-      add_page_data processor.process_page, initial_url, response.request.url
+
+      @data[initial_url] = processor.process_page_and_store @data[initial_url]
+      yield_page_data processor.data, initial_url, request_url
     end
 
     def add_to_queue(url, initial_url)
@@ -52,11 +68,12 @@ module Scrapers
       raise NoPageProcessorFoundError.new("Couldn't find processor for #{url} \n Available processors: #{available_processors_names}")
     end
 
-    def add_page_data(page_data, initial_url, url)
-      page_data = [page_data] unless page_data.kind_of? Array
-      page_data.each do |data|
-        @yieldBlock.curry[data, initial_url, url] if @yieldBlock
-        @data[initial_url].push data
+    def yield_page_data(page_data, initial_url, url)
+      if @yieldBlock
+        page_data = [page_data] unless page_data.kind_of? Array
+        page_data.each do |data|
+          @yieldBlock.curry[data, initial_url, url]
+        end
       end
     end
 

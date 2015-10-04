@@ -13,20 +13,37 @@ describe Scrapers::Loader do
       expect{scraper.scrap}.to raise_error s::NoPageProcessorFoundError
     end
 
-    it 'should process each page and return an array of the processed data' do
-      class ExtendedProcessor < s::BasePageProcessor
+    it 'should process each page and return the processed data' do
+      processor = Class.new(s::BasePageProcessor) do
         regexp %r{http://www\.purple\.com}
 
-        def process_page
+        define_method :process_page do
           'Yeaaaah!'
         end
       end
 
-      scraper = s::Loader.new('http://www.purple.com', ExtendedProcessor)
-      expect(scraper.scrap).to eq ['Yeaaaah!']
+      scraper = s::Loader.new('http://www.purple.com', processor)
+      expect(scraper.scrap).to eq 'Yeaaaah!'
     end
 
-    it 'should process each page and return concatenation of the arrays of the processed array data' do
+    it 'should get the full data by calling the inject method' do
+      processor = Class.new(s::BasePageProcessor) do
+        regexp %r{http://www\.purple\.com}
+
+        define_method :inject do |data|
+          @data + 'potato'
+        end
+
+        define_method :process_page do
+          'Yeaaaah!'
+        end
+      end
+
+      scraper = s::Loader.new('http://www.purple.com', processor)
+      expect(scraper.scrap).to eq 'Yeaaaah!potato'
+    end
+
+    it "should process each page and return the processed data even if it's an array" do
       class ExtendedProcessor < s::BasePageProcessor
         regexp %r{http://www\.purple\.com}
 
@@ -61,8 +78,8 @@ describe Scrapers::Loader do
         [ExtendedProcessor1, ExtendedProcessor2]
       )
       expect(scraper.scrap).to eq({
-        'http://www.zombo.com' => ['Welcome to Zombocom!'],
-        'http://www.purple.com' => ['Purple is the best!']
+        'http://www.zombo.com' => 'Welcome to Zombocom!',
+        'http://www.purple.com' => 'Purple is the best!'
       })
     end
 
@@ -91,6 +108,55 @@ describe Scrapers::Loader do
       expect(testYieldBlock).to receive(:call).with(2, 'http://www.purple.com', 'http://www.purple.com')
       expect(testYieldBlock).to receive(:call).with(3, 'http://www.purple.com/potato', 'http://www.purple.com/potato')
       scraper.scrap(&yieldBlock)
+    end
+
+    it 'accept hash as URL with data and pass it to the processor' do
+      initial = nil
+      url_data = nil
+      processor = Class.new(s::BasePageProcessor) do
+        regexp %r{.}
+
+        define_method(:initialize) do |response, i, ud|
+          initial = i
+          url_data = ud
+        end
+
+        define_method(:process_page){}
+      end
+
+      scraper = s::Loader.new(
+        { 'http://www.zombo.com' => { some_data: 'hey' } },
+        [processor]
+      )
+      scraper.scrap
+      expect(initial).to eq true
+      expect(url_data).to eq(some_data: 'hey')
+    end
+
+    it 'should pass wether the processor is procesing an initial URL or an additional' do
+      initial = nil
+      url_data = nil
+      processor = Class.new(s::BasePageProcessor) do
+        regexp %r{.}
+
+        define_method(:initialize) do |response, i, ud, &block|
+          initial = i
+          url_data = ud
+          @block = block
+        end
+
+        define_method(:process_page) do
+          @block.call('http://www.purple.com')
+        end
+      end
+
+      scraper = s::Loader.new(
+        { 'http://www.zombo.com' => { some_data: 'hey' } },
+        [processor]
+      )
+      scraper.scrap
+      expect(initial).to eq false
+      expect(url_data).to eq(some_data: 'hey')
     end
   end
 end
