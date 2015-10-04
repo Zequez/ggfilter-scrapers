@@ -56,7 +56,7 @@ class Scrapers::SteamGame::PageProcessor < Scrapers::BasePageProcessor
     game[:esrb_rating] = if ( esrb = css('img[src*="images/ratings/esrb"]').first )
       esrb['src'].scan(/esrb_(\w+)/).flatten.first.to_sym
     else nil end
-    game[:early_access] = false
+    game[:early_access] = !css('.early_access_header').empty?
     game[:audio_languages], game[:subtitles_languages] = read_languages
     game[:videos] = read_videos
     game[:images] = css('.highlight_strip_screenshot img').map{ |i| i['src'].sub(/.\d+x\d+\.jpg/, '.jpg') }

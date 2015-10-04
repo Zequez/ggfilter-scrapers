@@ -181,4 +181,10 @@ describe Scrapers::SteamGame::PageProcessor, cassette: true do
 
     its([:controller_support]){ is_expected.to match_array [:partial] }
   end
+
+  describe 'game with early access' do
+    game_cassette_subject(391720, 'layers_of_fear')
+
+    its([:early_access]){ is_expected.to eq true }
+  end
 end
