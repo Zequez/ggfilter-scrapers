@@ -4,7 +4,8 @@ module Scrapers
   class Loader
     attr_reader :data
 
-    def initialize(initial_url, processors)
+    def initialize(initial_url, processors, headers = {})
+      @headers = headers
       @processors = Array(processors)
       @initial_urls = Array(initial_url)
       @multi_urls = initial_url.kind_of? Array
@@ -37,7 +38,7 @@ module Scrapers
     def add_to_queue(url, initial_url)
       unless @urls_queued.include? url
         processor_class = find_processor_for_url(url)
-        request = Typhoeus::Request.new(url)
+        request = Typhoeus::Request.new(url, headers: @headers)
         request.on_complete do |response|
           process_response response, initial_url, processor_class
         end
