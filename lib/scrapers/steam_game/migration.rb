@@ -19,7 +19,9 @@ module Scrapers
             [:system_requirements, :text],
             [:players, :integer],
             [:controller_support, :integer],
-            [:features, :integer]
+            [:features, :integer],
+            [:reviews_positive_count, :integer],
+            [:reviews_negative_count, :integer]
           ].each do |(column, type)|
             add_column @table_name, column, type
           end

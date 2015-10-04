@@ -62,7 +62,9 @@ class Scrapers::SteamGame::PageProcessor < Scrapers::BasePageProcessor
     game[:videos] = read_videos
     game[:images] = css('.highlight_strip_screenshot img').map{ |i| i['src'].sub(/.\d+x\d+\.jpg/, '.jpg') }
     game[:summary] = css('.game_description_snippet').text.strip
-    game[:reviews_count] = css('.user_reviews_count').map{ |c| Integer(c.text.gsub(/[(),]/, '')) }.inject(0, :+)
+    reviews_count = css('.user_reviews_count').map{ |c| Integer(c.text.gsub(/[(),]/, '')) }
+    game[:reviews_positive_count] = reviews_count[0] || 0
+    game[:reviews_negative_count] = reviews_count[1] || 0
 
     game[:players] = detect_features(
       1 => :multi_player,
