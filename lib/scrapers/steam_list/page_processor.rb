@@ -13,6 +13,11 @@
 class Scrapers::SteamList::PageProcessor < Scrapers::BasePageProcessor
   regexp %r{^http://store\.steampowered\.com/search/results}
 
+  def inject(data)
+    data ||= []
+    data += @data
+  end
+
   def process_page
     data = []
 
