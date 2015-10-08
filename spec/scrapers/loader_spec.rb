@@ -56,33 +56,6 @@ describe Scrapers::Loader do
       expect(scraper.scrap).to eq ['Yeaaaah!', 'Potato!']
     end
 
-    it 'should return a hash with the URLs if multiple URLs were provided' do
-      class ExtendedProcessor1 < s::BasePageProcessor
-        regexp %r{http://www\.purple\.com}
-
-        def process_page
-          'Purple is the best!'
-        end
-      end
-
-      class ExtendedProcessor2 < s::BasePageProcessor
-        regexp %r{http://www\.zombo\.com}
-
-        def process_page
-          'Welcome to Zombocom!'
-        end
-      end
-
-      scraper = s::Loader.new(
-        ['http://www.zombo.com', 'http://www.purple.com'],
-        [ExtendedProcessor1, ExtendedProcessor2]
-      )
-      expect(scraper.scrap).to eq({
-        'http://www.zombo.com' => 'Welcome to Zombocom!',
-        'http://www.purple.com' => 'Purple is the best!'
-      })
-    end
-
     it 'should yield the data as each page loads to a block given in scrap' do
       class Processor < s::BasePageProcessor
         regexp %r{.}
@@ -95,7 +68,7 @@ describe Scrapers::Loader do
 
       scraper = s::Loader.new(
         ['http://www.zombo.com', 'http://www.purple.com', 'http://www.purple.com/potato'],
-        [Processor]
+        Processor
       )
 
       # Couldn't find a way to test calls that worked with currying
@@ -126,7 +99,7 @@ describe Scrapers::Loader do
 
       scraper = s::Loader.new(
         { 'http://www.zombo.com' => { some_data: 'hey' } },
-        [processor]
+        processor
       )
       scraper.scrap
       expect(initial).to eq true
@@ -152,7 +125,7 @@ describe Scrapers::Loader do
 
       scraper = s::Loader.new(
         { 'http://www.zombo.com' => { some_data: 'hey' } },
-        [processor]
+        processor
       )
       scraper.scrap
       expect(initial).to eq false

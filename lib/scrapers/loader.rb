@@ -4,7 +4,7 @@ module Scrapers
   class Loader
     attr_reader :data
 
-    def initialize(initial_url, processors, headers = {})
+    def initialize(initial_url, processor, headers = {})
       if initial_url.kind_of? Hash
         @initial_urls_data = initial_url
         @initial_urls = initial_url.keys
@@ -20,7 +20,7 @@ module Scrapers
       end
 
       @headers = headers
-      @processors = Array(processors)
+      @processor = processor
       @hydra = Typhoeus::Hydra.hydra
       @urls_queued = []
     end
@@ -38,11 +38,11 @@ module Scrapers
 
     private
 
-    def process_response(response, initial_url, processor_class)
+    def process_response(response, initial_url)
       request_url = response.request.url
       data_for_proc = @initial_urls_data[initial_url]
       initial_request = (request_url == initial_url)
-      processor = processor_class.new(response, initial_request, data_for_proc) do |url|
+      processor = @processor.new(response, initial_request, data_for_proc) do |url|
         add_to_queue(url, initial_url)
       end
       Scrapers.logger.info "Parsing #{response.request.url}"
@@ -53,19 +53,14 @@ module Scrapers
 
     def add_to_queue(url, initial_url)
       unless @urls_queued.include? url
-        processor_class = find_processor_for_url(url)
+        match_processor!(url)
         request = Typhoeus::Request.new(url, headers: @headers)
         request.on_complete do |response|
-          process_response response, initial_url, processor_class
+          process_response response, initial_url
         end
         @urls_queued << url
         @hydra.queue request
       end
-    end
-
-    def no_processor_error(url)
-      available_processors_names = @processors.map{ |p| p.class.name }.join(', ')
-      raise NoPageProcessorFoundError.new("Couldn't find processor for #{url} \n Available processors: #{available_processors_names}")
     end
 
     def yield_page_data(page_data, initial_url, url)
@@ -77,10 +72,12 @@ module Scrapers
       end
     end
 
-    def find_processor_for_url(url)
-      processor_class = @processors.detect{ |pc| pc.regexp.match url }
-      return no_processor_error(url) unless processor_class
-      processor_class
+    def match_processor!(url)
+      no_processor_error(url) unless @processor.regexp.match url
+    end
+
+    def no_processor_error(url)
+      raise NoPageProcessorFoundError.new("Couldn't find processor for #{url} \n Active processor: #{@processor.class}")
     end
   end
 end
