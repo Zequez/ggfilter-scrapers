@@ -1,5 +1,3 @@
-require 'active_support/concern'
-
 module Scrapers::SteamList::GameExtension
   extend ActiveSupport::Concern
 

@@ -1,5 +1,3 @@
-require 'active_support/concern'
-
 module Scrapers::SteamGame::GameExtension
   extend ActiveSupport::Concern
 
