@@ -10,9 +10,8 @@ describe Scrapers::SteamReviews::PageProcessor, cassette: true do
   def self.game_cassette_subject(app_id, name, data = {})
     before_all_cassette(name) do
       url = steam_reviews_url(app_id)
-      data_url = Hash(url => data)
-      loader = Scrapers::Loader.new(data_url, [processor_class])
-      @result = loader.scrap[url]
+      loader = Scrapers::Loader.new(processor_class, url, data)
+      @result = loader.scrap
     end
     subject{ @result }
   end
