@@ -42,20 +42,24 @@ module Scrapers
       end
     end
 
-    def store_error_page(scrap_request, exception)
-      backtrace = exception.backtrace.join("\n")
+    def store_error_page(scrap_request, exception = nil)
       time = Time.now.to_i
       sanitized_url = scrap_request.url.gsub(/[\x00\/\\:\*\?\"<>\|]/, '_')
 
       file_name = "#{time}_#{sanitized_url}"
       file_path = "#{Scrapers.app_root}/log/error_pages"
 
+      body = scrap_request.response ? scrap_request.response.body.force_encoding("utf-8") : ''
       FileUtils.mkdir_p file_path
-      File.write("#{file_path}/#{file_name}.html", scrap_request.response.body)
-      File.write("#{file_path}/#{file_name}.backtrace", backtrace)
+      File.write("#{file_path}/#{file_name}.html", body)
 
       self.error "Stored error page and backtrace #{file_name}"
-      errors_only_file << backtrace + "\n"
+
+      if exception
+        backtrace = exception.backtrace.join("\n")
+        errors_only_file << backtrace + "\n"
+        File.write("#{file_path}/#{file_name}.backtrace", backtrace)
+      end
     end
   end
 end

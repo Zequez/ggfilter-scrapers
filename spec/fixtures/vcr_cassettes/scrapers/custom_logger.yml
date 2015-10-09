@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://store.steampowered.com/app/209160
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      Server:
+      - Apache
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - no-cache
+      Location:
+      - http://store.steampowered.com/agecheck/app/209160/
+      Content-Encoding:
+      - gzip
+      Vary:
+      - Accept-Encoding
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '26'
+      X-Varnish:
+      - '1274071258'
+      Date:
+      - Fri, 09 Oct 2015 20:40:39 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - browserid=948363825208098190; expires=Sat, 08-Oct-2016 20:40:39 GMT; path=/
+      - steamCountry=AR%7C545bf212b4bde1c6422b82b5b6ecff54; path=/
+    body:
+      encoding: UTF-8
+      base64_string: |
+        H4sIAAAAAAAAAwIAAAD//wMAAAAAAAAAAAA=
+    http_version: 
+  recorded_at: Fri, 09 Oct 2015 20:40:39 GMT
+recorded_with: VCR 2.9.3
