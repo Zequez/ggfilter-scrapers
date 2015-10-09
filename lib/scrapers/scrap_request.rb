@@ -12,6 +12,7 @@ module Scrapers
       @response = nil
       @output = nil
       @finished = false
+      @error = false
     end
 
     def set_output(value)
@@ -29,6 +30,14 @@ module Scrapers
 
     def finished!
       @finished = true
+    end
+
+    def error!
+      @error = true
+    end
+
+    def error?
+      @error
     end
 
     def finished?

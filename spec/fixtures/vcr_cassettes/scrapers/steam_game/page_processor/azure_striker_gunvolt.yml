@@ -1,0 +1,1181 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://store.steampowered.com/app/388800
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Cookie:
+      - birthtime=724320001; fakeCC=US
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - text/html; charset=UTF-8
+      X-Varnish:
+      - '1265131151'
+      Date:
+      - Fri, 09 Oct 2015 18:31:43 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+      Set-Cookie:
+      - browserid=944986125485872481; expires=Sat, 08-Oct-2016 18:31:42 GMT; path=/
+      - recentapps=%7B%22388800%22%3A1444415502%7D; expires=Thu, 07-Jan-2016 18:31:42
+        GMT; path=/
+      - sessionid=93a8b9a2094085630232351f; path=/
+      - steamCountry=AR%7C545bf212b4bde1c6422b82b5b6ecff54; path=/
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\r\n<html class=\" responsive\">\r\n<head>\r\n\t<meta
+        http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n\t\t\t<meta
+        name=\"viewport\" content=\"width=device-width,initial-scale=1\">\r\n\t\t<meta
+        name=\"theme-color\" content=\"#171a21\">\r\n\t\t<title>Azure Striker Gunvolt
+        on Steam</title>\r\n\t<link rel=\"shortcut icon\" href=\"/favicon.ico\" type=\"image/x-icon\"
+        />\r\n\r\n\t<link href=\"http://store.akamai.steamstatic.com/public/shared/css/motiva_sans.css?v=ful_LJT3NQYl\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.akamai.steamstatic.com/public/shared/css/shared_global.css?v=wTcoFxa14BHr\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.akamai.steamstatic.com/public/shared/css/buttons.css?v=ZQhT8EbnYTgW\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.akamai.steamstatic.com/public/css/v6/store.css?v=SRzRT-Uuxs8U\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.akamai.steamstatic.com/public/shared/css/user_reviews.css?v=eK35SdE11BqT\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.akamai.steamstatic.com/public/shared/css/store_game_shared.css?v=nP6_Ej917_PN\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.akamai.steamstatic.com/public/css/v6/game.css?v=mFLJQTuyqsQA\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.akamai.steamstatic.com/public/css/v6/recommended.css?v=n1NdgwXfCZ2v\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.akamai.steamstatic.com/public/shared/css/apphub.css?v=pCG6EHTy9byu\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.akamai.steamstatic.com/public/shared/css/shared_responsive.css?v=FVU9KEgNYUuN\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<script type=\"text/javascript\" src=\"http://store.akamai.steamstatic.com/public/shared/javascript/jquery-1.8.3.min.js?v=.TZ2NKhB-nliU\"></script>\n<script
+        type=\"text/javascript\">$J = jQuery.noConflict();</script><script type=\"text/javascript\"
+        src=\"http://store.akamai.steamstatic.com/public/shared/javascript/tooltip.js?v=.Oo26AiO9mMmw\"></script>\n\n<script
+        type=\"text/javascript\" src=\"http://store.akamai.steamstatic.com/public/shared/javascript/shared_global.js?v=F4LLn6rCOruZ&amp;l=english\"></script>\n\n<script
+        type=\"text/javascript\" src=\"http://store.akamai.steamstatic.com/public/javascript/main.js?v=imYLXSPSeLYs&amp;l=english\"></script>\n\n<script
+        type=\"text/javascript\" src=\"http://store.akamai.steamstatic.com/public/javascript/dynamicstore.js?v=vfZ56HAz5ZHl&amp;l=english\"></script>\n\n<script
+        type=\"text/javascript\" src=\"http://store.akamai.steamstatic.com/public/shared/javascript/jquery.appear.js?v=.rB2Jqew4q0oc\"></script>\n\n<script
+        type=\"text/javascript\">\njQuery(document).ready(function($) { $J.data( document,
+        'x_readytime', new Date().getTime() ); \n$J.data( document, 'x_oldref', GetNavCookie()
+        ); \n$('.tooltip').v_tooltip();\nwindow.BindStoreTooltip = function( $Selector
+        ) { $Selector.v_tooltip( {'tooltipClass': 'store_tooltip', 'dataName': 'storeTooltip'
+        } ); };\nBindStoreTooltip( $('[data-store-tooltip]') ); \n});</script><script
+        type=\"text/javascript\">\n  var _gaq = _gaq || [];\n  _gaq.push(['_setAccount',
+        'UA-33786258-1']);\n  _gaq.push(['_setSampleRate', '0.4']);\n  _gaq.push(['_setCustomVar',
+        1, 'Logged In', 'false', 2]);\n  _gaq.push(['_setCustomVar', 2, 'Client Type',
+        'External', 2]);\n  _gaq.push(['_setCustomVar', 3, 'Cntrlr', 'application',
+        3]);\n  _gaq.push(['_setCustomVar', 4, 'Method', \"application\\/app\", 3]);\n
+        \ _gaq.push(['_trackPageview']);\n  _gaq.push(['_setSessionCookieTimeout',
+        900000]);\n  (function() {\n    var ga = document.createElement('script');
+        ga.type = 'text/javascript'; ga.async = true;\n    ga.src = ('https:' == document.location.protocol
+        ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n    var
+        s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,
+        s);\n  })();\n</script>\n<script type=\"text/javascript\" src=\"http://store.akamai.steamstatic.com/public/javascript/gamehighlightplayer.js?v=tccSFOOLjEFb&amp;l=english\"></script>\n<script
+        type=\"text/javascript\" src=\"http://store.akamai.steamstatic.com/public/shared/javascript/user_reviews.js?v=wElGfRd1klp0&amp;l=english\"></script>\n<script
+        type=\"text/javascript\" src=\"http://store.akamai.steamstatic.com/public/shared/javascript/dselect.js?v=NS7x25VV4jqy&amp;l=english\"></script>\n<script
+        type=\"text/javascript\" src=\"http://store.akamai.steamstatic.com/public/javascript/app_tagging.js?v=4vf_qmcYxcYh&amp;l=english\"></script>\n<script
+        type=\"text/javascript\" src=\"http://store.akamai.steamstatic.com/public/javascript/game.js?v=n3XSmAlBl_p2&amp;l=english\"></script>\n<script
+        type=\"text/javascript\" src=\"http://store.akamai.steamstatic.com/public/javascript/swfobject.js?v=.IJPsm1EB98JP\"></script>\n<script
+        type=\"text/javascript\" src=\"http://store.akamai.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=JpII_nlM9eyw&amp;l=english\"></script>\n\r\n\t\t\t\t\t\t<meta
+        name=\"Description\" content=\"A 2D action game featuring a young man with
+        the power of lightning who stands for freedom against the evil ambitions of
+        a massive organization. When lightning strikes, a new legend is born.\">\r\n\t\t\t\r\n\t\t\t<link
+        rel=\"canonical\" href=\"http://store.steampowered.com/app/388800/\">\r\n\t\r\n\t\t\t<link
+        rel=\"image_src\" href=\"http://cdn.akamai.steamstatic.com/steam/apps/388800/header.jpg?t=1443616117\">\r\n\t\r\n\t\r\n\t</head>\r\n<body
+        class=\"v6 app game_bg responsive_page\">\r\n\r\n<div class=\"responsive_page_frame
+        with_header\">\r\n\r\n\t\t\t\t\t\t<div class=\"responsive_page_menu_ctn mainmenu\">\r\n\t\t\t\t<div
+        class=\"responsive_page_menu\"  id=\"responsive_page_menu\">\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"mainmenu_contents\">\r\n\t\t\t\t\t\t<div class=\"mainmenu_contents_items\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"menuitem\" href=\"https://store.steampowered.com//login/?redir=app%2F388800\">\r\n\t\t\t\t\t\t\t\t\tLogin\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<a
+        class=\"menuitem supernav\" href=\"http://store.steampowered.com/\" data-tooltip-type=\"selector\"
+        data-tooltip-content=\".submenu_store\">\r\n\t\tStore\t</a>\r\n\t<div class=\"submenu_store\"
+        style=\"display: none;\" data-submenuid=\"store\">\r\n\t\t<a class=\"submenuitem\"
+        href=\"http://store.steampowered.com/\">Featured</a>\r\n\t\t<a class=\"submenuitem\"
+        href=\"http://store.steampowered.com/explore/\">Explore</a>\r\n\t\t<a class=\"submenuitem\"
+        href=\"http://store.steampowered.com/curators/\">Curators</a>\r\n\t\t<a class=\"submenuitem\"
+        href=\"http://steamcommunity.com/my/wishlist/\">Wishlist</a>\r\n\t\t<a class=\"submenuitem\"
+        href=\"http://store.steampowered.com/news/\">News</a>\r\n\t\t<a class=\"submenuitem\"
+        href=\"http://store.steampowered.com/stats/\">Stats</a>\r\n\t</div>\r\n\r\n\r\n\t<a
+        class=\"menuitem supernav\" style=\"display: block\" href=\"http://steamcommunity.com/\"
+        data-tooltip-type=\"selector\" data-tooltip-content=\".submenu_community\">\r\n\t\tCommunity\t</a>\r\n\t<div
+        class=\"submenu_community\" style=\"display: none;\" data-submenuid=\"community\">\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/\">Home</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/discussions/\">Discussions</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/workshop/\">Workshop</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/greenlight/\">Greenlight</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/market/\">Market</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/?subsection=broadcasts\">Broadcasts</a>\r\n\t\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\r\n\t\r\n\t<a
+        class=\"menuitem\" href=\"https://help.steampowered.com/\">\r\n\t\tSupport\t</a>\r\n\r\n\t\t\t\t\t\t\t<div
+        class=\"minor_menu_items\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"menuitem
+        change_language_action\">\r\n\t\t\t\t\t\t\t\t\tChange language\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"menuitem\" onclick=\"Responsive_RequestDesktopView();\">\r\n\t\t\t\t\t\t\t\t\t\tView
+        desktop website\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div
+        class=\"mainmenu_footer_spacer\"></div>\r\n\t\t\t\t\t\t<div class=\"mainmenu_footer\">\r\n\t\t\t\t\t\t\t<div
+        class=\"mainmenu_footer_logo\"><img src=\"http://store.akamai.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png\"></div>\r\n\t\t\t\t\t\t\t©
+        Valve Corporation. All rights reserved. All trademarks are property of their
+        respective owners in the US and other countries.\t\t\t\t\t\t\t<span class=\"mainmenu_valve_links\">\r\n\t\t\t\t\t\t\t\t<a
+        href=\"http://store.steampowered.com/privacy_agreement/\" target=\"_blank\">Privacy
+        Policy</a>\r\n\t\t\t\t\t\t\t\t&nbsp;| &nbsp;<a href=\"http://www.valvesoftware.com/legal.htm\"
+        target=\"_blank\">Legal</a>\r\n\t\t\t\t\t\t\t\t&nbsp;| &nbsp;<a href=\"http://store.steampowered.com/subscriber_agreement/\"
+        target=\"_blank\">Steam Subscriber Agreement</a>\r\n\t\t\t\t\t\t\t\t&nbsp;|
+        &nbsp;<a href=\"http://store.steampowered.com/steam_refunds/\" target=\"_blank\">Refunds</a>\r\n\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\r\n\t\t<div
+        class=\"responsive_local_menu_tab\" style=\"display: none;\">\r\n\r\n\t\t</div>\r\n\r\n\t\t<div
+        class=\"responsive_page_menu_ctn localmenu\">\r\n\t\t\t<div class=\"responsive_page_menu\"
+        \ id=\"responsive_page_local_menu\">\r\n\t\t\t\t<div class=\"localmenu_content\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\r\n\r\n\t\t\t\t\t<div
+        class=\"responsive_header\">\r\n\t\t\t\t<div class=\"responsive_header_content\">\r\n\t\t\t\t\t<div
+        id=\"responsive_menu_logo\">\r\n\t\t\t\t\t\t<img src=\"http://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png\"
+        height=\"100%\">\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t<div id=\"responsive_beta_logo\">\r\n\t\t\t\t\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_beta.png\"
+        height=\"100%\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"responsive_header_logo\">\r\n\t\t\t\t\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/shared/images/responsive/header_logo.png\"
+        height=\"36\" border=\"0\" alt=\"STEAM\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\r\n\t\t<div
+        class=\"responsive_page_content_overlay\">\r\n\r\n\t\t</div>\r\n\r\n\t\t<div
+        class=\"responsive_fixonscroll_ctn nonresponsive_hidden \">\r\n\t\t</div>\r\n\t\r\n\t<div
+        class=\"responsive_page_content\">\r\n\r\n\t\t<div id=\"global_header\">\r\n\t<div
+        class=\"content\">\r\n\t\r\n\t\t<div class=\"logo\">\r\n\t\t\t<span id=\"logo_holder\">\r\n\t\t\t\t<a
+        href=\"http://store.steampowered.com/\">\r\n\t\t\t\t\t<img src=\"http://store.akamai.steamstatic.com/public/images/v5/globalheader_logo.png\"
+        width=\"176\" height=\"44\">\r\n\t\t\t\t</a>\r\n\t\t\t</span>\r\n\t\t\t<!--[if
+        lt IE 7]>\r\n\t\t\t<style type=\"text/css\">\r\n\t\t\t#logo_holder img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+        }\r\n\t\t\t#logo_holder { display: inline-block; width: 176px; height: 44px;
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://store.akamai.steamstatic.com/public/images/v5/globalheader_logo.png');
+        }\r\n\t\t\t</style>\r\n\t\t\t<![endif]-->\r\n\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"supernav_container\">\r\n\t<a class=\"menuitem supernav\" href=\"http://store.steampowered.com/\"
+        data-tooltip-type=\"selector\" data-tooltip-content=\".submenu_store\">\r\n\t\tSTORE\t</a>\r\n\t<div
+        class=\"submenu_store\" style=\"display: none;\" data-submenuid=\"store\">\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://store.steampowered.com/\">Featured</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://store.steampowered.com/explore/\">Explore</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://store.steampowered.com/curators/\">Curators</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/my/wishlist/\">Wishlist</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://store.steampowered.com/news/\">News</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://store.steampowered.com/stats/\">Stats</a>\r\n\t</div>\r\n\r\n\r\n\t<a
+        class=\"menuitem supernav\" style=\"display: block\" href=\"http://steamcommunity.com/\"
+        data-tooltip-type=\"selector\" data-tooltip-content=\".submenu_community\">\r\n\t\tCOMMUNITY\t</a>\r\n\t<div
+        class=\"submenu_community\" style=\"display: none;\" data-submenuid=\"community\">\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/\">Home</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/discussions/\">Discussions</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/workshop/\">Workshop</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/greenlight/\">Greenlight</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/market/\">Market</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/?subsection=broadcasts\">Broadcasts</a>\r\n\t\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\r\n\t\t\t<a
+        class=\"menuitem\" href=\"http://store.steampowered.com/about/\">\r\n\t\t\tABOUT\t\t</a>\r\n\t\r\n\t<a
+        class=\"menuitem\" href=\"https://help.steampowered.com/\">\r\n\t\tSUPPORT\t</a>\r\n\t</div>\r\n\t<script
+        type=\"text/javascript\">\r\n\t\tjQuery(function($) {\r\n\t\t\t$('.tooltip').v_tooltip();\r\n\t\t\t$('#global_header
+        .supernav').v_tooltip({'location':'bottom', 'tooltipClass': 'supernav_content',
+        'offsetY':-4, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header
+        .supernav_container', 'correctForScreenSize': false});\r\n\t\t});\r\n\t</script>\r\n\r\n\t\t<div
+        id=\"global_actions\">\r\n\t\t\t\t\t\t<div id=\"global_action_menu\">\r\n\t\t\t\t\t\t\t\t\t<div
+        class=\"header_installsteam_btn header_installsteam_btn_green\">\r\n\t\t\t\t\t\t<div
+        class=\"header_installsteam_btn_leftcap\"></div>\r\n\t\t\t\t\t\t<div class=\"header_installsteam_btn_rightcap\"></div>\r\n\t\t\t\t\t\t<a
+        class=\"header_installsteam_btn_content\" href=\"http://store.steampowered.com/about/?snr=1_5_9__11\">\r\n\t\t\t\t\t\t\tInstall
+        Steam\t\t\t\t\t\t</a>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<a
+        class=\"global_action_link\" href=\"http://store.steampowered.com/login/?snr=1_5_9__11\">login</a>\r\n\t\t\t\t\t&nbsp;|&nbsp;
+        \r\n\t\t\t\t\t<span class=\"pulldown global_action_link\" id=\"language_pulldown\"
+        onclick=\"ShowMenu( this, 'language_dropdown', 'right' );\">language</span>\r\n\t\t\t\t\t<div
+        class=\"popup_block_new\" id=\"language_dropdown\" style=\"display: none;\">\r\n\t\t\t\t\t\t<div
+        class=\"popup_body popup_menu\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=bulgarian\" onclick=\"ChangeLanguage(
+        'bulgarian' ); return false;\">Български (Bulgarian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=czech\" onclick=\"ChangeLanguage(
+        'czech' ); return false;\">čeština (Czech)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=danish\" onclick=\"ChangeLanguage(
+        'danish' ); return false;\">Dansk (Danish)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=dutch\" onclick=\"ChangeLanguage(
+        'dutch' ); return false;\">Nederlands (Dutch)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=finnish\" onclick=\"ChangeLanguage(
+        'finnish' ); return false;\">Suomi (Finnish)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=french\" onclick=\"ChangeLanguage(
+        'french' ); return false;\">Français (French)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=greek\" onclick=\"ChangeLanguage(
+        'greek' ); return false;\">Ελληνικά (Greek)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=german\" onclick=\"ChangeLanguage(
+        'german' ); return false;\">Deutsch (German)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=hungarian\" onclick=\"ChangeLanguage(
+        'hungarian' ); return false;\">Magyar (Hungarian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=italian\" onclick=\"ChangeLanguage(
+        'italian' ); return false;\">Italiano (Italian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=japanese\" onclick=\"ChangeLanguage(
+        'japanese' ); return false;\">日本語 (Japanese)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=koreana\" onclick=\"ChangeLanguage(
+        'koreana' ); return false;\">한국어 (Korean)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=norwegian\" onclick=\"ChangeLanguage(
+        'norwegian' ); return false;\">Norsk (Norwegian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=polish\" onclick=\"ChangeLanguage(
+        'polish' ); return false;\">Polski (Polish)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=portuguese\" onclick=\"ChangeLanguage(
+        'portuguese' ); return false;\">Português (Portuguese)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=brazilian\" onclick=\"ChangeLanguage(
+        'brazilian' ); return false;\">Português-Brasil (Portuguese-Brazil)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=russian\" onclick=\"ChangeLanguage(
+        'russian' ); return false;\">Русский (Russian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=romanian\" onclick=\"ChangeLanguage(
+        'romanian' ); return false;\">Română (Romanian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=schinese\" onclick=\"ChangeLanguage(
+        'schinese' ); return false;\">简体中文 (Simplified Chinese)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=spanish\" onclick=\"ChangeLanguage(
+        'spanish' ); return false;\">Español (Spanish)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=swedish\" onclick=\"ChangeLanguage(
+        'swedish' ); return false;\">Svenska (Swedish)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=tchinese\" onclick=\"ChangeLanguage(
+        'tchinese' ); return false;\">繁體中文 (Traditional Chinese)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=thai\" onclick=\"ChangeLanguage(
+        'thai' ); return false;\">ไทย (Thai)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=turkish\" onclick=\"ChangeLanguage(
+        'turkish' ); return false;\">Türkçe (Turkish)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=ukrainian\" onclick=\"ChangeLanguage(
+        'ukrainian' ); return false;\">Українська (Ukrainian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"http://translation.steampowered.com\"
+        target=\"_blank\">Help us translate Steam</a>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t</div>\r\n\t\t\t</div>\r\n</div>\r\n<div
+        id=\"responsive_store_nav_ctn\"></div>\r\n\t\t<div class=\"responsive_page_template_content\">\r\n\r\n\t\t\t<script
+        type=\"text/javascript\">\r\n\r\n\tGStoreItemData.AddStoreItemData(\r\n\t\t{\"248310\":{\"name\":\"Freedom
+        Planet\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\"><div
+        class=\\\"discount_prices no_discount\\\"><div class=\\\"discount_final_price\\\">$14.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/248310\\/capsule_184x69.jpg?t=1441326954\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true},\"345820\":{\"name\":\"Shantae
+        and the Pirate's Curse\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"><div class=\\\"discount_prices no_discount\\\"><div class=\\\"discount_final_price\\\">$19.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/345820\\/capsule_184x69.jpg?t=1433473615\",\"os_windows\":true},\"318530\":{\"name\":\"Wings
+        of Vi\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\"><div
+        class=\\\"discount_prices no_discount\\\"><div class=\\\"discount_final_price\\\">$14.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/318530\\/capsule_184x69.jpg?t=1436805226\",\"os_windows\":true},\"203510\":{\"name\":\"Fortune
+        Summoners\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\"><div
+        class=\\\"discount_prices no_discount\\\"><div class=\\\"discount_final_price\\\">$19.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/203510\\/capsule_184x69.jpg?t=1342070667\",\"os_windows\":true},\"302790\":{\"name\":\"Momodora
+        III\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\"><div
+        class=\\\"discount_prices no_discount\\\"><div class=\\\"discount_final_price\\\">$3.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/302790\\/capsule_184x69.jpg?t=1420911290\",\"os_windows\":true},\"261700\":{\"name\":\"Eryi's
+        Action\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\"><div
+        class=\\\"discount_prices no_discount\\\"><div class=\\\"discount_final_price\\\">$4.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/261700\\/capsule_184x69.jpg?t=1387392049\",\"os_windows\":true,\"os_linux\":true},\"277890\":{\"name\":\"Shantae:
+        Risky's Revenge - Director's Cut\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"><div class=\\\"discount_prices no_discount\\\"><div class=\\\"discount_final_price\\\">$9.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/277890\\/capsule_184x69.jpg?t=1433473720\",\"os_windows\":true},\"250660\":{\"name\":\"Bunny
+        Must Die! Chelsea and the 7 Devils\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"><div class=\\\"discount_prices no_discount\\\"><div class=\\\"discount_final_price\\\">$9.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/250660\\/capsule_184x69.jpg?t=1437686064\",\"os_windows\":true},\"264360\":{\"name\":\"La
+        Tale\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\"><div
+        class=\\\"discount_prices no_discount\\\"><div class=\\\"discount_final_price\\\">Free
+        to Play<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/264360\\/capsule_184x69.jpg?t=1440129916\",\"os_windows\":true},\"291130\":{\"name\":\"Akane
+        the Kunoichi\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\"><div
+        class=\\\"discount_prices no_discount\\\"><div class=\\\"discount_final_price\\\">$2.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/291130\\/capsule_184x69.jpg?t=1420573417\",\"os_windows\":true},\"281220\":{\"name\":\"BloodRayne
+        Betrayal\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\"><div
+        class=\\\"discount_prices no_discount\\\"><div class=\\\"discount_final_price\\\">$9.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/281220\\/capsule_184x69.jpg?t=1429722979\",\"os_windows\":true},\"105600\":{\"name\":\"Terraria\",\"discount_block\":\"<div
+        class=\\\"discount_block  no_discount\\\"><div class=\\\"discount_prices no_discount\\\"><div
+        class=\\\"discount_final_price\\\">$9.99 USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/105600\\/capsule_184x69.jpg?t=1444313647\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true}},\r\n\t\t{}\t);\r\n\tGStoreItemData.AddNavParams(
+        {\r\n\t\trecommended: \"1_5_9__300\",\r\n\t} );\r\n\r\n\t$J( function() {\r\n\t\tvar
+        $Expander = $J('#devnotes_expander');\r\n\t\tif( $Expander.length && $Expander.height()
+        < parseInt( $Expander.css('max-height') ) ) {\r\n\t\t\t$J('#devnotes_more').hide();\r\n\t\t}\r\n\r\n\t\t\r\n\t\t\t\tInitAutocollapse();\r\n\t\tInitHorizontalAutoSliders();\r\n\r\n\t\tResponsive_ReparentItemsInResponsiveMode(
+        '.responsive_apppage_details_right', $J('#responsive_apppage_details_right_ctn')
+        );\r\n\t\tResponsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_left',
+        $J('#responsive_apppage_details_left_ctn') );\r\n\t\tResponsive_ReparentItemsInResponsiveMode(
+        '.responsive_apppage_reviewblock', $J('#responsive_apppage_reviewblock_ctn')
+        );\r\n\r\n\t\t//hack to workaround chrome bug\r\n\t\t$J('#responsive_apppage_reviewblock_ctn'
+        ).css('width', '100%' );\r\n\t\twindow.setTimeout( function() { $J('#responsive_apppage_reviewblock_ctn').css('width',
+        '' ); }, 1 );\r\n\t} );\r\n\tGDynamicStore.OnReady( function() {\r\n\t\tRenderMoreLikeThisBlock(
+        [\"248310\",\"345820\",\"318530\",\"203510\",\"302790\",\"261700\",\"277890\",\"250660\",\"264360\",\"291130\",\"281220\",\"105600\"]
+        );\r\n\t\t\t});\r\n\r\n\t\r\n</script>\r\n\r\n<div class=\"game_page_background
+        game\" style=\"background-image: url('http://cdn.akamai.steamstatic.com/steam/apps/388800/page_bg_generated_v6b.jpg?t=1443616117');\">\r\n\r\n\t\r\n\t\t<div
+        id=\"store_header\" class=\"\">\r\n\t\t<div class=\"content\">\r\n\t\t\t<div
+        id=\"store_controls\">\r\n\t\t\t\t<div id=\"cart_status_data\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"store_header_btn_green store_header_btn\" id=\"store_header_cart_btn\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t<div class=\"store_header_btn_caps
+        store_header_btn_leftcap\"></div>\r\n\t\t\t\t\t\t\t<div class=\"store_header_btn_caps
+        store_header_btn_rightcap\"></div>\r\n\t\t\t\t\t\t\t<a id=\"cart_link\" class=\"store_header_btn_content\"
+        href=\"http://store.steampowered.com/cart/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\tCart\t\t\t\t\t\t\t\t(<span
+        id=\"cart_item_count_value\">0</span>)\r\n\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\t\t\t\t<div
+        id=\"store_nav_area\">\r\n\t\t\t\t\t<div class=\"store_nav_leftcap\"></div>\r\n\t\t\t\t\t<div
+        class=\"store_nav_bg\">\r\n\t\t\t\t\t\t<div class=\"store_nav\">\r\n\t\t\t\t\t\t\t<a
+        class=\"tab \" href=\"http://store.steampowered.com/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t<span>Featured
+        Items</span>\r\n\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"tab
+        \ flyout_tab\" id=\"genre_tab\" data-flyout=\"genre_flyout\" data-flyout-align=\"left\"
+        data-flyout-valign=\"bottom\">\r\n\t\t\t\t\t\t\t\t\t<span class=\"pulldown\">Games<span
+        ></span></span>\r\n\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"popup_block_new
+        flyout_tab_flyout responsive_slidedown\" id=\"genre_flyout\" style=\"display:
+        none;\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"popup_body popup_menu\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/genre/Free%20to%20Play/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tFree
+        to Play\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/genre/Early%20Access/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tEarly
+        Access\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hr\"></div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"popup_menu_subheader\">Browse
+        by genre:</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Action/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tAction\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Adventure/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tAdventure\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Casual/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tCasual\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Indie/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tIndie\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Massively%20Multiplayer/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tMassively
+        Multiplayer\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Racing/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tRacing\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/RPG/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tRPG\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Simulation/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tSimulation\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Sports/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tSports\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Strategy/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tStrategy\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hr\"></div>\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/browse/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tSee
+        popular tags\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"hr\"></div>\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"popup_menu_subheader\">Browse by platform:</div>\r\n\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/search/?term=&sort_by=_ASC&os=mac&page=1&snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tMac
+        OS X\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"http://store.steampowered.com/search/?term=&sort_by=_ASC&os=linux&page=1&snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tSteamOS
+        + Linux\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<div
+        class=\"tab  flyout_tab\" id=\"software_tab\" data-flyout=\"software_flyout\"
+        data-flyout-align=\"left\" data-flyout-valign=\"bottom\">\r\n\t\t\t\t\t\t\t\t<span
+        class=\"pulldown\">Software<span ></span></span>\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div
+        class=\"popup_block_new flyout_tab_flyout responsive_slidedown\" id=\"software_flyout\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t<div class=\"popup_body popup_menu\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Animation%20%26%20Modeling/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tAnimation
+        & Modeling\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Audio%20Production/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tAudio
+        Production\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Design%20%26%20Illustration/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tDesign
+        & Illustration\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Game%20Development/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tGame
+        Development\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Photo%20Editing/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tPhoto
+        Editing\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Utilities/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tUtilities\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Video%20Production/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tVideo
+        Production\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Web%20Publishing/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tWeb
+        Publishing\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div
+        class=\"tab  flyout_tab\" id=\"hardware_tab\" data-flyout=\"hardware_flyout\"
+        data-flyout-align=\"left\" data-flyout-valign=\"bottom\">\r\n\t\t\t\t\t\t\t\t<span
+        class=\"pulldown\">Hardware<span ></span></span>\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div
+        class=\"popup_block_new flyout_tab_flyout responsive_slidedown\" id=\"hardware_flyout\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t<div class=\"popup_body popup_menu\">\r\n\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/app/353370?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\tSteam
+        Controller\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"http://store.steampowered.com/app/353380?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\tSteam
+        Link\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"http://store.steampowered.com/sale/steam_machines?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\tSteam
+        Machines\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\"
+        target=\"_blank\" href=\"http://steamcommunity.com/steamvr?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\tSteamVR\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<a
+        class=\"tab \" href=\"http://store.steampowered.com/freestuff/demos/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t<span>Demos</span>\r\n\t\t\t\t\t\t\t</a>\r\n\r\n\t\t\t\t\t\t\t<a
+        class=\"tab \" href=\"http://store.steampowered.com/news/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t<span>News</span>\r\n\t\t\t\t\t\t\t</a>\r\n\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<div
+        class=\"tab  flyout_tab\" id=\"foryou_tab\" data-flyout=\"foryou_flyout\"
+        data-flyout-align=\"left\" data-flyout-valign=\"bottom\" onmouseover=\"EnsureStoreMenuTagsLoaded(
+        '#foryou_yourtags' );\">\r\n\t\t\t\t\t\t\t\t<span class=\"pulldown\">\r\n\t\t\t\t\t\t\t\t\tFor
+        You\t\t\t\t\t\t\t\t\t<span></span>\r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div
+        class=\"popup_block_new flyout_tab_flyout responsive_slidedown\" id=\"foryou_flyout\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"popup_body popup_menu\">\r\n\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/recommended/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tRecently
+        viewed\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"http://store.steampowered.com/curators/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tSteam
+        Curators\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"http://store.steampowered.com/updated/all/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tRecently
+        updated\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<div
+        class=\"search_area\">\r\n\t\t\t\t\t\t\t\t<div id=\"store_search\">\r\n\t\t\t\t\t\t\t\t\t<form
+        id=\"searchform\" name=\"searchform\" method=\"get\" action=\"http://store.steampowered.com/search/\"
+        onsubmit=\"return SearchSuggestCheckTerm(this);\">\r\n\t\t\t\t\t\t\t\t\t\t<input
+        type=\"hidden\" name=\"snr\" value=\"1_5_9__12\" >\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"searchbox\">\r\n\t\t\t\t\t\t\t\t\t\t\t<input id=\"store_nav_search_term\"
+        name=\"term\" type=\"text\" class=\"default\" value=\"search the store\" size=\"22\"
+        autocomplete=\"off\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"#\" id=\"store_search_link\"
+        onclick=\"var $Form = $J(this).parents('form'); $Form.submit(); return false;\"><img
+        src=\"http://store.akamai.steamstatic.com/public/images/blank.gif\"></a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</form>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div
+        id=\"searchterm_options\" class=\"search_suggest popup_block_new\" style=\"display:
+        none;\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"popup_body\" style=\"border-top:
+        none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div id=\"search_suggestion_contents\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div
+        class=\"store_nav_rightcap\"></div>\r\n\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\t\t\t\t<script
+        type=\"text/javascript\">\r\n\t\t\t$J( function() {\r\n\t\t\t\tBindAutoFlyoutEvents();\r\n\r\n\t\t\t\tvar
+        $Window = $J(window);\r\n\t\t\t\tvar $Header = $J('#store_header');\r\n\t\t\t\tvar
+        $ResponsiveNavCtn = $J('#responsive_store_nav_ctn');\r\n\t\t\t\tvar $HeaderWrapper;\r\n\t\t\t\t$Window.on('Responsive_SmallScreenModeToggled.StoreMenu',
+        function() {\r\n\t\t\t\t\tvar bUseSmallScreenMode =window.UseSmallScreenMode
+        && window.UseSmallScreenMode();\r\n\r\n\t\t\t\t\tif ( !$HeaderWrapper )\r\n\t\t\t\t\t\t$HeaderWrapper
+        = $Header.wrap( $J('<div/>', {'class': 'responsive_store_nav_ctn_spacer'}
+        ) ).parent();\r\n\r\n\t\t\t\t\tif ( bUseSmallScreenMode )\r\n\t\t\t\t\t\t$ResponsiveNavCtn.append(
+        $Header );\r\n\t\t\t\t\telse\r\n\t\t\t\t\t\t$HeaderWrapper.append( $Header
+        );\r\n\r\n\r\n\t\t\t\t\tif ( bUseSmallScreenMode )\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t$Header.css(
+        'visibility', 'hidden' );\r\n\t\t\t\t\t\t$Header.show();\r\n\t\t\t\t\t\tvar
+        nMenuHeight = $J('#store_header' ).height() + $J('#store_header' ).offset().top;\r\n\t\t\t\t\t\tif
+        ( $Window.scrollTop() < nMenuHeight )\r\n\t\t\t\t\t\t\t$Window.scrollTop(
+        nMenuHeight - GetResponsiveHeaderFixedOffsetAdjustment() );\r\n\r\n\t\t\t\t\t\t$Header.css('visibility',
+        'visible');\r\n\t\t\t\t\t}\r\n\t\t\t\t} ).trigger('Responsive_SmallScreenModeToggled.StoreMenu');\r\n\r\n\t\t\t\tEnableSearchSuggestions(
+        $J('#searchform')[0].elements['term'], '1_5_9_', 'AR', 'english', '1347623'
+        );\r\n\t\t\t} );\r\n\t\t</script>\r\n\t<script type=\"text/javascript\">\r\n\tvar
+        g_AccountID = 0;\r\n\tvar g_sessionID = \"93a8b9a2094085630232351f\";\r\n\tvar
+        g_ServerTime = 1444415502;\r\n\r\n\t$J( InitMiniprofileHovers );\r\n\r\n\t\tGDynamicStore.Init(
+        0, false, \"win\" );\r\n\t</script>\r\n\t<div class=\"page_content_ctn\" itemscope
+        itemtype=\"http://schema.org/Product\">\r\n\r\n\t\t<meta itemprop=\"image\"
+        content=\"http://cdn.akamai.steamstatic.com/steam/apps/388800/capsule_231x87.jpg?t=1443616117\">\r\n\t\t\t\t\t<div
+        itemprop=\"offers\" itemscope itemtype=\"http://schema.org/Offer\" style=\"display:
+        none;\">\r\n\t\t\t\t<meta itemprop=\"priceCurrency\" content=\"USD\">\r\n\t\t\t\t<meta
+        itemprop=\"price\" content=\"14.99\">\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
+        class=\"page_title_area game_title_area page_content\">\r\n\t\t\t<div class=\"breadcrumbs\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"blockbg\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"http://store.steampowered.com/search/?term=&snr=1_5_9__205\">All
+        Games</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&gt; <a href=\"http://store.steampowered.com/genre/Action/?snr=1_5_9__205\">Action
+        Games</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&gt; <a href=\"http://store.steampowered.com/app/388800/?snr=1_5_9__205\"><span
+        itemprop=\"name\">Azure Striker Gunvolt</span></a>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t\t<div
+        style=\"clear: left;\"></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t<div class=\"apphub_HomeHeaderContent\">\r\n\r\n\t<div
+        class=\"apphub_HeaderStandardTop\">\r\n\t\t\t\t<div class=\"apphub_OtherSiteInfo\">\r\n\t\t\t<a
+        class=\"btnv6_blue_hoverfade btn_medium\" href=\"http://steamcommunity.com/app/388800\"
+        onclick=\"if ( typeof _gaq != 'undefined' && _gaq ) { _gaq.push(['app._link',
+        'http://steamcommunity.com/app/388800']); }\">\r\n\t\t\t\t<span>Community
+        Hub</span>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div class=\"apphub_AppIcon\"><img
+        src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/388800/6ef8c57390d20e09a05639c20b95abed411ed1f3.jpg\"><div
+        class=\"overlay\"></div></div>\r\n\t\t<div class=\"apphub_AppName\">Azure
+        Striker Gunvolt</div>\r\n\t\t<div style=\"clear: both\"></div>\r\n\t</div>\r\n\r\n</div>\r\n\r\n\t\t</div>\r\n\t\t<div
+        style=\"clear: left;\"></div>\r\n\r\n\t\t<div class=\"block\">\r\n\t\t\t\t\t\t<script
+        type=\"text/javascript\">\r\n\t\t\t\tvar strRequiredVersion = \"9\";\r\n\t\t\t\tif
+        ( typeof( g_bIsOnMac ) != 'undefined' && g_bIsOnMac )\r\n\t\t\t\t\tstrRequiredVersion
+        = \"10.1.0\";\r\n\r\n\t\t\t\t\r\n\t\t\t\tvar bShouldUseHTML5 = BCanPlayWebm()
+        || BDoesUserPreferHTML5() || !swfobject.hasFlashPlayerVersion(strRequiredVersion);\r\n\t\t\t</script>\r\n\t\t\t<div
+        class=\"game_background_glow\">\r\n\t\t\t<div class=\"block_content page_content\"
+        id=\"game_highlights\">\r\n\r\n\t\t\t\t<div class=\"rightcol\">\r\n\t\t\t\t\t<div
+        class=\"glance_ctn\">\r\n\t\t\t\t\t\t<div class=\"game_header_image_ctn\">\r\n\t\t\t\t\t\t\t<img
+        class=\"game_header_image_full\" src=\"http://cdn.akamai.steamstatic.com/steam/apps/388800/header.jpg?t=1443616117\">\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"game_description_snippet\">\r\n\t\t\t\t\t\t\t\tA 2D action game featuring
+        a young man with the power of lightning who stands for freedom against the
+        evil ambitions of a massive organization. When lightning strikes, a new legend
+        is born.\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t<div class=\"glance_ctn_responsive_left\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<div
+        onclick=\"window.location='#app_reviews_hash'\" style=\"cursor: pointer;\"
+        data-store-tooltip=\"84% of the 139 user reviews for this game are positive.\"
+        itemprop=\"aggregateRating\" itemscope itemtype=\"http://schema.org/AggregateRating\">\r\n\t\t\t\t\t\t\t\t\t<div
+        class=\"release_date\">\r\n\t\t\t\t\t\t\t\t\t\tUser reviews:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span
+        class=\"game_review_summary positive\" itemprop=\"description\">Very Positive</span>\r\n\t\t\t\t\t\t\t\t\t\t\t<span
+        class=\"responsive_hidden\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t(139 reviews)\r\n\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t\t<span
+        class=\"nonresponsive_hidden responsive_reviewdesc\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t-
+        84% of the 139 user reviews for this game are positive.\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t<!--
+        microdata -->\r\n\t\t\t\t\t\t\t\t\t\t\t<meta itemprop=\"reviewCount\" content=\"139\">\r\n\t\t\t\t\t\t\t\t\t\t\t<meta
+        itemprop=\"ratingValue\" content=\"9\">\r\n\t\t\t\t\t\t\t\t\t\t\t<meta itemprop=\"bestRating\"
+        content=\"10\">\r\n\t\t\t\t\t\t\t\t\t\t\t<meta itemprop=\"worstRating\" content=\"1\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"release_date\">\r\n\t\t\t\t\t\t\t\t\tRelease Date: <span class=\"date\">28
+        Aug, 2015</span>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t<div
+        class=\"glance_ctn_responsive_right\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<!--
+        when the javascript runs, it will set these visible or not depending on what
+        fits in the area -->\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"glance_tags_ctn
+        popular_tags_ctn\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"glance_tags_label\">Popular
+        user-defined tags for this product:</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"glance_tags
+        popular_tags\" data-appid=\"388800\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"http://store.steampowered.com/tag/en/Action/?snr=1_5_9__409\"
+        class=\"app_tag\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tAction\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/Indie/?snr=1_5_9__409\" class=\"app_tag\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tIndie\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/Platformer/?snr=1_5_9__409\" class=\"app_tag\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tPlatformer\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/Anime/?snr=1_5_9__409\" class=\"app_tag\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tAnime\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/2D/?snr=1_5_9__409\" class=\"app_tag\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t2D\t\t\t\t\t\t\t\t\t\t\t\t</a><div
+        class=\"app_tag add_button\" onclick=\"ShowAppTagModal( 388800 )\">+</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div
+        style=\"clear: both;\"></div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"leftcol\">\r\n\t\t\t\t\t<div class=\"highlight_ctn\">\r\n\t\t\t\t\t\t<div
+        class=\"highlight_overflow\">\r\n\t\t\t\t\t\t\t<div id=\"highlight_player_area\"
+        >\r\n\t\t\t\t\t\t\t\t<div class=\"highlight_player_area_spacer\">\r\n\t\t\t\t\t\t\t\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/images/game/game_highlight_image_spacer.gif\">\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_movie\" id=\"highlight_movie_256655768\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<script type=\"text/javascript\">\r\n\t\t\t\t\t\t\t\t\t\t\tif(
+        bShouldUseHTML5 )\r\n\t\t\t\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\t\t\tdocument.write('<video
+        class=\"highlight_player_item highlight_movie\" src=\"http://cdn.akamai.steamstatic.com/steam/apps/256655768/movie480.webm?t=1440481518\"
+        data-hd-src=\"http://cdn.akamai.steamstatic.com/steam/apps/256655768/movie_max.webm?t=1440481518\"
+        poster=\"http://cdn.akamai.steamstatic.com/steam/apps/256655768/movie.293x165.jpg?t=1440481518\"
+        id=\"movie_256655768\" preload=\"none\"><p>You will need to <a href=\"http://www.adobe.com/go/getflashplayer\"
+        target=\"_blank\">Install</a> the latest Flash plugin to view this page properly.</p></video>');\r\n\t\t\t\t\t\t\t\t\t\t\t\tjQuery(\"#movie_256655768\").videoControls();\r\n\t\t\t\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t\t\t\t\telse\r\n\t\t\t\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\t\t\tdocument.write('<div
+        id=\"movie_256655768\" class=\"highlight_flash_player_notice\" style=\"display:
+        none;\"><p>You will need to <a href=\"http://www.adobe.com/go/getflashplayer\"
+        target=\"_blank\">Install</a> the latest Flash plugin to view this page properly.</p></div>');\r\n\t\t\t\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t\t\t\t</script>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_ss_044b5479619ad43cd56c08055fb3f8c6c05c4931.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"ss_044b5479619ad43cd56c08055fb3f8c6c05c4931.jpg\"
+        target=\"_blank\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.akamai.steamstatic.com/steam/apps/388800/ss_044b5479619ad43cd56c08055fb3f8c6c05c4931.1920x1080.jpg?t=1443616117\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_ss_9f6e4fc98adc2b8b5c0a5dc4baefad0be89b2baf.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"ss_9f6e4fc98adc2b8b5c0a5dc4baefad0be89b2baf.jpg\"
+        target=\"_blank\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.akamai.steamstatic.com/steam/apps/388800/ss_9f6e4fc98adc2b8b5c0a5dc4baefad0be89b2baf.1920x1080.jpg?t=1443616117\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_ss_afe5e7a6d13efaf83442df88d2a332ec2f533e39.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"ss_afe5e7a6d13efaf83442df88d2a332ec2f533e39.jpg\"
+        target=\"_blank\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.akamai.steamstatic.com/steam/apps/388800/ss_afe5e7a6d13efaf83442df88d2a332ec2f533e39.1920x1080.jpg?t=1443616117\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_ss_14f1c43c82169fbcadf2202f02123c1a7d45a285.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"ss_14f1c43c82169fbcadf2202f02123c1a7d45a285.jpg\"
+        target=\"_blank\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.akamai.steamstatic.com/steam/apps/388800/ss_14f1c43c82169fbcadf2202f02123c1a7d45a285.1920x1080.jpg?t=1443616117\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_ss_3be20ea9958ff89a8ac375a51a4439d0d7475270.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"ss_3be20ea9958ff89a8ac375a51a4439d0d7475270.jpg\"
+        target=\"_blank\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.akamai.steamstatic.com/steam/apps/388800/ss_3be20ea9958ff89a8ac375a51a4439d0d7475270.1920x1080.jpg?t=1443616117\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<script
+        type=\"text/javascript\">\r\n\t\t\t\t\t\t\t\t\tvar rgMovieFlashvars = {\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t'movie_256655768':
+        {\r\n\t\t\t\t\t\t\t\t\t\t\t\tFILENAME: \"http://cdn.akamai.steamstatic.com/steam/apps/256655768/movieLrg.flv?t=1440481518\",\r\n\t\t\t\t\t\t\t\t\t\t\t\tMOVIE_NAME:
+        \"Azure+Striker+Gunvolt\"\r\n\t\t\t\t\t\t\t\t\t\t\t },\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t''
+        : ''\r\n\t\t\t\t\t\t\t\t\t};\r\n\t\t\t\t\t\t\t\t\tvar rgCommonFlashVars =
+        {\r\n\t\t\t\t\t\t\t\t\t\t\tclientLanguage: \"english\",\r\n\t\t\t\t\t\t\t\t\t\t\tcapsuleSize:
+        \"huge\",\r\n\t\t\t\t\t\t\t\t\t\t\tSTAGE_WIDTH: 600,\r\n\t\t\t\t\t\t\t\t\t\t\tSTAGE_HEIGHT:
+        338,\r\n\t\t\t\t\t\t\t\t\t\t\tAUTO_PLAY: \"true\",\r\n\t\t\t\t\t\t\t\t\t\t\tALLOW_JSPAUSE:
+        \"true\",\r\n\t\t\t\t\t\t\t\t\t\t\tTRACK_MUTE: \"true\",\r\n\t\t\t\t\t\t\t\t\t\t\tCHECKBOX_AUTOPLAY_SHOW:
+        \"true\",\r\n\t\t\t\t\t\t\t\t\t\t\tCHECKBOX_AUTOPLAY_TEXT: \"Autoplay+videos\"\r\n\t\t\t\t\t\t\t\t\t};\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tvar
+        rgScreenshotURLs = {\"ss_044b5479619ad43cd56c08055fb3f8c6c05c4931.jpg\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/388800\\/ss_044b5479619ad43cd56c08055fb3f8c6c05c4931_SIZE_.jpg?t=1443616117\",\"ss_9f6e4fc98adc2b8b5c0a5dc4baefad0be89b2baf.jpg\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/388800\\/ss_9f6e4fc98adc2b8b5c0a5dc4baefad0be89b2baf_SIZE_.jpg?t=1443616117\",\"ss_afe5e7a6d13efaf83442df88d2a332ec2f533e39.jpg\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/388800\\/ss_afe5e7a6d13efaf83442df88d2a332ec2f533e39_SIZE_.jpg?t=1443616117\",\"ss_14f1c43c82169fbcadf2202f02123c1a7d45a285.jpg\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/388800\\/ss_14f1c43c82169fbcadf2202f02123c1a7d45a285_SIZE_.jpg?t=1443616117\",\"ss_3be20ea9958ff89a8ac375a51a4439d0d7475270.jpg\":\"http:\\/\\/cdn.akamai.steamstatic.com\\/steam\\/apps\\/388800\\/ss_3be20ea9958ff89a8ac375a51a4439d0d7475270_SIZE_.jpg?t=1443616117\"};\r\n\t\t\t\t\t\t\t\t</script>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        id=\"highlight_strip\">\r\n\t\t\t\t\t\t\t\t<div id=\"highlight_strip_scroll\"
+        style=\"width: 722px;\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"highlight_selector\"></div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_movie\" id=\"thumb_movie_256655768\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img class=\"movie_thumb\" src=\"http://cdn.akamai.steamstatic.com/steam/apps/256655768/movie.184x123.jpg?t=1440481518\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_movie_marker\"></div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_ss_044b5479619ad43cd56c08055fb3f8c6c05c4931.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.akamai.steamstatic.com/steam/apps/388800/ss_044b5479619ad43cd56c08055fb3f8c6c05c4931.116x65.jpg?t=1443616117\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_ss_9f6e4fc98adc2b8b5c0a5dc4baefad0be89b2baf.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.akamai.steamstatic.com/steam/apps/388800/ss_9f6e4fc98adc2b8b5c0a5dc4baefad0be89b2baf.116x65.jpg?t=1443616117\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_ss_afe5e7a6d13efaf83442df88d2a332ec2f533e39.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.akamai.steamstatic.com/steam/apps/388800/ss_afe5e7a6d13efaf83442df88d2a332ec2f533e39.116x65.jpg?t=1443616117\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_ss_14f1c43c82169fbcadf2202f02123c1a7d45a285.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.akamai.steamstatic.com/steam/apps/388800/ss_14f1c43c82169fbcadf2202f02123c1a7d45a285.116x65.jpg?t=1443616117\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_ss_3be20ea9958ff89a8ac375a51a4439d0d7475270.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.akamai.steamstatic.com/steam/apps/388800/ss_3be20ea9958ff89a8ac375a51a4439d0d7475270.116x65.jpg?t=1443616117\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"slider_ctn\">\r\n\t\t\t\t\t\t\t\t\t<div id=\"highlight_slider_left\"
+        class=\"slider_left\"><span></span></div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"slider\"
+        id=\"highlight_slider\" >\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"slider_bg\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"handle\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div
+        id=\"highlight_slider_right\" class=\"slider_right\"><span></span></div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<script
+        type=\"text/javascript\">\r\n\t\t\t\t\t\t\t\t\t$J( function() {\r\n\t\t\t\t\t\t\t\t\t\tvar
+        player = new HighlightPlayer( {\r\n\t\t\t\t\t\t\t\t\t\t\telemPlayerArea: 'highlight_player_area',\r\n\t\t\t\t\t\t\t\t\t\t\telemStrip:
+        'highlight_strip',\r\n\t\t\t\t\t\t\t\t\t\t\telemStripScroll: 'highlight_strip_scroll',\r\n\t\t\t\t\t\t\t\t\t\t\telemSlider:
+        'highlight_slider',\r\n\t\t\t\t\t\t\t\t\t\t\trgMovieFlashvars: rgMovieFlashvars,\r\n\t\t\t\t\t\t\t\t\t\t\trgScreenshotURLs:
+        rgScreenshotURLs,\r\n\t\t\t\t\t\t\t\t\t\t\trgDefaultMovieFlashvars: rgCommonFlashVars,\r\n\t\t\t\t\t\t\t\t\t\t\tbUseHTMLPlayer:
+        bShouldUseHTML5\r\n\t\t\t\t\t\t\t\t\t\t} );\r\n\t\t\t\t\t\t\t\t\t\t$J('#highlight_slider_right').click(
+        function() {\r\n\t\t\t\t\t\t\t\t\t\t\tplayer.Transition( true );\r\n\t\t\t\t\t\t\t\t\t\t});\r\n\t\t\t\t\t\t\t\t\t\t$J('#highlight_slider_left').click(
+        function() {\r\n\t\t\t\t\t\t\t\t\t\t\tplayer.TransitionBack( true );\r\n\t\t\t\t\t\t\t\t\t\t});\r\n\r\n\t\t\t\t\t\t\t\t\t\tif(
+        window.location.hash )\r\n\t\t\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\t\tvar
+        ssid = window.location.hash.substr(1);\r\n\t\t\t\t\t\t\t\t\t\t\tplayer.HighlightScreenshot(ssid);\r\n\t\t\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t\t\t}
+        );\r\n\t\t\t\t\t\t\t\t</script>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div
+        style=\"clear: both;\"></div>\r\n\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t\r\n\t\t\t<div
+        class=\"queue_overflow_ctn\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"queue_ctn\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"queue_actions_ctn\">\r\n\t\t\t\t\t\t\t<p><a href=\"http://store.steampowered.com/login/?redir=app%2F388800\">Sign
+        in</a> to add this item to your wishlist, follow it, or mark it as not interested</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\r\n\t\t\t\r\n\t\t</div>\r\n\r\n\t\t\r\n\t\t\t<div
+        class=\"page_content\">\r\n\r\n\t\t\t\t<!-- Right Column -->\r\n\t\t\t\t<div
+        class=\"rightcol game_meta_data\">\r\n\t\t\t\t\t<div id=\"responsive_apppage_details_left_ctn\"></div>\r\n\t\t\t\t\t<div
+        id=\"responsive_apppage_details_right_ctn\"></div>\r\n\t\t\t\t\t<div style=\"clear:
+        both;\"></div>\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\r\n\t\t\t\t\t\r\n\r\n\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"block responsive_apppage_details_left\" id=\"category_block\">\r\n\r\n\t\t\t\t\t\t\t<div
+        class=\"game_area_details_specs\"><div class=\"icon\"><a href=\"http://store.steampowered.com/search/?category2=2&snr=1_5_9__423\"><img
+        class=\"category_icon\" src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_singlePlayer.png\"></a></div><a
+        class=\"name\" href=\"http://store.steampowered.com/search/?category2=2&snr=1_5_9__423\">Single-player</a></div><div
+        class=\"game_area_details_specs\"><div class=\"icon\"><a href=\"http://store.steampowered.com/search/?category2=22&snr=1_5_9__423\"><img
+        class=\"category_icon\" src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_achievements.png\"></a></div><a
+        class=\"name\" href=\"http://store.steampowered.com/search/?category2=22&snr=1_5_9__423\">Steam
+        Achievements</a></div><div class=\"game_area_details_specs\"><div class=\"icon\"><a
+        href=\"http://store.steampowered.com/search/?category2=29&snr=1_5_9__423\"><img
+        class=\"category_icon\" src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_cards.png\"></a></div><a
+        class=\"name\" href=\"http://store.steampowered.com/search/?category2=29&snr=1_5_9__423\">Steam
+        Trading Cards</a></div><div class=\"game_area_details_specs\"><div class=\"icon\"><a
+        href=\"http://store.steampowered.com/search/?category2=18&snr=1_5_9__423\"><img
+        class=\"category_icon\" src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_partial_controller.png\"></a></div><a
+        class=\"name\" href=\"http://store.steampowered.com/search/?category2=18&snr=1_5_9__423\">Partial
+        Controller Support</a></div><div class=\"game_area_details_specs\"><div class=\"icon\"><a
+        href=\"http://store.steampowered.com/search/?category2=23&snr=1_5_9__423\"><img
+        class=\"category_icon\" src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_cloud.png\"></a></div><a
+        class=\"name\" href=\"http://store.steampowered.com/search/?category2=23&snr=1_5_9__423\">Steam
+        Cloud</a></div><div class=\"game_area_details_specs\"><div class=\"icon\"><a
+        href=\"http://store.steampowered.com/search/?category2=25&snr=1_5_9__423\"><img
+        class=\"category_icon\" src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_leaderboards.png\"></a></div><a
+        class=\"name\" href=\"http://store.steampowered.com/search/?category2=25&snr=1_5_9__423\">Steam
+        Leaderboards</a></div>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"block responsive_apppage_details_right\">\r\n\t\t\t\t\t\t\t<div class=\"block_title\">\r\n\t\t\t\t\t\t\t\tLanguages:\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\r\n<table
+        \ class=\"game_language_options\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t<tr>\r\n\t\t<th
+        style=\"width: 94px;\"></th>\r\n\t\t\t\t<th class=\"checkcol\">Interface</th>\r\n\t\t<th
+        class=\"checkcol\">Full Audio</th>\r\n\t\t<th class=\"checkcol\">Subtitles</th>\r\n\t</tr>\r\n\r\n\t\t\t<tr
+        style=\"\" class=\"\">\r\n\t\t\t<td style=\"width: 94px; text-align: left\"
+        class=\"ellipsis\">\r\n\t\t\t\tEnglish\t\t\t</td>\r\n\t\t\t\t\t\t\t<td class=\"checkcol\">\r\n\t\t\t\t\t
+        <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t<td class=\"checkcol\">\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t<tr style=\"\" class=\"\">\r\n\t\t\t<td
+        style=\"width: 94px; text-align: left\" class=\"ellipsis\">\r\n\t\t\t\tFrench\t\t\t</td>\r\n\t\t\t\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t<td class=\"checkcol\">\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t<tr style=\"\" class=\"\">\r\n\t\t\t<td
+        style=\"width: 94px; text-align: left\" class=\"ellipsis\">\r\n\t\t\t\tItalian\t\t\t</td>\r\n\t\t\t\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t<td class=\"checkcol\">\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t<tr style=\"\" class=\"\">\r\n\t\t\t<td
+        style=\"width: 94px; text-align: left\" class=\"ellipsis\">\r\n\t\t\t\tGerman\t\t\t</td>\r\n\t\t\t\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t<td class=\"checkcol\">\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t<tr style=\"\" class=\"\">\r\n\t\t\t<td
+        style=\"width: 94px; text-align: left\" class=\"ellipsis\">\r\n\t\t\t\tSpanish\t\t\t</td>\r\n\t\t\t\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t<td class=\"checkcol\">\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t<tr style=\"display: none;\" class=\"\">\r\n\t\t\t<td
+        style=\"width: 94px; text-align: left\" class=\"ellipsis\">\r\n\t\t\t\tJapanese\t\t\t</td>\r\n\t\t\t\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t<td class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t<td class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t<tr style=\"display: none;\" class=\"\">\r\n\t\t\t<td
+        style=\"width: 94px; text-align: left\" class=\"ellipsis\">\r\n\t\t\t\tPortuguese\t\t\t</td>\r\n\t\t\t\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t<td class=\"checkcol\">\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t<tr style=\"display: none;\" class=\"\">\r\n\t\t\t<td
+        style=\"width: 94px; text-align: left\" class=\"ellipsis\">\r\n\t\t\t\tRussian\t\t\t</td>\r\n\t\t\t\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t<td class=\"checkcol\">\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t <img src=\"http://store.akamai.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t</table>\r\n\t<a class=\"all_languages\"
+        onclick=\"$J('table.game_language_options tr').show(); $J(this).hide(); return
+        false\">See all 8 supported languages</a>\r\n\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"block responsive_apppage_details_right\" id=\"achievement_block\">\r\n\t\t\t\t\t\t\t<div
+        class=\"block_title\">\r\n\t\t\t\t\t\t\t\tIncludes 25 Steam Achievements\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div
+        class=\"communitylink_achievement_images\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"communitylink_achievement\">\r\n\t\t\t\t\t\t\t\t\t\t<img class=\"communitylink_achievement\"
+        title=\"Surmount the Insurmountable\" src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/388800/c53a098082ad25c63c6a0477b3b24bcd60cfef99.jpg\">\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"communitylink_achievement\">\r\n\t\t\t\t\t\t\t\t\t\t<img class=\"communitylink_achievement\"
+        title=\"A Bolt Out of the Blue\" src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/388800/9df1833185e5ead2ff01b97754276c520847f787.jpg\">\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"communitylink_achievement\">\r\n\t\t\t\t\t\t\t\t\t\t<img class=\"communitylink_achievement\"
+        title=\"FEED MEEE!!\" src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/388800/1e8293f223d94c746189602bb22e2f7de50f341b.jpg\">\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"communitylink_achievement communitylink_achivement_plusmore\" href=\"http://steamcommunity.com/stats/388800/achievements\">\r\n\t\t\t\t\t\t\t\t\t\tView<br>all
+        25\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div style=\"clear:
+        left;\"></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\r\n\r\n\t\t\t\t\t<div
+        class=\"block responsive_apppage_details_left game_details underlined_links\">\r\n\t\t\t\t\t\t<div
+        class=\"block_content\">\r\n\t\t\t\t\t\t\t<div class=\"block_content_inner\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"details_block\">\r\n\t<b>Title:</b> Azure Striker Gunvolt<br>\r\n\r\n\t\t\t<b>Genre:</b>
+        <a href=\"http://store.steampowered.com/genre/Action/?snr=1_5_9__408\">Action</a>,
+        <a href=\"http://store.steampowered.com/genre/Indie/?snr=1_5_9__408\">Indie</a><br>\r\n\t\r\n\t\t\t<b>Developer:</b>\r\n\t\t\t\t\t\t\t\t<a
+        href=\"http://store.steampowered.com/search/?developer=INTI%20CREATES%20CO.%2C%20LTD.&snr=1_5_9__408\">INTI
+        CREATES CO., LTD.</a>\r\n\t\t\t\t<br>\r\n\t\r\n\t\t\t<b>Publisher:</b>\r\n\t\t<a
+        href=\"http://store.steampowered.com/search/?publisher=INTI CREATES CO., LTD.\">INTI
+        CREATES CO., LTD.</a>\t\t<br>\r\n\t\r\n\t\r\n\t\t\t<b>Release Date:</b> 28
+        Aug, 2015<br>\r\n\t\r\n\t</div>\r\n\r\n\r\n<div class=\"details_block\">\r\n\t<br>\r\n\r\n\t\t\t<a
+        class=\"linkbar\" href=\"http://www.gunvolt.com/en/\" target=\"_blank\">\r\n\t\t\tVisit
+        the website <img src=\"http://store.akamai.steamstatic.com/public/images/v5/ico_external_link.gif\"
+        border=\"0\" align=\"bottom\">\r\n\t\t</a>\r\n\t\r\n\t\r\n\t\t\t<a class=\"linkbar\"
+        href=\"http://store.steampowered.com/manual/388800\" target=\"_blank\">\r\n\t\t\tView
+        the manual <img src=\"http://store.akamai.steamstatic.com/public/images/v5/ico_external_link.gif\"
+        border=\"0\" align=\"bottom\">\r\n\t\t</a>\r\n\t\r\n\t\r\n\t\r\n\t\t\t<a class=\"linkbar\"
+        href=\"http://store.steampowered.com/news/?appids=388800\">\r\n\t\t\tView
+        update history\t\t</a>\r\n\t\t<a class=\"linkbar\" href=\"http://store.steampowered.com/news/?appids=388800\">\r\n\t\t\tRead
+        related news\t\t</a>\r\n\t\r\n\t\t\t<a class=\"linkbar\" href=\"http://steamcommunity.com/app/388800/discussions/\">\r\n\t\t\tView
+        discussions\t\t</a>\r\n\t\r\n\t\t<a class=\"linkbar\" href=\"http://steamcommunity.com/actions/Search?T=ClanAccount&K=Azure%20Striker%20Gunvolt\">\r\n\t\tFind
+        Community Groups\t</a>\r\n</div>\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div
+        class=\"block responsive_apppage_details_left\">\r\n\t\t\t\t\t\t<a class=\"btnv6_blue_hoverfade
+        btn_medium\" href=\"#\" onclick=\"ShowShareDialog(); return false;\"><span>Share</span></a>\r\n\t\t\t\t\t\t<a
+        class=\"btnv6_blue_hoverfade btn_medium\" href=\"#\" onclick=\"ShowEmbedWidget(388800);
+        return false;\"><span>Embed</span></a>\r\n\t\t\t\t\t\t<a id=\"ReportAppBtn\"
+        class=\"btnv6_blue_hoverfade btn_medium\" href=\"javascript:void(0)\" onclick=\"ShowReportDialog(388800)\"><span
+        data-store-tooltip=\"Report this Product\"><i class=\"ico16 reportv6\"></i>&nbsp;</span></a>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t\t<!--
+        End Right Column -->\r\n\r\n\r\n\t\t\t\t<div class=\"leftcol game_description_column\">\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<div
+        id=\"game_area_purchase\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\r\n\r\n\t\t\t\t\t\t<!--[if
+        lte IE 7]>\r\n<style type=\"text/css\">\r\n.game_area_purchase_game_dropdown_right_panel
+        .btn_addtocart { float: none; }\r\n</style>\r\n<![endif]-->\r\n<div class=\"game_area_purchase_game_wrapper\">\r\n\t\t<div
+        class=\"game_area_purchase_game\">\r\n\t\t<form name=\"add_to_cart_73680\"
+        action=\"http://store.steampowered.com/cart/\" method=\"POST\">\r\n\t\t\t<input
+        type=\"hidden\" name=\"snr\" value=\"1_5_9__403\">\r\n\t\t\t<input type=\"hidden\"
+        name=\"action\" value=\"add_to_cart\">\r\n\t\t\t<input type=\"hidden\" name=\"sessionid\"
+        value=\"93a8b9a2094085630232351f\">\r\n\t\t\t<input type=\"hidden\" name=\"subid\"
+        value=\"73680\">\r\n\t\t</form>\r\n\t\t<div class=\"game_area_purchase_platform\"><span
+        class=\"platform_img win\"></span></div>\r\n\t\t<h1>Buy Azure Striker Gunvolt</h1>\r\n\t\t\t\t\t<p>Includes
+        a free copy of Mighty Gunvolt!</p>\r\n\t\t\t\t\t\t\r\n\t\t<div class=\"game_purchase_action\">\r\n\t\t\t\t\t\t<div
+        class=\"game_purchase_action_bg\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"game_purchase_price
+        price\">\r\n\t\t\t\t\t\t\t$14.99 USD\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"btn_addtocart\">\r\n\r\n\t\t\t\t\t \r\n\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"btnv6_green_white_innerfade btn_medium\" href=\"javascript:addToCart(73680);\">\r\n\t\t\t\t\t\t\t<span>Add
+        to Cart</span>\r\n\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\t\t\r\n\t</div>\r\n\t<div
+        class=\"game_area_dlc_section\">\r\n\t\t\t\t<h2 class=\"gradientbg\">Downloadable
+        Content For This Game</h2>\t\t<form name=\"add_all_dlc_to_cart\" action=\"http://store.steampowered.com/cart/?snr=1_5_9_\"
+        method=\"POST\">\r\n\t\t\t<input type=\"hidden\" name=\"action\" value=\"add_to_cart\">\r\n\t\t\t<input
+        type=\"hidden\" name=\"sessionid\" value=\"93a8b9a2094085630232351f\">\r\n\r\n\t\t\t<div
+        class=\"tableView\">\r\n\r\n\t\t\t\t\t\t\t<div class=\"gameDlcBlocks\">\r\n\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"game_area_dlc_row odd ds_collapse_flag ds_collapse_flag_tiny\" id=\"dlc_row_392670\"
+        href=\"http://store.steampowered.com/app/392670/?snr=1_5_9__405\"  data-ds-appid=\"392670\"
+        onmouseover=\"GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:392670,&quot;public&quot;:1,&quot;v6&quot;:1}
+        );\" onmouseout=\"HideGameHover( this, event, 'global_hover' )\">\r\n\r\n\t\t\t\t\t\t<div
+        class=\"game_area_dlc_price\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t$9.99
+        USD\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"game_area_dlc_name\">\r\n\t\t\t\t\t\t\tAZURE
+        STRIKER GUNVOLT OFFICIAL SOUNDTRACK\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<input
+        type=\"hidden\" name=\"subid[]\" value=\"75101\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"game_area_dlc_row even ds_collapse_flag ds_collapse_flag_tiny\" id=\"dlc_row_396990\"
+        href=\"http://store.steampowered.com/app/396990/?snr=1_5_9__405\"  data-ds-appid=\"396990\"
+        onmouseover=\"GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:396990,&quot;public&quot;:1,&quot;v6&quot;:1}
+        );\" onmouseout=\"HideGameHover( this, event, 'global_hover' )\">\r\n\r\n\t\t\t\t\t\t<div
+        class=\"game_area_dlc_price\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t$9.99
+        USD\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"game_area_dlc_name\">\r\n\t\t\t\t\t\t\tAZURE
+        PHOSPHORESCENCE\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<input type=\"hidden\"
+        name=\"subid[]\" value=\"76541\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t</a>\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        id=\"dlc_purchase_action\" class=\"game_purchase_action game_purchase_action_bg\"
+        style=\"\">\r\n\t\t\t\t\t\t<div class=\"game_purchase_price price\">\r\n\t\t\t\t\t\t\t$19.98
+        USD\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"btn_addtocart\">\r\n\r\n\t\t\t\t\t\t\t<a
+        class=\"btnv6_green_white_innerfade btn_medium\" href=\"javascript:addAllDlcToCart();\">\r\n\t\t\t\t\t\t\t\t<span>Add
+        all DLC to Cart</span>\r\n\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div
+        style=\"clear: both;\"></div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\r\n\t\t</div>
+        <!-- tableView -->\r\n\r\n\t\t<div style=\"clear: right;\"></div>\r\n\r\n\t\t</form>\r\n\r\n\t</div>
+        <!-- game_area_dlc_section -->\r\n\r\n\t\t\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<!--
+        game_area_purchase -->\r\n\r\n\t\t\t\t\t<div class=\"purchase_area_spacer\">&nbsp;</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"steam_curators_block block responsive_apppage_reviewblock\">\r\n\t\t\t\t\t\t\t<div
+        class=\"block_header\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h2>Recommended
+        By Curators</h2>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<div
+        class=\"steam_curator_selected\">\r\n\t\t\t\t\t\t\t\t<div class=\"steam_curator_icon
+        medium no_grid\"><a href=\"http://store.steampowered.com/curator/9393382-The-Framerate-Police/?appid=388800\"><img
+        src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/8c/8c0c60ecb558842f4c56996791ded041c095db4d_medium.jpg\"
+        data-store-tooltip=\"The Framerate Police\"></a></div>\r\n\t\t\t\t\t\t\t\t<div
+        class=\"steam_curator_recommendation\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"29fps
+        lock. Genre: Side-scrolling action.\"\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div
+        style=\"clear: both\"></div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<!--
+        Announcements block -->\r\n\t\t\t\t\t\t<div class=\"early_access_announcements\">\r\n\t\t\t\t\t\t\t<h2>\r\n\t\t\t\t\t\t\t\tRecent
+        updates\t\t\t\t\t\t\t<span class=\"note\">\r\n\t\t\t\t\t\t\t\t<a href=\"http://steamcommunity.com/gid/[g:1:9911704]/announcements/\">View
+        all <em>(16)</em></a>\r\n\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t</h2>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"post \">\r\n\t\t\t\t\t\t\t\t<div class=\"container\">\r\n\t\t\t\t\t\t\t\t\t<h2>6
+        October</h2>\r\n\t\t\t\t\t\t\t\t\t<h1><a href=\"http://steamcommunity.com/gid/[g:1:9911704]/announcements/detail/53272764498527397\">Azure
+        Striker Gunvolt Update (Build 802984)</a></h1>\r\n\t\t\t\t\t\t\t\t\t<p>* A
+        bug that was causing the game to crash while fighting Stratos during the Babel
+        stage in Speedrun Mode has been fixed. \r<br>\r<br>* スピードランモードの「アメノサカホコ」ステージにて、ストラトス戦でストップする不具合を修正
+        \r<br></p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"hr\"></div>\r\n\t\t\t\t\t\t\t\t<span
+        class=\"comments\">0 comments</span>\r\n\t\t\t\t\t\t\t\t<span class=\"more\"><a
+        href=\"http://steamcommunity.com/gid/[g:1:9911704]/announcements/detail/53272764498527397\">Read
+        more</a></span>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"divider\"></div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"post
+        \">\r\n\t\t\t\t\t\t\t\t<div class=\"container\">\r\n\t\t\t\t\t\t\t\t\t<h2>2
+        October</h2>\r\n\t\t\t\t\t\t\t\t\t<h1><a href=\"http://steamcommunity.com/gid/[g:1:9911704]/announcements/detail/53272764484780606\">Azure
+        Striker Gunvolt Update (Build 798875)</a></h1>\r\n\t\t\t\t\t\t\t\t\t<p>* The
+        game has been updated to fix graphical errors for AMD Radeon Evergreen\r<br>(HD
+        5xxx, HD 6xxx) graphics cards.\r<br>\r<br>* AMD Radeon の Evergreen 世代（HD 5xxx,
+        HD 6xxx）における表示不具合の修正\r<br></p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div
+        class=\"hr\"></div>\r\n\t\t\t\t\t\t\t\t<span class=\"comments\">0 comments</span>\r\n\t\t\t\t\t\t\t\t<span
+        class=\"more\"><a href=\"http://steamcommunity.com/gid/[g:1:9911704]/announcements/detail/53272764484780606\">Read
+        more</a></span>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<div
+        class=\"game_page_autocollapse\" style=\"max-height: 450px;\">\r\n\t\t\t\t\t\t<div
+        id=\"game_area_description\" class=\"game_area_description\">\r\n\t\t\t\t\t\t\t<h2>About
+        This Game</h2>\r\n\t\t\t\t\t\t\tAzure Striker Gunvolt is a 2D action game
+        featuring the talents of star creator Keiji Inafune as the Executive Producer
+        and Action Supervisor. \r<br>With the “septimal” power to create and manipulate
+        lightning, Gunvolt faces off against the massive conglomerate known as the
+        Sumeragi Group. Intense battles \r<br>unfold against Sumeragi's ultra-powerful
+        adepts (those who possess septimal powers) as Gunvolt fights to keep his nation
+        free.<h2 class=\"bb_tag\">Speedrun Mode</h2>\rThis new mode gives speedrunners
+        around the world the chance to compete for the best time, \r<br>with pre-determined
+        settings put in place by the Gunvolt team to maximize efficiency for this
+        challenging new mode. \r<br>Future updates which will new add features and
+        settings are already planned, \r<br>so stayed tuned for information about
+        that in the near future.<h2 class=\"bb_tag\">Lightning-Based Action</h2>\rUse
+        your trusty sidearm to tag enemies, then let loose a burst of electricity
+        for massive damage. You can even tag multiple enemies and zap them all simultaneously.
+        \r<br>Your lightning abilities are not just for defeating enemies, though.
+        Use them to perform various maneuvers such as hovering across hazardous terrain.<h2
+        class=\"bb_tag\">Do Battle With a Variety of Bosses</h2>\rSumeragi's most
+        powerful members, with a wide range of personalities, await you at the end
+        of your missions. \r<br>Battles get heated as bosses unleash their most powerful
+        skills and techniques.<h2 class=\"bb_tag\">Those for Whom the Muse Sings Shall
+        Turn the Tides of Battle</h2>\rEven Gunvolt falls in battle sometimes. When
+        this happens, there is a chance that Lumen, \r<br>aka The Muse, will revive
+        you and grant you a massive power boost. Furthermore, \r<br>if you manage
+        to amass at least 1000 Kudos during a stage, \r<br>the BGM will change and
+        Lumen will sing one of her songs for you for as long as you maintain those
+        Kudos. \r<br>Your Kudos will reset upon taking damage, so keep that no-damage
+        run going for as long as you can!<h2 class=\"bb_tag\">Japanese Voice Mode</h2>\rIn
+        this long-awaited mode, players will be able to play the original Japanese
+        version of the game, \r<br>which includes ample mid-stage dialogue, all fully
+        voiced in Japanese with English text. \r<br>The entire script has been re-translated
+        to coincide with the dialogue of the Japanese version of the game. \r<br>To
+        play the game in Japanese Voice Mode, select it from the Language Settings
+        before starting the game.\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t\t\t<div
+        class=\"game_page_autocollapse sys_req\" style=\"max-height: 220px;\">\r\n\t\t<h2>System
+        Requirements</h2>\r\n\t\t\t\t<div class=\"sysreq_contents\">\r\n\t\t\t\t\t\t\t<div
+        class=\"game_area_sys_req sysreq_content active\" data-os=\"win\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"game_area_sys_req_full\">\r\n\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t<strong>Minimum:</strong>\r<br><ul
+        class=\"bb_ul\"><li><strong>OS:</strong> Windows XP, 7 or 8.1\r<br></li><li><strong>Processor:</strong>
+        2Ghz or faster processer\r<br></li><li><strong>Memory:</strong> 2 GB RAM\r<br></li><li><strong>Graphics:</strong>
+        512MB VRAM (NVIDIA GeForce)\r<br></li><li><strong>DirectX:</strong> Version
+        9.0c\r<br></li><li><strong>Hard Drive:</strong> 2 GB available space\r</li></ul>\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        style=\"clear: both;\"></div>\r\n\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\t<script
+        type=\"text/javascript\">\r\n\t\t$J( function() {\r\n\t\t\tvar $Tabs = $J('.sysreq_tab');\r\n\t\t\tvar
+        $Content = $J('.sysreq_content');\r\n\r\n\t\t\t$Tabs.click( function() {\r\n\t\t\t\tvar
+        $Tab = $J(this);\r\n\t\t\t\t$Tabs.removeClass('active');\r\n\t\t\t\t$Tab.addClass('active');\r\n\r\n\t\t\t\t$Content.removeClass('active');\r\n\t\t\t\t$Content.filter('[data-os='
+        + $Tab.data('os') + ']').addClass('active');\r\n\r\n\t\t\t\t$Content.trigger('gamepage_autocollapse_expand');\r\n\t\t\t});\r\n\t\t}
+        );\r\n\t</script>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"game_page_autocollapse\"
+        style=\"max-height: 400px;\">\r\n\t\t\t\t\t\t<div id=\"game_area_legal\">\r\n\t\t\t\t\t\t\t<p>©
+        INTI CREATES CO., LTD. 2014, 2015 ALL RIGHTS RESERVED.</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"block\" id=\"recommended_block\">\r\n\t\t\t\t\t\t<div class=\"block_header\">\r\n\t\t\t\t\t\t\t<div
+        class=\"right\">\r\n\t\t\t\t\t\t\t\t<a href=\"http://store.steampowered.com/recommended/morelike/app/388800/?snr=1_5_9__300\">See
+        all</a>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<h4>More like this</h4>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div
+        class=\"block_responsive_horizontal_scroll store_horizontal_autoslider block_content
+        nopad\" id=\"recommended_block_content\">\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t<div
+        id=\"responsive_apppage_reviewblock_ctn\" class=\"rightcol game_meta_data\"></div>\r\n\r\n\t\t\t\t<div
+        id=\"app_reviews_hash\" class=\"app_reviews_area\">\r\n\t\t\t\t\t<script>\r\n\tjQuery(
+        document ).ready(function( $ ) {\r\n\t\tCollapseLongReviews();\r\n\t});\r\n</script>\r\n\t<div
+        class=\"user_reviews_header no_bottom_margin\">\r\n\t\tHelpful customer reviews\t\t\t\t<div
+        class=\"user_reviews_see_all\">\r\n\t\t\t<a href=\"http://store.steampowered.com/reviews/?snr=1_5_9_\">About
+        Reviews</a>\r\n\t\t</div>\r\n\t\t\t</div>\r\n\t<div class=\"user_reviews_filter_bar\">\r\n\t\t<span
+        class=\"user_reviews_filter_text\">Filter:</span>\r\n\t\t<div class=\"user_reviews_tab
+        active\" id=\"ReviewsTab_all\">\r\n\t\t\t<a href=\"javascript:void(0)\" onclick=\"SelectReviews(
+        388800, 'all', 30, 'english' );\">\r\n\t\t\t\t<span>Helpful</span>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"user_reviews_tab\" id=\"ReviewsTab_recent\">\r\n\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"SelectReviews( 388800, 'recent', 30, 'english' );\">\r\n\t\t\t\t<span>Recent</span>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"user_reviews_tab\" id=\"ReviewsTab_positive\">\r\n\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"SelectReviews( 388800, 'positive', 30, 'english' );\">\r\n\t\t\t\t\t\t\t\t\t<span>Positive
+        </span> <span class=\"user_reviews_count\">(118)</span>\r\n\t\t\t\t\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"user_reviews_tab\" id=\"ReviewsTab_negative\">\r\n\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"SelectReviews( 388800, 'negative', 30, 'english' );\">\r\n\t\t\t\t\t\t\t\t\t<span>Negative
+        </span> <span class=\"user_reviews_count\">(21)</span>\r\n\t\t\t\t\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"user_reviews_tab\" id=\"ReviewsTab_funny\">\r\n\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"SelectReviews( 388800, 'funny', 30, 'english' );\">\r\n\t\t\t\t<span>Funny</span>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        style=\"clear: left;\"></div>\r\n\t</div>\r\n\r\n\t<div id=\"LoadingMoreReviewsrecent\"
+        style=\"display: none\" class=\"loading_more_reviews\">\r\n\t\t<img src=\"http://store.akamai.steamstatic.com/public/shared/images/throbber.gif\"
+        class=\"loading_more_reviews_throbber\">\r\n\t\tLoading reviews...\t</div>\r\n\t<div
+        id=\"LoadingMoreReviewspositive\" style=\"display: none\" class=\"loading_more_reviews\">\r\n\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/shared/images/throbber.gif\"
+        class=\"loading_more_reviews_throbber\">\r\n\t\tLoading reviews...\t</div>\r\n\t<div
+        id=\"LoadingMoreReviewsnegative\" style=\"display: none\" class=\"loading_more_reviews\">\r\n\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/shared/images/throbber.gif\"
+        class=\"loading_more_reviews_throbber\">\r\n\t\tLoading reviews...\t</div>\r\n\t<div
+        id=\"LoadingMoreReviewsfunny\" style=\"display: none\" class=\"loading_more_reviews\">\r\n\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/shared/images/throbber.gif\"
+        class=\"loading_more_reviews_throbber\">\r\n\t\tLoading reviews...\t</div>\r\n\r\n\t<div
+        id=\"Reviews_positive\" style=\"display: none\" class=\"user_reviews_container\"></div>\r\n\t<div
+        id=\"Reviews_negative\" style=\"display: none\" class=\"user_reviews_container\"></div>\r\n\t<div
+        id=\"Reviews_recent\" style=\"display: none\" class=\"user_reviews_container\"></div>\r\n\t<div
+        id=\"Reviews_funny\" style=\"display: none\" class=\"user_reviews_container\"></div>\r\n\t<div
+        id=\"Reviews_all\" class=\"user_reviews_container\">\r\n\t\t\t<div id=\"Reviewsall0\">\r\n\t\t\t<div
+        class=\"review_box\">\r\n\t\t\t\t\t\t<div class=\"header\">\r\n\t\t\t\t13
+        of 14 people (93%) found this review helpful\t\t\t\t\t\t\t\t<br>1 person found
+        this review funny\t\t\t</div>\r\n\t\t\t\t\t<div style=\"clear: left;\"></div>\r\n\r\n\t\t<div
+        id=\"ReviewContentall18019052\">\r\n\t\t\t<div class=\"leftcol\">\r\n\t\t\t\t<div
+        class=\"avatar\">\r\n\t\t\t\t\t<a href=\"http://steamcommunity.com/id/mzess/\">\r\n\t\t\t\t\t\t<div
+        class=\"playerAvatar offline\" data-miniprofile=\"90430564\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img
+        src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/96/96ab5536edb1761495fea9575c18a39d1b61e396.jpg\"
+        srcset=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/96/96ab5536edb1761495fea9575c18a39d1b61e396.jpg
+        1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/96/96ab5536edb1761495fea9575c18a39d1b61e396_medium.jpg
+        2x\">\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div
+        class=\"persona_name\"><a href=\"http://steamcommunity.com/id/mzess/\" data-miniprofile=\"90430564\">Zess</a></div>\r\n\t\t\t\t\t\t\t\t<div
+        class=\"num_owned_games\"><a href=\"http://steamcommunity.com/id/mzess/games/?tab=all\">164
+        products in account</a></div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"num_reviews\"><a
+        href=\"http://steamcommunity.com/id/mzess/recommended/\">1 review</a></div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"rightcol\">\r\n\t\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<a href=\"http://steamcommunity.com/id/mzess/recommended/388800/\"><img
+        src=\"http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png\"
+        width=\"40\" height=\"40\"></a>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div
+        class=\"title ellipsis\"><a href=\"http://steamcommunity.com/id/mzess/recommended/388800/\">Recommended</a></div>\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours ellipsis\">4.0 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"postedDate\">Posted: 13 September\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\r\n\t\t\t\t<div
+        class=\"content\">\r\n\t\t\t\t\tIt didn't work very well when it first came
+        out, but dozen of patches later, now it does.<br>I still wish they remade
+        the menus instead of just having two screens, though.<br><br>That aside, great
+        game. If you liked Megaman Zero, this is even better.\t\t\t\t\t<div class=\"gradient\"></div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"posted\">\r\n\t\t\t\t\t<div class=\"view_more\"><a href=\"#\" onclick=\"UserReviewShowMore('18019052',
+        'all' ); return false;\">Read More</a></div>\r\n\t\t\t\t\t&nbsp;\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"hr\"></div>\r\n\t\t\t\t<div class=\"control_block\">\r\n\r\n\t\t\t\t\t<span
+        class=\"text\">Was this review helpful?</span>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<a
+        href=\"javascript:void(0)\" onclick=\"UserReviewVoteUp( '18019052' )\" class=\"btnv6_grey_black
+        btn_small_thin ico_hover \" id=\"RecommendationVoteUpBtnall18019052\"><span><i
+        class=\"ico16 thumb_upv6\"></i> Yes</span></a>\r\n\t\t\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"UserReviewVoteDown( '18019052' )\" class=\"btnv6_grey_black btn_small_thin
+        ico_hover \" id=\"RecommendationVoteDownBtnall18019052\"><span><i class=\"ico16
+        thumb_downv6\"></i> No</span></a>\r\n\t\t\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"UserReviewVoteTag( '18019052', 1, 'RecommendationVoteTagBtnall18019052_1'
+        )\" class=\"btnv6_grey_black btn_small_thin ico_hover \" id=\"RecommendationVoteTagBtnall18019052_1\"><span><i
+        class=\"ico16 funny\"></i> Funny</span></a>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div
+        style=\"clear: left;\"></div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div class=\"review_box\">\r\n\t\t\t\t\t\t<div
+        class=\"header\">\r\n\t\t\t\t5 of 5 people (100%) found this review helpful\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t<div
+        style=\"clear: left;\"></div>\r\n\r\n\t\t<div id=\"ReviewContentall18318356\">\r\n\t\t\t<div
+        class=\"leftcol\">\r\n\t\t\t\t<div class=\"avatar\">\r\n\t\t\t\t\t<a href=\"http://steamcommunity.com/id/Akkadias/\">\r\n\t\t\t\t\t\t<div
+        class=\"playerAvatar in-game\" data-miniprofile=\"34106345\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img
+        src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f9/f96774021a6c7e3a8464b322fbd7159e66479b1a.jpg\"
+        srcset=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f9/f96774021a6c7e3a8464b322fbd7159e66479b1a.jpg
+        1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f9/f96774021a6c7e3a8464b322fbd7159e66479b1a_medium.jpg
+        2x\">\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div
+        class=\"persona_name\"><a href=\"http://steamcommunity.com/id/Akkadias/\"
+        data-miniprofile=\"34106345\">Count Akkula</a></div>\r\n\t\t\t\t\t\t\t\t<div
+        class=\"num_owned_games\"><a href=\"http://steamcommunity.com/id/Akkadias/games/?tab=all\">355
+        products in account</a></div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"num_reviews\"><a
+        href=\"http://steamcommunity.com/id/Akkadias/recommended/\">157 reviews</a></div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"rightcol\">\r\n\t\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<a href=\"http://steamcommunity.com/id/Akkadias/recommended/388800/\"><img
+        src=\"http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png\"
+        width=\"40\" height=\"40\"></a>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div
+        class=\"title ellipsis\"><a href=\"http://steamcommunity.com/id/Akkadias/recommended/388800/\">Recommended</a></div>\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours ellipsis\">6.6 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"postedDate\">Posted: 3 October\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\r\n\t\t\t\t<div
+        class=\"content\">\r\n\t\t\t\t\tThe fact that Mighty Number 9 is getting all
+        the attention while this spectacular high-energy platformer went largely ignored
+        is a crime.<br><br>\t\t\t\t\t<div class=\"gradient\"></div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"posted\">\r\n\t\t\t\t\t<div class=\"view_more\"><a href=\"#\" onclick=\"UserReviewShowMore('18318356',
+        'all' ); return false;\">Read More</a></div>\r\n\t\t\t\t\t&nbsp;\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"hr\"></div>\r\n\t\t\t\t<div class=\"control_block\">\r\n\r\n\t\t\t\t\t<span
+        class=\"text\">Was this review helpful?</span>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<a
+        href=\"javascript:void(0)\" onclick=\"UserReviewVoteUp( '18318356' )\" class=\"btnv6_grey_black
+        btn_small_thin ico_hover \" id=\"RecommendationVoteUpBtnall18318356\"><span><i
+        class=\"ico16 thumb_upv6\"></i> Yes</span></a>\r\n\t\t\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"UserReviewVoteDown( '18318356' )\" class=\"btnv6_grey_black btn_small_thin
+        ico_hover \" id=\"RecommendationVoteDownBtnall18318356\"><span><i class=\"ico16
+        thumb_downv6\"></i> No</span></a>\r\n\t\t\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"UserReviewVoteTag( '18318356', 1, 'RecommendationVoteTagBtnall18318356_1'
+        )\" class=\"btnv6_grey_black btn_small_thin ico_hover \" id=\"RecommendationVoteTagBtnall18318356_1\"><span><i
+        class=\"ico16 funny\"></i> Funny</span></a>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div
+        style=\"clear: left;\"></div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div class=\"review_box\">\r\n\t\t\t\t\t\t<div
+        class=\"header\">\r\n\t\t\t\t6 of 7 people (86%) found this review helpful\t\t\t\t\t\t\t\t<br>1
+        person found this review funny\t\t\t</div>\r\n\t\t\t\t\t<div style=\"clear:
+        left;\"></div>\r\n\r\n\t\t<div id=\"ReviewContentall18053694\">\r\n\t\t\t<div
+        class=\"leftcol\">\r\n\t\t\t\t<div class=\"avatar\">\r\n\t\t\t\t\t<a href=\"http://steamcommunity.com/id/frostmaiden/\">\r\n\t\t\t\t\t\t<div
+        class=\"playerAvatar offline\" data-miniprofile=\"56824623\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img
+        src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/75/75053deb28642d3ccb96ce5b910a6aa76d6b8aa1.jpg\"
+        srcset=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/75/75053deb28642d3ccb96ce5b910a6aa76d6b8aa1.jpg
+        1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/75/75053deb28642d3ccb96ce5b910a6aa76d6b8aa1_medium.jpg
+        2x\">\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div
+        class=\"persona_name\"><a href=\"http://steamcommunity.com/id/frostmaiden/\"
+        data-miniprofile=\"56824623\">Frost Liline</a></div>\r\n\t\t\t\t\t\t\t\t<div
+        class=\"num_owned_games\"><a href=\"http://steamcommunity.com/id/frostmaiden/games/?tab=all\">37
+        products in account</a></div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"num_reviews\"><a
+        href=\"http://steamcommunity.com/id/frostmaiden/recommended/\">1 review</a></div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"rightcol\">\r\n\t\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<a href=\"http://steamcommunity.com/id/frostmaiden/recommended/388800/\"><img
+        src=\"http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png\"
+        width=\"40\" height=\"40\"></a>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div
+        class=\"title ellipsis\"><a href=\"http://steamcommunity.com/id/frostmaiden/recommended/388800/\">Recommended</a></div>\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours ellipsis\">25.1 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"postedDate\">Posted: 15 September\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\r\n\t\t\t\t<div
+        class=\"content\">\r\n\t\t\t\t\tGameplay: Very creative and gripping gameplay
+        and immense replay value. The challenges are thought out and that combined
+        with the leveling system and equipment shop are high motivators for a gamer
+        to keep playing and perfecting their playthroughs! <br><br>Story: You'll just
+        have to play through it yourself - no spoilers allowed. I will say that the
+        addition of the in-game dialogue and in-boss dialogue is really cool. You
+        can turn that off if it bugs you, but it's neat to have play that through
+        for the story and have that kind of character development and interaction.
+        Then you can turn it off when you want your challenges accomplished.<br><br>Theme
+        and Atmosphere: Definitely felt a Megaman zero vibe, but at the same time,
+        Gunvolt has its own originality and charm. Esp the train stage... wooo, that
+        brought back good memories.<br><br>Overall: It would be an understatement
+        to say that I enjoyed the game. It brought back the excellent memories of
+        Megaman Zero and promises the launch of another inspiring series. I look forward
+        to Gunvolt 2,\t\t\t\t\t<div class=\"gradient\"></div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"posted\">\r\n\t\t\t\t\t<div class=\"view_more\"><a href=\"#\" onclick=\"UserReviewShowMore('18053694',
+        'all' ); return false;\">Read More</a></div>\r\n\t\t\t\t\t&nbsp;\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"hr\"></div>\r\n\t\t\t\t<div class=\"control_block\">\r\n\r\n\t\t\t\t\t<span
+        class=\"text\">Was this review helpful?</span>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<a
+        href=\"javascript:void(0)\" onclick=\"UserReviewVoteUp( '18053694' )\" class=\"btnv6_grey_black
+        btn_small_thin ico_hover \" id=\"RecommendationVoteUpBtnall18053694\"><span><i
+        class=\"ico16 thumb_upv6\"></i> Yes</span></a>\r\n\t\t\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"UserReviewVoteDown( '18053694' )\" class=\"btnv6_grey_black btn_small_thin
+        ico_hover \" id=\"RecommendationVoteDownBtnall18053694\"><span><i class=\"ico16
+        thumb_downv6\"></i> No</span></a>\r\n\t\t\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"UserReviewVoteTag( '18053694', 1, 'RecommendationVoteTagBtnall18053694_1'
+        )\" class=\"btnv6_grey_black btn_small_thin ico_hover \" id=\"RecommendationVoteTagBtnall18053694_1\"><span><i
+        class=\"ico16 funny\"></i> Funny</span></a>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div
+        style=\"clear: left;\"></div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div class=\"review_box\">\r\n\t\t\t\t\t\t<div
+        class=\"header\">\r\n\t\t\t\t7 of 9 people (78%) found this review helpful\t\t\t\t\t\t\t\t<div
+        class=\"commentCount\"><a href=\"http://steamcommunity.com/id/7line7/recommended/388800/\">3
+        <img src=\"http://store.akamai.steamstatic.com/public/shared/images/comment_quoteicon.png\"
+        align=\"center\"></a></div>\r\n\t\t\t\t\t\t\t\t<br>1 person found this review
+        funny\t\t\t</div>\r\n\t\t\t\t\t<div style=\"clear: left;\"></div>\r\n\r\n\t\t<div
+        id=\"ReviewContentall17956526\">\r\n\t\t\t<div class=\"leftcol\">\r\n\t\t\t\t<div
+        class=\"avatar\">\r\n\t\t\t\t\t<a href=\"http://steamcommunity.com/id/7line7/\">\r\n\t\t\t\t\t\t<div
+        class=\"playerAvatar online\" data-miniprofile=\"213247535\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img
+        src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e8/e84ac674905846949126b8aeb1d7e4cf715aa743.jpg\"
+        srcset=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e8/e84ac674905846949126b8aeb1d7e4cf715aa743.jpg
+        1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e8/e84ac674905846949126b8aeb1d7e4cf715aa743_medium.jpg
+        2x\">\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div
+        class=\"persona_name\"><a href=\"http://steamcommunity.com/id/7line7/\" data-miniprofile=\"213247535\">7line7</a></div>\r\n\t\t\t\t\t\t\t\t<div
+        class=\"num_owned_games\"><a href=\"http://steamcommunity.com/id/7line7/games/?tab=all\">34
+        products in account</a></div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"num_reviews\"><a
+        href=\"http://steamcommunity.com/id/7line7/recommended/\">1 review</a></div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"rightcol\">\r\n\t\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<a href=\"http://steamcommunity.com/id/7line7/recommended/388800/\"><img
+        src=\"http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png\"
+        width=\"40\" height=\"40\"></a>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div
+        class=\"title ellipsis\"><a href=\"http://steamcommunity.com/id/7line7/recommended/388800/\">Recommended</a></div>\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours ellipsis\">7.0 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"postedDate\">Posted: 9 September\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\r\n\t\t\t\t<div
+        class=\"content\">\r\n\t\t\t\t\tThis game reminds me why I used to love Capcom
+        when i was a kid\t\t\t\t\t<div class=\"gradient\"></div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"posted\">\r\n\t\t\t\t\t<div class=\"view_more\"><a href=\"#\" onclick=\"UserReviewShowMore('17956526',
+        'all' ); return false;\">Read More</a></div>\r\n\t\t\t\t\t&nbsp;\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"hr\"></div>\r\n\t\t\t\t<div class=\"control_block\">\r\n\r\n\t\t\t\t\t<span
+        class=\"text\">Was this review helpful?</span>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<a
+        href=\"javascript:void(0)\" onclick=\"UserReviewVoteUp( '17956526' )\" class=\"btnv6_grey_black
+        btn_small_thin ico_hover \" id=\"RecommendationVoteUpBtnall17956526\"><span><i
+        class=\"ico16 thumb_upv6\"></i> Yes</span></a>\r\n\t\t\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"UserReviewVoteDown( '17956526' )\" class=\"btnv6_grey_black btn_small_thin
+        ico_hover \" id=\"RecommendationVoteDownBtnall17956526\"><span><i class=\"ico16
+        thumb_downv6\"></i> No</span></a>\r\n\t\t\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"UserReviewVoteTag( '17956526', 1, 'RecommendationVoteTagBtnall17956526_1'
+        )\" class=\"btnv6_grey_black btn_small_thin ico_hover \" id=\"RecommendationVoteTagBtnall17956526_1\"><span><i
+        class=\"ico16 funny\"></i> Funny</span></a>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div
+        style=\"clear: left;\"></div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div class=\"review_box\">\r\n\t\t\t\t\t\t<div
+        class=\"header\">\r\n\t\t\t\t4 of 4 people (100%) found this review helpful\t\t\t\t\t\t\t\t<br>1
+        person found this review funny\t\t\t</div>\r\n\t\t\t\t\t<div style=\"clear:
+        left;\"></div>\r\n\r\n\t\t<div id=\"ReviewContentall18066624\">\r\n\t\t\t<div
+        class=\"leftcol\">\r\n\t\t\t\t<div class=\"avatar\">\r\n\t\t\t\t\t<a href=\"http://steamcommunity.com/id/TarzanEng/\">\r\n\t\t\t\t\t\t<div
+        class=\"playerAvatar offline\" data-miniprofile=\"170275243\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<img
+        src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/01/01873145b5fd3a2567b66e72f3fdb795f5f57af0.jpg\"
+        srcset=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/01/01873145b5fd3a2567b66e72f3fdb795f5f57af0.jpg
+        1x, http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/01/01873145b5fd3a2567b66e72f3fdb795f5f57af0_medium.jpg
+        2x\">\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div
+        class=\"persona_name\"><a href=\"http://steamcommunity.com/id/TarzanEng/\"
+        data-miniprofile=\"170275243\">TarzanEng</a></div>\r\n\t\t\t\t\t\t\t\t<div
+        class=\"num_owned_games\"><a href=\"http://steamcommunity.com/id/TarzanEng/games/?tab=all\">195
+        products in account</a></div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"num_reviews\"><a
+        href=\"http://steamcommunity.com/id/TarzanEng/recommended/\">8 reviews</a></div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"rightcol\">\r\n\t\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<a href=\"http://steamcommunity.com/id/TarzanEng/recommended/388800/\"><img
+        src=\"http://store.akamai.steamstatic.com/public/shared/images/userreviews/icon_thumbsUp_v6.png\"
+        width=\"40\" height=\"40\"></a>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div
+        class=\"title ellipsis\"><a href=\"http://steamcommunity.com/id/TarzanEng/recommended/388800/\">Recommended</a></div>\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours ellipsis\">58.2 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"postedDate\">Posted: 16 September\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\r\n\t\t\t\t<div
+        class=\"content\">\r\n\t\t\t\t\tThis is the review after the game is fixed.<br><br>It
+        plays a lot like Megaman Zero and Megaman. It does have the Megaman recipe
+        such as dash, climb, shoot and etc <br><br>What is different from Megaman
+        is this, the game mechanics reward you for playing very well in game. <br><br><br>Instead
+        of charging, shooting and slashing, you need to tag your enemies and then
+        use your filed of electricity to kill off your enemies. Sure you can kill
+        them by tagging to death. But electricity is the best way to go. You do not
+        get the boss weapon but you get this neat little upgrade. <br><br>You can
+        even make your gear (though it iis really only making the game last longer)
+        Think of it as like Megaman Legends where you collect items and made your
+        own gear. The items are hard to get sometimes but it is worth the effort.<br><br>The
+        enemies might be a push over at time but the boss are not. There are not grinding
+        your teeth hard but they are the most entertaining boss fight. The boss fight
+        really shines through the game. For example, when the boss used their power
+        (such as Merak using Lazy Laser), you can feel the boss is getting very determined
+        t0 finish your off. You will do whatever it takes to get stop his attack or
+        avoid it at all cost.<br><br>Having to hear the awesome music when I reached
+        1000 Kudos is the thing I been looking so forward too. It force me to be better
+        and it forces me to keep it at that pace because the music is really integrated
+        well into the game. So if you can played a good game, you will feel like you
+        are empowered, become a full blown yangire or unstoppable force which is neat.
+        Think of it as like Carol from Freedom Planet. You worked hard to get her
+        bike and you do your best to keep it<br><br>The storyline is good as well.
+        I literally cried when I finished the game after watching the ending.<br><br>This
+        game, I take my hats off the people who made this game.<br><br>EDIT:Be warn
+        though, this game does not work in Steam offline Mode\t\t\t\t\t<div class=\"gradient\"></div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"posted\">\r\n\t\t\t\t\t<div class=\"view_more\"><a href=\"#\" onclick=\"UserReviewShowMore('18066624',
+        'all' ); return false;\">Read More</a></div>\r\n\t\t\t\t\t&nbsp;\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"hr\"></div>\r\n\t\t\t\t<div class=\"control_block\">\r\n\r\n\t\t\t\t\t<span
+        class=\"text\">Was this review helpful?</span>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<a
+        href=\"javascript:void(0)\" onclick=\"UserReviewVoteUp( '18066624' )\" class=\"btnv6_grey_black
+        btn_small_thin ico_hover \" id=\"RecommendationVoteUpBtnall18066624\"><span><i
+        class=\"ico16 thumb_upv6\"></i> Yes</span></a>\r\n\t\t\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"UserReviewVoteDown( '18066624' )\" class=\"btnv6_grey_black btn_small_thin
+        ico_hover \" id=\"RecommendationVoteDownBtnall18066624\"><span><i class=\"ico16
+        thumb_downv6\"></i> No</span></a>\r\n\t\t\t\t\t<a href=\"javascript:void(0)\"
+        onclick=\"UserReviewVoteTag( '18066624', 1, 'RecommendationVoteTagBtnall18066624_1'
+        )\" class=\"btnv6_grey_black btn_small_thin ico_hover \" id=\"RecommendationVoteTagBtnall18066624_1\"><span><i
+        class=\"ico16 funny\"></i> Funny</span></a>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div
+        style=\"clear: left;\"></div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\t\t\t\t<div
+        id=\"LoadMoreReviewsall\" class=\"load_more_reviews_btn\">\r\n\t\t\t\t<a href=\"javascript:void(0);\"
+        onclick=\"LoadMoreReviews( 388800, 5, 30, 'all', 'english' );\" class=\"btnv6_blue_blue_innerfade
+        btn_medium\">\r\n\t\t\t\t\t<span>Load More Reviews</span>\r\n\t\t\t\t</a>\r\n\t\t\t</div>\r\n\t\t\t\t\t\t<div
+        id=\"ViewAllReviewsall\" class=\"view_all_reviews_btn\">\r\n\t\t\t\t<a href=\"http://steamcommunity.com/app/388800/reviews/?browsefilter=toprated&snr=1_5_9_\">Browse
+        all 83 reviews</a>\r\n\t\t\t</div>\r\n\t\t\t\t\t\t<div id=\"LoadingMoreReviewsall\"
+        style=\"display: none\" class=\"loading_more_reviews\">\r\n\t\t\t\t<img src=\"http://store.akamai.steamstatic.com/public/shared/images/throbber.gif\"
+        class=\"loading_more_reviews_throbber\">\r\n\t\t\t\tLoading reviews...\t\t\t</div>\r\n\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\r\n\t\t\t</div>\r\n\r\n\t\t\t<div
+        style=\"clear: both;\"></div>\r\n\t\t</div>\r\n\r\n\t</div>\r\n</div>\r\n\r\n\t\t<div
+        class=\"hover game_hover\" id=\"global_hover\" style=\"display: none; left:
+        0; top: 0;\">\r\n\t\t\t<div class=\"game_hover_box hover_box\">\r\n\t\t\t\t<div
+        class=\"content\" id=\"global_hover_content\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div
+        class=\"hover_arrow_left\"></div>\r\n\t\t\t<div class=\"hover_arrow_right\"></div>\r\n\t\t</div>\r\n<div
+        id=\"EmbedModal\"  style=\"display: none\">\r\n\t<div id=\"widget_create\">\r\n\t\t<p>You
+        can use this widget-maker to generate a bit of HTML that can be embedded in
+        your website to easily allow customers to purchase this game on Steam.</p>\r\n\r\n\t\t\t\t<p
+        class=\"small\">Enter up to 375 characters to add a description to your widget:</p>\r\n\t\t<textarea
+        name=\"w_text\" placeholder=\"A 2D action game featuring a young man with
+        the power of lightning who stands for freedom against the evil ambitions of
+        a massive organization. When lightning strikes, a new legend is born.\" maxlength=\"375\"></textarea>\r\n\r\n\t\t<div
+        class=\"buttoncontainer\">\r\n\t\t\t<a class=\"btnv6_blue_hoverfade btn_medium
+        \" href=\"#\" onclick=\"CreateWidget(388800); return false;\"><span>Create
+        widget</span></a>\r\n\t\t</div>\r\n\t</div>\r\n\t<div id=\"widget_finished\"
+        style=\"display: none;\">\r\n\t\t<div id=\"widget_container\"></div>\r\n\r\n\t\t<p
+        class=\"small\">Copy and paste the HTML below into your website to make the
+        above widget appear</p>\r\n\t\t<textarea id=\"widget_code\" style=\"\"></textarea>\r\n\t</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"ShareModal\" style=\"display: none\">\r\n\t<div class=\"share\">Share:&nbsp;
+        <a target=\"_blank\" href=\"http://store.steampowered.com/share/facebook/app/388800\"
+        title=\"Share on Facebook\"><img src=\"http://store.akamai.steamstatic.com/public/images/v5/social/facebook.gif\"></a>&nbsp;
+        <a target=\"_blank\" href=\"http://store.steampowered.com/share/twitter/app/388800\"
+        title=\"Share on Twitter\"><img src=\"http://store.akamai.steamstatic.com/public/images/v5/social/twitter.gif\"></a>&nbsp;
+        <a target=\"_blank\" href=\"http://store.steampowered.com/share/reddit/app/388800\"
+        title=\"Share on Reddit\"><img src=\"http://store.akamai.steamstatic.com/public/images/v5/social/reddit.gif\"></a></div></div>\r\n\r\n\t<div
+        id=\"app_tagging_modal\" class=\"app_tag_modal nologin\" style=\"display:
+        none;\">\r\n\t\t<div class=\"app_tag_modal_content\">\r\n\t\t\t<div class=\"app_tag_modal_seperator\"></div>\r\n\t\t\t<div
+        class=\"app_tag_modal_left\">\r\n\t\t\t\t<h2>Popular user-defined tags for
+        this product:<span class=\"app_tag_modal_tooltip\" data-store-tooltip=\"These
+        are tags applied to the product by the most users.  You can click a tag to
+        find other products with that tag applied.  Or, you can hit the plus symbol
+        for any existing tags to increase that tag's popularity on this product.\">(?)</span></h2>\r\n\t\t\t\t<div
+        class=\"app_tags popular_tags\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div
+        class=\"app_tag_modal_right\">\r\n\t\t\t\t\t\t\t\t\t<h2>Sign in</h2>\r\n\t\t\t\t\t<p>Sign
+        in to add your own tags to this product.</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<a
+        class=\"btnv6_blue_hoverfade btn_medium\" href=\"https://store.steampowered.com/login/?redir=app/388800\">\r\n\t\t\t\t\t\t\t<span>Sign
+        in</span>\r\n\t\t\t\t\t\t</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t<div
+        style=\"clear: both;\"></div>\r\n\t\t</div>\r\n\t</div>\r\n\t\t<script type=\"text/javascript\">\r\n\t\t$J(
+        function() {\r\n\t\t\tInitAppTagModal( 388800,\r\n\t\t\t\t[{\"tagid\":19,\"name\":\"Action\",\"count\":38,\"browseable\":true},{\"tagid\":492,\"name\":\"Indie\",\"count\":34,\"browseable\":true},{\"tagid\":1625,\"name\":\"Platformer\",\"count\":21,\"browseable\":true},{\"tagid\":4085,\"name\":\"Anime\",\"count\":21,\"browseable\":true},{\"tagid\":3871,\"name\":\"2D\",\"count\":19,\"browseable\":true}],\r\n\t\t\t\t[],\r\n\t\t\t\t\"1_5_9__410\",\r\n\t\t\t\t\"1_5_9__411\",\r\n\t\t\t\tnull\t\t\t);\r\n\t\t});\r\n\t</script>\r\n\r\n\t\t</div>\t<!--
+        responsive_page_legacy_content -->\r\n\r\n\t\t<div id=\"footer_spacer\" class=\"\"></div>\r\n<div
+        id=\"footer\"  class=\"\">\r\n<div class=\"footer_content\">\r\n\t<div class=\"rule\"></div>\r\n\r\n\t<div
+        id=\"footer_nav\">\r\n\r\n\t\t\r\n\t\t\r\n\t\t\t<span class=\"pulldown btnv6_blue_hoverfade
+        btn_small\" id=\"footer_steam_pulldown\">\r\n\t\t\t\t<span>ABOUT STEAM</span>\r\n\t\t\t</span>\r\n\t\t<div
+        class=\"popup_block_new\" id=\"footer_steam_dropdown\" style=\"display: none;\">\r\n\t\t\t\t\t\t<div
+        class=\"popup_body popup_menu\">\r\n\t\t\t\t<a class=\"popup_menu_item\" href=\"http://store.steampowered.com/about/?snr=1_44_44__22\">\r\n\t\t\t\t\tWhat
+        is Steam?\t\t\t\t</a>\r\n\t\t\t\t<!--\r\n\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"\">\r\n\t\t\t\t\t\tDownload Steam now\t\t\t\t\t</a>\r\n\t\t\t\t\t-->\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" target=\"_blank\" href=\"https://support.steampowered.com/kb_article.php?p_faqid=549#gifts\">\r\n\t\t\t\t\tGifting
+        on Steam\t\t\t\t</a>\r\n\t\t\t\t<a class=\"popup_menu_item\" href=\"https://steamcommunity.com/?snr=1_44_44__22\">\r\n\t\t\t\t\tThe
+        Steam Community\t\t\t\t</a>\r\n\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\r\n\t\t\t<span
+        class=\"pulldown btnv6_blue_hoverfade btn_small\" id=\"footer_valve_pulldown\">\r\n\t\t\t\t<span>ABOUT
+        VALVE</span>\r\n\t\t\t</span>\r\n\t\t<div class=\"popup_block_new\" id=\"footer_valve_dropdown\"
+        style=\"display: none;\">\r\n\t\t\t<div class=\"popup_body popup_menu\">\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" target=\"_blank\" href=\"http://www.valvesoftware.com/about.html\">\r\n\t\t\t\t\tAbout
+        Valve\t\t\t\t</a>\r\n\t\t\t\t<a class=\"popup_menu_item\" target=\"_blank\"
+        href=\"http://www.valvesoftware.com/business/\">\r\n\t\t\t\t\tBusiness Solutions\t\t\t\t</a>\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" target=\"_blank\" href=\"http://www.steampowered.com/steamworks/\">\r\n\t\t\t\t\tSteamworks\t\t\t\t</a>\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" target=\"_blank\" href=\"http://www.valvesoftware.com/jobs.html\">\r\n\t\t\t\t\tJobs\t\t\t\t</a>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t<span
+        class=\"pulldown btnv6_blue_hoverfade btn_small\" id=\"footer_help_pulldown\">\r\n\t\t\t\t<span>HELP</span>\r\n\t\t\t</span>\r\n\t\t<div
+        class=\"popup_block_new\" id=\"footer_help_dropdown\" style=\"display: none;\">\r\n\t\t\t\t\t\t<div
+        class=\"popup_body popup_menu\">\r\n\t\t\t\t<a class=\"popup_menu_item\" href=\"https://help.steampowered.com/?snr=1_44_44__23\">\r\n\t\t\t\t\tSupport\t\t\t\t</a>\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" target=\"_blank\" href=\"http://store.steampowered.com/forums/?snr=1_44_44__23\">\r\n\t\t\t\t\tForums\t\t\t\t</a>\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" target=\"_blank\" href=\"http://store.steampowered.com/stats/?snr=1_44_44__23\">\r\n\t\t\t\t\tStats\t\t\t\t</a>\r\n\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\r\n\t\t\t<span
+        class=\"pulldown btnv6_blue_hoverfade btn_small\" id=\"footer_feeds_pulldown\">\r\n\t\t\t\t<span>NEWS
+        FEEDS</span>\r\n\t\t\t</span>\r\n\t\t<div class=\"popup_block_new\" id=\"footer_feeds_dropdown\"
+        style=\"display: none;\">\r\n\t\t\t<div class=\"popup_body popup_menu\">\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/feeds/news.xml\">\r\n\t\t\t\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif\"
+        width=\"13\" height=\"13\" border=\"0\" alt=\"\" align=\"top\">&nbsp;&nbsp;Steam
+        News\t\t\t\t</a>\r\n\t\t\t\t<a class=\"popup_menu_item\" href=\"http://store.steampowered.com/feeds/newreleases.xml\">\r\n\t\t\t\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif\"
+        width=\"13\" height=\"13\" border=\"0\" alt=\"\" align=\"top\">&nbsp;&nbsp;Game
+        Releases\t\t\t\t</a>\r\n\t\t\t\t<a class=\"popup_menu_item\" href=\"http://store.steampowered.com/feeds/daily_deals.xml\">\r\n\t\t\t\t\t<img
+        src=\"http://store.akamai.steamstatic.com/public/images/ico/ico_rss2.gif\"
+        width=\"13\" height=\"13\" border=\"0\" alt=\"\" align=\"top\">&nbsp;&nbsp;Daily
+        Deals\t\t\t\t</a>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear:
+        left;\"></div>\r\n\r\n\t\t<script type=\"text/javascript\">\r\n\t\t\tRegisterFlyout(
+        'footer_genre_pulldown', 'footer_genre_dropdown', null, null, true );\r\n\t\t\tRegisterFlyout(
+        'footer_steam_pulldown', 'footer_steam_dropdown', null, null, true );\r\n\t\t\tRegisterFlyout(
+        'footer_valve_pulldown', 'footer_valve_dropdown', null, null, true );\r\n\t\t\tRegisterFlyout(
+        'footer_help_pulldown', 'footer_help_dropdown', null, null, true );\r\n\t\t\tRegisterFlyout(
+        'footer_feeds_pulldown', 'footer_feeds_dropdown', null, null, true );\r\n\t\t</script>\r\n\t</div>\r\n\r\n\t<br>\r\n\r\n
+        \   <div class=\"rule\"></div>\r\n    <div id=\"footer_logo\"><a target=\"_blank\"
+        href=\"http://www.valvesoftware.com\"><img src=\"http://store.akamai.steamstatic.com/public/images/v6/logo_valve_footer.png\"
+        alt=\"Valve Software\" border=\"0\" /></a></div>\r\n    <div id=\"footer_text\">\r\n
+        \       <div>&copy; 2015 Valve Corporation.  All rights reserved.  All trademarks
+        are property of their respective owners in the US and other countries.</div>\r\n
+        \       <div>VAT included in all prices where applicable.&nbsp;&nbsp;\r\n\r\n
+        \           <a target=\"_blank\" href=\"http://store.steampowered.com/privacy_agreement/\">Privacy
+        Policy</a>\r\n            &nbsp; | &nbsp;\r\n            <a target=\"_blank\"
+        href=\"http://www.valvesoftware.com/legal.htm\">Legal</a>\r\n            &nbsp;
+        | &nbsp;\r\n            <a target=\"_blank\" href=\"http://store.steampowered.com/subscriber_agreement/\">Steam
+        Subscriber Agreement</a>\r\n            &nbsp; | &nbsp;\r\n            <a
+        target=\"_blank\" href=\"http://store.steampowered.com/steam_refunds/\">Refunds</a>\r\n
+        \           \r\n        </div>\r\n\t\t\t\t\t<div class=\"responsive_optin_link\">\r\n\t\t\t\t<div
+        class=\"btn_medium btnv6_grey_black\" onclick=\"Responsive_RequestMobileView()\">\r\n\t\t\t\t\t<span>View
+        mobile website</span>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t    </div>\r\n\r\n\r\n\r\n
+        \   <div style=\"clear: left;\"></div>\r\n\r\n    <div class=\"rule\"></div>\r\n\r\n
+        \   <div class=\"valve_links\">\r\n        <a target=\"_blank\" href=\"http://www.valvesoftware.com/about.html\">About
+        Valve</a>\r\n        &nbsp; | &nbsp;<a target=\"_blank\" href=\"http://www.valvesoftware.com/business/\">Business
+        Solutions</a>\r\n        &nbsp; | &nbsp;<a target=\"_blank\" href=\"http://www.steampowered.com/steamworks/\">Steamworks</a>\r\n
+        \       &nbsp; | &nbsp;<a target=\"_blank\" href=\"http://www.valvesoftware.com/jobs.html\">Jobs</a>\r\n
+        \       &nbsp; | &nbsp;<a target=\"_blank\" href=\"http://steamcommunity.com/greenlight\">Steam
+        Distribution</a>\r\n\t\t&nbsp; | &nbsp;<a target=\"_blank\" href=\"http://www.facebook.com/Steam\"><img
+        src=\"http://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif\">
+        Steam</a>\r\n\t\t&nbsp; | &nbsp;<a target=\"_blank\" href=\"http://twitter.com/steam_games\"><img
+        src=\"http://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif\">
+        @steam_games</a>\r\n    </div>\r\n\r\n</div>\r\n</div>\r\n\t</div>\t<!-- responsive_page_content
+        -->\r\n\r\n</div>\t<!-- responsive_page_frame -->\r\n</body>\r\n</html>"
+    http_version: 
+  recorded_at: Fri, 09 Oct 2015 18:31:43 GMT
+recorded_with: VCR 2.9.3

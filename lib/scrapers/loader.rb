@@ -19,13 +19,14 @@ module Scrapers
       end
 
       @options = {
-        headers: {}
+        headers: {},
+        continue_with_errors: false
       }.merge(options)
 
       @hydra = Typhoeus::Hydra.hydra
     end
 
-    def scrap(yield_type = :group, &block)
+    def scrap(&block)
       raise 'Unknown yield type' unless [:group, :request, :request_array]
 
       @data = {}
@@ -58,10 +59,20 @@ module Scrapers
 
       Scrapers.logger.info "Parsing #{scrap_request.url}".light_black
 
-      scrap_request.set_output processor.process_page
-      scrap_request.finished!
+      begin
+        output = processor.process_page
+      rescue StandardError => e
+        scrap_request.error!
+        scrap_request.finished!
+        Scrapers.logger.error "Error parsing #{scrap_request.url}"
+        Scrapers.logger.store_error_page scrap_request, e
+        raise e unless @options[:continue_with_errors]
+      else
+        scrap_request.set_output output
+        scrap_request.finished!
 
-      @yieldBlock.call(scrap_request) if @yieldBlock
+        @yieldBlock.call(scrap_request) if @yieldBlock
+      end
     end
 
     def add_to_queue(scrap_request)

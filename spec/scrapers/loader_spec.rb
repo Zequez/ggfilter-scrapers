@@ -164,5 +164,20 @@ describe Scrapers::Loader do
       )
       scraper.scrap
     end
+
+    it 'should create an error file with an error if an error in the processor is raised' do
+      processor = Class.new(s::BasePageProcessor) do
+        regexp %r{.}
+
+        define_method(:process_page) do
+          raise 'Potato'
+        end
+      end
+
+      scraper = s::Loader.new(processor, 'http://www.purple.com', nil, nil, continue_with_errors: true)
+      expect(scraper.scrap).to eq nil
+      expect(File.exists? "#{Scrapers.app_root}/log/error_pages/#{Time.now.to_i}_http___www.purple.com.html").to eq true
+      expect(File.exists? "#{Scrapers.app_root}/log/error_pages/#{Time.now.to_i}_http___www.purple.com.backtrace").to eq true
+    end
   end
 end

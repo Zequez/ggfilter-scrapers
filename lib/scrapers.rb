@@ -5,6 +5,7 @@ require 'active_record'
 require 'colorize'
 require 'awesome_print'
 require 'i18n_data'
+require 'fileutils'
 require 'active_support/concern'
 
 module Scrapers
@@ -13,47 +14,25 @@ module Scrapers
   class NoPageProcessorFoundError < StandardError; end
   class InvalidProcessorError < StandardError; end
 
-  def self.logger
-    @logger ||= begin
-      root = defined?(Rails) ? Rails.root : ROOT
-      logfile = File.open("#{root}/log/scrapers.log", 'a')  # create log file
-      logfile.sync = true  # automatically flushes data to file
-      CustomLogger.new(logfile)  # constant accessible anywhere
-    end
+  def self.app_root
+    @app_root ||= defined?(Rails) ? Rails.root : ROOT
   end
 
-  class CustomLogger < Logger
-    @@colors = {
-      fatal: :red,
-      error: :red,
-      warn: :orange,
-      info: :blue
-    }
+  def self.logger
+    @error_log ||= begin
 
-    def format_message(severity, timestamp, progname, msg)
-      output = "#{timestamp.to_formatted_s(:db)} #{severity} #{msg}\n"
-      sev = severity.downcase.to_sym
-      if !(msg =~ /^\\e\[0;/) and @@colors[sev]
-        output = output.send(@@colors[sev])
-      end
-      output
     end
 
-    def l(msg)
-      self << "#{msg.inspect}\n"
-    end
-
-    def la(msg)
-      self << "#{msg.ai}\n"
-    end
-
-    def ln(msg)
-      self << "#{msg}\n"
+    @logger ||= begin
+      logfile = File.open("#{app_root}/log/scrapers.log", 'a')  # create log file
+      logfile.sync = true  # automatically flushes data to file
+      CustomLogger.new(logfile)
     end
   end
 end
 
 require 'scrapers/version'
+require 'scrapers/custom_logger'
 require 'scrapers/base_page_processor'
 require 'scrapers/base_runner'
 require 'scrapers/base_migration'
