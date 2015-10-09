@@ -190,7 +190,7 @@ describe Scrapers::SteamGame::PageProcessor, cassette: true do
     its([:early_access]){ is_expected.to eq true }
   end
 
-  describe 'failing system requirements' do
+  describe 'edge case system requirements' do
     game_cassette_subject(2710, 'act_of_war_direct_action')
 
     its([:system_requirements]){ are_expected.to eq({
@@ -205,6 +205,31 @@ describe Scrapers::SteamGame::PageProcessor, cassette: true do
         memory: nil,
         video_card: nil,
         disk_space: nil
+      }
+    })}
+  end
+
+  # describe 'edge case steam achievements?' do
+  #   game_cassette_subject(388800, 'azure_striker_gunvolt')
+  #
+  #   its([:steam_achievements_count]){ is_expected.to eq 25 }
+  # end
+
+  describe 'another edge case with system requirements' do
+    game_cassette_subject(209160, 'call_of_duty_ghosts')
+
+    its([:system_requirements]){ are_expected.to eq({
+      minimum: {
+        processor: 'Intel® Core™ 2 Duo E8200 2.66 GHZ / AMD Phenom™ X3 8750 2.4 GHZ or better',
+        memory: '6 GB RAM',
+        video_card: 'NVIDIA® GeForce™ GTS 450 / ATI® Radeon™ HD 5870 or better',
+        disk_space: '40 GB HD space'
+      },
+      recommended: {
+        processor: 'Intel® Core™ i5 – 680 @ 3.6GHz',
+        memory: '8 GB RAM',
+        video_card: 'NVIDIA® GeForce™ GTX 760 @ 4GB',
+        disk_space: '40 GB HD space'
       }
     })}
   end

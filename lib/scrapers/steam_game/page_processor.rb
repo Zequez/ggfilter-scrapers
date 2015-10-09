@@ -107,8 +107,8 @@ class Scrapers::SteamGame::PageProcessor < Scrapers::BasePageProcessor
 
   def read_system_requirements
     win = css('.sysreq_content[data-os="win"]')
-    min = list_to_hash win.search('.game_area_sys_req_leftCol li, .game_area_sys_req_full li')
-    req = list_to_hash win.search('.game_area_sys_req_rightCol li')
+    min = list_to_hash win.at_css('.game_area_sys_req_leftCol, .game_area_sys_req_full')
+    req = list_to_hash win.at_css('.game_area_sys_req_rightCol')
 
     {
       minimum: system_requirements_keyification(min),
@@ -116,16 +116,21 @@ class Scrapers::SteamGame::PageProcessor < Scrapers::BasePageProcessor
     }
   end
 
-  def list_to_hash(lis)
-    Hash[lis.map{ |li| li.to_s.scan(/strong>([^<:]+):?<\/strong>([^<\r]+)/).flatten.map(&:strip) }.reject(&:empty?)]
+  def list_to_hash(ul)
+    Hash[
+      ul
+        .to_s
+        .scan(/strong>([^<]+)<\/strong>([^<]+)/)
+        .map{ |a| a.map{ |s| s.gsub(/^[:\s]+|[:\s]+$/, '') } }
+    ]
   end
 
   def system_requirements_keyification(hash)
     keys = {
-      processor: ['Processor'],
-      memory: ['Memory'],
-      video_card: ['Video Card', 'Graphics'],
-      disk_space: ['Hard Disk Space', 'Hard Drive']
+      processor: ['Processor', 'CPU'],
+      memory: ['Memory', 'RAM'],
+      video_card: ['Video Card', 'Graphics', 'Video'],
+      disk_space: ['Hard Disk Space', 'Hard Drive', 'HDD']
     }
 
     Hash[keys.map do |k, vals|
