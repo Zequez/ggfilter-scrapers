@@ -31,7 +31,7 @@ module Scrapers
     end
 
     def self.regexp(value = nil)
-      (@regexp = value if value) || @regexp || /(?!)/
+      (@regexp = value if value) || @regexp || /./
     end
   end
 end

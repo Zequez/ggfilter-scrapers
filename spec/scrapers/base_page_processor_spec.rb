@@ -15,8 +15,8 @@ describe Scrapers::BasePageProcessor, cassette: true do
   end
 
   describe '.regexp' do
-    it 'should return a nonmatching regex by default' do
-      expect(Scrapers::BasePageProcessor.regexp).to eq(/(?!)/)
+    it 'should return matching regex by default' do
+      expect(Scrapers::BasePageProcessor.regexp).to eq(/./)
     end
 
     it 'should save the regex when called with a value' do
@@ -24,7 +24,7 @@ describe Scrapers::BasePageProcessor, cassette: true do
         regexp %r{potato}
       end
       expect(ExtendedProcessor.regexp).to eq(/potato/)
-      expect(Scrapers::BasePageProcessor.regexp).to eq(/(?!)/)
+      expect(Scrapers::BasePageProcessor.regexp).to eq(/./)
     end
   end
 

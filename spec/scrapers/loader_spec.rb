@@ -8,8 +8,26 @@ describe Scrapers::Loader do
   end
 
   describe '#scrap', cassette: true do
+    describe 'non successful HTTP responses' do
+      it 'should follow redirections' do
+
+      end
+
+      it 'should ignore timeouts' do
+
+      end
+
+      it 'should ignore anything that is not successful' do
+
+      end
+    end
+
     it 'should raise a NoPageProcessorFoundError error if no processor was found for the page' do
-      scraper = s::Loader.new(s::BasePageProcessor, 'http://www.purple.com')
+      processor = Class.new(s::BasePageProcessor) do
+        regexp %r{rsarsarsa}
+      end
+
+      scraper = s::Loader.new(processor, 'http://www.purple.com')
       expect{scraper.scrap}.to raise_error s::NoPageProcessorFoundError
     end
 
@@ -62,8 +80,6 @@ describe Scrapers::Loader do
 
     it 'should yield the a scrap_request with the data as each page loads to a block given in scrap' do
       class Processor < s::BasePageProcessor
-        regexp %r{.}
-
         def process_page
           @@count ||= 0
           @@count += 1
@@ -110,8 +126,6 @@ describe Scrapers::Loader do
     it 'accept an input and a resource with the URL and pass it to the processor' do
       scrap_request = nil
       processor = Class.new(s::BasePageProcessor) do
-        regexp %r{.}
-
         define_method(:initialize) do |sr|
           scrap_request = sr
         end
@@ -135,12 +149,10 @@ describe Scrapers::Loader do
 
     it 'should pass wether the processor is procesing an initial URL or an additional' do
       mock_processor = Class.new(s::BasePageProcessor) do
-        regexp %r{.}
+
       end
 
       processor = Class.new(s::BasePageProcessor) do
-        regexp %r{.}
-
         define_method(:process_page) do
           add_to_queue 'http://www.purple.com'
         end
@@ -167,8 +179,6 @@ describe Scrapers::Loader do
 
     it 'should create an error file with an error if an error in the processor is raised' do
       processor = Class.new(s::BasePageProcessor) do
-        regexp %r{.}
-
         define_method(:process_page) do
           raise 'Potato'
         end
