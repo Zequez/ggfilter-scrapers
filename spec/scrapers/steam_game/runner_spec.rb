@@ -12,6 +12,8 @@ describe Scrapers::SteamGame::Runner, cassette: true do
     runner.run
     # Just basic checking
     expect(bioshock_infinite.metacritic).to eq 94
+    expect(bioshock_infinite.steam_game_scraped_at).to be_within(1.minute).of(Time.now)
     expect(dota_2.metacritic).to eq 90
+    expect(dota_2.steam_game_scraped_at).to be_within(1.minute).of(Time.now)
   end
 end

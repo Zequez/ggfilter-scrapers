@@ -28,9 +28,9 @@ class Scrapers::SteamReviews::Runner < Scrapers::BaseRunner
   private
 
   def data_process(data, game)
-    L data
     processor = Scrapers::SteamReviews::DataProcessor.new(data, game)
     game = processor.process
+    game.steam_reviews_scraped_at = Time.now
     game.save!
     log_game(game)
   end

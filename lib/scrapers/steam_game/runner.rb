@@ -28,6 +28,7 @@ class Scrapers::SteamGame::Runner < Scrapers::BaseRunner
   def data_process(data, game)
     processor = Scrapers::SteamGame::DataProcessor.new(data, game)
     game = processor.process
+    game.steam_game_scraped_at = Time.now
     game.save!
     log_game(game)
   end

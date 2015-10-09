@@ -31,6 +31,7 @@ describe Scrapers::SteamList::Runner, cassette: true, type: :steam_list do
       expect(game.steam_reviews_ratio).to eq 95
       expect(game.steam_thumbnail).to eq 'http://cdn.akamai.steamstatic.com/steam/apps/200510/capsule_sm_120.jpg?t=1413482568'
       expect(game.steam_id).to eq 200510
+      expect(game.steam_list_scraped_at).to be_within(1.minute).of(Time.now)
     end
   end
 
@@ -43,6 +44,7 @@ describe Scrapers::SteamList::Runner, cassette: true, type: :steam_list do
       game.reload
       expect(game.name).to eq 'XCOM: Enemy Unknown'
       expect(game.released_at).to be_within(1.day).of Time.parse('8 Oct, 2012')
+      expect(game.steam_list_scraped_at).to be_within(1.minute).of(Time.now)
     end
   end
 

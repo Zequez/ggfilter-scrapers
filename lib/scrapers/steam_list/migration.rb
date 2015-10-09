@@ -12,7 +12,8 @@ module Scrapers
             [:steam_reviews_ratio, :integer],
             [:steam_reviews_count, :integer],
             [:steam_thumbnail, :string],
-            [:released_at, :datetime]
+            [:released_at, :datetime],
+            [:steam_list_scraped_at, :datetime]
           ].each do |(column, type)|
             add_column @table_name, column, type
           end

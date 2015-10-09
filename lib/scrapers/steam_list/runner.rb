@@ -37,6 +37,7 @@ class Scrapers::SteamList::Runner < Scrapers::BaseRunner
     processor = Scrapers::SteamList::DataProcessor.new(data, game)
     game = processor.process
     was_new = game.new_record?
+    game.steam_list_scraped_at = Time.now
     game.save!
     log_game(game, was_new)
     @on_sale_ids.push(game.id) if game.steam_sale_price

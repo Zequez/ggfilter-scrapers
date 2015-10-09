@@ -21,7 +21,8 @@ module Scrapers
             [:controller_support, :integer],
             [:features, :integer],
             [:positive_steam_reviews_count, :integer],
-            [:negative_steam_reviews_count, :integer]
+            [:negative_steam_reviews_count, :integer],
+            [:steam_game_scraped_at, :datetime]
           ].each do |(column, type)|
             add_column @table_name, column, type
           end
