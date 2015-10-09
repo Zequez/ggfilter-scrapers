@@ -1,9 +1,14 @@
 describe Scrapers::BasePageProcessor, cassette: true do
-  it 'should initialize with an HTTP response and a code block' do
+  def new_scrap_request
     response = Typhoeus.get('http://www.purple.com')
+    scrap_request = Scrapers::ScrapRequest.new('http://purple.com', 'http://purple.com')
+    scrap_request.set_response response
+    scrap_request
+  end
 
+  it 'should initialize with an ScrapRequest and a code block' do
     expect{
-      Scrapers::BasePageProcessor.new(response) do |url|
+      Scrapers::BasePageProcessor.new(new_scrap_request) do |url|
 
       end
     }.to_not raise_error
@@ -30,12 +35,10 @@ describe Scrapers::BasePageProcessor, cassette: true do
       end
     end
 
-    response = Typhoeus.get('http://www.purple.com')
-
     block = lambda{ |url| }
     expect(block).to receive(:call).with('rsarsa')
 
-    processor = ExtendedProcessor.new(response, &block)
+    processor = ExtendedProcessor.new(new_scrap_request, &block)
     processor.process_page
   end
 end

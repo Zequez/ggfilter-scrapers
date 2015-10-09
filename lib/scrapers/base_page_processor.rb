@@ -14,11 +14,6 @@ module Scrapers
 
     attr_accessor :data
 
-    # def process_page_and_store(all_data)
-    #   @data = process_page
-    #   inject(all_data)
-    # end
-
     def process_page
       raise NotImplementedError.new('#process_page is an abstract method')
     end
