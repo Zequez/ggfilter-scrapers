@@ -6,9 +6,7 @@ class Scrapers::SteamReviews::Runner < Scrapers::BaseRunner
     }
   end
 
-  def run
-    Scrapers.logger.info 'SteamReviews scraper running'
-
+  def run!
     reviews_url = options[:reviews_url]
     games = options[:games]
 
@@ -36,10 +34,8 @@ class Scrapers::SteamReviews::Runner < Scrapers::BaseRunner
   end
 
   def log_game(game)
-    log_id = game.steam_id.to_s.ljust(10)
     positive = game.positive_steam_reviews.size
     negative = game.negative_steam_reviews.size
-    log_text = "#{log_id} #{game.name} Reviews: [#{positive}/#{negative}]"
-    Scrapers.logger.ln log_text
+    Scrapers.logger.ln "#{game_log_text(game)} Reviews: [#{positive}/#{negative}]"
   end
 end

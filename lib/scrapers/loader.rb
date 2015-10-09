@@ -56,7 +56,7 @@ module Scrapers
         add_to_queue scrap_request.subrequest!(url)
       end
 
-      Scrapers.logger.info "Parsing #{scrap_request.url}"
+      Scrapers.logger.info "Parsing #{scrap_request.url}".light_black
 
       scrap_request.set_output processor.process_page
       scrap_request.finished!

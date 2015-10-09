@@ -9,9 +9,7 @@ class Scrapers::SteamGame::Runner < Scrapers::BaseRunner
     }
   end
 
-  def run
-    Scrapers.logger.info 'SteamGame scraper running'
-
+  def run!
     game_url = options[:game_url]
     games = options[:games]
 
@@ -34,8 +32,6 @@ class Scrapers::SteamGame::Runner < Scrapers::BaseRunner
   end
 
   def log_game(game)
-    log_id = game.steam_id.to_s.ljust(10)
-    log_text = "#{log_id} #{game.name}"
-    Scrapers.logger.ln log_text
+    Scrapers.logger.ln game_log_text(game)
   end
 end

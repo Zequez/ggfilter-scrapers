@@ -13,10 +13,8 @@ class Scrapers::SteamList::Runner < Scrapers::BaseRunner
     }
   end
 
-  def run
-    Scrapers.logger.info "SteamList running for " + (sale? ? 'games on sale' : 'all games')
-    start_time = Time.now
-
+  def run!
+    Scrapers.logger.info "For " + (sale? ? 'games on sale' : 'all games')
 
     url = sale? ? options[:on_sale_url] : options[:all_games_url]
     @on_sale_ids = []
@@ -33,9 +31,6 @@ class Scrapers::SteamList::Runner < Scrapers::BaseRunner
       on_sale_count = @on_sale_ids.size
       Scrapers.logger.info "SteamList #{updated_count} items no longer on sale! #{on_sale_count} on sale!"
     end
-
-    elapsed_time = ((Time.now - start_time)/60).round(2)
-    Scrapers.logger.info "SteamList time elapsed: #{elapsed_time} minutes"
   end
 
   private
@@ -55,9 +50,7 @@ class Scrapers::SteamList::Runner < Scrapers::BaseRunner
   end
 
   def log_game(game, was_new)
-    log_id = game.steam_id.to_s.ljust(10)
-    log_text = "#{log_id} #{game.name}"
-    log_text = log_text.green if was_new
-    Scrapers.logger.ln log_text
+    log_text = game_log_text(game)
+    Scrapers.logger.ln was_new ? log_text.green : log_text
   end
 end
