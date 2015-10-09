@@ -43,7 +43,7 @@ module Scrapers
     end
 
     def store_error_page(scrap_request, exception = nil)
-      time = Time.now.to_i
+      time = Time.now.strftime('%Y-%m-%d')
       sanitized_url = scrap_request.url.gsub(/[\x00\/\\:\*\?\"<>\|]/, '_')
 
       file_name = "#{time}_#{sanitized_url}"
@@ -56,8 +56,8 @@ module Scrapers
       self.error "Stored error page and backtrace #{file_name}"
 
       if exception
-        backtrace = exception.backtrace.join("\n")
-        errors_only_file << backtrace + "\n"
+        backtrace = exception.backtrace.join("\n") + "\n\n"
+        errors_only_file << backtrace
         File.write("#{file_path}/#{file_name}.backtrace", backtrace)
       end
     end

@@ -207,8 +207,9 @@ describe Scrapers::Loader do
 
       scraper = s::Loader.new(processor, 'http://www.purple.com', nil, nil, continue_with_errors: true)
       expect(scraper.scrap).to eq nil
-      expect(File.exists? "#{Scrapers.app_root}/log/error_pages/#{Time.now.to_i}_http___www.purple.com.html").to eq true
-      expect(File.exists? "#{Scrapers.app_root}/log/error_pages/#{Time.now.to_i}_http___www.purple.com.backtrace").to eq true
+      time = Time.now.strftime('%Y-%m-%d')
+      expect(File.exists? "#{Scrapers.app_root}/log/error_pages/#{time}_http___www.purple.com.html").to eq true
+      expect(File.exists? "#{Scrapers.app_root}/log/error_pages/#{time}_http___www.purple.com.backtrace").to eq true
     end
   end
 end
