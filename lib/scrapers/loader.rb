@@ -57,7 +57,8 @@ module Scrapers
         add_to_queue scrap_request.subrequest!(url)
       end
 
-      Scrapers.logger.info "Parsing #{scrap_request.url}".light_black
+      load_time = scrap_request.response.total_time
+      Scrapers.logger.info "Parsing #{scrap_request.url} | Load time: #{load_time}".light_black
 
       begin
         output = processor.process_page
@@ -78,10 +79,15 @@ module Scrapers
     def add_to_queue(scrap_request)
       if scrap_request
         match_processor!(scrap_request.url)
-        request = Typhoeus::Request.new(scrap_request.url, headers: @options[:headers])
+        request = Typhoeus::Request.new(scrap_request.url, headers: @options[:headers], followlocation: true)
         request.on_complete do |response|
           scrap_request.set_response response
-          process_response scrap_request
+
+          if response.success?
+            process_response scrap_request
+          else
+            Scrapers.logger.error "Error loading page #{scrap_request.url} Error code: #{response.code}"
+          end
         end
         @hydra.queue request
       end

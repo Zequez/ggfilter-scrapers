@@ -10,7 +10,18 @@ describe Scrapers::Loader do
   describe '#scrap', cassette: true do
     describe 'non successful HTTP responses' do
       it 'should follow redirections' do
+        response = nil
+        processor = Class.new(s::BasePageProcessor) do
+          define_method :process_page do
+            response = @scrap_request.response
+          end
+        end
 
+        scraper = s::Loader.new(processor, 'http://goo.gl/F89MjN')
+        scraper.scrap
+
+        expect(response.code).to eq 200
+        expect(response.request.url).to_not eq 'http://www.purple.com'
       end
 
       it 'should ignore timeouts' do
@@ -18,7 +29,17 @@ describe Scrapers::Loader do
       end
 
       it 'should ignore anything that is not successful' do
+        response = nil
+        processor = Class.new(s::BasePageProcessor) do
+          define_method :process_page do
+            response = @scrap_request.response
+          end
+        end
 
+        scraper = s::Loader.new(processor, ['http://www.purple.com/404', 'http://nreisoanoeirnstioersnat.info'])
+        scraper.scrap
+
+        expect(response).to eq nil
       end
     end
 
@@ -88,7 +109,7 @@ describe Scrapers::Loader do
 
       scraper = s::Loader.new(
         Processor,
-        ['http://www.zombo.com', 'http://www.purple.com', 'http://www.purple.com/potato'],
+        ['http://www.zombo.com', 'http://www.purple.com', 'http://www.example.com'],
         [1234, 4321, 1111],
         [[1,2,3], [3,2,1], [1,1,1]]
       )
@@ -115,8 +136,8 @@ describe Scrapers::Loader do
       end
       expect(testYieldBlock).to receive(:call) do |scrap_request|
         expect(scrap_request.output).to eq 3
-        expect(scrap_request.url).to eq 'http://www.purple.com/potato'
-        expect(scrap_request.root_url).to eq 'http://www.purple.com/potato'
+        expect(scrap_request.url).to eq 'http://www.example.com'
+        expect(scrap_request.root_url).to eq 'http://www.example.com'
         expect(scrap_request.resource).to eq [1,1,1]
         expect(scrap_request.input).to eq 1111
       end
