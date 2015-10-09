@@ -88,4 +88,19 @@ describe Scrapers::SteamGame::DataProcessor do
     expect(game.controller_support).to eq :full
     expect(game.features).to match_array [:steam_achievements, :vr_support, :steam_cloud]
   end
+
+  it 'should work with non-standard languages' do
+    game = Game.create
+
+    data = {
+      audio_languages: ['Simplified Chinese', 'Traditional Chinese'],
+      subtitles_languages: [],
+      controller_support: []
+    }
+
+    processor = Scrapers::SteamGame::DataProcessor.new(data, game)
+    processor.process
+
+    expect(game.audio_languages).to eq ['zh-CN', 'zh-TW']
+  end
 end
