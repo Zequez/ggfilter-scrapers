@@ -15,7 +15,8 @@ module Scrapers
 
   def self.logger
     @logger ||= begin
-      logfile = File.open("#{ROOT}/log/scrapers.log", 'a')  # create log file
+      root = defined?(Rails) ? Rails.root : ROOT
+      logfile = File.open("#{root}/log/scrapers.log", 'a')  # create log file
       logfile.sync = true  # automatically flushes data to file
       CustomLogger.new(logfile)  # constant accessible anywhere
     end
