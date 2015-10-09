@@ -15,6 +15,8 @@ class Scrapers::SteamList::Runner < Scrapers::BaseRunner
 
   def run
     Scrapers.logger.info "SteamList running for " + (sale? ? 'games on sale' : 'all games')
+    start_time = Time.now
+
 
     url = sale? ? options[:on_sale_url] : options[:all_games_url]
     @on_sale_ids = []
@@ -27,8 +29,13 @@ class Scrapers::SteamList::Runner < Scrapers::BaseRunner
     end
 
     if sale?
-      Game.where.not(id: @on_sale_ids).update_all(steam_sale_price: nil)
+      updated_count = Game.where.not(id: @on_sale_ids).update_all(steam_sale_price: nil)
+      on_sale_count = @on_sale_ids.size
+      Scrapers.logger.info "SteamList #{updated_count} items no longer on sale! #{on_sale_count} on sale!"
     end
+
+    elapsed_time = ((Time.now - start_time)/60).round(2)
+    Scrapers.logger.info "SteamList time elapsed: #{elapsed_time} minutes"
   end
 
   private
