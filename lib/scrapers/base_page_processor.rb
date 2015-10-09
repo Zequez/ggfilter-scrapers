@@ -1,21 +1,23 @@
 module Scrapers
   class BasePageProcessor
-    def initialize(response, initial = true, url_data = {}, &add_to_queue)
-      @response = response
-      @request = response.request
-      @initial = initial
-      @url_data = url_data
-      @url = response.request.url
-      @doc = Nokogiri::HTML(response.body)
+    def initialize(scrap_request, &add_to_queue)
+      @scrap_request = scrap_request
+      @response      = scrap_request.response
+      @request       = scrap_request.request
+      @initial       = scrap_request.root_url
+      @input         = scrap_request.input
+      @url           = scrap_request.url
+
+      @doc = Nokogiri::HTML(@response.body)
       @add_to_queue = add_to_queue
     end
 
     attr_accessor :data
 
-    def process_page_and_store(all_data)
-      @data = process_page
-      inject(all_data)
-    end
+    # def process_page_and_store(all_data)
+    #   @data = process_page
+    #   inject(all_data)
+    # end
 
     def process_page
       raise NotImplementedError.new('#process_page is an abstract method')
@@ -29,8 +31,8 @@ module Scrapers
       @doc.search(matcher)
     end
 
-    def inject(data)
-      @data
+    def self.inject(all_data, data)
+      data
     end
 
     def self.regexp(value = nil)

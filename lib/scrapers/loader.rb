@@ -1,74 +1,77 @@
-require 'typhoeus'
-
 module Scrapers
   class Loader
     attr_reader :data
 
-    def initialize(initial_url, processor, headers = {})
-      if initial_url.kind_of? Hash
-        @initial_urls_data = initial_url
-        @initial_urls = initial_url.keys
-        @multi_urls = true
-      elsif initial_url.kind_of? Array
-        @initial_urls_data = {}
-        @initial_urls = initial_url
-        @multi_urls = true
-      else
-        @initial_urls_data = {}
-        @initial_urls = [initial_url]
-        @multi_urls = false
+    def initialize(processor, urls = [], inputs = [], resources = [], options = {})
+      @multi_urls = urls.kind_of? Array
+      urls      = @multi_urls ? urls : [urls]
+      inputs    = @multi_urls ? inputs : [inputs]
+      resources = @multi_urls ? resources : [resources]
+
+      raise ArgumentError.new('urls.size != inputs.size')     if inputs.size > 0    && urls.size != inputs.size
+      raise  ArgumentError.new('urls.size != resources.size') if resources.size > 0 && urls.size != resources.size
+
+      @urls_scrap_requests = {}
+      @scrap_requests = urls.each_with_index.map do |url, i|
+        @urls_scrap_requests[url] = RootScrapRequest.new(url, inputs[i], resources[i])
       end
 
-      @headers = headers
+      @options = {
+        headers: {}
+      }.merge(options)
+
       @processor = processor
       @hydra = Typhoeus::Hydra.hydra
-      @urls_queued = []
     end
 
-    def scrap(&block)
+    def scrap(yield_type = :group, &block)
+      raise 'Unknown yield type' unless [:group, :request, :request_array]
+
       @data = {}
       @yieldBlock = block
-      @initial_urls.each do |initial_url|
-        add_to_queue initial_url, initial_url
+      @scrap_requests.each do |scrap_request|
+        add_to_queue scrap_request
       end
       @hydra.run
+
+      @data = consolidated_output_hash
 
       @multi_urls ? @data : @data.values.first
     end
 
     private
 
-    def process_response(response, initial_url)
-      request_url = response.request.url
-      data_for_proc = @initial_urls_data[initial_url]
-      initial_request = (request_url == initial_url)
-      processor = @processor.new(response, initial_request, data_for_proc) do |url|
-        add_to_queue(url, initial_url)
+    def consolidated_output_hash
+      outputs = {}
+      inject = @processor.method(:inject)
+      @scrap_requests.map do |scrap_request|
+        outputs[scrap_request.url] = scrap_request.consolidated_output(&inject)
       end
-      Scrapers.logger.info "Parsing #{response.request.url}"
-
-      @data[initial_url] = processor.process_page_and_store @data[initial_url]
-      yield_page_data processor.data, initial_url, request_url
+      outputs
     end
 
-    def add_to_queue(url, initial_url)
-      unless @urls_queued.include? url
-        match_processor!(url)
-        request = Typhoeus::Request.new(url, headers: @headers)
+    def process_response(scrap_request)
+      processor = @processor.new(scrap_request) do |url|
+        add_to_queue scrap_request.subrequest!(url)
+      end
+
+      Scrapers.logger.info "Parsing #{scrap_request.url}"
+
+      scrap_request.set_output processor.process_page
+      scrap_request.finished!
+
+      @yieldBlock.call(scrap_request) if @yieldBlock
+    end
+
+    def add_to_queue(scrap_request)
+      if scrap_request
+        match_processor!(scrap_request.url)
+        request = Typhoeus::Request.new(scrap_request.url, headers: @options[:headers])
         request.on_complete do |response|
-          process_response response, initial_url
+          scrap_request.set_response response
+          process_response scrap_request
         end
-        @urls_queued << url
         @hydra.queue request
-      end
-    end
-
-    def yield_page_data(page_data, initial_url, url)
-      if @yieldBlock
-        page_data = [page_data] unless page_data.kind_of? Array
-        page_data.each do |data|
-          @yieldBlock.curry[data, initial_url, url]
-        end
       end
     end
 
