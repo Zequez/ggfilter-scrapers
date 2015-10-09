@@ -109,6 +109,7 @@ class Scrapers::SteamGame::PageProcessor < Scrapers::BasePageProcessor
     win = css('.sysreq_content[data-os="win"]')
     min = list_to_hash win.search('.game_area_sys_req_leftCol li, .game_area_sys_req_full li')
     req = list_to_hash win.search('.game_area_sys_req_rightCol li')
+
     {
       minimum: system_requirements_keyification(min),
       recommended: system_requirements_keyification(req)
@@ -116,7 +117,7 @@ class Scrapers::SteamGame::PageProcessor < Scrapers::BasePageProcessor
   end
 
   def list_to_hash(lis)
-    Hash[lis.map{ |li| li.to_s.scan(/strong>([^<:]+):?<\/strong>([^<\r]+)/).flatten.map(&:strip) }]
+    Hash[lis.map{ |li| li.to_s.scan(/strong>([^<:]+):?<\/strong>([^<\r]+)/).flatten.map(&:strip) }.reject(&:empty?)]
   end
 
   def system_requirements_keyification(hash)

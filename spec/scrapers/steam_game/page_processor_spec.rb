@@ -189,4 +189,23 @@ describe Scrapers::SteamGame::PageProcessor, cassette: true do
 
     its([:early_access]){ is_expected.to eq true }
   end
+
+  describe 'failing system requirements' do
+    game_cassette_subject(2710, 'act_of_war_direct_action')
+
+    its([:system_requirements]){ are_expected.to eq({
+      minimum: {
+        processor: 'Pentium 4 1.5 GHz or equivalent (3.0 GHz recommended)',
+        memory: '256 MB RAM (512 MB recommended)',
+        video_card: '64 MB Hardware T&amp;L-compatible video card (256 MB recommended)',
+        disk_space: '3 GB free HD space'
+      },
+      recommended: {
+        processor: nil,
+        memory: nil,
+        video_card: nil,
+        disk_space: nil
+      }
+    })}
+  end
 end
