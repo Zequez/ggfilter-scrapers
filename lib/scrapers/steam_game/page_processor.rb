@@ -12,7 +12,8 @@
 #  :images
 #  :summary
 #  :early_access
-#  :reviews_count
+#  :positive_steam_reviews_count
+#  :negative_steam_reviews_count
 #  :system_requirements
 #    :minimum
 #      :processor
@@ -63,8 +64,8 @@ class Scrapers::SteamGame::PageProcessor < Scrapers::BasePageProcessor
     game[:images] = css('.highlight_strip_screenshot img').map{ |i| i['src'].sub(/.\d+x\d+\.jpg/, '.jpg') }
     game[:summary] = css('.game_description_snippet').text.strip
     reviews_count = css('.user_reviews_count').map{ |c| Integer(c.text.gsub(/[(),]/, '')) }
-    game[:reviews_positive_count] = reviews_count[0] || 0
-    game[:reviews_negative_count] = reviews_count[1] || 0
+    game[:positive_steam_reviews_count] = reviews_count[0] || 0
+    game[:negative_steam_reviews_count] = reviews_count[1] || 0
 
     game[:players] = detect_features(
       1 => :multi_player,

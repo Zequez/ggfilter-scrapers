@@ -34,8 +34,8 @@ describe Scrapers::SteamGame::PageProcessor, cassette: true do
     its([:metacritic]){               is_expected.to eq 94 }
     its([:esrb_rating]){              is_expected.to eq :m }
     its([:early_access]){             is_expected.to eq false }
-    its([:reviews_positive_count]){   is_expected.to eq 41944 }
-    its([:reviews_negative_count]){   is_expected.to eq 2058 }
+    its([:positive_steam_reviews_count]){   is_expected.to eq 41944 }
+    its([:negative_steam_reviews_count]){   is_expected.to eq 2058 }
 
     its([:tags]){ are_expected.to eq([
       "FPS",
