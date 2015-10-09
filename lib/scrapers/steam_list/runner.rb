@@ -9,7 +9,8 @@ class Scrapers::SteamList::Runner < Scrapers::BaseRunner
     {
       on_sale: false,
       all_games_url: 'http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1',
-      on_sale_url: 'http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1&specials=1'
+      on_sale_url: 'http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1&specials=1',
+      continue_with_errors: false
     }
   end
 
@@ -18,7 +19,13 @@ class Scrapers::SteamList::Runner < Scrapers::BaseRunner
 
     url = sale? ? options[:on_sale_url] : options[:all_games_url]
     @on_sale_ids = []
-    @loader = Scrapers::Loader.new(Scrapers::SteamList::PageProcessor, url)
+    @loader = Scrapers::Loader.new(
+      Scrapers::SteamList::PageProcessor,
+      url,
+      nil,
+      nil,
+      continue_with_errors: options[:continue_with_errors]
+    )
     @loader.scrap do |scrap_request|
       scrap_request.output.each do |game_data|
         game = Game.find_by_steam_id(game_data[:id])

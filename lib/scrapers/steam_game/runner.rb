@@ -5,7 +5,8 @@ class Scrapers::SteamGame::Runner < Scrapers::BaseRunner
       games: [],
       headers: {
         'Cookie' => 'birthtime=724320001; fakeCC=US'
-      }
+      },
+      continue_with_errors: false
     }
   end
 
@@ -15,7 +16,14 @@ class Scrapers::SteamGame::Runner < Scrapers::BaseRunner
 
     urls = games.map{ |g| game_url % g.steam_id }
 
-    @loader = Scrapers::Loader.new(Scrapers::SteamGame::PageProcessor, urls, nil, games, headers: options[:headers])
+    @loader = Scrapers::Loader.new(
+      Scrapers::SteamGame::PageProcessor,
+      urls,
+      nil,
+      games,
+      continue_with_errors: options[:continue_with_errors],
+      headers: options[:headers]
+    )
     @loader.scrap do |scrap_request|
       data_process scrap_request.output, scrap_request.resource
     end

@@ -14,7 +14,8 @@ describe Scrapers::SteamList::Runner, cassette: true, type: :steam_list do
     expect(runner.options).to eq({
       all_games_url: 'potato',
       on_sale_url: 'salad',
-      on_sale: false
+      on_sale: false,
+      continue_with_errors: false
     })
   end
 
