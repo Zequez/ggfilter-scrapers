@@ -3,6 +3,8 @@ module Scrapers
     attr_reader :data
 
     def initialize(processor, urls = [], inputs = nil, resources = nil, options = {})
+      @processor = processor
+
       @multi_urls = urls.kind_of? Array
       urls_array      = @multi_urls ? urls : [urls]
       inputs_array    = inputs    ? (@multi_urls ? inputs : [inputs])       : []
@@ -11,16 +13,15 @@ module Scrapers
       raise ArgumentError.new('urls.size != inputs.size')     if inputs && urls_array.size != inputs_array.size
       raise  ArgumentError.new('urls.size != resources.size') if resources && urls_array.size != resources_array.size
 
-      @urls_scrap_requests = {}
+      injector = @processor.method(:inject)
       @scrap_requests = urls_array.each_with_index.map do |url, i|
-        @urls_scrap_requests[url] = RootScrapRequest.new(url, inputs_array[i], resources_array[i])
+        RootScrapRequest.new(url, inputs_array[i], resources_array[i], injector)
       end
 
       @options = {
         headers: {}
       }.merge(options)
 
-      @processor = processor
       @hydra = Typhoeus::Hydra.hydra
     end
 

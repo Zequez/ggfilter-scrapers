@@ -4,7 +4,7 @@ module Scrapers
       @scrap_request = scrap_request
       @response      = scrap_request.response
       @request       = scrap_request.request
-      @initial       = scrap_request.root_url
+      @root_url      = scrap_request.root_url
       @input         = scrap_request.input
       @url           = scrap_request.url
 

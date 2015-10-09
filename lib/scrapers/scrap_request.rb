@@ -44,9 +44,10 @@ module Scrapers
   class RootScrapRequest < ScrapRequest
     attr_reader :requests, :subrequests
 
-    def initialize(url, input, resource)
+    def initialize(url, input, resource, injector)
       super(url, url, input, resource, self)
 
+      @injector = injector
       @consolidated_output = nil
       @requests = [self]
       @subrequests = []
@@ -60,8 +61,8 @@ module Scrapers
       @requests.any?{ |r| r.url == url }
     end
 
-    def consolidated_output(&block)
-      @consolidated_output ||= @requests.map(&:output).inject(nil, &block)
+    def consolidated_output
+      @requests.map(&:output).inject(nil, &@injector)
     end
 
     def add_subrequest(scrap_request)

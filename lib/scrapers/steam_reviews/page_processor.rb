@@ -1,3 +1,5 @@
+# Input
+# reviews_count: Integer
 # Output
 # Object of:
 #   positive: [
@@ -12,10 +14,10 @@ class Scrapers::SteamReviews::PageProcessor < Scrapers::BasePageProcessor
 
   MAX_PAGES = 100
 
-  def inject(all_data)
+  def self.inject(all_data, data)
     all_data ||= { positive: [], negative: [] }
-    all_data[:positive] += @data[:positive]
-    all_data[:negative] += @data[:negative]
+    all_data[:positive] += data[:positive]
+    all_data[:negative] += data[:negative]
     all_data
   end
 
@@ -34,8 +36,8 @@ class Scrapers::SteamReviews::PageProcessor < Scrapers::BasePageProcessor
       data[type].push hours
     end
 
-    if @initial and @url_data[:reviews_count]
-      pages = @url_data[:reviews_count]/10 + 1
+    if @root_url and @input[:reviews_count]
+      pages = @input[:reviews_count]/10 + 1
       pages = pages > MAX_PAGES ? MAX_PAGES : pages
       (2..pages).each do |page|
         add_to_queue generate_url(page)
