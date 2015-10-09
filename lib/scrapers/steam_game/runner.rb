@@ -16,11 +16,10 @@ class Scrapers::SteamGame::Runner < Scrapers::BaseRunner
     games = options[:games]
 
     urls = games.map{ |g| game_url % g.steam_id }
-    urls_games = Hash[urls.zip(games)]
 
-    @loader = Scrapers::Loader.new(urls, Scrapers::SteamGame::PageProcessor, options[:headers])
-    @loader.scrap do |data, url|
-      data_process data, urls_games[url]
+    @loader = Scrapers::Loader.new(Scrapers::SteamGame::PageProcessor, urls, nil, games, headers: options[:headers])
+    @loader.scrap do |scrap_request|
+      data_process scrap_request.output, scrap_request.resource
     end
   end
 

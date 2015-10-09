@@ -2,18 +2,18 @@ module Scrapers
   class Loader
     attr_reader :data
 
-    def initialize(processor, urls = [], inputs = [], resources = [], options = {})
+    def initialize(processor, urls = [], inputs = nil, resources = nil, options = {})
       @multi_urls = urls.kind_of? Array
-      urls      = @multi_urls ? urls : [urls]
-      inputs    = @multi_urls ? inputs : [inputs]
-      resources = @multi_urls ? resources : [resources]
+      urls_array      = @multi_urls ? urls : [urls]
+      inputs_array    = inputs    ? (@multi_urls ? inputs : [inputs])       : []
+      resources_array = resources ? (@multi_urls ? resources : [resources]) : []
 
-      raise ArgumentError.new('urls.size != inputs.size')     if inputs.size > 0    && urls.size != inputs.size
-      raise  ArgumentError.new('urls.size != resources.size') if resources.size > 0 && urls.size != resources.size
+      raise ArgumentError.new('urls.size != inputs.size')     if inputs && urls_array.size != inputs_array.size
+      raise  ArgumentError.new('urls.size != resources.size') if resources && urls_array.size != resources_array.size
 
       @urls_scrap_requests = {}
-      @scrap_requests = urls.each_with_index.map do |url, i|
-        @urls_scrap_requests[url] = RootScrapRequest.new(url, inputs[i], resources[i])
+      @scrap_requests = urls_array.each_with_index.map do |url, i|
+        @urls_scrap_requests[url] = RootScrapRequest.new(url, inputs_array[i], resources_array[i])
       end
 
       @options = {
