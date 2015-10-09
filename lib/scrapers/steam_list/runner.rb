@@ -18,9 +18,12 @@ class Scrapers::SteamList::Runner < Scrapers::BaseRunner
 
     url = sale? ? options[:on_sale_url] : options[:all_games_url]
     @on_sale_ids = []
-    @loader = Scrapers::Loader.new(url, Scrapers::SteamList::PageProcessor)
-    @loader.scrap do |data|
-      data_process(data, Game.find_by_steam_id(data[:id]))
+    @loader = Scrapers::Loader.new(Scrapers::SteamList::PageProcessor, url)
+    @loader.scrap do |scrap_request|
+      scrap_request.output.each do |game_data|
+        game = Game.find_by_steam_id(game_data[:id])
+        data_process(game_data, game)
+      end
     end
 
     if sale?
