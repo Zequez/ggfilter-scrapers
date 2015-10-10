@@ -39,14 +39,19 @@ class Scrapers::SteamReviews::PageProcessor < Scrapers::BasePageProcessor
     end
 
     if cards.size == 10
-      add_to_queue generate_url(current_page + 1)
+      if current_page == 1
+        add_to_queue generate_url(current_page + 1)
+        add_to_queue generate_url(current_page + 2)
+      end
+
+      add_to_queue generate_url(current_page + 3)
     end
 
     data
   end
 
   def current_page
-    Integer(@url.scan(/p=(\d+)/).flatten.first)
+    @current_page ||= Integer(@url.scan(/p=(\d+)/).flatten.first)
   end
 
   def generate_url(page)

@@ -1477,4 +1477,96 @@ http_interactions:
         name=\"forceanon\" value=\"1\">\t\t\t</form>\r\n\t\t\t"
     http_version: 
   recorded_at: Sun, 04 Oct 2015 10:25:12 GMT
+- request:
+    method: get
+    uri: http://steamcommunity.com/app/319470/homecontent/?allguidepage=2&appHubSubSection=10&artpage=2&browsefilter=toprated&discussionspage=2&filterLanguage=default&integratedguidepage=2&itemspage=2&l=english&p=5&screenshotspage=2&searchText=&userreviewsoffset=40&videospage=2&webguidepage=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Content-Security-Policy:
+      - script-src 'self' 'unsafe-inline' 'unsafe-eval' http://steamcommunity-a.akamaihd.net/
+        https://api.steampowered.com/ http://www.google-analytics.com https://ssl.google-analytics.com
+        https://www.google.com https://www.gstatic.com https://apis.google.com; object-src
+        'none'; connect-src 'self' http://steamcommunity.com https://steamcommunity.com
+        https://api.steampowered.com/; frame-src 'self' http://store.steampowered.com/
+        https://store.steampowered.com/ http://www.youtube.com https://www.youtube.com
+        https://www.google.com;
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private,max-age=60
+      Content-Type:
+      - text/html; charset=UTF-8
+      X-Varnish:
+      - '1835333286'
+      Date:
+      - Sat, 10 Oct 2015 21:29:52 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - sessionid=73215fafe569a9dcea05593a; path=/
+      - steamCountry=AR%7C545bf212b4bde1c6422b82b5b6ecff54; path=/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 10 Oct 2015 21:29:52 GMT
+- request:
+    method: get
+    uri: http://steamcommunity.com/app/319470/homecontent/?allguidepage=2&appHubSubSection=10&artpage=2&browsefilter=toprated&discussionspage=2&filterLanguage=default&integratedguidepage=2&itemspage=2&l=english&p=6&screenshotspage=2&searchText=&userreviewsoffset=50&videospage=2&webguidepage=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Content-Security-Policy:
+      - script-src 'self' 'unsafe-inline' 'unsafe-eval' http://steamcommunity-a.akamaihd.net/
+        https://api.steampowered.com/ http://www.google-analytics.com https://ssl.google-analytics.com
+        https://www.google.com https://www.gstatic.com https://apis.google.com; object-src
+        'none'; connect-src 'self' http://steamcommunity.com https://steamcommunity.com
+        https://api.steampowered.com/; frame-src 'self' http://store.steampowered.com/
+        https://store.steampowered.com/ http://www.youtube.com https://www.youtube.com
+        https://www.google.com;
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private,max-age=60
+      Content-Type:
+      - text/html; charset=UTF-8
+      X-Varnish:
+      - '605132379'
+      Date:
+      - Sat, 10 Oct 2015 21:29:52 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - sessionid=94dceb00cf98235e6172f2d9; path=/
+      - steamCountry=AR%7C545bf212b4bde1c6422b82b5b6ecff54; path=/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 10 Oct 2015 21:29:52 GMT
 recorded_with: VCR 2.9.3
