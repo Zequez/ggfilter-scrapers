@@ -14,6 +14,8 @@ class Scrapers::SteamGame::Runner < Scrapers::BaseRunner
     game_url = options[:game_url]
     games = options[:games]
 
+    Scrapers.logger.info "#{games.size} to scrap!"
+
     urls = games.map{ |g| game_url % g.steam_id }
 
     @loader = Scrapers::Loader.new(
