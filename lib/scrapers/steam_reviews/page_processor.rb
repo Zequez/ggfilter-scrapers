@@ -27,7 +27,9 @@ class Scrapers::SteamReviews::PageProcessor < Scrapers::BasePageProcessor
       negative: []
     }
 
-    css('.apphub_Card').each do |card|
+    cards = css('.apphub_Card')
+
+    cards.each do |card|
       next unless card.at_css('.UserReviewCardContent_FlaggedByDeveloper').nil?
       next unless hours_e = card.at_css('.hours')
       next unless hours_m = hours_e.content.match(/^[0-9]+(\.[0-9]+)?/)
@@ -36,15 +38,15 @@ class Scrapers::SteamReviews::PageProcessor < Scrapers::BasePageProcessor
       data[type].push hours
     end
 
-    if @root_url and @input[:reviews_count]
-      pages = @input[:reviews_count]/10 + 1
-      pages = pages > MAX_PAGES ? MAX_PAGES : pages
-      (2..pages).each do |page|
-        add_to_queue generate_url(page)
-      end
+    if cards.size == 10
+      add_to_queue generate_url(current_page + 1)
     end
 
     data
+  end
+
+  def current_page
+    Integer(@url.scan(/p=(\d+)/).flatten.first)
   end
 
   def generate_url(page)

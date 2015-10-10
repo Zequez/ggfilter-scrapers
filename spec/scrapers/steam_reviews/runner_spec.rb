@@ -6,8 +6,8 @@ describe Scrapers::SteamReviews::Runner, cassette: true do
   )
 
   it 'should scrap all the games given' do
-    ninja = Game.create steam_id: 319470, steam_reviews_count: 40 # Ninja Pizza Girl
-    orion = Game.create steam_id: 381010, steam_reviews_count: 6 # Orion: A Sci-Fi Visual Novel
+    ninja = Game.create steam_id: 319470 # Ninja Pizza Girl
+    orion = Game.create steam_id: 381010 # Orion: A Sci-Fi Visual Novel
 
     runner = Scrapers::SteamReviews::Runner.new(games: [ninja, orion])
     runner.run

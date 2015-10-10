@@ -1,16 +1,16 @@
 describe Scrapers::SteamReviews::PageProcessor, cassette: true do
   def processor_class; Scrapers::SteamReviews::PageProcessor end
 
-  def steam_reviews_url(app_id, index = 0)
+  def steam_reviews_url(app_id, index = 0, language = 'default', filter = 'toprated')
     offset = index * 10
     page = index + 1
-    "http://steamcommunity.com/app/#{app_id}/homecontent/?l=english&userreviewsoffset=#{offset}&p=#{page}&itemspage=2&screenshotspage=2&videospage=2&artpage=2&allguidepage=2&webguidepage=2&integratedguidepage=2&discussionspage=2&appHubSubSection=10&browsefilter=toprated&filterLanguage=default&searchText="
+    "http://steamcommunity.com/app/#{app_id}/homecontent/?l=english&userreviewsoffset=#{offset}&p=#{page}&itemspage=2&screenshotspage=2&videospage=2&artpage=2&allguidepage=2&webguidepage=2&integratedguidepage=2&discussionspage=2&appHubSubSection=10&browsefilter=#{filter}&filterLanguage=#{language}&searchText="
   end
 
-  def self.game_cassette_subject(app_id, name, data = {})
+  def self.game_cassette_subject(app_id, name)
     before_all_cassette(name) do
       url = steam_reviews_url(app_id)
-      loader = Scrapers::Loader.new(processor_class, url, data)
+      loader = Scrapers::Loader.new(processor_class, url)
       @result = loader.scrap
     end
     subject{ @result }
@@ -36,7 +36,7 @@ describe Scrapers::SteamReviews::PageProcessor, cassette: true do
   end
 
   describe 'loading a game with multiple pages of reviews' do
-    game_cassette_subject 319470, 'ninja_pizza_girl', reviews_count: 34
+    game_cassette_subject 319470, 'ninja_pizza_girl'
 
     its([:positive]){ is_expected.to match_array [2.4,4.2,2,3.7,2.9,2.2,4,1.1,1.3,2.6,0.5,0.5,10.6,0.4,1.2,2.4,2.2,2.5,2,0.8,0.1,1.5,2.4,5.9,6.7,1.2,4.2,1,0.8,2.6,1,2.7,2.4,9.7] }
     its([:negative]){ is_expected.to match_array [1.7] }

@@ -12,12 +12,11 @@ class Scrapers::SteamReviews::Runner < Scrapers::BaseRunner
     games = options[:games]
 
     urls = games.map{ |g| reviews_url % g.steam_id }
-    inputs = games.map{ |g| { reviews_count: g.steam_reviews_count } }
 
     @loader = Scrapers::Loader.new(
       Scrapers::SteamReviews::PageProcessor,
       urls,
-      inputs,
+      nil,
       games,
       continue_with_errors: options[:continue_with_errors]
     )
