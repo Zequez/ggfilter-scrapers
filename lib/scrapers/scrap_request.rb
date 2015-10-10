@@ -66,12 +66,16 @@ module Scrapers
       @requests.all?(&:finished?)
     end
 
+    def any_error?
+      @requests.any?(&:error?)
+    end
+
     def was_url_requested?(url)
       @requests.any?{ |r| r.url == url }
     end
 
     def consolidated_output
-      @requests.map(&:output).inject(nil, &@injector)
+      @requests.reject(&:error?).map(&:output).inject(nil, &@injector)
     end
 
     def add_subrequest(scrap_request)

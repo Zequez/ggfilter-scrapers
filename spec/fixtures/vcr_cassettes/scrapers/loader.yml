@@ -377,4 +377,65 @@ http_interactions:
       base64_string: ''
     http_version: 
   recorded_at: Fri, 09 Oct 2015 21:36:25 GMT
+- request:
+    method: get
+    uri: http://purple.com/
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 10 Oct 2015 23:13:20 GMT
+      Server:
+      - Chaos
+      Last-Modified:
+      - Sat, 10 Oct 2015 05:01:01 GMT
+      Etag:
+      - '"4c1-521b8fb89a87a"'
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '1217'
+      Content-Type:
+      - text/html
+    body:
+      encoding: UTF-8
+      base64_string: |
+        PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEg
+        VHJhbnNpdGlvbmFsLy9FTiI+CjxIVE1MPgo8SEVBRD4KPG1ldGEgaHR0cC1l
+        cXVpdj0iQ29udGVudC10eXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7Y2hhcnNl
+        dD1VVEYtOCI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CmJvZHkgeyBiYWNr
+        Z3JvdW5kLWNvbG9yOiAjN0QyNkNEOyB9CmF7IGNvbG9yOiNBQUFBMDA7IHRl
+        eHQtZGVjb3JhdGlvbjogbm9uZTsgcGFkZGluZzogNHB4OyB9CmE6bGluayB7
+        IGNvbG9yOiNBQUFBMDA7IH0KYTp2aXNpdGVkIHsgY29sb3I6Izk5OTkwMDsg
+        fQphOmhvdmVyIHsgY29sb3I6IzY2MDAwMDsgYmFja2dyb3VuZDogIzlENDZE
+        RDsgfQphOmFjdGl2ZSB7IGNvbG9yOiM2NjY2MDA7IH0KPC9zdHlsZT4KPGxp
+        bmsgcmVsPSJzdHlsZXNoZWV0IiB0eXBlPSJ0ZXh0L2NzcyIgaHJlZj0iaW5k
+        ZXguY3NzIj4KPE1FVEEgSFRUUC1FUVVJVj0iUmVmcmVzaCIgQ09OVEVOVD0i
+        MzsgVVJMPXB1cnBsZS5odG1sIj4KPFRJVExFPnd3dy5wdXJwbGUuY29tPC9U
+        SVRMRT4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgoKICB2YXIg
+        X2dhcSA9IF9nYXEgfHwgW107CiAgX2dhcS5wdXNoKFsnX3NldEFjY291bnQn
+        LCAnVUEtMjczMTgwMjItMSddKTsKICBfZ2FxLnB1c2goWydfc2V0RG9tYWlu
+        TmFtZScsICdwdXJwbGUuY29tJ10pOwogIF9nYXEucHVzaChbJ190cmFja1Bh
+        Z2V2aWV3J10pOwoKICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgZ2EgPSBkb2N1
+        bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsgZ2EudHlwZSA9ICd0ZXh0
+        L2phdmFzY3JpcHQnOyBnYS5hc3luYyA9IHRydWU7CiAgICBnYS5zcmMgPSAo
+        J2h0dHBzOicgPT0gZG9jdW1lbnQubG9jYXRpb24ucHJvdG9jb2wgPyAnaHR0
+        cHM6Ly9zc2wnIDogJ2h0dHA6Ly93d3cnKSArICcuZ29vZ2xlLWFuYWx5dGlj
+        cy5jb20vZ2EuanMnOwogICAgdmFyIHMgPSBkb2N1bWVudC5nZXRFbGVtZW50
+        c0J5VGFnTmFtZSgnc2NyaXB0JylbMF07IHMucGFyZW50Tm9kZS5pbnNlcnRC
+        ZWZvcmUoZ2EsIHMpOwogIH0pKCk7Cgo8L3NjcmlwdD4KPC9IRUFEPgoKPHVs
+        PgogIDxsaT4gPGEgaHJlZj0iZmFxLmh0bWwiPkZBUTwvYT48L2xpPgogIDxs
+        aT4mbmJzcDs8L2xpPgogIDxsaT4gPGEgaHJlZj0iYWR2ZXJ0aXNlLmh0bWwi
+        PllvdXIgYWQgaGVyZTwvYT48L2xpPgo8L3VsPgoKCjwvQk9EWT4KPC9IVE1M
+        Pgo=
+    http_version: 
+  recorded_at: Sat, 10 Oct 2015 23:13:20 GMT
 recorded_with: VCR 2.9.3

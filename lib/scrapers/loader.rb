@@ -26,11 +26,13 @@ module Scrapers
       @hydra = Typhoeus::Hydra.hydra
     end
 
-    def scrap(&block)
-      raise 'Unknown yield type' unless [:group, :request, :request_array]
+    def scrap(yield_type: :request, yield_with_errors: false, &block)
+      raise 'Unknown yield type' unless [:group, :request]
 
       @data = {}
-      @yieldBlock = block
+      @yield_block = block
+      @yield_type = yield_type
+      @yield_with_errors = yield_with_errors
       @scrap_requests.each do |scrap_request|
         add_to_queue scrap_request
       end
@@ -53,26 +55,48 @@ module Scrapers
     end
 
     def process_response(scrap_request)
-      processor = @processor.new(scrap_request) do |url|
-        add_to_queue scrap_request.subrequest!(url)
+      if scrap_request.error?
+        Scrapers.logger.error "Error loading page #{scrap_request.url} Error code: #{scrap_request.response.code}"
+      else
+        processor = create_processor(scrap_request)
+
+        load_time = scrap_request.response.total_time
+        Scrapers.logger.info "Parsing #{scrap_request.url} | Load time: #{load_time}".light_black
+
+        begin
+          output = processor.process_page
+        rescue StandardError => e
+          scrap_request.error!
+          Scrapers.logger.error "Error parsing #{scrap_request.url}"
+          Scrapers.logger.store_error_page scrap_request, e
+          raise e unless @options[:continue_with_errors]
+        else
+          scrap_request.set_output output
+        end
       end
 
-      load_time = scrap_request.response.total_time
-      Scrapers.logger.info "Parsing #{scrap_request.url} | Load time: #{load_time}".light_black
+      yield_scrap_request scrap_request
+    end
 
-      begin
-        output = processor.process_page
-      rescue StandardError => e
-        scrap_request.error!
-        scrap_request.finished!
-        Scrapers.logger.error "Error parsing #{scrap_request.url}"
-        Scrapers.logger.store_error_page scrap_request, e
-        raise e unless @options[:continue_with_errors]
-      else
-        scrap_request.set_output output
-        scrap_request.finished!
+    def create_processor(scrap_request)
+      @processor.new(scrap_request) do |url|
+        add_to_queue scrap_request.subrequest!(url)
+      end
+    end
 
-        @yieldBlock.call(scrap_request) if @yieldBlock
+    def yield_scrap_request(scrap_request)
+      if @yield_block
+        if @yield_type == :group
+          if scrap_request.root.all_finished?
+            if @yield_with_errors or not scrap_request.root.any_error?
+              @yield_block.call(scrap_request.root)
+            end
+          end
+        else
+          if @yield_with_errors or not scrap_request.error?
+            @yield_block.call(scrap_request)
+          end
+        end
       end
     end
 
@@ -82,12 +106,9 @@ module Scrapers
         request = Typhoeus::Request.new(scrap_request.url, headers: @options[:headers], followlocation: true)
         request.on_complete do |response|
           scrap_request.set_response response
-
-          if response.success?
-            process_response scrap_request
-          else
-            Scrapers.logger.error "Error loading page #{scrap_request.url} Error code: #{response.code}"
-          end
+          scrap_request.finished!
+          scrap_request.error! if not response.success?
+          process_response scrap_request
         end
         @hydra.queue request
       end

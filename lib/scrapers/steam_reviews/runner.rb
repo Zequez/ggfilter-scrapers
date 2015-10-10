@@ -11,6 +11,8 @@ class Scrapers::SteamReviews::Runner < Scrapers::BaseRunner
     reviews_url = options[:reviews_url]
     games = options[:games]
 
+    Scrapers.logger.info "#{games.size} to scrap!"
+
     urls = games.map{ |g| reviews_url % g.steam_id }
 
     @loader = Scrapers::Loader.new(
@@ -20,12 +22,10 @@ class Scrapers::SteamReviews::Runner < Scrapers::BaseRunner
       games,
       continue_with_errors: options[:continue_with_errors]
     )
-    @loader.scrap do |scrap_request|
-      if scrap_request.root.all_finished?
-        game = scrap_request.resource
-        data = scrap_request.root.consolidated_output
-        data_process(data, game)
-      end
+    @loader.scrap(yield_type: :group) do |scrap_request|
+      game = scrap_request.resource
+      data = scrap_request.consolidated_output
+      data_process(data, game)
     end
   end
 
