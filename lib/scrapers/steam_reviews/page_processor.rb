@@ -38,7 +38,7 @@ class Scrapers::SteamReviews::PageProcessor < Scrapers::BasePageProcessor
       data[type].push hours
     end
 
-    if cards.size == 10
+    if cards.size == 10 and current_page < MAX_PAGES
       if current_page == 1
         add_to_queue generate_url(current_page + 1)
         add_to_queue generate_url(current_page + 2)
