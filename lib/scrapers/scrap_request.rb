@@ -29,6 +29,12 @@ module Scrapers
       @response = nil
     end
 
+    def destroy
+      @root = nil
+      @requests = []
+      @subrequests = []
+    end
+
     def root?
       @is_root ||= @root == self
     end

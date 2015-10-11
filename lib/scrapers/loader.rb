@@ -26,13 +26,14 @@ module Scrapers
       @hydra = Typhoeus::Hydra.hydra
     end
 
-    def scrap(yield_type: :request, yield_with_errors: false, &block)
+    def scrap(yield_type: :request, yield_with_errors: false, collect: nil, &block)
       raise 'Unknown yield type' unless [:group, :request]
 
       @data = {}
       @yield_block = block
       @yield_type = yield_type
       @yield_with_errors = yield_with_errors
+      @yield_collect = collect.nil? ? !block_given? : collect
       @scrap_requests.each do |scrap_request|
         add_to_queue scrap_request
       end
@@ -40,7 +41,9 @@ module Scrapers
 
       @data = consolidated_output_hash
 
-      @multi_urls ? @data : @data.values.first
+      if @yield_collect
+        @multi_urls ? @data : @data.values.first
+      end
     end
 
     private
@@ -75,7 +78,9 @@ module Scrapers
         end
       end
 
-      yield_scrap_request scrap_request
+      if yield_scrap_request(scrap_request)
+        destroy_scrap_request(scrap_request) unless @yield_collect
+      end
     end
 
     def create_processor(scrap_request)
@@ -90,14 +95,23 @@ module Scrapers
           if scrap_request.root.all_finished?
             if @yield_with_errors or not scrap_request.root.any_error?
               @yield_block.call(scrap_request.root)
+              return true
             end
           end
         else
           if @yield_with_errors or not scrap_request.error?
             @yield_block.call(scrap_request)
+            return true
           end
         end
       end
+      false
+    end
+
+    # This allows less memory usage
+    def destroy_scrap_request(scrap_request)
+      scrap_request.destroy
+      @scrap_requests.delete(scrap_request)
     end
 
     def add_to_queue(scrap_request, front: false)

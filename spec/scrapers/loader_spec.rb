@@ -91,7 +91,7 @@ describe Scrapers::Loader do
           end
         end
         expect(yield_block).to receive(:call, &expectations).exactly(3).times
-        scraper.scrap(yield_with_errors: true, &yield_block)
+        scraper.scrap(yield_with_errors: true, collect: true, &yield_block)
       end
     end
 
