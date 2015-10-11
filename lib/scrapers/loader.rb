@@ -80,7 +80,7 @@ module Scrapers
 
     def create_processor(scrap_request)
       @processor.new(scrap_request) do |url|
-        add_to_queue scrap_request.subrequest!(url)
+        add_to_queue scrap_request.subrequest!(url), front: true
       end
     end
 
@@ -100,7 +100,7 @@ module Scrapers
       end
     end
 
-    def add_to_queue(scrap_request)
+    def add_to_queue(scrap_request, front: false)
       if scrap_request
         match_processor!(scrap_request.url)
         request = Typhoeus::Request.new(scrap_request.url, headers: @options[:headers], followlocation: true)
@@ -110,7 +110,7 @@ module Scrapers
           scrap_request.error! if not response.success?
           process_response scrap_request
         end
-        @hydra.queue request
+        front ? @hydra.queue_front(request) : @hydra.queue(request)
       end
     end
 
