@@ -24,6 +24,11 @@ module Scrapers
       @response = value
     end
 
+    def clear_response
+      @request = nil
+      @response = nil
+    end
+
     def root?
       @is_root ||= @root == self
     end

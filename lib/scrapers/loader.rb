@@ -109,6 +109,7 @@ module Scrapers
           scrap_request.finished!
           scrap_request.error! if not response.success?
           process_response scrap_request
+          scrap_request.clear_response
         end
         front ? @hydra.queue_front(request) : @hydra.queue(request)
       end
