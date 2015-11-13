@@ -11,6 +11,10 @@ class Scrapers::SteamGame::DataProcessor
     @data[:audio_languages] = convert_languages(@data[:audio_languages])
     @data[:subtitles_languages] = convert_languages(@data[:subtitles_languages])
     @data[:controller_support] = @data[:controller_support] && @data[:controller_support].first || :no
+    @data[:vr] = []
+    if @data[:features]
+      @data[:vr] << :vive if @data[:features].include? :vr_support
+    end
     @game.assign_attributes(@data)
     @game
   end

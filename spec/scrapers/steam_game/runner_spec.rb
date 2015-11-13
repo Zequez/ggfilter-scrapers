@@ -2,7 +2,7 @@ describe Scrapers::SteamGame::Runner, cassette: true do
   with_model_extended(
     :Game,
     [Scrapers::SteamList::GameExtension, Scrapers::SteamGame::GameExtension],
-    [Scrapers::SteamList::Migration::M1, Scrapers::SteamGame::Migration::M1]
+    [Scrapers::SteamList::Migration::M1, Scrapers::SteamGame::Migration::M1, Scrapers::SteamGame::Migration::M2]
   )
 
   it 'should scrap all the games given' do

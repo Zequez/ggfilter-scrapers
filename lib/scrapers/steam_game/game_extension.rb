@@ -26,10 +26,16 @@ module Scrapers::SteamGame::GameExtension
     flag_column :features, {
       steam_achievements:  0b000001,
       steam_trading_cards: 0b000010,
-      vr_support:          0b000100,
+      # vr_support:          0b000100,
       steam_workshop:      0b001000,
       steam_cloud:         0b010000,
       valve_anti_cheat:    0b100000
+    }
+
+    flag_column :vr, {
+      vive:   0b001,
+      oculus: 0b010,
+      open:   0b100
     }
 
     serialize :tags

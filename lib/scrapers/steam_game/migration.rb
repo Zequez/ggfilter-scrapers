@@ -28,6 +28,12 @@ module Scrapers
           end
         end
       end
+
+      class M2 < BaseMigration
+        def change
+          add_column @table_name, :vr, :integer, default: 0, null: false
+        end
+      end
     end
   end
 end

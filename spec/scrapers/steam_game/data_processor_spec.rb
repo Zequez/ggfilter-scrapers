@@ -2,7 +2,7 @@ describe Scrapers::SteamGame::DataProcessor do
   with_model_extended(
     :Game,
     [Scrapers::SteamList::GameExtension, Scrapers::SteamGame::GameExtension],
-    [Scrapers::SteamList::Migration::M1, Scrapers::SteamGame::Migration::M1]
+    [Scrapers::SteamList::Migration::M1, Scrapers::SteamGame::Migration::M1, Scrapers::SteamGame::Migration::M2]
   )
 
   it 'should copy the attributes from the data hash to the game' do
@@ -86,7 +86,8 @@ describe Scrapers::SteamGame::DataProcessor do
     })
     expect(game.players).to match_array [:co_op, :single_player]
     expect(game.controller_support).to eq :full
-    expect(game.features).to match_array [:steam_achievements, :vr_support, :steam_cloud]
+    expect(game.features).to match_array [:steam_achievements, :steam_cloud]
+    expect(game.vr).to match_array [:vive]
   end
 
   it 'should work with non-standard languages' do
