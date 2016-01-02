@@ -38,7 +38,7 @@ module Scrapers::SteamGame::GameExtension
       open:   0b100
     }
 
-    serialize :tags
+    serialize :tags, JSON
     serialize :audio_languages
     serialize :subtitles_languages
     serialize :videos
