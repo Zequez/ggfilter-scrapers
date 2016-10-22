@@ -2,7 +2,7 @@ module Scrapers::Steam
   module List
     describe DataProcessor do
       it 'should copy the attributes from the data hash to the game' do
-        game = SteamGame.create
+        game = SteamGame.create steam_id: 12345
 
         data = {
           id: 1234,
@@ -20,15 +20,14 @@ module Scrapers::Steam
         expect(processor.process).to eq game
 
         expect(game.steam_id).to eq 1234
-        expect(game.steam_name).to eq 'Potato'
         expect(game.name).to eq 'Potato'
-        expect(game.steam_price).to eq 123
-        expect(game.steam_sale_price).to eq 50
+        expect(game.price).to eq 123
+        expect(game.sale_price).to eq 50
         expect(game.released_at).to be_within(1.minute).of(1.week.ago)
         expect(game.platforms).to match_array [:win, :mac, :linux]
-        expect(game.steam_reviews_count).to eq 1111
-        expect(game.steam_reviews_ratio).to eq 95
-        expect(game.steam_thumbnail).to eq 'http://imgur.com/rsarsa'
+        expect(game.reviews_count).to eq 1111
+        expect(game.reviews_ratio).to eq 95
+        expect(game.thumbnail).to eq 'http://imgur.com/rsarsa'
 
         expect(game.new_record?).to eq false
       end
@@ -50,15 +49,14 @@ module Scrapers::Steam
         game = processor.process
 
         expect(game.steam_id).to eq 1234
-        expect(game.steam_name).to eq 'Potato'
         expect(game.name).to eq 'Potato'
-        expect(game.steam_price).to eq 123
-        expect(game.steam_sale_price).to eq 50
+        expect(game.price).to eq 123
+        expect(game.sale_price).to eq 50
         expect(game.released_at).to be_within(1.minute).of(1.week.ago)
         expect(game.platforms).to match_array [:win, :mac, :linux]
-        expect(game.steam_reviews_count).to eq 1111
-        expect(game.steam_reviews_ratio).to eq 95
-        expect(game.steam_thumbnail).to eq 'http://imgur.com/rsarsa'
+        expect(game.reviews_count).to eq 1111
+        expect(game.reviews_ratio).to eq 95
+        expect(game.thumbnail).to eq 'http://imgur.com/rsarsa'
 
         expect(game.new_record?).to eq true
       end
