@@ -1,5 +1,5 @@
-describe Scrapers::SteamReviews::PageProcessor, cassette: true do
-  def processor_class; Scrapers::SteamReviews::PageProcessor end
+describe Scrapers::Steam::Reviews::PageProcessor, cassette: true do
+  def processor_class; Scrapers::Steam::Reviews::PageProcessor end
 
   def steam_reviews_url(app_id, index = 0, language = 'default', filter = 'toprated')
     offset = index * 10

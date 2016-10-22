@@ -4,7 +4,7 @@ module Scrapers::Steam
       create_table :steam_games do |t|
         # Game data
         t.integer :steam_id, null: false
-        t.string :name, null: false
+        t.string :name
         t.string :tags
         t.string :genre
         t.text :summary
@@ -22,8 +22,11 @@ module Scrapers::Steam
         # Reviews
         t.integer :reviews_ratio
         t.integer :reviews_count
-        t.text :positive_reviews_count
-        t.text :negative_reviews_count
+        t.integer :positive_reviews_count
+        t.integer :negative_reviews_count
+        t.text :positive_reviews
+        t.text :negative_reviews
+
 
         # Other data
         t.integer :dlc_count

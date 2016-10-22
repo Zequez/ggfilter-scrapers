@@ -52,7 +52,7 @@ module Scrapers::Steam
     serialize :videos
     serialize :images
     serialize :system_requirements
-    serialize :positive_steam_reviews
-    serialize :negative_steam_reviews
+    serialize :positive_reviews
+    serialize :negative_reviews
   end
 end

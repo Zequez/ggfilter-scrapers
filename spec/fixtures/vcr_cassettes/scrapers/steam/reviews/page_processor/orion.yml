@@ -1,0 +1,1556 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://steamcommunity.com/app/381010/homecontent/?allguidepage=2&appHubSubSection=10&artpage=2&browsefilter=toprated&discussionspage=2&filterLanguage=default&integratedguidepage=2&itemspage=2&l=english&p=1&screenshotspage=2&searchText=&userreviewsoffset=0&videospage=2&webguidepage=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Content-Security-Policy:
+      - script-src 'self' 'unsafe-inline' 'unsafe-eval' http://steamcommunity-a.akamaihd.net/
+        https://api.steampowered.com/ *.google-analytics.com https://www.google.com
+        https://www.gstatic.com https://apis.google.com; object-src 'none'; connect-src
+        'self' http://steamcommunity.com https://steamcommunity.com https://api.steampowered.com/;
+        frame-src 'self' http://store.steampowered.com/ https://store.steampowered.com/
+        http://www.youtube.com https://www.youtube.com https://www.google.com https://sketchfab.com;
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private,max-age=60
+      Content-Type:
+      - text/html; charset=UTF-8
+      X-Varnish:
+      - '1718208854'
+      Date:
+      - Sat, 22 Oct 2016 13:59:29 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+      Set-Cookie:
+      - sessionid=0fdd55a27eb2a13765b60844; path=/
+      - steamCountry=AR%7C34e26c2a2766d38fa1726fc5c27ef748; path=/
+    body:
+      encoding: UTF-8
+      string: "\t\t<div id=\"page1\">\r\n\t\t<div class=\"apphub_Card modalContentLink
+        interactable\" style=\"display: none\" data-modal-content-url=\"http://steamcommunity.com/profiles/76561198046975243/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t41
+        of 44 people (93%) found this review helpful<br>1 person found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">1.7
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 28 September, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tCompleted
+        the game.<br><br>It didn't take too long. In fact, in my opinion it was a
+        little too short. Appropriate for the length of a standard EVN perhaps, but
+        you wish that it took a bit more time to flesh out the world of Orion.<br><br>So,
+        the good thing is that the bones are all there. All the main nodes that should
+        be there are there, and the logic as far as I can see it is sound.<br><br>Unfortunately
+        even a beautiful skeleton is just that, and the various flaws I want to point
+        out still stems from the problem that there isn't enough content to flesh
+        out Orion. To start with, Orion is a world of Unionism but you barely get
+        a sense of it from complains mouthed by various characters. The main character
+        is a naive kid who is shielded from this reality, but even then he should've
+        seen some acts that are considered 'abnormal' in our society in his daily
+        life. We don't get that. During the whole adventure, since you're constantly
+        on the move there's no time to appreciate the world. All we get are verbal
+        woes from characters we barely scratch the surface.<br><br>In fact the only
+        character you'll feel familiar with is Virgil. Everyone else, even your own
+        bro Louca feels terribly distant, and while you can feel his (almost disturbing)
+        love for the MC it... could've been more elaborated. I wonder how many people
+        will feel tricked by the Mari CG. She totally isn't important at all in the
+        story and could've been replaced by a faceless goon for all I care. Really,
+        I enjoy the game quite a bit, but I must repeat again and again that there
+        just isn't enough flesh or time to make these seemingly cool characters endearing
+        or even memorable.<br><br>I guess that's the tradeoff for having full voice
+        acting in the game. This is quite high quality stuff, but can be seen hollow
+        in the inside.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
+        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/profiles/76561198046975243/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"86709515\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder online\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f5/f506d7625c203a043476fde9084cb2106169fbb5.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        online ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198046975243/\">Crax</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">112 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/profiles/76561198065979638/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t30
+        of 31 people (97%) found this review helpful<br>1 person found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">2.3
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 3 October, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tNOTE:
+        I was a Kickstarter backer for this game.<br><br>I wasn't really sure if I
+        should give this a thumbs up or a thumbs down. Ultimately, I enjoyed the plot
+        threads, the music, and the character designs. However, a lot of the nine
+        different endings were basically unsatisfying with a lot of different plot
+        threads dropped. For the first eight endings, this is fairly deliberate as
+        the premise of the game basically forces you to try different scenarios and
+        keep playing to finally put most of the pieces together. And I use the word
+        &quot;most&quot; in that last sentence on purpose: the ninth &quot;true&quot;
+        ending is basically the ending that reveals the most information in terms
+        of build-up but kind of the worst ending for all of the dangling plot threads
+        and character development in the game. <br><br>Which would really be my biggest
+        complaint, I think, with the game. All the characters except for Sam and MAYBE
+        Virgil are basically stock figures that don't get much life of their own,
+        motivations given to the characters are weak or nonexistent, and the game
+        spends far too much time going &quot;WELP BYE!&quot; to characters other than
+        Sam and forgetting that they exist at all. Finally, I had a lot of high hopes
+        for the political intrigue and worldbuilding that were mentioned in the Kickstarter
+        campaign only to find that there's really only the barest nod to both.<br><br>In
+        the end, I don't think I wasted my investment on the Kickstarter campaign,
+        nor was I bored during the two hours I was working out all nine endings. I
+        even hope Reuben Lack and his team put together another VN in the future --
+        I just hope the do it with deeper development in the world and characters.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/profiles/76561198065979638/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"105713910\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/7b/7b322c8e4bf3ee9a26f5111e5565fefbf6ddf952.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198065979638/\">verstehen</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">318 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/azusa_twin/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t33
+        of 41 people (80%) found this review helpful<br>2 people found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Not Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours\">2.1 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
+        style=\"clear: left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 4 December, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tOrion
+        is a science-fiction visual novel centered on the implications of time travel,
+        artificial intelligence, and humanity's ascent to the stars.<br>There are
+        9 endings in total including 1 true ending that can be obtainable after completing
+        8 of the other endings.<br><br><div class=\"bb_h1\">The story</div>Sam Acacius
+        has received a horrifying message: the section of the Orion Torus where he
+        lives, his only home, will be destroyed. This information has been entrusted
+        to him alone. With the identity of the messenger itself obscured, Sam must
+        decide whether the risks of investigation are worth it. What could a single
+        person do to stop the inevitable?<br>To learn the answers behind this message,
+        Sam must confront forces at the very core of society. Whether he succeeds
+        or fails depends on critical choices he'll have to make along the way.<br><br><div
+        class=\"bb_h1\">Audio and Visual elements</div>Background art are generally
+        smooth looking, actually I kind of like them overall, as for the sprites are
+        average just that for some characters the sprites seems a little inconsistent.<br><br>Voice
+        acting is honestly good I can say that it does the job well, it manages to
+        put a sense of emotion through the voice of the characters. As for the sound
+        effects are used in the right way [these are for important for this certain
+        visual novel because you will get met with black screen and sound effects
+        will let you imagine what is going on]<br><br><div class=\"bb_h1\">To sum
+        up</div>I still cannot recommend this Visual Novel, why? The true ending is
+        a very anti climatic and it is just not worth to go through 8 endings just
+        to see a very anti climatic ending.<br><br><div class=\"bb_h1\">Atogaki</div>I
+        honestly would have recommend this Visual Novel if the ednings were more satisfying
+        but sadly for this it is not that case, I felt it is quite a waste, they had
+        the visuals and sound elements alright but the endings are just to vague and
+        very unsatisfying.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
+        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/azusa_twin/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"194279557\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        in-game\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/74/74ad4cbe0a7b105374546cb53e154d1692de5d1a.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        in-game ellipsis\"><a href=\"http://steamcommunity.com/id/azusa_twin/\">ティアラ
+        μ's</a></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentMoreLink ellipsis\">268
+        products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/chelnior/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t20
+        of 21 people (95%) found this review helpful<br>1 person found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">4.1
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 7 July</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tLovely
+        artworks. Well arranged story. But there is a problem.<br>If you want to unlock
+        &quot;Ture&quot; ending, you should reach all 8 of &quot;normal&quot; endings.<br>The
+        problem is, finding those normal endings is pain without walkthrough information.<br>The
+        story is designed to play again and again to obtain the truth.<br>But good
+        or not, there is no achievement, so ... enjoy your way.<br>I like this game,
+        but think not worth full price.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
+        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/chelnior/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"102559167\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        in-game\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/09/09ea335a4a678d6575bf72447a21e752c98961d4.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        in-game ellipsis\"><a href=\"http://steamcommunity.com/id/chelnior/\">chelni</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">155 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">1</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/kimchitea/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t16
+        of 18 people (89%) found this review helpful<br>1 person found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Not Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours\">1.2 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
+        style=\"clear: left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 11 April</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tI
+        like short visual novels if they feel self-contained, not like a piece of
+        what should have been a larger story. The setting and characters in <i>Orion</i>
+        feel underdeveloped; when characters go from friends to enemies or vice versa,
+        it doesn't have the emotional impact it should, because the reader barely
+        knew the characters in the first place.<br><br>The choice structure is interesting,
+        with an in-story justification for the choices and multiple endings. But there
+        are a few occasions where if you don't have the right flags to reach a particular
+        ending, instead of hiding the unchoosable option, the game just ignores your
+        choice without any feedback. Took me a little while to realize this was a
+        deliberate design choice, because it feels like a bug.<br><br>The true ending,
+        which takes about two hours to reach (Steam didn't record my play time correctly),
+        might have felt like a satisfying conclusion if I had a better sense of the
+        relationship between the characters -- a better reason to care about them
+        -- but instead it's just anticlimactic.<br><br>The voice acting is quite good,
+        and I love the CG art (although it clashes badly with the more cartoonish
+        character sprites). But overall <i>Orion</i> is dull and unmemorable. Even
+        at a lower price point, I couldn't recommend it.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/kimchitea/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"127569075\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e8/e8be824bf648f83d7f00741a253474fb2e8d8549.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/id/kimchitea/\">Kimchi
+        Tea</a></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentMoreLink ellipsis\">2,087
+        products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/daerphen/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t15
+        of 17 people (88%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">4.4
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 16 December, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tRather
+        short Visual Novel. At least if you only watch one of the 9 possible endings.
+        Need to do this later.<br><br>Overall it is a nice game with a good soundtrack
+        and nice visuals. The combination between a spoken dialog and a monologue
+        the player has to read himself is nice. Reading spead can be changed in the
+        settings, but this is only needed if you are slow in reading and have set
+        to &quot;auto&quot;. If not you have to click everytime you want the next
+        text.<br><br>As stated before I only played one ending and had about 5-10
+        decisions (haven't counted). Took me about 2 hours to complete. <br><br>I
+        can recommend it, but I guess you want to wait for a good sale or a bundle
+        to grab this one.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
+        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/daerphen/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"100668484\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/36/36949f9254ef44e2003c07c6baf0d62848a2d53d.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/id/daerphen/\">Daerphen</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">2,474 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">1</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/gotchibi/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t11
+        of 11 people (100%) found this review helpful<br>2 people found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Not Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours\">7.2 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
+        style=\"clear: left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 13 September</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tGot
+        this VN a while ago and decided to play it again to get all the endings. And…
+        err…<br><br>I really wanted to recommend this game, the art style is lovely,
+        VA is pretty great, and of course, it’s sci-fi (which I happen to like a lot).
+        But I can’t; everything is confusing about this story, there’s little background
+        to explain how the “world” of Orion properly works. The characters are dull,
+        I didn’t felt sympathy for any of them (not even Sam, the MC). The endings
+        were simply meh and the true ending was bad. This story had potential, but
+        it seems that it was so rushed that it turned out like this: a mess. What
+        annoyed me the most was <span class=\"bb_spoiler\"><span>the fact that when
+        Sam decides to react to the Kaitos siblings, they simply become friends??
+        Both siblings have been bullying Sam FOR YEARS, and out of nowhere, because
+        Sam “proved he is worthy” now they can be friends? F*ck off, that’s BS and
+        it annoyed me SO MUCH that I almost gave up on playing this.</span></span><br><br>Some
+        stories work out when the MC is suddenly thrown in a situation, and little
+        by little, we get to know them better and their world. But this doesn’t happen
+        with Orion, they throw Sam in this situation like a bag of potatoes falling
+        off a truck. <br><br>3/10, only because the art style and VA were really good.
+        Buy it only with a huge discount if you’re too curious, but honestly, I don’t
+        recommend this VN.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
+        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/gotchibi/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"160082573\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/64/6454aa8282e7217fb4fbf666018e74e21ea6f844.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/id/gotchibi/\">Helena</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">374 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">3</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/profiles/76561197988012862/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t12
+        of 15 people (80%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Not Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours\">2.4 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
+        style=\"clear: left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 13 December, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tBranching
+        visual novel with 9 endings.<br><br>This isn't one of these VNs with one storyline
+        and all of the branches lead to your quick death, no this one has basically
+        4 different ways the plot can go (join the rebel underground, join the opposition,
+        join the scientist, join the gamers), with a final decision selecting for
+        8 endings, with a ninth ending unlocking once you have seen these 8. Except
+        that it doesn't work that way, because some of the time the final decision
+        didn't do anything when I reloaded the save and replayed it, and some of the
+        time I get a message that says something along the lines of &quot;something's
+        not right&quot; and I get a non-ending that is not listed in the endings collection.
+        Since I have wandered down all 4 of these plot branches by now where the other
+        choices give miniscule variances from the plot, it's now all about experimenting
+        and skipping a lot to get the sequences just right, or following a walk-through,
+        or reconsidering whether I really need to complete this game. And given that
+        it's failed to touch me in any way, I gave up at this point.<br><br>So what's
+        the take-away? The characters are one-dimensional, their &quot;dialogue heads&quot;
+        and their appearance in the main art panels differs in style and sometimes
+        also in detail (e.g. eye color), there are voiceovers for the dialogues but
+        not for the narration that are good but fail to provide the emotional depth
+        that the writing lacks.<br><br>I've seen better.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/profiles/76561197988012862/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"27747134\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/90/9050779d9546ace5ad127dcaea433e8baf493a91.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561197988012862/\">mendel</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">3,081 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">2</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/Asriel666/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t8
+        of 8 people (100%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Not Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours\">1.5 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
+        style=\"clear: left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 5 July</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tWell,
+        I can't truely recommend this game, neither I can say that it's bad. Still
+        I give it a thumb down as it dissappointed me, though I'm sure that many ppl
+        would like this game very much.<br><br>First things first; I love the art
+        style. This game has very beautiful drawings, especially with it's backgrounds.
+        Also the voice acting is very great. In the first moments I fell in love with
+        this game. The story seemed interesting too and thought it would be a vn I
+        could love the whole gameplay through.<br><br>But here's the big why I gave
+        it a thumb down: <br>The story rushes very fast. It seems like it has a big
+        story which would've needed more time. Characters turned from friends to fiends,
+        sometimes choices didn't matter, in other times you never get to see the character
+        ever again until you start a new run. It leaves quetions open and not in a
+        good kind of way.<br>My first endings were like cut and left me confused.
+        It wasn't a good or a bad ending, it just.. ended. And in a very confusing
+        way. As I'm used to games like the Zero Escape games, I thought I have to
+        find some more endings to go even further but that's not the case. You have
+        to chose the right choices in case you want a real ending and not only a game
+        over. When I play VN I expect them to deal with my choices. But you have to
+        choose them in the right order and if you mess one up, you're game over. I
+        don't want to open a guide for completing a VN and I'm not patient enough
+        to check everything over and over again just to hope that I didn't mess it
+        up this time and this for 9 endings in total. <br>In the end I got one good
+        ending as I followed the guide but that just wasn't any fun at all, so I quit
+        doing this for all endings. <br><br><br>Again, I truely wanted to love this
+        game as it has so much potential. And I feel sorry for it that I couldn't
+        enjoy it the way it could've been enjoyable.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/Asriel666/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"162242263\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e3/e33352a677e247e7b93da107fc64dbbc96299830.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/id/Asriel666/\">Neku</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">260 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/profiles/76561198113781246/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t12
+        of 18 people (67%) found this review helpful<br>1 person found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">42.1
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 30 September, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tThis
+        VN is amazing. The story telling and concepts the game portrays are very interesting
+        and pulled me in immidietaly. I almost instantly fell in love with many of
+        the characters, and although that may depend on the person, I picked a few
+        favorites very quickly that I found to love through out the whole entire VN
+        <br><br>In addition to the fantastic story-telling this VN has many different
+        paths in which may lead to a &quot;bad end&quot; or a &quot;good ending&quot;
+        and you need certain specific ones to get the &quot;True Ending&quot; Which
+        makes the game a ton of fun, I always found myself thinking about which choice
+        I was going to make over and over again, knowing that my decisions do have
+        an impact on the game. <br><br>For those who beleive the game isn't that long
+        or they felt as if the ending wasn't complete, that is because it wasn't.
+        It was not the True ending and they most likely picked the wrong choices which
+        in my opinion is one of the best parts about a Visual Novel. Trying to trust
+        your own self in order to see how your own actions reflect in a game is one
+        of the most rewarding feelings even if it is the &quot;bad&quot; choice. <br><br>Furthermore,
+        the sound design in this game is very nice, which made reading this visual
+        novel even better, I found myself enjoying the music more than I realized
+        because it fit the mood so well of what I was reading. The art is also amazing,
+        and really portrays the game very nicely. This is a Full-voiced game which
+        is incredible since all of the voice actor is done very well. I never found
+        a voice that I thought was annoying unless the character was, in fact, suppose
+        to be annoying. Basically, the voices fit all the characters really well and
+        it was done very nicely. You will fall in love with the voices, sounds, and
+        art of this Visual Novel. <br><br>Over all, I believe that this VN deserves
+        more credit than it has recieved, and if you enjoy reading visual novels in
+        your spare time, you'll fall in love with this one. :3\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/profiles/76561198113781246/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"153515518\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/78/78f17f28ea8800c125cc96c5a4086b790eca283f.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198113781246/\">SpoonKitty</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">47 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div>\t\t\t\t<script>\r\n\t\t\t\t\t$J(function()
+        { RequestCurrentUserRecommendationVotes( [\"18243097\",\"18310781\",\"19475185\",\"24155896\",\"22354506\",\"19727767\",\"25496988\",\"19684670\",\"24116546\",\"18266969\"]
+        ); } );\r\n\t\t\t\t</script>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t<form method=\"GET\"
+        id=\"MoreContentForm1\" name=\"MoreContentForm1\" action=\"http://steamcommunity.com/app/381010/homecontent/\">\r\n\t\t\t<input
+        type=\"hidden\" name=\"userreviewsoffset\" value=\"10\"><input type=\"hidden\"
+        name=\"p\" value=\"2\"><input type=\"hidden\" name=\"workshopitemspage\" value=\"2\"><input
+        type=\"hidden\" name=\"readytouseitemspage\" value=\"2\"><input type=\"hidden\"
+        name=\"mtxitemspage\" value=\"2\"><input type=\"hidden\" name=\"itemspage\"
+        value=\"3\"><input type=\"hidden\" name=\"screenshotspage\" value=\"3\"><input
+        type=\"hidden\" name=\"videospage\" value=\"3\"><input type=\"hidden\" name=\"artpage\"
+        value=\"3\"><input type=\"hidden\" name=\"allguidepage\" value=\"3\"><input
+        type=\"hidden\" name=\"webguidepage\" value=\"3\"><input type=\"hidden\" name=\"integratedguidepage\"
+        value=\"3\"><input type=\"hidden\" name=\"discussionspage\" value=\"2\"><input
+        type=\"hidden\" name=\"numperpage\" value=\"10\"><input type=\"hidden\" name=\"browsefilter\"
+        value=\"toprated\"><input type=\"hidden\" name=\"appid\" value=\"381010\"><input
+        type=\"hidden\" name=\"appHubSubSection\" value=\"10\">\t\t\t\t<input type=\"hidden\"
+        name=\"l\" value=\"english\">\r\n\t\t\t\t<input type=\"hidden\" name=\"appHubSubSection\"
+        value=\"10\">\r\n\t\t\t\t<input type=\"hidden\" name=\"browsefilter\" value=\"toprated\">\r\n\t\t\t\t<input
+        type=\"hidden\" name=\"filterLanguage\" value=\"default\">\r\n\t\t\t\t<input
+        type=\"hidden\" name=\"searchText\" value=\"\">\r\n\t\t\t\t<input type=\"hidden\"
+        name=\"forceanon\" value=\"1\">\t\t\t\t\t\t\t</form>\r\n\t\t\t"
+    http_version: 
+  recorded_at: Sat, 22 Oct 2016 13:59:30 GMT
+- request:
+    method: get
+    uri: http://steamcommunity.com/app/381010/homecontent/?allguidepage=2&appHubSubSection=10&artpage=2&browsefilter=toprated&discussionspage=2&filterLanguage=default&integratedguidepage=2&itemspage=2&l=english&p=4&screenshotspage=2&searchText=&userreviewsoffset=30&videospage=2&webguidepage=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Content-Security-Policy:
+      - script-src 'self' 'unsafe-inline' 'unsafe-eval' http://steamcommunity-a.akamaihd.net/
+        https://api.steampowered.com/ *.google-analytics.com https://www.google.com
+        https://www.gstatic.com https://apis.google.com; object-src 'none'; connect-src
+        'self' http://steamcommunity.com https://steamcommunity.com https://api.steampowered.com/;
+        frame-src 'self' http://store.steampowered.com/ https://store.steampowered.com/
+        http://www.youtube.com https://www.youtube.com https://www.google.com https://sketchfab.com;
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private,max-age=60
+      Content-Type:
+      - text/html; charset=UTF-8
+      X-Varnish:
+      - '1339558123'
+      Date:
+      - Sat, 22 Oct 2016 13:59:30 GMT
+      Content-Length:
+      - '6118'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - sessionid=5cb68a043731798accd4a9c0; path=/
+      - steamCountry=AR%7C34e26c2a2766d38fa1726fc5c27ef748; path=/
+    body:
+      encoding: UTF-8
+      string: "\t\t<div id=\"page4\">\r\n\t\t<div class=\"apphub_Card modalContentLink
+        interactable\" style=\"display: none\" data-modal-content-url=\"http://steamcommunity.com/profiles/76561198263757729/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\tNo
+        ratings yet\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">0.7
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 2 December, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tPretty
+        good so far. Haven't finished it yet but wanted to jot down some ideas in
+        case I didn't get round to writing the review later...<br><br>I liked the
+        voice acting and the interface and graphics were really cool. The story is
+        pretty cool too!\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
+        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/profiles/76561198263757729/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"303492001\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/fa/fa489b4de5932d5bd85d14ce39867b8ec44ab24d.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198263757729/\">martina.lapelli92</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">5 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/profiles/76561198118853077/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\tNo
+        ratings yet\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">3.1
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 25 January</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tI
+        backed this game on Kickstarter, and I'm quite glad I did. <br><br>This is
+        one of the prettiest non-Japanese VNs I've played. While the story is a little
+        rushed, the routes seem to be quite different enough to make it worth it.
+        I'm charmed by both art styles - that of the sprites and the more realistic
+        CGs, though the huge leap in style takes a little getting used to.<br><br>Out
+        of all the VNs on Steam, this one is worth giving a shot! (Now, if only they
+        had achievements...)\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
+        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/profiles/76561198118853077/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"158587349\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/5c/5c8c9de81636db471822284b21211fef8621cf04.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198118853077/\">tsupertsundere</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">222 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div>\t\t\t\t<script>\r\n\t\t\t\t\t$J(function()
+        { RequestCurrentUserRecommendationVotes( [\"19432889\",\"20760421\"] ); }
+        );\r\n\t\t\t\t</script>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t<form method=\"GET\"
+        id=\"MoreContentForm4\" name=\"MoreContentForm4\" action=\"http://steamcommunity.com/app/381010/homecontent/\">\r\n\t\t\t<input
+        type=\"hidden\" name=\"userreviewsoffset\" value=\"32\"><input type=\"hidden\"
+        name=\"p\" value=\"5\"><input type=\"hidden\" name=\"workshopitemspage\" value=\"5\"><input
+        type=\"hidden\" name=\"readytouseitemspage\" value=\"5\"><input type=\"hidden\"
+        name=\"mtxitemspage\" value=\"5\"><input type=\"hidden\" name=\"itemspage\"
+        value=\"3\"><input type=\"hidden\" name=\"screenshotspage\" value=\"3\"><input
+        type=\"hidden\" name=\"videospage\" value=\"3\"><input type=\"hidden\" name=\"artpage\"
+        value=\"3\"><input type=\"hidden\" name=\"allguidepage\" value=\"3\"><input
+        type=\"hidden\" name=\"webguidepage\" value=\"3\"><input type=\"hidden\" name=\"integratedguidepage\"
+        value=\"3\"><input type=\"hidden\" name=\"discussionspage\" value=\"5\"><input
+        type=\"hidden\" name=\"numperpage\" value=\"10\"><input type=\"hidden\" name=\"browsefilter\"
+        value=\"toprated\"><input type=\"hidden\" name=\"appid\" value=\"381010\"><input
+        type=\"hidden\" name=\"appHubSubSection\" value=\"10\">\t\t\t\t<input type=\"hidden\"
+        name=\"l\" value=\"english\">\r\n\t\t\t\t<input type=\"hidden\" name=\"appHubSubSection\"
+        value=\"10\">\r\n\t\t\t\t<input type=\"hidden\" name=\"browsefilter\" value=\"toprated\">\r\n\t\t\t\t<input
+        type=\"hidden\" name=\"filterLanguage\" value=\"default\">\r\n\t\t\t\t<input
+        type=\"hidden\" name=\"searchText\" value=\"\">\r\n\t\t\t\t<input type=\"hidden\"
+        name=\"forceanon\" value=\"1\">\t\t\t\t\t\t\t</form>\r\n\t\t\t"
+    http_version: 
+  recorded_at: Sat, 22 Oct 2016 13:59:30 GMT
+- request:
+    method: get
+    uri: http://steamcommunity.com/app/381010/homecontent/?allguidepage=2&appHubSubSection=10&artpage=2&browsefilter=toprated&discussionspage=2&filterLanguage=default&integratedguidepage=2&itemspage=2&l=english&p=3&screenshotspage=2&searchText=&userreviewsoffset=20&videospage=2&webguidepage=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Content-Security-Policy:
+      - script-src 'self' 'unsafe-inline' 'unsafe-eval' http://steamcommunity-a.akamaihd.net/
+        https://api.steampowered.com/ *.google-analytics.com https://www.google.com
+        https://www.gstatic.com https://apis.google.com; object-src 'none'; connect-src
+        'self' http://steamcommunity.com https://steamcommunity.com https://api.steampowered.com/;
+        frame-src 'self' http://store.steampowered.com/ https://store.steampowered.com/
+        http://www.youtube.com https://www.youtube.com https://www.google.com https://sketchfab.com;
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private,max-age=60
+      Content-Type:
+      - text/html; charset=UTF-8
+      X-Varnish:
+      - '899384150'
+      Date:
+      - Sat, 22 Oct 2016 13:59:31 GMT
+      Content-Length:
+      - '23997'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - sessionid=78ae8c41b8f45241ab67fc1e; path=/
+      - steamCountry=AR%7C34e26c2a2766d38fa1726fc5c27ef748; path=/
+    body:
+      encoding: UTF-8
+      string: "\t\t<div id=\"page3\">\r\n\t\t<div class=\"apphub_Card modalContentLink
+        interactable\" style=\"display: none\" data-modal-content-url=\"http://steamcommunity.com/id/starworthy/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t1
+        person found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">11.5
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 25 December, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tOK,
+        so this game requires you to solve the soup cans to find all the endings.
+        But, it contains a interesting premise and I am happy I got it.<br><br>However,
+        at the normal price I think that this is a bit expensive. BUT I would still
+        recommend for people that like Sci-Fi.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/starworthy/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"80758299\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/61/61736b3344c0cf74ce370a7d1649105634c13649.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/id/starworthy/\">StarWorthy</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">402 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/MilanCZECH/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t1
+        person found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">4.0
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 26 March</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tShort
+        but enjoyable visual novel with 9 possible endings !\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/MilanCZECH/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"88694887\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        in-game\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f5/f558da9bce123f7be58bab4bfbd7bac13f425183.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        in-game ellipsis\"><a href=\"http://steamcommunity.com/id/MilanCZECH/\">Milan</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">213 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/DWoodhouse/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t2
+        of 3 people (67%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">2.6
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 5 February</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tA
+        wonderful gem of a game.<br>Excellent art and characters, good music, and
+        although short it pulls you into the story.<br>Would not at all object to
+        a second installment in the world of Orion.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/DWoodhouse/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"66529378\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        online\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/6d/6d859dcd39074a8abd6b179eb9c9dade240ac6b3.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        online ellipsis\"><a href=\"http://steamcommunity.com/id/DWoodhouse/\">Woody</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">1,991 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/profiles/76561198032080092/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t2
+        of 4 people (50%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Not Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours\">4.0 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
+        style=\"clear: left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 15 February</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tLike
+        others, I am also very inbetween in my feelings, but ultimately I gave it
+        a thumbs down.<br><br>The voice acting is good and the concept of the game
+        was interesting, but it was just lacking so much.  There was a lot of potential
+        in the plot, but there was no follow through.  There are 9 endings, but even
+        the &quot;true&quot; ending is anticlimactic.  It is a short VN (2-3 hours),
+        which probably did not help much.<br>If the game is in [another] bundle, go
+        for it.  Otherwise, I would pass.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
+        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/profiles/76561198032080092/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"71814364\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/84/849634578e75f20ebfce1fb1afe9f5b5c04460fc.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198032080092/\">Nekotora
+        (Mari1)</a></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentMoreLink ellipsis\">640
+        products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/greenphazer/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t1
+        of 3 people (33%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Not Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours\">1.0 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
+        style=\"clear: left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 9 December, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tReview
+        in 100 words or less, go:<br><br>The plot of this game is a young boy who
+        learns he has time travel capability and is quickly wrapped up in a government
+        scheme.   It's not easy to tell who the good and bad guys are.   The plot
+        choices are extremely bland and trope.   Unfortunately the story is poorly
+        told which means there is no real intensive to replay the game for all the
+        endings.   The 1st ending I found was unsatisfying and confusing.   The other
+        endings were not any better.   It's a shame as the graphics and sound in the
+        game are above average for a visual novel.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/greenphazer/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"46705631\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/3e/3e57aa410ae6b7e19db638bf2101f9415843b38d.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/id/greenphazer/\">Greenphazer</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">269 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/ShadowFallrising/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t0
+        of 1 people (0%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">5.6
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 22 February</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tOh,
+        my God, the true ending is amazing! And the credit song blew me away. Honest
+        to God, I teared up. Ironically, I got all of the bad endings first, but every
+        new ending gave me a little piece of the puzzle, and a little more about the
+        characters I interacted with. Sam Acacius is an amazing young kid with a really
+        good outlook on life; despite all of the crap thrown at him, he keeps a level
+        head, and doesn't cave, staying true to himself the entire journey. I will
+        admit, I had my doubts, mostly when I kept getting the bad endings, wondering
+        if it was worth it, but holy hell, was it ever! My favorite character was
+        Virgil, his sass made me laugh out loud so many times. Truth be told, I'm
+        normally more of a fantasy gal than a sci-fi gal, but the trailer piqued my
+        interest, and I don't regret buying it in the end. Great story, solid characters,
+        beautiful art, and the way Sam handled the difficult moral choices thrown
+        at him made me question my own moral structure (just a bit). VERY highly recommend
+        this game, to anyone even remotely interested.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/ShadowFallrising/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"73917376\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/98/9858f52b9fcf9e8105da7b1dc506b3d7e7f7711c.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/id/ShadowFallrising/\">ShadowFallRising</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">23 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/profiles/76561198013439685/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t1
+        of 4 people (25%) found this review helpful<br>1 person found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">0.8
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 5 October, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tWOW!<br>This
+        was so amazing!<br>I just wish it went on for a bit longer :[\nI was thoroughly
+        enjoying it\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
+        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/profiles/76561198013439685/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"53173957\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder online\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/dc/dc96d66ab9ddc31b37463b2a9a1feb0afe2278fa.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        online ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198013439685/\">KailJunamy</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">11 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/profiles/76561198253003058/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t5
+        of 13 people (38%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Not Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours\">1.6 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
+        style=\"clear: left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 13 October, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tGood
+        story, but none of the endings really satisfied me.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/profiles/76561198253003058/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"292737330\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/c4/c4fd5bf4b819a85796a2c9d97925db036aeb633c.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198253003058/\">HenriKristi</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">40 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/Unkn0wn2k15/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\tNo
+        ratings yet\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">1.1
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 20 December, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tEnjoyed
+        the utopian story line and voice acting.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/Unkn0wn2k15/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"298129952\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/62/62238b8680baccf2ac04b590e888f03f7f6e3bc1.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/id/Unkn0wn2k15/\">Unkn0wn~</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">16 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/profiles/76561198263757729/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\tNo
+        ratings yet\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">0.7
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 2 December, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tPretty
+        good so far. Haven't finished it yet but wanted to jot down some ideas in
+        case I didn't get round to writing the review later...<br><br>I liked the
+        voice acting and the interface and graphics were really cool. The story is
+        pretty cool too!\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
+        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/profiles/76561198263757729/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"303492001\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/fa/fa489b4de5932d5bd85d14ce39867b8ec44ab24d.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198263757729/\">martina.lapelli92</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">5 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div>\t\t\t\t<script>\r\n\t\t\t\t\t$J(function()
+        { RequestCurrentUserRecommendationVotes( [\"19931089\",\"22062253\",\"20978201\",\"21241675\",\"19594666\",\"21398324\",\"18338577\",\"18458063\",\"19819533\",\"19432889\"]
+        ); } );\r\n\t\t\t\t</script>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t<form method=\"GET\"
+        id=\"MoreContentForm3\" name=\"MoreContentForm3\" action=\"http://steamcommunity.com/app/381010/homecontent/\">\r\n\t\t\t<input
+        type=\"hidden\" name=\"userreviewsoffset\" value=\"30\"><input type=\"hidden\"
+        name=\"p\" value=\"4\"><input type=\"hidden\" name=\"workshopitemspage\" value=\"4\"><input
+        type=\"hidden\" name=\"readytouseitemspage\" value=\"4\"><input type=\"hidden\"
+        name=\"mtxitemspage\" value=\"4\"><input type=\"hidden\" name=\"itemspage\"
+        value=\"3\"><input type=\"hidden\" name=\"screenshotspage\" value=\"3\"><input
+        type=\"hidden\" name=\"videospage\" value=\"3\"><input type=\"hidden\" name=\"artpage\"
+        value=\"3\"><input type=\"hidden\" name=\"allguidepage\" value=\"3\"><input
+        type=\"hidden\" name=\"webguidepage\" value=\"3\"><input type=\"hidden\" name=\"integratedguidepage\"
+        value=\"3\"><input type=\"hidden\" name=\"discussionspage\" value=\"4\"><input
+        type=\"hidden\" name=\"numperpage\" value=\"10\"><input type=\"hidden\" name=\"browsefilter\"
+        value=\"toprated\"><input type=\"hidden\" name=\"appid\" value=\"381010\"><input
+        type=\"hidden\" name=\"appHubSubSection\" value=\"10\">\t\t\t\t<input type=\"hidden\"
+        name=\"l\" value=\"english\">\r\n\t\t\t\t<input type=\"hidden\" name=\"appHubSubSection\"
+        value=\"10\">\r\n\t\t\t\t<input type=\"hidden\" name=\"browsefilter\" value=\"toprated\">\r\n\t\t\t\t<input
+        type=\"hidden\" name=\"filterLanguage\" value=\"default\">\r\n\t\t\t\t<input
+        type=\"hidden\" name=\"searchText\" value=\"\">\r\n\t\t\t\t<input type=\"hidden\"
+        name=\"forceanon\" value=\"1\">\t\t\t\t\t\t\t</form>\r\n\t\t\t"
+    http_version: 
+  recorded_at: Sat, 22 Oct 2016 13:59:31 GMT
+- request:
+    method: get
+    uri: http://steamcommunity.com/app/381010/homecontent/?allguidepage=2&appHubSubSection=10&artpage=2&browsefilter=toprated&discussionspage=2&filterLanguage=default&integratedguidepage=2&itemspage=2&l=english&p=2&screenshotspage=2&searchText=&userreviewsoffset=10&videospage=2&webguidepage=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Content-Security-Policy:
+      - script-src 'self' 'unsafe-inline' 'unsafe-eval' http://steamcommunity-a.akamaihd.net/
+        https://api.steampowered.com/ *.google-analytics.com https://www.google.com
+        https://www.gstatic.com https://apis.google.com; object-src 'none'; connect-src
+        'self' http://steamcommunity.com https://steamcommunity.com https://api.steampowered.com/;
+        frame-src 'self' http://store.steampowered.com/ https://store.steampowered.com/
+        http://www.youtube.com https://www.youtube.com https://www.google.com https://sketchfab.com;
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private,max-age=60
+      Content-Type:
+      - text/html; charset=UTF-8
+      X-Varnish:
+      - '1718210877'
+      Date:
+      - Sat, 22 Oct 2016 13:59:31 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+      Set-Cookie:
+      - sessionid=80e1a83f463ff10bf6a5e218; path=/
+      - steamCountry=AR%7C34e26c2a2766d38fa1726fc5c27ef748; path=/
+    body:
+      encoding: UTF-8
+      string: "\t\t<div id=\"page2\">\r\n\t\t<div class=\"apphub_Card modalContentLink
+        interactable\" style=\"display: none\" data-modal-content-url=\"http://steamcommunity.com/id/GothlenRot/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t6
+        of 7 people (86%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">4.2
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 14 April</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tWonderful
+        Scifi VN! I loved the layout for the story and endings. Good voice acting,
+        The art of the characters while still digital they give a realism detailed
+        feel thats done right! Music and sound effects were done well too. I really
+        enjoyed this one. 10/10\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
+        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/GothlenRot/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"54287088\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        online\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/0b/0b71940a50a491beacaa934761e1a4db0f975d96.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        online ellipsis\"><a href=\"http://steamcommunity.com/id/GothlenRot/\">•Goregasm•</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">233 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/AccidentlyOnPurpose/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t9
+        of 13 people (69%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">1.9
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 4 February</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t7.5/10
+        - Sci-fi Visual Novel on Steroids! <br><br>I really enjoyed this visual novel;
+        it definitely lived up to my Sci-Fi expectations. The game was only about
+        1.5 hours; but there are another 7-8 endings you can unlock. This story was
+        pretty captivating, but I felt like I ended too abruptly in order to have
+        so many ending. <br><br>This could have been an all-star if they kept rolling
+        with the story and focused on 1 stellar ending. That's just me though I find
+        reading through the same stuff just to change 1-2 answers differently boring.
+        <br><br>I would definitely grab this visual novel for $3 or less. (It's only
+        1.5 hours)<br><br><div class=\"bb_code\"><div class=\"bb_h1\"> Accidently
+        Reviewed</div>Was this review helpful or maybe even not helpful? Either way
+        join this group for more. Free Keys and Reviews weekly!<br><a class=\"bb_link\"
+        href=\"http://steamcommunity.com/groups/Accidently\" target=\"_blank\" rel=\"noreferrer\"
+        > Steam Group: AccidentlyReviewed</a></div><br><br><br>\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/AccidentlyOnPurpose/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"154892828\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/37/371ed5e45a63b9c3acdb7ec0674c7858fe9c5b20.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/id/AccidentlyOnPurpose/\">AccidentlyOnPurpose</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">1,282 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">4</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/con_brio1993/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t14
+        of 23 people (61%) found this review helpful<br>1 person found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Not Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hours\">3.6 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
+        style=\"clear: left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 29 September, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tI'm
+        only in chapter 4 of the game, but I have some constructive criticism. I've
+        had multiple &quot;choices&quot; to make so far in the game, however many
+        of them appear to be completely inconsequential. Stuff like &quot;stay here&quot;
+        vs &quot;make a run for it.&quot; Except the &quot;make a run for it&quot;
+        option has you recaptured a second after, and there doesn't seem to be any
+        indication that it has any impact on the story that &quot;stay here' wouldn't
+        have had. <br><br>In chapter 3 I ran into two choices, both that led to really
+        vague game overs. Speaking of which, the game overs I've been getting have
+        been very oddly written. It seems like the game expects me to be discovering
+        these endings on replay, because they don't make very much sense. Almost as
+        if I were stumbling into the end or middle of a game's story without any context.
+        Like in one ending I successfully meet a character I needed to meet. Then
+        the game ends with &quot;Was this the right one?&quot; &quot;No. But I can't
+        say why. Sorry.&quot;  <br><br>It is too early to really render a final verdict,
+        but my initial impression isn't as good as I was hoping. If you're a fan of
+        VR's, itching for a new one to play, and don't mind dropping the 11-12 dollars,
+        then based on my current impressions I'd say maybe go for this.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/con_brio1993/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"64734315\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/19/199bb847fa4ef032c66ace6aab776e493b70ec92.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/id/con_brio1993/\">CornBurrito93</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">162 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/pinehoney/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t9
+        of 14 people (64%) found this review helpful<br>2 people found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">0.9
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 28 September, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tA
+        very interesting game set in a utopia. I love the story enriched game so far!
+        If you guys would like to watch some gameplay before playing this yourself
+        here! <br>Check out my playthrough here: <a class=\"bb_link\" href=\"https://www.youtube.com/watch?v=lkP4Rc4Qork\"
+        target=\"_blank\" rel=\"noreferrer\"  id=\"dynamiclink_0\">https://www.youtube.com/watch?v=lkP4Rc4Qork</a>\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/pinehoney/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"99696811\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/7d/7d19a4f409445dd71cea7a0efbc8a6911df9da71.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/id/pinehoney/\">Small
+        loan of a million dollars$</a></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentMoreLink
+        ellipsis\">9 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/silversuriv/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t3
+        of 3 people (100%) found this review helpful<br>1 person found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">2.1
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 6 May</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"bb_h1\">Review</div>Orion: A Sci-Fi Visual Novel is a fully voiced
+        interactive visual novel revolving around a protagonist with time-warping
+        capabilities. There are 9 total endings (1 is hidden/true ending) that vary
+        quite a bit.<br><br>I definitely enjoyed the voiced narration and soundtrack.
+        The artwork has a Western illustration style with plenty of Sci-Fi elements
+        (as opposed to the traditional animu) and do a great job portraying the story.
+        One major gripe I have about this game is the rather abrupt and shallow endings.
+        I really wish there would have been more detail or follow up of each ending.
+        They were clearly designed in order to help you (as a player) gain information
+        in order to understand/discover the true ending.<br><br>Traditional VN options
+        are present: text speed, window size, skip commands etc. Full save and load
+        states are supported alongside qs/ql.<br><br><div class=\"bb_h1\">Score</div>I
+        enjoyed my playthrough of each ending (~2 hours total). There aren't that
+        many VN's on Steam anyways, so this is definitely worth a shot.<br><br>Good<br>-
+        7/10<br><br><table class=\"bb_table\"><tr><td><a class=\"bb_link\" href=\"http://steamcommunity.com/groups/BeforeYouBuy\"
+        target=\"_blank\" rel=\"noreferrer\" >Before You Buy</a> – analyses of newly
+        released indie games</td></tr></table>\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/silversuriv/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"88714679\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/32/32eb51a527978817469732336392908bc89f6024.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/id/silversuriv/\">silversuriv</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">1,584 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/Rhykevance/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t4
+        of 5 people (80%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">12.8
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 10 March</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tAfter
+        the first couple endings I wasn't sure how to feel about this game, but after
+        having seen them all and the only &quot;true&quot; one I feel positive about
+        it.<br><br>This VN has numerous choices leading to four story branches each
+        with a &quot;good&quot;/&quot;bad&quot; variation. The choices can feel minuscule
+        or like a guessing game, and only when some of the rather abrupt endings appear
+        before you do you realize you must've made a mistake.<br><br>There is a meta-plot
+        of sorts. The game isn't too obvious about this and I only realized it halfway
+        through. You can time-travel (although for many parts the protagonist is unable
+        or unwilling to do so) and having to see multiple &quot;wrong&quot; endings
+        is actually part of the idea of rewinding time. As soon as I stopped regarding
+        being tossed back to the main menu screen as mere &quot;Game Overs&quot; I
+        was able to relate better to things and understand some initially irritating
+        comments made by the protagonist or by his constant tablet A.I. companion
+        &quot;Virgil&quot;.<br><br>As goes with time-travel, I guess, the story can
+        sometimes feel messy, even if it isn't complicated at core. The meta-plot
+        idea isn't always carried all the way, and you may regard to people already
+        differently than the protagonist does when doing your second branch, leading
+        to a disparity in how either of you is perceiving things, even if by meta-logic
+        he should be just as aware of everything. But I suppose there is a limit to
+        how far this meta-thing can be carried in time-travel fiction and expecting
+        everything to respond deeper is probably too much to be expected and nitpicking.<br><br>Even
+        so the logic within seems profound. The dev appears to know his stuff as things
+        seemed plausible to me once explained by the protagonist or Virgil. At times
+        I had wanted to yell at the protagonist to use his powers to get away from
+        dire situations but he is just a kid and it's being mentioned often enough
+        that his ability might take a great toll on his body or surrounding. The endings
+        - even if abrupt - feel plausible, some of them being more sadder or scarier
+        or positive than others and being faithful to the sci-fi nature of it. The
+        &quot;true&quot; ending is a little more extensive, and felt &quot;true&quot;
+        enough to me, having finished the game with an ultimately good feeling even
+        if I probably haven't understood all the details.<br><br>The meta-thing can
+        feel awkward. What in theory could be an interesting time-jumping thing has
+        you &quot;just&quot; reload saves and skip your way through other dialogue
+        options or actions, essentially performing a guessing game in the hopes to
+        find those specific routes to the endings you're still missing. There are
+        8 &quot;untrue&quot; endings and you need to see them all before being able
+        to go the path to the &quot;true&quot; one, which strongly relates to the
+        meta-perception of the protagonist and Virgil - without having seen untrue
+        endings the true one wouldn't make sense. I tried going the true path earlier
+        and oddly the game makes you time-jump back to the decisive dialogue again
+        and again with no explanation why you just hopped back a minute in time. If
+        you haven't realized by then how this all works you'll probably feel irritated.
+        Some other paths felt buggy instead, choosing either out of two options would
+        lead to the same end unless I had made specific different choices earlier
+        on. I got that far only with a walkthrough from the dev. I'm not sure if I
+        had been able to get all the endings without it, I can well imagine one could
+        get frustrated without. Luckily the skipping works very fast and there are
+        plenty of save slots, otherwise I would've never had the patience.<br><br>The
+        game is overall nicely designed. Menus and stuff look clean and polished (it
+        better be, being a sci-fi/dystopian game), there is some pretty nice music
+        and good voice acting for dialogues that only in a few instances touch the
+        fence of turning cheesy. The art can be great too although the character portraits
+        have a different style/artist than how they are designed in the backgrounds
+        (I've read in another review details like eye colors sometimes differ between
+        either, I haven't noticed any such disparity). There are a couple typos but
+        I don't think I've ever seen a VN/gamebook without those. A few times the
+        voice acting and subtitles aren't aligning 100% but it's no great deal.<br><br>I
+        wish some characters would get more time to explain themselves. The game is
+        rather quick in pushing events forward, like it or hate it. Across the various
+        timelines and story branches you get to assemble more or less of a detailed
+        picture of some of them but a game that has time-travel in it could've probably
+        given you more options to examine characters and the world if it had tried
+        hard enough. There are some political ideas tossed in but for many parts it's
+        more glimpses than anything. The protagonist's whining annoyed me a little
+        at times; he is pushed from one situation to another neither knowing what
+        to do nor who to trust, but once I went with his frustration about the whole
+        thing I was able to relate to him and his fears and doubts. Characters-wise
+        it's him and his sort-of-bickering with Virgil that shines the most, which
+        is no surprise because they are the only two constants across the time- and
+        plotlines and they make a good duo.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/Rhykevance/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"8299525\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder in-game\"><img
+        src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/46/46afbce38eaf6019aac56a2f0017d92c030007a2.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        in-game ellipsis\"><a href=\"http://steamcommunity.com/id/Rhykevance/\">Sharisad</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">1,019 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">1</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/profiles/76561198092020195/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t2
+        of 2 people (100%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">3.7
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 7 December, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\ti
+        would recomend this Visual novel if you have the time to kill~ <br><br>I really
+        enjoyed the plot  but I do feel like it could have been  a longer game. i
+        think instead of a visual novel if it was a point a click puzzle game or something
+        along those lines. but, then, like i said just being longer would make me
+        happy. there was so much more potental for more endings  and Character development
+        and subplots. and i woudl ahve happily sat for many more hours unlocking the
+        endings. <br><br>the art is beautiful  as is the soundtrack ( I actually brought
+        from the creators site after finished the game) the voices are amazing  and
+        i actually felt like the main Characters had genuin emotions. <br><br>I followed
+        the development and some of the VA's like Jonah Scott on tumblr  and ultimately
+        I wasn't disapointed <br>i really do recomend at least one playthrough just
+        for the story. and I hope that the creators make more games.<br><br>soundtrack
+        10/10<br>voice acting 10/10<br>art 9/10<br>story 9/10<br>Characters 8/10\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/profiles/76561198092020195/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"131754467\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/a8/a8bf40a32a20d0599fcc7f3514295fc9d19b5e14.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198092020195/\">LittleSparrow</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">64 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/profiles/76561198060170343/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t2
+        of 2 people (100%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
+        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">6.0
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 7 April</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t5 routes
+        in. Updated this a bit.<br><br>The game is short if you're a Skip Jockey.
+        If you're a &quot;do a route now and then&quot; kinda gamer like me, I think
+        the length is fine.I take my time reading VNs so be warned it will likely
+        be shorter for you. <br><br>Considering the cost of a movie ticket, I think
+        the price is fine. Voice, art, music, writing and sound effects cost money
+        and this is well done. <br><br>This is a visual novel, not a point and click
+        or sim. Look it up if you haven't &quot;played&quot; one before.<br>This is
+        sci-fi not otome. I can only read so much fluff before needing something to
+        chew on. <br><br>Its a VN with 9 endings with several choices along the routes.
+        I'm noticing there are main branches and others just give bits of flavor text.
+        Some routes are definitely more detailed and its not intuitive to get to some
+        of the parts that divulge major character backgrounds. The flow of the choices
+        and what you get from making them are the only area I can pinpoint for mixed
+        feelings, that not intuitive, not quite satisfying at times part. Not sure
+        if its a &quot;when you do a route amongst the others&quot; mechanism that
+        starts bringing things more into alignment or that I just stumbled on vague
+        for the first two before getting more into it. <br><br>I won't talk about
+        the storyline or plot, as going through it is the most fun of these VNs and
+        I'd hate to lose an &quot;Oh!&quot; in the midst of playing to a review without
+        enjoying the set-up within the VN, especially with a short VN.<br><br>Voice
+        acting, sound and music give a premium feel that really go the extra step
+        for immersion. Its a tough choice between Cyrus and Louca being my favorite
+        characters. Voice, writing and character are just such a good mix, but it
+        took a bit to get there. Still, &quot;NO! Keep eating.&quot; had myself and
+        most of the folks in the room chuckling. Voice acting isn't over the top,
+        good tone for the characters and were nice for the feel of the game. Really
+        glad to see more of the VAs from other VNs I've enjoyed. <br><br>Art was split
+        with sprites being more cartoon art (which I happen to like as a nice change
+        around all the anime style I also enjoy). CGs have a much more graphic novel
+        feel (what I read when not in VNs) with a good use of color and lighting to
+        add to drama / feel. The backgrounds felt more a mix of the two styles. They
+        had a good level of detail and some added to the feel in a more cinematic
+        way than just showing a kitchen, bedroom, theater. i.e. characters interacting
+        in the background making speeches or crowds of people shoving around. Would
+        have asked for more of those. Kudos to the background artist for playing in
+        both styles and working to bridge some of the disconnect that using such opposite
+        styles in a single game can cause.<br><br>Writing... I have to go through
+        more routes. Not like I need it to discuss, but I WANT to go through more
+        routes, which tells me its good. They're tackling 2 tough things in this story:
+        1. Time travel and all the trip-ups, intricacies and just literary physics
+        you have to keep track of for plausibility. 2. The only voice really telling
+        the story is a 16 year old clueless boy, who's purposefully been kept in the
+        dark about everything his entire life, and is describing things in the first
+        person. In the telephone game, this means you as the reader are even more
+        clueless.  It manages to be intriguing and frustrating simultaneously which
+        I guess is part of that immersion thing again.  I'm assuming this isn't the
+        writer's first VN or if it is, I admire your &quot;go bold or go home&quot;
+        self. Nothing like skipping the bunny hill and going straight for the black
+        diamonds.<br><br>I'm off to learn more of the story. I know there's a lot
+        hidden and I hope the majority makes it into the light through Sam's eyes.<br><br>I
+        may update this review if things change, but I'd say it comes in next to &quot;Octave
+        Higher&quot; for me which means some good depth of work, world creation and
+        concept and in the upper ranks of VNs I've tried, especially for indie.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/profiles/76561198060170343/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"99904615\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/64/64cf801c648a4aa870294cda6b737dc045051820.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198060170343/\">Beaker
+        Katt</a></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentMoreLink ellipsis\">96
+        products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/vianmeor/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t1
+        person found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">2.1
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 11 December, 2015</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tI'll
+        give this game a begrudging thumbs up.<br><br>I'm very ambivalent about it
+        overall, since the premise and writing isn't bad, the execution was mostly
+        okay, and there are more good points than bad. The problems, however, are
+        definitely felt - from minute ones like differences in the CG art and sprites
+        being so drastic that it detracts from the immersion, to the frustrating requirements
+        for the final ending (I had spent a fair two hours finding the base 8 endings,
+        only to get stuck with one of them that just wouldn't come up no matter what
+        I did - only to find out I was making mistakes at the very beginning with
+        choices supposedly inconsequential to the later action) - but are mostly seen
+        to (they've recently taken to posting an Ending Guide since the True Ending
+        is very likely to be missed, had people not had the patience to go through
+        all the choices to discover the base 8 themselves  - something very, very
+        likely as with my experience).<br><br>Nonetheless, the atmosphere is nice,
+        it's a charming piece if a tad slow at points, and there are some good points
+        to it. <br><br>My final recommendation would be to get the game if you like
+        Sci-Fi stories that center around time-loops - going back again and again
+        until you get things right - and maybe when the game's on a sale. I dont think
+        the game's bad, but I've also seen better. Nonetheless, the game still has
+        merits hence the recommendation.<br><br>P.S. I still dont understand the True
+        Ending, and I'm very disappointed I went through so much trouble just for...
+        that. You'll have to see it for yourself, though, I guess.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/vianmeor/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"84687854\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        online\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/54/54a4872bac6f8d76b5f948ba7116bdc76f964316.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        online ellipsis\"><a href=\"http://steamcommunity.com/id/vianmeor/\">vianmeor</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">507 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/id/Fruitsniffer/recommended/381010/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t1
+        person found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">4.3
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: 6 March</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tOrion:
+        A Sci-Fi Visual Novel is a pretty decent visual novel with an interesting
+        setting. The story was pretty unique and I really enjoyed playing through
+        the game again and again to get all the different endings, though some are
+        hidden behind a series of choices that have to be picked very carefully and
+        hearing Virgil tell me that “something’s not right” over and over and over
+        again, really made me lose my patience. <br><br>It took me about four hours
+        to get all the different endings and I have to say that not at a single occasion
+        I thought about quitting before having finished the whole game. <br><br>If
+        you take spelling very seriously and don’t like freaky time travel sci-fi
+        plot stuff, then you’re probably better off buying another one of those otome
+        visual novels you probably like so much. <br>If you can ignore how unpolished
+        this visual novel is when it comes to spelling though, and got a thing for
+        sci-fi time travel shenanigans, I think it’s safe to say that you’ll probably
+        enjoy this.<br><br><b>So, should you play Orion: A Sci-Fi Visual Novel?<br><br>Yeah.
+        It’s pretty good.</b>\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
+        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/id/Fruitsniffer/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
+        data-miniprofile=\"82812799\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
+        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/58/58fdf3136ebfa4fd8e9605f9ac6a5a29967ea891.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/id/Fruitsniffer/\">Fruitsniffer</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">348 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div>\t\t\t\t<script>\r\n\t\t\t\t\t$J(function()
+        { RequestCurrentUserRecommendationVotes( [\"22422302\",\"20961475\",\"18255110\",\"18244781\",\"22834718\",\"21754395\",\"19548269\",\"22288913\",\"19630420\",\"21669900\"]
+        ); } );\r\n\t\t\t\t</script>\r\n\t\t\t\t<script type=\"text/javascript\">$J(
+        function() {ReplaceDynamicLink( 'dynamiclink_0', \"<div class=\\\"dynamiclink_box
+        \\\" onclick=\\\"DynamicLink_PlayYouTubeVideoInline( this, &quot;lkP4Rc4Qork&quot;
+        );\\\">\\r\\n\\t<img class=\\\"dynamiclink_preview\\\" src=\\\"http:\\/\\/img.youtube.com\\/vi\\/lkP4Rc4Qork\\/1.jpg\\\">\\r\\n\\t<div
+        class=\\\"dynamiclink_content\\\">\\r\\n\\t\\t<div class=\\\"dynamiclink_name\\\"><span
+        class=\\\"dynamiclink_type\\\">YouTube\\u2122 Video: <\\/span>&nbsp;<\\/div>\\r\\n\\t\\t<div
+        class=\\\"dynamiclink_youtubeviews\\\">\\r\\n\\t\\t\\tViews: 0\\t\\t<\\/div>\\r\\n\\t\\t<div
+        class=\\\"dynamiclink_description\\\">\\r\\n\\t\\t\\t\\t\\t<\\/div>\\r\\n\\t<\\/div>\\r\\n<\\/div>\"
+        );} );</script>\t\t</div>\r\n\t\t\t\t\t<form method=\"GET\" id=\"MoreContentForm2\"
+        name=\"MoreContentForm2\" action=\"http://steamcommunity.com/app/381010/homecontent/\">\r\n\t\t\t<input
+        type=\"hidden\" name=\"userreviewsoffset\" value=\"20\"><input type=\"hidden\"
+        name=\"p\" value=\"3\"><input type=\"hidden\" name=\"workshopitemspage\" value=\"3\"><input
+        type=\"hidden\" name=\"readytouseitemspage\" value=\"3\"><input type=\"hidden\"
+        name=\"mtxitemspage\" value=\"3\"><input type=\"hidden\" name=\"itemspage\"
+        value=\"3\"><input type=\"hidden\" name=\"screenshotspage\" value=\"3\"><input
+        type=\"hidden\" name=\"videospage\" value=\"3\"><input type=\"hidden\" name=\"artpage\"
+        value=\"3\"><input type=\"hidden\" name=\"allguidepage\" value=\"3\"><input
+        type=\"hidden\" name=\"webguidepage\" value=\"3\"><input type=\"hidden\" name=\"integratedguidepage\"
+        value=\"3\"><input type=\"hidden\" name=\"discussionspage\" value=\"3\"><input
+        type=\"hidden\" name=\"numperpage\" value=\"10\"><input type=\"hidden\" name=\"browsefilter\"
+        value=\"toprated\"><input type=\"hidden\" name=\"appid\" value=\"381010\"><input
+        type=\"hidden\" name=\"appHubSubSection\" value=\"10\">\t\t\t\t<input type=\"hidden\"
+        name=\"l\" value=\"english\">\r\n\t\t\t\t<input type=\"hidden\" name=\"appHubSubSection\"
+        value=\"10\">\r\n\t\t\t\t<input type=\"hidden\" name=\"browsefilter\" value=\"toprated\">\r\n\t\t\t\t<input
+        type=\"hidden\" name=\"filterLanguage\" value=\"default\">\r\n\t\t\t\t<input
+        type=\"hidden\" name=\"searchText\" value=\"\">\r\n\t\t\t\t<input type=\"hidden\"
+        name=\"forceanon\" value=\"1\">\t\t\t\t\t\t\t</form>\r\n\t\t\t"
+    http_version: 
+  recorded_at: Sat, 22 Oct 2016 13:59:31 GMT
+- request:
+    method: get
+    uri: http://steamcommunity.com/app/381010/homecontent/?allguidepage=2&appHubSubSection=10&artpage=2&browsefilter=toprated&discussionspage=2&filterLanguage=default&integratedguidepage=2&itemspage=2&l=english&p=6&screenshotspage=2&searchText=&userreviewsoffset=50&videospage=2&webguidepage=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Content-Security-Policy:
+      - script-src 'self' 'unsafe-inline' 'unsafe-eval' http://steamcommunity-a.akamaihd.net/
+        https://api.steampowered.com/ *.google-analytics.com https://www.google.com
+        https://www.gstatic.com https://apis.google.com; object-src 'none'; connect-src
+        'self' http://steamcommunity.com https://steamcommunity.com https://api.steampowered.com/;
+        frame-src 'self' http://store.steampowered.com/ https://store.steampowered.com/
+        http://www.youtube.com https://www.youtube.com https://www.google.com https://sketchfab.com;
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private,max-age=60
+      Content-Type:
+      - text/html; charset=UTF-8
+      X-Varnish:
+      - '703794377'
+      Date:
+      - Sat, 22 Oct 2016 13:59:31 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - sessionid=ea2bcb8e5cf9c83a1ebd07ab; path=/
+      - steamCountry=AR%7C34e26c2a2766d38fa1726fc5c27ef748; path=/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 22 Oct 2016 13:59:31 GMT
+- request:
+    method: get
+    uri: http://steamcommunity.com/app/381010/homecontent/?allguidepage=2&appHubSubSection=10&artpage=2&browsefilter=toprated&discussionspage=2&filterLanguage=default&integratedguidepage=2&itemspage=2&l=english&p=5&screenshotspage=2&searchText=&userreviewsoffset=40&videospage=2&webguidepage=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Content-Security-Policy:
+      - script-src 'self' 'unsafe-inline' 'unsafe-eval' http://steamcommunity-a.akamaihd.net/
+        https://api.steampowered.com/ *.google-analytics.com https://www.google.com
+        https://www.gstatic.com https://apis.google.com; object-src 'none'; connect-src
+        'self' http://steamcommunity.com https://steamcommunity.com https://api.steampowered.com/;
+        frame-src 'self' http://store.steampowered.com/ https://store.steampowered.com/
+        http://www.youtube.com https://www.youtube.com https://www.google.com https://sketchfab.com;
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private,max-age=60
+      Content-Type:
+      - text/html; charset=UTF-8
+      X-Varnish:
+      - '1718213608'
+      Date:
+      - Sat, 22 Oct 2016 13:59:32 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - sessionid=8895e15777279b5aad67e3c7; path=/
+      - steamCountry=AR%7C34e26c2a2766d38fa1726fc5c27ef748; path=/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 22 Oct 2016 13:59:32 GMT
+recorded_with: VCR 2.9.3

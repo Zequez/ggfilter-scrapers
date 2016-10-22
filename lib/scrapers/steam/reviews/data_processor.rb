@@ -10,8 +10,8 @@ module Scrapers::Steam::Reviews
 
     def process
       data = {
-        positive_steam_reviews: @data[:positive],
-        negative_steam_reviews: @data[:negative]
+        positive_reviews: @data[:positive],
+        negative_reviews: @data[:negative]
       }
       @game.assign_attributes(data)
       @game
