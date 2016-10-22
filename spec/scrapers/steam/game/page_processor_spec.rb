@@ -30,12 +30,12 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
 
     its([:genre]){                    is_expected.to eq 'Action' }
     its([:dlc_count]){                is_expected.to eq 5 }
-    its([:steam_achievements_count]){ is_expected.to eq 80 }
+    its([:achievements_count]){       is_expected.to eq 80 }
     its([:metacritic]){               is_expected.to eq 94 }
     its([:esrb_rating]){              is_expected.to eq :m }
     its([:early_access]){             is_expected.to eq false }
-    its([:positive_steam_reviews_count]){   is_expected.to eq 41944 }
-    its([:negative_steam_reviews_count]){   is_expected.to eq 2058 }
+    its([:positive_reviews_count]){   is_expected.to eq 53994 }
+    its([:negative_reviews_count]){   is_expected.to eq 2647 }
 
     its([:tags]){ are_expected.to eq([
       "FPS",
@@ -43,8 +43,8 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
       "Story Rich",
       "Singleplayer",
       "Steampunk",
-      "Shooter",
       "Atmospheric",
+      "Shooter",
       "First-Person",
       "Alternate History",
       "Adventure",
@@ -52,8 +52,8 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
       "Dystopian",
       "Sci-fi",
       "Time Travel",
-      "Linear",
       "Fantasy",
+      "Linear",
       "Gore",
       "RPG",
       "Political",
@@ -82,23 +82,23 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
       "Korean"
     ])}
 
-    its([:videos]){ are_expected.to eq([
-      "http://cdn.akamai.steamstatic.com/steam/apps/2028092/movie480.webm?t=1352079200",
-      "http://cdn.akamai.steamstatic.com/steam/apps/2028471/movie480.webm?t=1377749259",
-      "http://cdn.akamai.steamstatic.com/steam/apps/2028345/movie480.webm?t=1359486935",
-      "http://cdn.akamai.steamstatic.com/steam/apps/2028377/movie480.webm?t=1360956376"
+    it{ expect(@result[:videos].map{|v| v.sub(/\?t=\d+$/, '')}).to eq([
+      "http://cdn.akamai.steamstatic.com/steam/apps/2028092/movie480.webm",
+      "http://cdn.akamai.steamstatic.com/steam/apps/2028471/movie480.webm",
+      "http://cdn.akamai.steamstatic.com/steam/apps/2028345/movie480.webm",
+      "http://cdn.akamai.steamstatic.com/steam/apps/2028377/movie480.webm"
     ])}
 
-    its([:images]){ are_expected.to eq([
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_26e2d983948edfb911db3e0d2c3679900b4ef9fa.jpg?t=1441392956",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_c6f3fbf3e9f4cb1777462150203a7174608dfcd9.jpg?t=1441392956",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_dc76723504ce89c1ed1f66fd468682ba76548c32.jpg?t=1441392956",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_37f25110f8d76335ddbc29a381bc6961e209acf6.jpg?t=1441392956",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_d45294620026ff41f7e6b8610c6d60e13645fbf3.jpg?t=1441392956",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_fd6f5de55332f6c3cd119a01a9e017e840765c0e.jpg?t=1441392956",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_3a364ffdcd2c1eeb3957435c624fc7c383d8cb69.jpg?t=1441392956",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_4616da02724c2beaa8afc74a501929d27a65542a.jpg?t=1441392956",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_e98deaf0e334206b84c2462276aee98107fa20d0.jpg?t=1441392956"
+    it{ expect(@result[:images].map{|v| v.sub(/\?t=\d+$/, '')}).to eq([
+      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_26e2d983948edfb911db3e0d2c3679900b4ef9fa.jpg",
+      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_c6f3fbf3e9f4cb1777462150203a7174608dfcd9.jpg",
+      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_dc76723504ce89c1ed1f66fd468682ba76548c32.jpg",
+      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_37f25110f8d76335ddbc29a381bc6961e209acf6.jpg",
+      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_d45294620026ff41f7e6b8610c6d60e13645fbf3.jpg",
+      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_fd6f5de55332f6c3cd119a01a9e017e840765c0e.jpg",
+      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_3a364ffdcd2c1eeb3957435c624fc7c383d8cb69.jpg",
+      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_4616da02724c2beaa8afc74a501929d27a65542a.jpg",
+      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_e98deaf0e334206b84c2462276aee98107fa20d0.jpg"
     ])}
 
     its([:summary]){                  is_expected.to eq(
@@ -140,7 +140,16 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
 
     its([:features]){ are_expected.to match_array([
       :steam_achievements,
-      :vr
+      :steam_trading_cards
+    ])}
+
+    its([:vr_platforms]){ are_expected.to match_array([
+      :vive,
+      :rift
+    ])}
+
+    its([:vr_mode]){ are_expected.to match_array([
+      :seated
     ])}
 
     its([:metacritic]){ is_expected.to eq nil }
@@ -162,10 +171,27 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     })}
   end
 
+  describe 'game with advanced VR support' do
+    game_cassette_subject(471710, 'rec_room')
+
+    its([:vr_platforms]){ are_expected.to match_array([
+      :vive
+    ])}
+
+    its([:vr_controllers]){ are_expected.to match_array([
+      :tracked
+    ])}
+
+    its([:vr_mode]){ are_expected.to match_array([
+      :standing,
+      :room_scale
+    ])}
+  end
+
   describe 'game with multiplayer && VAC && co-op && !achievements && !controller support' do
     game_cassette_subject(570, 'dota_2')
 
-    its([:steam_achievements_count]){ are_expected.to eq 0 }
+    its([:achievements_count]){ are_expected.to eq 0 }
 
     its([:features]){ are_expected.to match_array([
       :steam_workshop,
@@ -179,13 +205,13 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
   end
 
   describe 'game with partial controller support' do
-    game_cassette_subject(200510, 'x_com_enemy_unknown')
+    game_cassette_subject(413150, 'stardew_valley')
 
     its([:controller_support]){ is_expected.to match_array [:partial] }
   end
 
   describe 'game with early access' do
-    game_cassette_subject(391720, 'layers_of_fear')
+    game_cassette_subject(264710, 'subnautica')
 
     its([:early_access]){ is_expected.to eq true }
   end
@@ -209,11 +235,11 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     })}
   end
 
-  # describe 'edge case steam achievements?' do
-  #   game_cassette_subject(388800, 'azure_striker_gunvolt')
-  #
-  #   its([:steam_achievements_count]){ is_expected.to eq 25 }
-  # end
+  describe 'edge case steam achievements?' do
+    game_cassette_subject(388800, 'azure_striker_gunvolt')
+
+    its([:achievements_count]){ is_expected.to eq 25 }
+  end
 
   describe 'another edge case with system requirements' do
     game_cassette_subject(209160, 'call_of_duty_ghosts')

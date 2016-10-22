@@ -30,7 +30,7 @@ module Scrapers::Steam
 
         # Other data
         t.integer :dlc_count
-        t.integer :steam_achievements_count
+        t.integer :achievements_count
         t.string :audio_languages
         t.string :subtitles_languages
         t.integer :metacritic
@@ -43,7 +43,9 @@ module Scrapers::Steam
         t.integer :controller_support, default: 0, null: false
         t.integer :features, default: 0, null: false
         t.integer :platforms, default: 0, null: false
-        t.integer :vr, default: 0, null: false
+        t.integer :vr_platforms, default: 0, null: false
+        t.integer :vr_mode, default: 0, null: false
+        t.integer :vr_controllers, default: 0, null: false
 
         # Scraping dates
         t.datetime :game_scraped_at

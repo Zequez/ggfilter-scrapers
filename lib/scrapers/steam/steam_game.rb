@@ -34,10 +34,21 @@ module Scrapers::Steam
       valve_anti_cheat:    0b100000
     }
 
-    flag_column :vr, {
+    flag_column :vr_platforms, {
       vive:   0b001,
-      oculus: 0b010,
-      open:   0b100
+      rift:   0b010
+    }
+
+    flag_column :vr_mode, {
+      seated: 0b001,
+      standing: 0b010,
+      room_scale: 0b100
+    }
+
+    flag_column :vr_controllers, {
+      tracked: 0b001,
+      gamepad: 0b010,
+      keyboard_mouse: 0b100
     }
 
     flag_column :platforms, {

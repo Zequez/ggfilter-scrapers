@@ -37,7 +37,7 @@ module Scrapers::Steam::Game
     def data_process(data, game)
       processor = DataProcessor.new(data, game)
       game = processor.process
-      game.steam_game_scraped_at = Time.now
+      game.game_scraped_at = Time.now
       game.save!
       log_game(game)
     end

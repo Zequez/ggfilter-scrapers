@@ -8,7 +8,7 @@ module Scrapers::Steam
           tags: ['Potato', 'Galaxy', 'Simulator'],
           genre: 'Action',
           dlc_count: 5,
-          steam_achievements_count: 80,
+          achievements_count: 80,
           audio_languages: ['English', 'Spanish'],
           subtitles_languages: ['English', 'Spanish', 'Portuguese-Brazil'],
           metacritic: 93,
@@ -39,7 +39,10 @@ module Scrapers::Steam
           },
           players: [:co_op, :single_player],
           controller_support: [:full],
-          features: [:steam_achievements, :vr_support, :steam_cloud]
+          features: [:steam_achievements, :steam_cloud],
+          vr_mode: [:seated],
+          vr_platforms: [:rift],
+          vr_controllers: [:tracked, :gamepad]
         }
 
         processor = DataProcessor.new(data, game)
@@ -51,7 +54,7 @@ module Scrapers::Steam
         expect(game.tags).to eq ['Potato', 'Galaxy', 'Simulator']
         expect(game.genre).to eq 'Action'
         expect(game.dlc_count).to eq 5
-        expect(game.steam_achievements_count).to eq 80
+        expect(game.achievements_count).to eq 80
         expect(game.audio_languages).to eq ['en', 'es']
         expect(game.subtitles_languages).to eq ['en', 'es', 'pt-BR']
         expect(game.metacritic).to eq 93
@@ -83,7 +86,9 @@ module Scrapers::Steam
         expect(game.players).to match_array [:co_op, :single_player]
         expect(game.controller_support).to eq :full
         expect(game.features).to match_array [:steam_achievements, :steam_cloud]
-        expect(game.vr).to match_array [:vive]
+        expect(game.vr_platforms).to match_array [:rift]
+        expect(game.vr_mode).to match_array [:seated]
+        expect(game.vr_controllers).to match_array [:tracked, :gamepad]
       end
 
       it 'should work with non-standard languages' do

@@ -52,7 +52,7 @@ module Scrapers::Steam::Game
       game[:tags] = css('.popular_tags a').map{ |a| a.text.strip }
       game[:genre] = css('.details_block b + a[href*="genre"]').text
       game[:dlc_count] = css('.game_area_dlc_name').size
-      game[:steam_achievements_count] = if ( sac = css('#achievement_block .block_title').first )
+      game[:achievements_count] = if ( sac = css('#achievement_block .block_title').first )
         Integer(sac.text.scan(/\d+/).flatten.first)
       else 0 end
       game[:metacritic] = (m = css('#game_area_metascore span').first) ? Integer(m.text) : nil
@@ -64,9 +64,10 @@ module Scrapers::Steam::Game
       game[:videos] = read_videos
       game[:images] = css('.highlight_strip_screenshot img').map{ |i| i['src'].sub(/.\d+x\d+\.jpg/, '.jpg') }
       game[:summary] = css('.game_description_snippet').text.strip
-      reviews_count = css('.user_reviews_count').map{ |c| Integer(c.text.gsub(/[(),]/, '')) }
-      game[:positive_steam_reviews_count] = reviews_count[0] || 0
-      game[:negative_steam_reviews_count] = reviews_count[1] || 0
+      game[:positive_reviews_count] =
+        Integer(css('[for="review_type_positive"] .user_reviews_count').text.gsub(/[(),]/, '')) || 0
+      game[:negative_reviews_count] =
+        Integer(css('[for="review_type_negative"] .user_reviews_count').text.gsub(/[(),]/, '')) || 0
 
       game[:players] = detect_features(
         1 => :multi_player,
@@ -84,6 +85,23 @@ module Scrapers::Steam::Game
         30 => :steam_workshop,
         23 => :steam_cloud,
         8  => :valve_anti_cheat
+      )
+
+      game[:vr_mode] = detect_vr_features(
+        301 => :seated,
+        302 => :standing,
+        303 => :room_scale
+      )
+
+      game[:vr_controllers] = detect_vr_features(
+        201 => :tracked,
+        202 => :gamepad,
+        203 => :keyboard_mouse
+      )
+
+      game[:vr_platforms] = detect_vr_features(
+        101 => :vive,
+        102 => :rift
       )
 
       game[:system_requirements] = read_system_requirements
@@ -131,7 +149,7 @@ module Scrapers::Steam::Game
         processor: ['Processor', 'CPU'],
         memory: ['Memory', 'RAM'],
         video_card: ['Video Card', 'Graphics', 'Video'],
-        disk_space: ['Hard Disk Space', 'Hard Drive', 'HDD']
+        disk_space: ['Hard Disk Space', 'Hard Drive', 'HDD', 'Storage']
       }
 
       Hash[keys.map do |k, vals|
@@ -141,15 +159,29 @@ module Scrapers::Steam::Game
     end
 
     def features
-      @features ||= css('.game_area_details_specs .icon a').map{ |a| Integer(a['href'].scan(/category2=(\d+)/).flatten.first) }
+      @features ||= css('.game_area_details_specs .icon a')
+        .map{ |a| a['href'].scan(/category2=(\d+)/).flatten.first }
+        .compact
+        .map{ |cat| Integer(cat) }
     end
 
-    def detect_features(list)
+    def vr_features
+      @vr_features ||= css('.game_area_details_specs .icon a')
+        .map{ |a| a['href'].scan(/vrsupport=(\d+)/).flatten.first }
+        .compact
+        .map{ |cat| Integer(cat) }
+    end
+
+    def detect_features(list, all_features = features)
       result = []
       list.each_pair do |key, value|
-        result.push value if features.include?(key)
+        result.push value if all_features.include?(key)
       end
       result
+    end
+
+    def detect_vr_features(list)
+      detect_features(list, vr_features)
     end
   end
 end
