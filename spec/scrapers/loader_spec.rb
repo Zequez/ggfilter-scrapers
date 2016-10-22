@@ -3,7 +3,7 @@ describe Scrapers::Loader do
 
   describe '#new' do
     it 'should accept an URL as the first argument and a list of processors as the second argument' do
-      expect{ s::Loader.new(s::BasePageProcessor, 'http::/potato.com') }.to_not raise_error
+      expect{ s::Loader.new(s::Base::PageProcessor, 'http::/potato.com') }.to_not raise_error
     end
   end
 
@@ -12,7 +12,7 @@ describe Scrapers::Loader do
       describe 'non successful HTTP responses' do
         it 'should follow redirections' do
           response = nil
-          processor = Class.new(s::BasePageProcessor) do
+          processor = Class.new(s::Base::PageProcessor) do
             define_method :process_page do
               response = @scrap_request.response
             end
@@ -31,7 +31,7 @@ describe Scrapers::Loader do
 
         it 'should ignore anything that is not successful' do
           response = nil
-          processor = Class.new(s::BasePageProcessor) do
+          processor = Class.new(s::Base::PageProcessor) do
             define_method :process_page do
               response = @scrap_request.response
             end
@@ -45,7 +45,7 @@ describe Scrapers::Loader do
       end
 
       it 'should create an error file with an error if an error in the processor is raised' do
-        processor = Class.new(s::BasePageProcessor) do
+        processor = Class.new(s::Base::PageProcessor) do
           define_method(:process_page) do
             raise 'Potato'
           end
@@ -59,7 +59,7 @@ describe Scrapers::Loader do
       end
 
       it 'should yield a scrap_requests with errors' do
-        processor = Class.new(s::BasePageProcessor) do
+        processor = Class.new(s::Base::PageProcessor) do
           define_method :process_page do
             if @url == 'http://purple.com'
               add_to_queue 'http://www.purple.com/404'
@@ -96,7 +96,7 @@ describe Scrapers::Loader do
     end
 
     it 'should raise a NoPageProcessorFoundError error if no processor was found for the page' do
-      processor = Class.new(s::BasePageProcessor) do
+      processor = Class.new(s::Base::PageProcessor) do
         regexp %r{rsarsarsa}
       end
 
@@ -105,7 +105,7 @@ describe Scrapers::Loader do
     end
 
     it 'should process each page and return the processed data' do
-      processor = Class.new(s::BasePageProcessor) do
+      processor = Class.new(s::Base::PageProcessor) do
         regexp %r{http://www\.purple\.com}
 
         define_method :process_page do
@@ -118,7 +118,7 @@ describe Scrapers::Loader do
     end
 
     it 'should get the full data by calling the inject method' do
-      processor = Class.new(s::BasePageProcessor) do
+      processor = Class.new(s::Base::PageProcessor) do
         regexp %r{http://www\.purple\.com}
 
         define_singleton_method :inject do |all_data, data|
@@ -135,7 +135,7 @@ describe Scrapers::Loader do
     end
 
     it "should process each page and return the processed data even if it's an array" do
-      class ExtendedProcessor < s::BasePageProcessor
+      class ExtendedProcessor < s::Base::PageProcessor
         regexp %r{http://www\.purple\.com}
 
         def process_page
@@ -148,11 +148,11 @@ describe Scrapers::Loader do
     end
 
     it 'should raise an exception when creating a Loader with different sizes URLs, inputs and resources' do
-      expect{ s::Loader.new(s::BasePageProcessor, ['http://www.purple.com'], [1,2,3], [1]) }.to raise_error(ArgumentError)
+      expect{ s::Loader.new(s::Base::PageProcessor, ['http://www.purple.com'], [1,2,3], [1]) }.to raise_error(ArgumentError)
     end
 
     it 'should yield the a scrap_request with the data as each page loads to a block given in scrap' do
-      class Processor < s::BasePageProcessor
+      class Processor < s::Base::PageProcessor
         def process_page
           @@count ||= 0
           @@count += 1
@@ -198,7 +198,7 @@ describe Scrapers::Loader do
 
     it 'accept an input and a resource with the URL and pass it to the processor' do
       scrap_request = nil
-      processor = Class.new(s::BasePageProcessor) do
+      processor = Class.new(s::Base::PageProcessor) do
         define_method(:initialize) do |sr|
           scrap_request = sr
         end
@@ -221,11 +221,11 @@ describe Scrapers::Loader do
     end
 
     it 'should pass wether the processor is procesing an initial URL or an additional' do
-      mock_processor = Class.new(s::BasePageProcessor) do
+      mock_processor = Class.new(s::Base::PageProcessor) do
 
       end
 
-      processor = Class.new(s::BasePageProcessor) do
+      processor = Class.new(s::Base::PageProcessor) do
         define_method(:process_page) do
           add_to_queue 'http://www.purple.com'
         end

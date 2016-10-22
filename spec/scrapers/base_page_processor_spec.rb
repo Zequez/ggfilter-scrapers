@@ -1,4 +1,4 @@
-describe Scrapers::BasePageProcessor, cassette: true do
+describe Scrapers::Base::PageProcessor, cassette: true do
   def new_scrap_request
     response = Typhoeus.get('http://www.purple.com')
     scrap_request = Scrapers::ScrapRequest.new('http://purple.com', 'http://purple.com')
@@ -8,7 +8,7 @@ describe Scrapers::BasePageProcessor, cassette: true do
 
   it 'should initialize with an ScrapRequest and a code block' do
     expect{
-      Scrapers::BasePageProcessor.new(new_scrap_request) do |url|
+      Scrapers::Base::PageProcessor.new(new_scrap_request) do |url|
 
       end
     }.to_not raise_error
@@ -16,20 +16,20 @@ describe Scrapers::BasePageProcessor, cassette: true do
 
   describe '.regexp' do
     it 'should return matching regex by default' do
-      expect(Scrapers::BasePageProcessor.regexp).to eq(/./)
+      expect(Scrapers::Base::PageProcessor.regexp).to eq(/./)
     end
 
     it 'should save the regex when called with a value' do
-      class ExtendedProcessor < Scrapers::BasePageProcessor
+      class ExtendedProcessor < Scrapers::Base::PageProcessor
         regexp %r{potato}
       end
       expect(ExtendedProcessor.regexp).to eq(/potato/)
-      expect(Scrapers::BasePageProcessor.regexp).to eq(/./)
+      expect(Scrapers::Base::PageProcessor.regexp).to eq(/./)
     end
   end
 
   it 'should call the block given when calling #add_to_queue' do
-    class ExtendedProcessor < Scrapers::BasePageProcessor
+    class ExtendedProcessor < Scrapers::Base::PageProcessor
       def process_page
         add_to_queue('rsarsa')
       end

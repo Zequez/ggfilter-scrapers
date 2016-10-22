@@ -3,7 +3,7 @@ module Scrapers::Benchmarks
     def change
       create_table :gpus do |t|
         t.string :name
-        t.string :value
+        t.integer :value, null: false
       end
     end
   end
