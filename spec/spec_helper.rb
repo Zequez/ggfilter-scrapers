@@ -2,7 +2,6 @@ require 'scrapers'
 require 'webmock/rspec'
 require 'vcr'
 require 'rspec/its'
-require 'with_model'
 require 'database_cleaner'
 require 'pathname'
 
@@ -12,6 +11,7 @@ WebMock.disable_net_connect!(allow_localhost: true)
 
 ActiveRecord::Base.establish_connection adapter: 'sqlite3', database: ':memory:'
 ActiveRecord::Migration.verbose = false
+Scrapers::Benchmarks::Migration.new.migrate(:up)
 
 # Add a custom logger for debugging
 LL = begin
@@ -47,8 +47,6 @@ end
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-  config.extend WithModel
-  config.extend WithModelExtended
   config.include SteamListSpecHelpers, type: :steam_list
   config.include ProcessorSpecHelper
 

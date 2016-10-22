@@ -1,5 +1,5 @@
 module Scrapers::Benchmarks
-  class Runner < Scrapers::BaseRunner
+  class Runner < Scrapers::Base::Runner
     def self.options
       {
         high_url: 'http://www.videocardbenchmark.net/high_end_gpus.html',
@@ -22,7 +22,7 @@ module Scrapers::Benchmarks
     end
 
     def data_process(data, gpu)
-      processor = Scrapers::BaseDataProcessor.new(data, gpu)
+      processor = Scrapers::Base::DataProcessor.new(data, gpu)
       gpu = processor.process
       gpu.save!
     end

@@ -35,24 +35,24 @@ describe Scrapers::Benchmarks::PageProcessor, cassette: true do
   describe 'GPU listings' do
     gpus_listing_cassette_subject('midlow_range_gpus')
 
-    its(:size){ is_expected.to eq 323 }
+    its(:size){ is_expected.to eq 348 }
 
     describe '0' do
       subject_n(0)
-      its([:name]) { is_expected.to eq 'GeForce GT 520MX' }
-      its([:value]) { is_expected.to eq 409 }
+      its([:name]) { is_expected.to eq 'Radeon HD 7520G + 7610M Dual' }
+      its([:value]) { is_expected.to eq 464 }
     end
 
     describe '10' do
       subject_n(10)
-      its([:name]) { is_expected.to eq 'Radeon HD 7600G + 7450M Dual' }
-      its([:value]) { is_expected.to eq 389 }
+      its([:name]) { is_expected.to eq 'GeForce 9600 GS' }
+      its([:value]) { is_expected.to eq 451 }
     end
 
     describe '100' do
       subject_n(100)
-      its([:name]) { is_expected.to eq 'Radeon R5 220' }
-      its([:value]) { is_expected.to eq 259 }
+      its([:name]) { is_expected.to eq 'GeForce 8600 GTS' }
+      its([:value]) { is_expected.to eq 300 }
     end
   end
 
@@ -61,8 +61,8 @@ describe Scrapers::Benchmarks::PageProcessor, cassette: true do
 
     describe '0' do
       subject_n(0)
-      its([:name]) { is_expected.to eq 'GeForce GTX 980 Ti' }
-      its([:value]) { is_expected.to eq 11543 }
+      its([:name]) { is_expected.to eq 'NVIDIA TITAN X' }
+      its([:value]) { is_expected.to eq 13195 }
     end
   end
 end
