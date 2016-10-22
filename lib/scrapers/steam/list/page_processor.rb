@@ -64,7 +64,7 @@ module Scrapers::Steam::List
       text = a.search('.search_price').text
       if text
         price, sale_price = text.strip.scan(/\$\d+(?:\.\d+)?|[^\0-9]+/).flatten
-        price = price ? parse_price(price) : 0
+        price = price ? parse_price(price) : nil
         sale_price = parse_price(sale_price)
         [price, sale_price]
       else
@@ -99,7 +99,7 @@ module Scrapers::Steam::List
         tooltip = reviews_e['data-store-tooltip']
         tooltip.gsub(',', '').scan(/\d+/).map{|n| Integer(n)}.reverse
       else
-        [nil, nil]
+        [0, 50]
       end
     end
 
