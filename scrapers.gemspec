@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "typhoeus", "~> 0.7"
   spec.add_dependency "nokogiri", "~> 1.6"
-  spec.add_dependency "activerecord", "~> 4.2"
+  spec.add_dependency "activerecord", ">= 4.2"
   spec.add_dependency "colorize", "~> 0.7"
   spec.add_dependency "simple_flaggable_column", "~> 0.0.2"
   spec.add_dependency "awesome_print", "~> 1.6"
