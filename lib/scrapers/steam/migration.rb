@@ -39,6 +39,7 @@ module Scrapers::Steam
         t.integer :players, default: 0, null: false
         t.integer :controller_support, default: 0, null: false
         t.integer :features, default: 0, null: false
+        t.integer :platforms, default: 0, null: false
         t.integer :vr, default: 0, null: false
 
         # Scraping dates

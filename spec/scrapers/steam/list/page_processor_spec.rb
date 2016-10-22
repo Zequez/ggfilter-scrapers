@@ -1,5 +1,5 @@
-describe Scrapers::SteamList::PageProcessor, cassette: true, type: :steam_list do
-  def processor_class; Scrapers::SteamList::PageProcessor end
+describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list do
+  def processor_class; Scrapers::Steam::List::PageProcessor end
 
   def self.attributes_subject(page, name)
     subject do
