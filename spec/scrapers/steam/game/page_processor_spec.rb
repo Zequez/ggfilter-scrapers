@@ -1,5 +1,5 @@
-describe Scrapers::SteamGame::PageProcessor, cassette: true do
-  def processor_class; Scrapers::SteamGame::PageProcessor end
+describe Scrapers::Steam::Game::PageProcessor, cassette: true do
+  def processor_class; Scrapers::Steam::Game::PageProcessor end
 
   def steam_game_url(app_id)
     "http://store.steampowered.com/app/#{app_id}"

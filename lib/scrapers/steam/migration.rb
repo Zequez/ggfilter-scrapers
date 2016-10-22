@@ -1,9 +1,9 @@
 module Scrapers::Steam
   class Migration < ActiveRecord::Migration
     def change
-      create_table :steam_game do |t|
+      create_table :steam_games do |t|
         # Game data
-        t.integer :steam_id
+        t.integer :steam_id, null: false
         t.string :name, null: false
         t.string :tags
         t.string :genre

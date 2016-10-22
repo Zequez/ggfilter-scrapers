@@ -20,7 +20,7 @@ module Scrapers::Steam::Game
       urls = games.map{ |g| game_url % g.steam_id }
 
       @loader = Scrapers::Loader.new(
-        Scrapers::SteamGame::PageProcessor,
+        PageProcessor,
         urls,
         nil,
         games,
@@ -35,7 +35,7 @@ module Scrapers::Steam::Game
     private
 
     def data_process(data, game)
-      processor = Scrapers::SteamGame::DataProcessor.new(data, game)
+      processor = DataProcessor.new(data, game)
       game = processor.process
       game.steam_game_scraped_at = Time.now
       game.save!
