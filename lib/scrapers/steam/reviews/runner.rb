@@ -1,6 +1,3 @@
-require "addressable/uri"
-# uri = Addressable::URI.new
-
 module Scrapers::Steam
   module Reviews
     class Runner < Scrapers::Base::Runner
