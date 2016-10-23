@@ -11,6 +11,41 @@
 
 module Scrapers::Steam::Reviews
   class PageProcessor < Scrapers::Base::PageProcessor
+    def self.generate_url(app_id, options = {})
+      options = {
+        page: 1,
+        order: 'toprated',
+        language: 'all',
+        search: '',
+        per_page: 10
+      }.merge(options)
+
+      offset = (options[:page] - 1) * 10
+
+      "http://steamcommunity.com/app/#{app_id}/homecontent/?" + URI.encode_www_form(
+        userreviewsoffset: offset,
+        p: options[:page],
+        workshopitemspage: 2,
+        readytouseitemspage: 2,
+        mtxitemspage: 2,
+        itemspage: 2,
+        screenshotspage: 2,
+        videospage: 2,
+        artpage: 2,
+        allguidepage: 2,
+        webguidepage: 2,
+        integratedguidepage: 2,
+        discussionspage: 2,
+        numperpage: options[:per_page],
+        browsefilter: options[:order],
+        l: 'english',
+        appHubSubSection: 10,
+        filterLanguage: options[:language],
+        searchText: options[:search],
+        forceanon: 1
+      )
+    end
+
     regexp %r{^http://steamcommunity\.com/app/(\d+)/homecontent/\?.*userreviewsoffset=(\d+).*p=(\d+).*$}
 
     MAX_PAGES = 100
