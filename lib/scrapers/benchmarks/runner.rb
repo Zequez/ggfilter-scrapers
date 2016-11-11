@@ -10,7 +10,6 @@ module Scrapers::Benchmarks
     end
 
     def run!
-
       urls = [options[:high_url], options[:mid_url], options[:midlow_url], options[:low_url]]
 
       @loader = Scrapers::Loader.new(PageProcessor, urls)

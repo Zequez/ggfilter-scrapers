@@ -4,7 +4,7 @@ module Scrapers::Steam
       it 'should scrap all the games given' do
         bioshock_infinite = SteamGame.create steam_id: 8870, name: 'Bioshock Infinite'
         dota_2 = SteamGame.create steam_id: 570, name: 'Dota 2'
-        runner = Runner.new(games: [bioshock_infinite, dota_2])
+        runner = Runner.new(resources: [bioshock_infinite, dota_2])
         runner.run
         # Just basic checking
         expect(bioshock_infinite.metacritic).to eq 94

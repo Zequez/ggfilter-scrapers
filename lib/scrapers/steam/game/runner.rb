@@ -1,33 +1,23 @@
 module Scrapers::Steam::Game
   class Runner < Scrapers::Base::Runner
+    def processor; PageProcessor end
+
     def self.options
-      {
+      super.merge({
         game_url: "http://store.steampowered.com/app/%s",
-        games: [],
+        resources: [],
         headers: {
           'Cookie' => 'birthtime=724320001; fakeCC=US'
-        },
-        continue_with_errors: false
-      }
+        }
+      })
+    end
+
+    def urls
+      resources.map{ |g| options[:game_url] % g.steam_id }
     end
 
     def run!
-      game_url = options[:game_url]
-      games = options[:games]
-
-      Scrapers.logger.info "#{games.size} to scrap!"
-
-      urls = games.map{ |g| game_url % g.steam_id }
-
-      @loader = Scrapers::Loader.new(
-        PageProcessor,
-        urls,
-        nil,
-        games,
-        continue_with_errors: options[:continue_with_errors],
-        headers: options[:headers]
-      )
-      @loader.scrap do |scrap_request|
+      scrap do |scrap_request|
         data_process scrap_request.output, scrap_request.resource
       end
     end

@@ -8,28 +8,24 @@ module Scrapers
   module Steam
     module List
       class Runner < Scrapers::Base::Runner
+        def processor; PageProcessor end
         def self.options
-          {
+          super.merge({
             on_sale: false,
             all_games_url: 'http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1',
-            on_sale_url: 'http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1&specials=1',
-            continue_with_errors: false
-          }
+            on_sale_url: 'http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1&specials=1'
+          })
+        end
+
+        def urls
+          sale? ? options[:on_sale_url] : options[:all_games_url]
         end
 
         def run!
           Scrapers.logger.info "For " + (sale? ? 'games on sale' : 'all games')
 
-          url = sale? ? options[:on_sale_url] : options[:all_games_url]
           @on_sale_ids = []
-          @loader = Loader.new(
-            PageProcessor,
-            url,
-            nil,
-            nil,
-            continue_with_errors: options[:continue_with_errors]
-          )
-          @loader.scrap do |scrap_request|
+          scrap do |scrap_request|
             scrap_request.output.each do |game_data|
               game = SteamGame.find_by_steam_id(game_data[:id])
               data_process(game_data, game)

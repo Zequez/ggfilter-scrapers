@@ -5,11 +5,10 @@ module Scrapers::Steam
 
       it 'should accept options as initializer' do
         runner = klass.new(all_games_url: 'potato', on_sale_url: 'salad')
-        expect(runner.options).to eq({
+        expect(runner.options).to include({
           all_games_url: 'potato',
           on_sale_url: 'salad',
-          on_sale: false,
-          continue_with_errors: false
+          on_sale: false
         })
       end
 

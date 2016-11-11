@@ -1,30 +1,21 @@
 module Scrapers::Steam
   module Reviews
     class Runner < Scrapers::Base::Runner
+      def processor; PageProcessor end
+
       def self.options
-        {
-          games: [],
-          reviews_url: 'http://steamcommunity.com/app/%s/homecontent/?l=english&userreviewsoffset=0&p=1&itemspage=2&screenshotspage=2&videospage=2&artpage=2&allguidepage=2&webguidepage=2&integratedguidepage=2&discussionspage=2&appHubSubSection=10&browsefilter=toprated&filterLanguage=all&searchText=',
-          continue_with_errors: false
-        }
+        super.merge({
+          resources: [],
+          reviews_url: 'http://steamcommunity.com/app/%s/homecontent/?l=english&userreviewsoffset=0&p=1&itemspage=2&screenshotspage=2&videospage=2&artpage=2&allguidepage=2&webguidepage=2&integratedguidepage=2&discussionspage=2&appHubSubSection=10&browsefilter=toprated&filterLanguage=all&searchText='
+        })
+      end
+
+      def urls
+        resources.map{ |g| options[:reviews_url] % g.steam_id }
       end
 
       def run!
-        reviews_url = options[:reviews_url]
-        games = options[:games]
-
-        Scrapers.logger.info "#{games.size} to scrap!"
-
-        urls = games.map{ |g| reviews_url % g.steam_id }
-
-        @loader = Scrapers::Loader.new(
-          PageProcessor,
-          urls,
-          nil,
-          games,
-          continue_with_errors: options[:continue_with_errors]
-        )
-        @loader.scrap(yield_type: :group) do |scrap_request|
+        scrap(yield_type: :group) do |scrap_request|
           game = scrap_request.resource
           data = scrap_request.consolidated_output
           data_process(data, game)

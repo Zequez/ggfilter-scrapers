@@ -5,7 +5,7 @@ module Scrapers::Steam
         game1 = SteamGame.create steam_id: 498680 # Shadows of thruth
         game2 = SteamGame.create steam_id: 331290 # Miko Gakkou
 
-        runner = Runner.new(games: [game1, game2])
+        runner = Runner.new(resources: [game1, game2])
         runner.run
 
         expect(game1.positive_reviews).to eq [0.1, 9.1, 0.5]
