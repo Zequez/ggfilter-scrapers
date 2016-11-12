@@ -6,12 +6,14 @@ module Scrapers::Benchmarks
       gpus = []
 
       css('#mark table.chart tr')[1..-2].each do |tr|
-        gpu = {}
-        gpu[:name] = tr.search('.chart:first-child a').text
-        gpu[:value] = tr.search('.value div').text.gsub(/,/, '').to_i
-        gpus.push gpu
+        name = tr.search('.chart:first-child a').text
+        if not (name =~ /\+/)
+          gpu = {}
+          gpu[:name] = name
+          gpu[:value] = tr.search('.value div').text.gsub(/,/, '').to_i
+          gpus.push gpu
+        end
       end
-
       gpus
     end
   end

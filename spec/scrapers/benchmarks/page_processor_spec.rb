@@ -64,5 +64,13 @@ describe Scrapers::Benchmarks::PageProcessor, cassette: true do
       its([:name]) { is_expected.to eq 'NVIDIA TITAN X' }
       its([:value]) { is_expected.to eq 13195 }
     end
+
+    it 'should ignore all the SLI/Crossfire benchmarks (signaled with a plus sign)' do
+      names = @result.map{|gpu| gpu[:name]}
+      expect(names).to_not include('Radeon R9 Fury + Fury X')
+      expect(names).to_not include('Radeon R7 + HD 7700 Dual')
+      expect(names).to_not include('Radeon HD 8670D + 6670 Dual')
+      expect(names).to_not include('Radeon HD 7560D + HD 7700 Dual')
+    end
   end
 end
