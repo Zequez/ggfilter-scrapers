@@ -7,7 +7,7 @@ module Scrapers::Steam::Game
         game_url: "http://store.steampowered.com/app/%s",
         resources: [],
         headers: {
-          'Cookie' => 'birthtime=724320001; fakeCC=US'
+          'Cookie' => 'birthtime=724320001; mature_content=1; fakeCC=US'
         }
       })
     end

@@ -12,6 +12,14 @@ module Scrapers::Steam
         expect(dota_2.metacritic).to eq 90
         expect(dota_2.game_scraped_at).to be_within(1.minute).of(Time.now)
       end
+
+      it 'should work with this, who knows why' do
+        game = SteamGame.create steam_id: 251570, name: '7 Days To Die'
+        runner = Runner.new(resources: [game])
+        runner.run
+        expect(game.positive_reviews_count).to eq 28728
+        expect(game.negative_reviews_count).to eq 7166
+      end
     end
   end
 end

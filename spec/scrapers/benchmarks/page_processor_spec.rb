@@ -35,24 +35,24 @@ describe Scrapers::Benchmarks::PageProcessor, cassette: true do
   describe 'GPU listings' do
     gpus_listing_cassette_subject('midlow_range_gpus')
 
-    its(:size){ is_expected.to eq 348 }
+    its(:size){ is_expected.to eq 337 }
 
     describe '0' do
       subject_n(0)
-      its([:name]) { is_expected.to eq 'Radeon HD 7520G + 7610M Dual' }
-      its([:value]) { is_expected.to eq 464 }
+      its([:name]) { is_expected.to eq 'Radeon R5 M230' }
+      its([:value]) { is_expected.to eq 459 }
     end
 
     describe '10' do
       subject_n(10)
-      its([:name]) { is_expected.to eq 'GeForce 9600 GS' }
-      its([:value]) { is_expected.to eq 451 }
+      its([:name]) { is_expected.to eq 'Quadro 410' }
+      its([:value]) { is_expected.to eq 433 }
     end
 
     describe '100' do
       subject_n(100)
-      its([:name]) { is_expected.to eq 'GeForce 8600 GTS' }
-      its([:value]) { is_expected.to eq 300 }
+      its([:name]) { is_expected.to eq 'Radeon HD 6450' }
+      its([:value]) { is_expected.to eq 285 }
     end
   end
 
