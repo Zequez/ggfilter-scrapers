@@ -56,7 +56,7 @@ module Scrapers
       self.error "Stored error page and backtrace #{file_name}"
 
       if exception
-        backtrace = exception.backtrace.join("\n") + "\n\n"
+        backtrace = exception.message + "\n" + exception.backtrace.join("\n") + "\n\n"
         errors_only_file << backtrace
         File.write("#{file_path}/#{file_name}.backtrace", backtrace)
       end
