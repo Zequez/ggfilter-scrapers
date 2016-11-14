@@ -64,10 +64,16 @@ module Scrapers::Steam::Game
       game[:videos] = read_videos
       game[:images] = css('.highlight_strip_screenshot img').map{ |i| i['src'].sub(/.\d+x\d+\.jpg/, '.jpg') }
       game[:summary] = css('.game_description_snippet').text.strip
-      game[:positive_reviews_count] =
-        Integer(css('[for="review_type_positive"] .user_reviews_count').text.gsub(/[(),]/, '')) || 0
-      game[:negative_reviews_count] =
-        Integer(css('[for="review_type_negative"] .user_reviews_count').text.gsub(/[(),]/, '')) || 0
+
+      if not css('.noReviewsYetTitle').empty?
+        game[:positive_reviews_count] = 0
+        game[:negative_reviews_count] = 0
+      else
+        game[:positive_reviews_count] =
+          Integer(css('[for="review_type_positive"] .user_reviews_count').text.gsub(/[(),]/, '')) || 0
+        game[:negative_reviews_count] =
+          Integer(css('[for="review_type_negative"] .user_reviews_count').text.gsub(/[(),]/, '')) || 0
+      end
 
       game[:players] = detect_features(
         1 => :multi_player,

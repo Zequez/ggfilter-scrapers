@@ -259,4 +259,11 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
       }
     })}
   end
+
+  describe 'game without reviews' do
+    game_cassette_subject(381000, '6_nights')
+
+    its([:positive_reviews_count]){ is_expected.to eq 0 }
+    its([:negative_reviews_count]){ is_expected.to eq 0 }
+  end
 end
