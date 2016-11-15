@@ -15,10 +15,8 @@ module Scrapers::Steam
       end
 
       def run!
-        scrap(yield_type: :group) do |scrap_request|
-          game = scrap_request.resource
-          data = scrap_request.consolidated_output
-          data_process(data, game)
+        scrap(yield_type: :group) do |scrap_request, resource|
+          data_process(scrap_request.consolidated_output, resource)
         end
       end
 

@@ -7,6 +7,10 @@ describe Scrapers::Loader do
     end
   end
 
+  describe 'loading error handling' do
+
+  end
+
   describe '#scrap', cassette: true do
     describe 'errors handling' do
       describe 'non successful HTTP responses' do
@@ -51,7 +55,7 @@ describe Scrapers::Loader do
           end
         end
 
-        scraper = s::Loader.new(processor, 'http://www.purple.com', nil, nil, continue_with_errors: true)
+        scraper = s::Loader.new(processor, 'http://www.purple.com', continue_with_errors: true)
         expect(scraper.scrap).to eq nil
         time = Time.now.strftime('%Y-%m-%d')
         expect(File.exists? "#{Scrapers.app_root}/log/error_pages/#{time}_http___www.purple.com.html").to eq true
@@ -72,8 +76,6 @@ describe Scrapers::Loader do
         scraper = s::Loader.new(
           processor,
           ['http://purple.com'],
-          nil,
-          nil,
           continue_with_errors: true
         )
 
@@ -147,10 +149,6 @@ describe Scrapers::Loader do
       expect(scraper.scrap).to eq ['Yeaaaah!', 'Potato!']
     end
 
-    it 'should raise an exception when creating a Loader with different sizes URLs, inputs and resources' do
-      expect{ s::Loader.new(s::Base::PageProcessor, ['http://www.purple.com'], [1,2,3], [1]) }.to raise_error(ArgumentError)
-    end
-
     it 'should yield the a scrap_request with the data as each page loads to a block given in scrap' do
       class Processor < s::Base::PageProcessor
         def process_page
@@ -161,9 +159,7 @@ describe Scrapers::Loader do
 
       scraper = s::Loader.new(
         Processor,
-        ['http://www.zombo.com', 'http://www.purple.com', 'http://www.example.com'],
-        [1234, 4321, 1111],
-        [[1,2,3], [3,2,1], [1,1,1]]
+        ['http://www.zombo.com', 'http://www.purple.com', 'http://www.example.com']
       )
 
       # Couldn't find a way to test calls that worked with currying
@@ -176,48 +172,18 @@ describe Scrapers::Loader do
         expect(scrap_request.output).to eq 1
         expect(scrap_request.url).to eq 'http://www.zombo.com'
         expect(scrap_request.root_url).to eq 'http://www.zombo.com'
-        expect(scrap_request.resource).to eq [1,2,3]
-        expect(scrap_request.input).to eq 1234
       end
       expect(testYieldBlock).to receive(:call) do |scrap_request|
         expect(scrap_request.output).to eq 2
         expect(scrap_request.url).to eq 'http://www.purple.com'
         expect(scrap_request.root_url).to eq 'http://www.purple.com'
-        expect(scrap_request.resource).to eq [3,2,1]
-        expect(scrap_request.input).to eq 4321
       end
       expect(testYieldBlock).to receive(:call) do |scrap_request|
         expect(scrap_request.output).to eq 3
         expect(scrap_request.url).to eq 'http://www.example.com'
         expect(scrap_request.root_url).to eq 'http://www.example.com'
-        expect(scrap_request.resource).to eq [1,1,1]
-        expect(scrap_request.input).to eq 1111
       end
       scraper.scrap(&yieldBlock)
-    end
-
-    it 'accept an input and a resource with the URL and pass it to the processor' do
-      scrap_request = nil
-      processor = Class.new(s::Base::PageProcessor) do
-        define_method(:initialize) do |sr|
-          scrap_request = sr
-        end
-
-        define_method(:process_page){ 'ho ho ho' }
-      end
-
-      scraper = s::Loader.new(
-        processor,
-        'http://www.zombo.com',
-        { some_data: 'hey' },
-        { resource: 'yes' }
-      )
-      scraper.scrap
-
-      expect(scrap_request.url).to eq 'http://www.zombo.com'
-      expect(scrap_request.input).to eq(some_data: 'hey')
-      expect(scrap_request.resource).to eq(resource: 'yes')
-      expect(scrap_request.output).to eq 'ho ho ho'
     end
 
     it 'should pass wether the processor is procesing an initial URL or an additional' do

@@ -5,7 +5,6 @@ module Scrapers::Base
       @response      = scrap_request.response
       @request       = scrap_request.request
       @root_url      = scrap_request.root_url
-      @input         = scrap_request.input
       @url           = scrap_request.url
 
       @doc = Nokogiri::HTML(@response.body)

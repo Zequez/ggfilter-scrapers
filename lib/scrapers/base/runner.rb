@@ -17,7 +17,7 @@ module Scrapers
         log_text = "#{self.class} running!"
           .colorize(:color => :black, :background => :yellow)
         Scrapers.logger.info log_text
-        
+
         if resources
           Scrapers.logger.info "#{resources.size} to scrap!"
         end
@@ -57,19 +57,28 @@ module Scrapers
         @resources ||= options[:resources]
       end
 
+      # Only works if you mapped the URLs from resources
+      def resource_from_url(url)
+        resources[urls.index(url)]
+      end
+
       def loader
         @loader ||= Loader.new(
           processor,
           urls,
-          nil,
-          resources,
           continue_with_errors: @options[:continue_with_errors],
           headers: @options[:headers]
         )
       end
 
       def scrap(options = {}, &block)
-        loader.scrap(options, &block)
+        loader.scrap(options) do |scrap_request|
+          if @options[:resources]
+            block.call(scrap_request, resource_from_url(scrap_request.url))
+          else
+            block.call(scrap_request)
+          end
+        end
       end
 
       def game_log_text(game)

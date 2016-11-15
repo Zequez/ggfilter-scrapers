@@ -2,11 +2,9 @@ module Scrapers
   class ScrapRequest
     attr_reader :root_url, :url, :input, :resource, :root, :output, :response, :request
 
-    def initialize(root_url, url = nil, input = nil, resource = nil, root = nil)
+    def initialize(root_url, url = nil, root = nil)
       @root_url = root_url
       @url = url || root_url
-      @input = input
-      @resource = resource
       @root = root
 
       @response = nil
@@ -57,7 +55,7 @@ module Scrapers
 
     def subrequest!(url)
       return nil if @root.was_url_requested? url
-      @root.add_subrequest ScrapRequest.new(@group_url, url, @input, @resource, @root)
+      @root.add_subrequest ScrapRequest.new(@group_url, url, @root)
     end
   end
 end

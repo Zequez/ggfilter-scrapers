@@ -2,8 +2,8 @@ module Scrapers
   class RootScrapRequest < ScrapRequest
     attr_reader :requests, :subrequests
 
-    def initialize(url, input, resource, injector)
-      super(url, url, input, resource, self)
+    def initialize(url, injector)
+      super(url, url, self)
 
       @injector = injector
       @consolidated_output = nil

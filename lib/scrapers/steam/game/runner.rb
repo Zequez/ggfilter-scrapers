@@ -17,8 +17,8 @@ module Scrapers::Steam::Game
     end
 
     def run!
-      scrap do |scrap_request|
-        data_process scrap_request.output, scrap_request.resource
+      scrap do |scrap_request, resource|
+        data_process scrap_request.output, resource
       end
     end
 
