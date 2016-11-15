@@ -1,5 +1,5 @@
 module Scrapers::Benchmarks
-  class Migration < ActiveRecord::Migration
+  class Migration < ActiveRecord::Migration[4.2]
     def change
       create_table :gpus do |t|
         t.string :name

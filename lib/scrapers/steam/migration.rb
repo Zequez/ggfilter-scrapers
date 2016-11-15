@@ -1,5 +1,5 @@
 module Scrapers::Steam
-  class Migration < ActiveRecord::Migration
+  class Migration < ActiveRecord::Migration[4.2]
     def change
       create_table :steam_games do |t|
         # Game data
