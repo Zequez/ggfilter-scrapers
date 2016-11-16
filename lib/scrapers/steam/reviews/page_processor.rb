@@ -63,7 +63,9 @@ module Scrapers::Steam::Reviews
         negative: []
       }
 
-      cards = css('.apphub_Card')
+      return data if @response.body.empty?
+
+      cards = css!('.apphub_Card')
 
       cards.each do |card|
         next unless card.at_css('.UserReviewCardContent_FlaggedByDeveloper').nil?

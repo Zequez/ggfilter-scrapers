@@ -13,6 +13,19 @@ module Scrapers
     attr_reader :data
 
     def initialize(processor, urls = [], options = {})
+      default_options = {
+        headers: {},
+        page_processor_abort_after: 1,
+        request_abort_after: 1,
+        request_retry_count: 3,
+        request_retry_delay: 1000,
+        request_timeout: 5000,
+        follow_location: false,
+
+        continue_with_errors: false
+      }
+      @options = default_options.merge(options)
+
       @processor = processor
 
       @multi_urls = urls.kind_of? Array
@@ -22,11 +35,6 @@ module Scrapers
       @scrap_requests = @urls.each_with_index.map do |url, i|
         RootScrapRequest.new(url, injector)
       end
-
-      @options = {
-        headers: {},
-        continue_with_errors: false
-      }.merge(options)
 
       @hydra = Typhoeus::Hydra.hydra
     end
@@ -44,14 +52,17 @@ module Scrapers
       end
       @hydra.run
 
-      @data = consolidated_output_hash
-
-      if @yield_collect
-        @multi_urls ? @data : @data.values.first
-      end
+      return_values
     end
 
     private
+
+    def return_values
+      data = consolidated_output_hash
+      if @yield_collect
+        @multi_urls ? data : data.values.first
+      end
+    end
 
     def consolidated_output_hash
       outputs = {}

@@ -35,6 +35,13 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
     end
   end
 
+  describe 'error handling' do
+    it 'should raise an InvalidPageError if the page is invalid' do
+      expect { page_processor_for_html('<html></html>').process_page }
+      .to raise_error(Scrapers::InvalidPageError)
+    end
+  end
+
   describe 'loading multiple pages' do
     it 'should call the block given with all the next pages' do
       url1 = steam_list_url('civilization', 1)

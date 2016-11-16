@@ -22,6 +22,13 @@ describe Scrapers::Steam::Reviews::PageProcessor, cassette: true do
     end
   end
 
+  describe 'error handling' do
+    it 'should raise an InvalidPageError if the page is invalid' do
+      expect { page_processor_for_html('<html></html>').process_page }
+      .to raise_error(Scrapers::InvalidPageError)
+    end
+  end
+
   describe 'loading a game with a single page of reviews' do
     game_cassette_subject 498680, 'shadows-of-truth'
 

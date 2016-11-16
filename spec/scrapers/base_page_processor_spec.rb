@@ -14,6 +14,16 @@ describe Scrapers::Base::PageProcessor, cassette: true do
     }.to_not raise_error
   end
 
+  describe '#css!' do
+    it 'should raise an InvalidPageError if no match found' do
+      expect{
+        pp = Scrapers::Base::PageProcessor.new(new_scrap_request) do |url|
+        end
+        pp.css!('#potato_something_non_existant')
+      }.to raise_error Scrapers::InvalidPageError
+    end
+  end
+
   describe '.regexp' do
     it 'should return matching regex by default' do
       expect(Scrapers::Base::PageProcessor.regexp).to eq(/./)

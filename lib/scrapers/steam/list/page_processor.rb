@@ -21,7 +21,9 @@ module Scrapers::Steam::List
     def process_page
       data = []
 
-      @doc.search('.search_result_row').each do |a|
+      css!('#search_result_container')
+
+      css('.search_result_row').each do |a|
         game = {}
 
         game[:id] = read_id(a)
@@ -57,11 +59,11 @@ module Scrapers::Steam::List
     end
 
     def read_name(a)
-      a.search('.title').text.strip
+      css!('.title', a).text.strip
     end
 
     def read_prices(a)
-      text = a.search('.search_price').text
+      text = css!('.search_price', a).text
       if text
         price, sale_price = text.strip.scan(/\$\d+(?:\.\d+)?|[^\0-9]+/).flatten
         price = price ? parse_price(price) : nil
@@ -73,7 +75,7 @@ module Scrapers::Steam::List
     end
 
     def read_released_at(a)
-      date = a.search('.search_released').text
+      date = css!('.search_released', a).text
       if date.blank?
         nil
       else
@@ -87,14 +89,15 @@ module Scrapers::Steam::List
 
     def read_platforms(a)
       platforms = []
-      platforms.push(:win) if a.search('.platform_img.win').first
-      platforms.push(:mac) if a.search('.platform_img.mac').first
-      platforms.push(:linux) if a.search('.platform_img.linux').first
+      platforms.push(:win) if css('.platform_img.win', a).first
+      platforms.push(:mac) if css('.platform_img.mac', a).first
+      platforms.push(:linux) if css('.platform_img.linux', a).first
       platforms
     end
 
     def read_reviews(a)
-      reviews_e = a.search('.search_review_summary').first
+      css!('.search_reviewscore', a)
+      reviews_e = css('.search_review_summary', a).first
       if reviews_e
         tooltip = reviews_e['data-store-tooltip']
         tooltip.gsub(',', '').scan(/\d+/).map{|n| Integer(n)}.reverse
@@ -104,7 +107,7 @@ module Scrapers::Steam::List
     end
 
     def read_thumbnail(a)
-      img_e = a.search('.search_capsule img').first
+      img_e = css!('.search_capsule img', a).first
       img_e ? img_e['src'] : nil
     end
 

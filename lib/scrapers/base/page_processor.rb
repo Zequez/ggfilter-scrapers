@@ -18,11 +18,19 @@ module Scrapers::Base
     end
 
     def add_to_queue(url)
-      @add_to_queue.call(url)
+      @add_to_queue.call(url) if @add_to_queue
     end
 
-    def css(matcher)
-      @doc.search(matcher)
+    def css(matcher, parent = @doc)
+      parent.search(matcher)
+    end
+
+    def css!(matcher, parent = @doc)
+      result = css(matcher, parent)
+      if result.empty?
+        raise Scrapers::InvalidPageError.new('Could not find ' + matcher)
+      end
+      return result
     end
 
     def self.inject(all_data, data)

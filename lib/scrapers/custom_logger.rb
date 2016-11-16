@@ -43,8 +43,11 @@ module Scrapers
     end
 
     def store_error_page(scrap_request, exception = nil)
-      time = Time.now.strftime('%Y-%m-%d')
-      sanitized_url = scrap_request.url.gsub(/[\x00\/\\:\*\?\"<>\|]/, '_')
+      time = Time.now.strftime('%Y%m%d%M%s')
+      sanitized_url = scrap_request.url
+        .sub(/^https?:\/\//, '')
+        .sub(/\?.*$/, '')
+        .gsub(/[\x00\/\\:\*\?\"<>\|]/, '_')
 
       file_name = "#{time}_#{sanitized_url}"
       file_path = "#{Scrapers.app_root}/log/error_pages"

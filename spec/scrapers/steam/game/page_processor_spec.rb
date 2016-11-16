@@ -5,7 +5,7 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     "http://store.steampowered.com/app/#{app_id}"
   end
 
-  def self.game_cassette_subject(app_id, name = 'game')
+  def self.cassette_subject(app_id, name = 'game')
     before_all_cassette(name) do
       url = steam_game_url(app_id)
       @result = scrap(url, 'Cookie' => 'birthtime=724320001; fakeCC=US')
@@ -25,8 +25,15 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     end
   end
 
+  describe 'error handling' do
+    it 'should raise an InvalidPageError if the page is invalid' do
+      expect { page_processor_for_html('<html></html>').process_page }
+      .to raise_error(Scrapers::InvalidPageError)
+    end
+  end
+
   describe 'loading a regular game like Bioshock Infinite' do
-    game_cassette_subject(8870, 'bioshock_infinite')
+    cassette_subject(8870, 'bioshock_infinite')
 
     its([:genre]){                    is_expected.to eq 'Action' }
     its([:dlc_count]){                is_expected.to eq 5 }
@@ -136,7 +143,7 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
   end
 
   describe 'game with VR support && no recommended requirements && !metacritic && !esrb' do
-    game_cassette_subject(396030, 'in_cell_vr')
+    cassette_subject(396030, 'in_cell_vr')
 
     its([:features]){ are_expected.to match_array([
       :steam_achievements,
@@ -172,7 +179,7 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
   end
 
   describe 'game with advanced VR support' do
-    game_cassette_subject(471710, 'rec_room')
+    cassette_subject(471710, 'rec_room')
 
     its([:vr_platforms]){ are_expected.to match_array([
       :vive
@@ -189,7 +196,7 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
   end
 
   describe 'game with multiplayer && VAC && co-op && !achievements && !controller support' do
-    game_cassette_subject(570, 'dota_2')
+    cassette_subject(570, 'dota_2')
 
     its([:achievements_count]){ are_expected.to eq 0 }
 
@@ -205,19 +212,19 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
   end
 
   describe 'game with partial controller support' do
-    game_cassette_subject(413150, 'stardew_valley')
+    cassette_subject(413150, 'stardew_valley')
 
     its([:controller_support]){ is_expected.to match_array [:partial] }
   end
 
   describe 'game with early access' do
-    game_cassette_subject(264710, 'subnautica')
+    cassette_subject(264710, 'subnautica')
 
     its([:early_access]){ is_expected.to eq true }
   end
 
   describe 'edge case system requirements' do
-    game_cassette_subject(2710, 'act_of_war_direct_action')
+    cassette_subject(2710, 'act_of_war_direct_action')
 
     its([:system_requirements]){ are_expected.to eq({
       minimum: {
@@ -236,13 +243,13 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
   end
 
   describe 'edge case steam achievements?' do
-    game_cassette_subject(388800, 'azure_striker_gunvolt')
+    cassette_subject(388800, 'azure_striker_gunvolt')
 
     its([:achievements_count]){ is_expected.to eq 25 }
   end
 
   describe 'another edge case with system requirements' do
-    game_cassette_subject(209160, 'call_of_duty_ghosts')
+    cassette_subject(209160, 'call_of_duty_ghosts')
 
     its([:system_requirements]){ are_expected.to eq({
       minimum: {
@@ -261,7 +268,7 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
   end
 
   describe 'game without reviews' do
-    game_cassette_subject(381000, '6_nights')
+    cassette_subject(381000, '6_nights')
 
     its([:positive_reviews_count]){ is_expected.to eq 0 }
     its([:negative_reviews_count]){ is_expected.to eq 0 }
