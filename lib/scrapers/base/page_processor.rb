@@ -1,44 +1,48 @@
-module Scrapers::Base
-  class PageProcessor
-    def initialize(scrap_request, &add_to_queue)
-      @scrap_request = scrap_request
-      @response      = scrap_request.response
-      @request       = scrap_request.request
-      @root_url      = scrap_request.root_url
-      @url           = scrap_request.url
+module Scrapers
+  class InvalidPageError < StandardError
 
-      @doc = Nokogiri::HTML(@response.body)
-      @add_to_queue = add_to_queue
-    end
+  end
 
-    attr_accessor :data
-
-    def process_page
-      raise NotImplementedError.new('#process_page is an abstract method')
-    end
-
-    def add_to_queue(url)
-      @add_to_queue.call(url) if @add_to_queue
-    end
-
-    def css(matcher, parent = @doc)
-      parent.search(matcher)
-    end
-
-    def css!(matcher, parent = @doc)
-      result = css(matcher, parent)
-      if result.empty?
-        raise Scrapers::InvalidPageError.new('Could not find ' + matcher)
+  module Base
+    class PageProcessor
+      def initialize(url, loader)
+        @url = url
+        @loader = loader
+        @queued = 0
       end
-      return result
-    end
 
-    def self.inject(all_data, data)
-      data
-    end
+      def load(&cb)
+        @queued += 1
+        @loader.queue(@url) do |response|
+          @queued -= 1
+          @response = response
+          @doc = Nokogiri::HTML(response.body)
+          process_page do |output|
+            cb.call(output)
+          end
+        end
+      end
 
-    def self.regexp(value = nil)
-      (@regexp = value if value) || @regexp || /./
+      def process_page
+        raise NotImplementedError.new('#process_page is an abstract method')
+      end
+
+      def css(matcher, parent = @doc)
+        parent.search(matcher)
+      end
+
+      def css!(matcher, parent = @doc)
+        result = css(matcher, parent)
+        if result.empty?
+          raise Scrapers::InvalidPageError.new('Could not find ' + matcher)
+        end
+        return result
+      end
+
+      def add(url, processor_class = self.class, &cb)
+        processor = processor_class.new(url, @loader)
+        processor.load(&cb)
+      end
     end
   end
 end

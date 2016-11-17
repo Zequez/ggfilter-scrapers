@@ -44,8 +44,6 @@
 
 module Scrapers::Steam::Game
   class PageProcessor < Scrapers::Base::PageProcessor
-    regexp %r{http://store.steampowered.com/app/(\d+)}
-
     def process_page
       game = {}
 
@@ -112,7 +110,7 @@ module Scrapers::Steam::Game
 
       game[:system_requirements] = read_system_requirements
 
-      game
+      yield game
     end
 
     def read_videos

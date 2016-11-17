@@ -1,7 +1,5 @@
 module Scrapers::Benchmarks
   class PageProcessor < Scrapers::Base::PageProcessor
-    regexp %r{http://www.videocardbenchmark.net/([a-z0-9_-]+).html}
-
     def process_page
       gpus = []
 
@@ -14,7 +12,8 @@ module Scrapers::Benchmarks
           gpus.push gpu
         end
       end
-      gpus
+
+      yield gpus
     end
   end
 end

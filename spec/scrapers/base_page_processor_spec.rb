@@ -1,54 +1,89 @@
 describe Scrapers::Base::PageProcessor, cassette: true do
-  def new_scrap_request
-    response = Typhoeus.get('http://www.purple.com')
-    scrap_request = Scrapers::ScrapRequest.new('http://purple.com', 'http://purple.com')
-    scrap_request.set_response response
-    scrap_request
+  def stub_url(url, status, body)
+    Typhoeus.stub(url).and_return(Typhoeus::Response.new(code: status, body: body))
   end
 
-  it 'should initialize with an ScrapRequest and a code block' do
-    expect{
-      Scrapers::Base::PageProcessor.new(new_scrap_request) do |url|
+  it 'should yield the output of the page processing' do
+    stub_url('www.purple.com', 200, '<html></html>')
 
+    class Processor < Scrapers::Base::PageProcessor
+      def process_page
+        yield('Yeah!')
       end
-    }.to_not raise_error
+    end
+
+    loader = Scrapers::TrueLoader.new
+    pl = Processor.new('www.purple.com', loader)
+
+    pl_load_cb = lambda{}
+    loader_run_cb = lambda{}
+
+    expect(pl_load_cb).to receive(:call){ |output| expect(output).to eq('Yeah!') }
+    expect(loader_run_cb).to receive(:call){ |response| expect(response.body).to eq('<html></html>') }
+
+    pl.load(&pl_load_cb)
+    loader.run(&loader_run_cb)
+  end
+
+  it 'should handle nested requests' do
+    stub_url('www.purple.com', 200, '<html>Mmm</html>')
+    stub_url('www.example.com', 200, '<html>Potato</html>')
+
+    class ExampleProcessor < Scrapers::Base::PageProcessor
+      def process_page
+        yield('Bye')
+      end
+    end
+
+    class PurpleProcessor < Scrapers::Base::PageProcessor
+      def process_page
+        add('www.example.com', ExampleProcessor) do |output|
+          yield('Hello' + output)
+        end
+      end
+    end
+
+    loader = Scrapers::TrueLoader.new
+    pl = PurpleProcessor.new('www.purple.com', loader)
+
+    pl_load_cb = lambda{}
+    loader_run_cb = lambda{}
+
+    expect(pl_load_cb).to receive(:call){ |output| expect(output).to eq('HelloBye') }
+    expect(loader_run_cb).to receive(:call).ordered{ |response| expect(response.body).to eq('<html>Mmm</html>') }
+    expect(loader_run_cb).to receive(:call).ordered{ |response| expect(response.body).to eq('<html>Potato</html>') }
+
+    pl.load(&pl_load_cb)
+    loader.run(&loader_run_cb)
   end
 
   describe '#css!' do
+    class Processor < Scrapers::Base::PageProcessor
+      def process_page
+
+      end
+    end
+
     it 'should raise an InvalidPageError if no match found' do
+      stub_url('www.example.com', 200, '<html></html>')
       expect{
-        pp = Scrapers::Base::PageProcessor.new(new_scrap_request) do |url|
-        end
-        pp.css!('#potato_something_non_existant')
+        loader = Scrapers::TrueLoader.new
+        pl = Processor.new('www.example.com', loader)
+        pl.load{}
+        loader.run{}
+        pl.css!('#foo')
       }.to raise_error Scrapers::InvalidPageError
     end
-  end
 
-  describe '.regexp' do
-    it 'should return matching regex by default' do
-      expect(Scrapers::Base::PageProcessor.regexp).to eq(/./)
+    it 'should not raise an InvalidPageError if the match is found' do
+      stub_url('www.example.com', 200, '<html><div id="foo"></div></html>')
+      expect{
+        loader = Scrapers::TrueLoader.new
+        pl = Processor.new('www.example.com', loader)
+        pl.load{}
+        loader.run{}
+        pl.css!('#foo')
+      }.to_not raise_error
     end
-
-    it 'should save the regex when called with a value' do
-      class ExtendedProcessor < Scrapers::Base::PageProcessor
-        regexp %r{potato}
-      end
-      expect(ExtendedProcessor.regexp).to eq(/potato/)
-      expect(Scrapers::Base::PageProcessor.regexp).to eq(/./)
-    end
-  end
-
-  it 'should call the block given when calling #add_to_queue' do
-    class ExtendedProcessor < Scrapers::Base::PageProcessor
-      def process_page
-        add_to_queue('rsarsa')
-      end
-    end
-
-    block = lambda{ |url| }
-    expect(block).to receive(:call).with('rsarsa')
-
-    processor = ExtendedProcessor.new(new_scrap_request, &block)
-    processor.process_page
   end
 end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://steamcommunity.com/app/498680/homecontent/?allguidepage=2&appHubSubSection=10&artpage=2&browsefilter=toprated&discussionspage=2&filterLanguage=all&forceanon=1&integratedguidepage=2&itemspage=2&l=english&mtxitemspage=2&numperpage=10&p=1&readytouseitemspage=2&screenshotspage=2&searchText=&userreviewsoffset=0&videospage=2&webguidepage=2&workshopitemspage=2
+    uri: http://steamcommunity.com/app/498680/homecontent/?userreviewsoffset=0&p=1&workshopitemspage=2&readytouseitemspage=2&mtxitemspage=2&itemspage=2&screenshotspage=2&videospage=2&artpage=2&allguidepage=2&webguidepage=2&integratedguidepage=2&discussionspage=2&numperpage=10&browsefilter=toprated&l=english&appHubSubSection=10&filterLanguage=all&searchText=&forceanon=1
     body:
       encoding: US-ASCII
       string: ''
@@ -26,17 +26,17 @@ http_interactions:
       Cache-Control:
       - public,max-age=60
       Expires:
-      - Sun, 23 Oct 2016 18:09:27 GMT
+      - Thu, 17 Nov 2016 06:14:10 GMT
       Last-Modified:
-      - Sun, 23 Oct 2016 18:08:00 GMT
+      - Thu, 17 Nov 2016 06:13:00 GMT
       Content-Type:
       - text/html; charset=UTF-8
       X-Varnish:
-      - '1874216918'
+      - '2136328303'
       Date:
-      - Sun, 23 Oct 2016 18:08:27 GMT
+      - Thu, 17 Nov 2016 06:13:10 GMT
       Content-Length:
-      - '18973'
+      - '17015'
       Connection:
       - keep-alive
     body:
@@ -76,39 +76,38 @@ http_interactions:
         class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
         href=\"http://steamcommunity.com/profiles/76561198086542708/\">\r\n\t\t\t\t<div
         class=\"apphub_friend_block\" data-miniprofile=\"126276980\">\r\n\t\t\t\t\t<div
-        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/d1/d1b3abafd92ba37f6640885ef9a161aa9be533fb.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder online\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/d1/d1b3abafd92ba37f6640885ef9a161aa9be533fb.jpg\"></div>\r\n\t\t\t\t\t<div
         class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
-        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198086542708/\">UnimaginativeHandle</a></div>\r\n\t\t\t\t\t<div
-        class=\"apphub_CardContentMoreLink ellipsis\">2,250 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        online ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198086542708/\">UnimaginativeHandle</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">2,363 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
         class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
-        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        alignNews\">1</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
         class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
-        data-modal-content-url=\"http://steamcommunity.com/profiles/76561198289224745/recommended/498680/\"
+        data-modal-content-url=\"http://steamcommunity.com/profiles/76561198173842257/recommended/498680/\"
         data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
-        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t1
-        person found this review helpful<br>1 person found this review funny\t\t\t</div>\r\n\r\n\t\t\t<div
-        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
-        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t3
+        of 4 people (75%) found this review helpful<br>1 person found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
         width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
-        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">0.1
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">9.6
         hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
         left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
-        class=\"date_posted\">Posted: October 21</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tBir
-        kez daha anladım ki,olumsuz yorumu görüp ön yargılı olmayacaksın,tamam ilk
-        etapta göze amatör geliyor ama anladığım kadarıyla arkadaşların yaptığı ilk
-        oyun bu ve küçümsenecek kadar da değil yani.Başlangıcın bu olması bence başarıdır.<br><br><br>-Oyunla
-        ilgili olarak<br>Bulmacalar zor geliyor ama çözdükten sonra mantıklı geliyor
-        ve aslında çok da zor olmadığını anlıyorsun.<br>Mesela başarımları bulmak
-        bile bir bulmaca çözmek gibi zaten hepsini bulana ödül dediklerine göre...<br>bir
-        tek nesneler biraz zor alınıyor orda bir problem var sanırım.<br><br>Ben beğendim.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
-        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"date_posted\">Posted: October 18</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tOyunu
+        herkese kesinlikle tavsiye ederim.Düşündüren bulmacaları ile oyun gerçekten
+        çok başarılı olmuş.Hiç beklemediğiniz yerlerde ufak bir sıçrama ile yerinizden
+        kalkabilirsiniz.Tabiki en büyük ve gurur verici yanı ise böylesi başarılı
+        oyunun türk yapımı oluyor olması.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
+        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
         class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
-        href=\"http://steamcommunity.com/profiles/76561198289224745/\">\r\n\t\t\t\t<div
-        class=\"apphub_friend_block\" data-miniprofile=\"328959017\">\r\n\t\t\t\t\t<div
-        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/c2/c200437e2f8c842d539166250d5a208ceeff3c87.jpg\"></div>\r\n\t\t\t\t\t<div
+        href=\"http://steamcommunity.com/profiles/76561198173842257/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"213576529\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb.jpg\"></div>\r\n\t\t\t\t\t<div
         class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
-        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198289224745/\">F@NT@STIK</a></div>\r\n\t\t\t\t\t<div
-        class=\"apphub_CardContentMoreLink ellipsis\">2 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198173842257/\">{{VIP}}
+        ERROR -_-</a></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentMoreLink ellipsis\">102
+        products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
         class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
         alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
         class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
@@ -120,7 +119,7 @@ http_interactions:
         class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown.png?v=1\"
         width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
         class=\"title\">Not Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
-        class=\"hours\">2.5 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
+        class=\"hours\">3.0 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
         style=\"clear: left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
         class=\"date_posted\">Posted: October 18</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tAlright.
         I've played for.. A couple hours now apparently. The game is poor in my opinion,
@@ -159,7 +158,7 @@ http_interactions:
         src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown.png?v=1\"
         width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
         class=\"title\">Not Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
-        class=\"hours\">0.3 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
+        class=\"hours\">3.5 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
         style=\"clear: left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
         class=\"date_posted\">Posted: October 17</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tpoor
         english and no password\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
@@ -170,67 +169,18 @@ http_interactions:
         offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/16/1645d96d5d2c5ff8a877a289c76cac1ee044a79d.jpg\"></div>\r\n\t\t\t\t\t<div
         class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
         offline ellipsis\"><a href=\"http://steamcommunity.com/id/bws412/\">Bryan
-        Callen</a></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentMoreLink ellipsis\">35
+        Callen</a></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentMoreLink ellipsis\">37
         products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
         class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
-        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
-        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
-        data-modal-content-url=\"http://steamcommunity.com/profiles/76561198173842257/recommended/498680/\"
-        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
-        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t2
-        of 4 people (50%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div
-        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
-        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
-        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
-        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">9.1
-        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
-        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
-        class=\"date_posted\">Posted: October 18</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tOyunu
-        herkese kesinlikle tavsiye ederim.Düşündüren bulmacaları ile oyun gerçekten
-        çok başarılı olmuş.Hiç beklemediğiniz yerlerde ufak bir sıçrama ile yerinizden
-        kalkabilirsiniz.Tabiki en büyük ve gurur verici yanı ise böylesi başarılı
-        oyunun türk yapımı oluyor olması.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div
-        class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
-        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
-        href=\"http://steamcommunity.com/profiles/76561198173842257/\">\r\n\t\t\t\t<div
-        class=\"apphub_friend_block\" data-miniprofile=\"213576529\">\r\n\t\t\t\t\t<div
-        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb.jpg\"></div>\r\n\t\t\t\t\t<div
-        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
-        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198173842257/\">{{VIP}}
-        ERROR -_-</a></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentMoreLink ellipsis\">97
-        products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
-        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
-        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
-        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
-        data-modal-content-url=\"http://steamcommunity.com/profiles/76561197976059363/recommended/498680/\"
-        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
-        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t0
-        of 1 people (0%) found this review helpful\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
-        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
-        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsDown.png?v=1\"
-        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
-        class=\"title\">Not Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
-        class=\"hours\">0.9 hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
-        style=\"clear: left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
-        class=\"date_posted\">Posted: October 21</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tif
-        only i can do something !!! Enter key dont works , nothing seem to works  :-)\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
-        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
-        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
-        href=\"http://steamcommunity.com/profiles/76561197976059363/\">\r\n\t\t\t\t<div
-        class=\"apphub_friend_block\" data-miniprofile=\"15793635\">\r\n\t\t\t\t\t<div
-        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/75/750a32826baf35642d82252abf65061b35ab68ca.jpg\"></div>\r\n\t\t\t\t\t<div
-        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
-        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561197976059363/\">valpi</a></div>\r\n\t\t\t\t\t<div
-        class=\"apphub_CardContentMoreLink ellipsis\">50 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
-        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
-        alignNews\">7</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        alignNews\">1</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
         class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
         data-modal-content-url=\"http://steamcommunity.com/id/lHaDeS/recommended/498680/\"
         data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
-        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\tNo
-        ratings yet<br>1 person found this review funny\t\t\t</div>\r\n\r\n\t\t\t<div
-        class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div class=\"reviewInfo\">\r\n\t\t\t\t\t<div
-        class=\"thumb\">\r\n\t\t\t\t\t\t<img src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t1
+        of 2 people (50%) found this review helpful<br>1 person found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
         width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
         class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">0.5
         hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
@@ -242,16 +192,46 @@ http_interactions:
         class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
         href=\"http://steamcommunity.com/id/lHaDeS/\">\r\n\t\t\t\t<div class=\"apphub_friend_block\"
         data-miniprofile=\"335598959\">\r\n\t\t\t\t\t<div class=\"appHubIconHolder
-        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/4b/4be339a6592acd73c8fbf58d79360e2f9645ce45.jpg\"></div>\r\n\t\t\t\t\t<div
+        offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/50/50a20606209d40fb51242e1d052c48b0e675c7e3.jpg\"></div>\r\n\t\t\t\t\t<div
         class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
         offline ellipsis\"><a href=\"http://steamcommunity.com/id/lHaDeS/\">みλつまち</a></div>\r\n\t\t\t\t\t<div
         class=\"apphub_CardContentMoreLink ellipsis\">4 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
         class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
+        alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div><div
+        class=\"apphub_Card modalContentLink interactable\" style=\"display: none\"
+        data-modal-content-url=\"http://steamcommunity.com/profiles/76561198289224745/recommended/498680/\"
+        data-modal-content-sizetofit=\"false\">\r\n\t<div class=\"apphub_CardContentMain\">\r\n\t\t<div
+        class=\"apphub_UserReviewCardContent\">\r\n\t\t\t<div class=\"found_helpful\">\r\n\t\t\t\t1
+        of 2 people (50%) found this review helpful<br>1 person found this review
+        funny\t\t\t</div>\r\n\r\n\t\t\t<div class=\"vote_header\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"reviewInfo\">\r\n\t\t\t\t\t<div class=\"thumb\">\r\n\t\t\t\t\t\t<img
+        src=\"http://steamcommunity-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp.png?v=1\"
+        width=\"44\" height=\"44\">\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"title\">Recommended</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"hours\">0.3
+        hrs on record</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div style=\"clear:
+        left\"></div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"apphub_CardTextContent\">\r\n\t\t\t\t<div
+        class=\"date_posted\">Posted: October 21</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\tBir
+        kez daha anladım ki,olumsuz yorumu görüp ön yargılı olmayacaksın,tamam ilk
+        etapta göze amatör geliyor ama anladığım kadarıyla arkadaşların yaptığı ilk
+        oyun bu ve küçümsenecek kadar da değil yani.Başlangıcın bu olması bence başarıdır.<br><br><br>-Oyunla
+        ilgili olarak<br>Bulmacalar zor geliyor ama çözdükten sonra mantıklı geliyor
+        ve aslında çok da zor olmadığını anlıyorsun.<br>Mesela başarımları bulmak
+        bile bir bulmaca çözmek gibi zaten hepsini bulana ödül dediklerine göre...<br>bir
+        tek nesneler biraz zor alınıyor orda bir problem var sanırım.<br><br>Ben beğendim.\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div
+        class=\"UserReviewCardContent_Footer\">\r\n\t\t\t<div class=\"gradient\">&nbsp;</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\r\n\t\t<div
+        class=\"apphub_CardContentAuthorBlock tall\">\r\n\t\t<div class=\"apphub_friend_block_container\">\r\n\t\t\t<a
+        href=\"http://steamcommunity.com/profiles/76561198289224745/\">\r\n\t\t\t\t<div
+        class=\"apphub_friend_block\" data-miniprofile=\"328959017\">\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder offline\"><img src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/c2/c200437e2f8c842d539166250d5a208ceeff3c87.jpg\"></div>\r\n\t\t\t\t\t<div
+        class=\"appHubIconHolder greyOverlay\"></div>\r\n\t\t\t\t\t<div class=\"apphub_CardContentAuthorName
+        offline ellipsis\"><a href=\"http://steamcommunity.com/profiles/76561198289224745/\">F@NT@STIK</a></div>\r\n\t\t\t\t\t<div
+        class=\"apphub_CardContentMoreLink ellipsis\">2 products in account</div>\r\n\t\t\t\t</div>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div
+        class=\"apphub_UserReviewCardStats\">\r\n\t\t\t<div class=\"apphub_CardCommentCount
         alignNews\">0</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear: left\"></div>\r\n\t</div>\r\n\t</div>\t\t\t\t<script>\r\n\t\t\t\t\t$J(function()
-        { RequestCurrentUserRecommendationVotes( [\"26097443\",\"26145457\",\"26109762\",\"26096784\",\"26104944\",\"26151197\",\"26163655\"]
+        { RequestCurrentUserRecommendationVotes( [\"26097443\",\"26104944\",\"26109762\",\"26096784\",\"26163655\",\"26145457\"]
         ); } );\r\n\t\t\t\t</script>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t<form method=\"GET\"
         id=\"MoreContentForm1\" name=\"MoreContentForm1\" action=\"http://steamcommunity.com/app/498680/homecontent/\">\r\n\t\t\t<input
-        type=\"hidden\" name=\"userreviewsoffset\" value=\"7\"><input type=\"hidden\"
+        type=\"hidden\" name=\"userreviewsoffset\" value=\"6\"><input type=\"hidden\"
         name=\"p\" value=\"2\"><input type=\"hidden\" name=\"workshopitemspage\" value=\"3\"><input
         type=\"hidden\" name=\"readytouseitemspage\" value=\"3\"><input type=\"hidden\"
         name=\"mtxitemspage\" value=\"3\"><input type=\"hidden\" name=\"itemspage\"
@@ -268,6 +248,8 @@ http_interactions:
         type=\"hidden\" name=\"filterLanguage\" value=\"all\">\r\n\t\t\t\t<input type=\"hidden\"
         name=\"searchText\" value=\"\">\r\n\t\t\t\t<input type=\"hidden\" name=\"forceanon\"
         value=\"1\">\t\t\t\t\t\t\t</form>\r\n\t\t\t"
-    http_version: 
-  recorded_at: Sun, 23 Oct 2016 18:08:27 GMT
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: http://steamcommunity.com/app/498680/homecontent/?userreviewsoffset=0&p=1&workshopitemspage=2&readytouseitemspage=2&mtxitemspage=2&itemspage=2&screenshotspage=2&videospage=2&artpage=2&allguidepage=2&webguidepage=2&integratedguidepage=2&discussionspage=2&numperpage=10&browsefilter=toprated&l=english&appHubSubSection=10&filterLanguage=all&searchText=&forceanon=1
+  recorded_at: Thu, 17 Nov 2016 06:13:11 GMT
 recorded_with: VCR 2.9.3

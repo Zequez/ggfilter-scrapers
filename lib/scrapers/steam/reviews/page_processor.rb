@@ -46,8 +46,6 @@ module Scrapers::Steam::Reviews
       )
     end
 
-    regexp %r{^http://steamcommunity\.com/app/(\d+)/homecontent/\?.*userreviewsoffset=(\d+).*p=(\d+).*$}
-
     MAX_PAGES = 100
 
     def self.inject(all_data, data)
@@ -77,15 +75,19 @@ module Scrapers::Steam::Reviews
       end
 
       if cards.size == 10 and current_page < MAX_PAGES
-        if current_page == 1
-          add_to_queue generate_url(current_page + 1)
-          add_to_queue generate_url(current_page + 2)
+        # if current_page == 1
+        #   add_to_queue generate_url(current_page + 1)
+        #   add_to_queue generate_url(current_page + 2)
+        # end
+
+        add(generate_url(current_page + 1)) do |output|
+          data[:positive] += output[:positive]
+          data[:negative] += output[:negative]
+          yield(data)
         end
-
-        add_to_queue generate_url(current_page + 3)
+      else
+        yield(data)
       end
-
-      data
     end
 
     def current_page

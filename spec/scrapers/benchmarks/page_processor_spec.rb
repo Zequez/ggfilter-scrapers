@@ -8,7 +8,7 @@ describe Scrapers::Benchmarks::PageProcessor, cassette: true do
   def self.gpus_listing_cassette_subject(type)
     before_all_cassette do
       url = benchmarks_url(type)
-      @result = scrap(url)
+      @result = vcr_processor_request(processor_class, url)
     end
     subject{ @result }
   end
@@ -18,18 +18,6 @@ describe Scrapers::Benchmarks::PageProcessor, cassette: true do
       @gpu = @result[n]
     end
     subject{ @gpu }
-  end
-
-  describe 'URL detection' do
-    it 'should detect the videocardbenchmark listing URL' do
-      url = benchmarks_url('midlow_range_gpus')
-      expect(url).to match processor_class.regexp
-    end
-
-    it 'should not match non-videocardbenchmark listing URLs' do
-      url = "http://purple.com"
-      expect(url).to_not match processor_class.regexp
-    end
   end
 
   describe 'GPU listings' do

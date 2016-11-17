@@ -42,7 +42,7 @@ VCR.configure do |config|
   end
 
   config.cassette_library_dir = "#{Scrapers::ROOT}/spec/fixtures/vcr_cassettes"
-  config.hook_into :webmock # or :fakeweb
+  config.hook_into :typhoeus
   config.configure_rspec_metadata!
 end
 

@@ -11,12 +11,32 @@
 #  :thumbnail
 module Scrapers::Steam::List
   class PageProcessor < Scrapers::Base::PageProcessor
-    regexp %r{^http://store\.steampowered\.com/search/results}
+    def process_page
+      css!('#search_result_container')
 
-    def inject(data)
-      data ||= []
-      data += @data
+      pagination = css('.search_pagination_right')
+      last_page_e = pagination.search('a:not(.pagebtn)').last
+      if last_page_e
+        last_page_link = last_page_e['href'].sub(%r{/search/\?}, '/search/results?')
+        pages = Integer(last_page_link.scan(/page=(\d+)/).flatten.first)
+      else
+        pages = 1
+      end
+
+      (1..pages).each do |n|
+        url = @url.sub(/page=(\d+)/, "page=#{n}")
+        add(url, EachPageProcessor) do |output|
+          yield output
+        end
+      end
     end
+  end
+
+  class EachPageProcessor < Scrapers::Base::PageProcessor
+    # def self.inject(all_data, data)
+    #   all_data ||= []
+    #   all_data += @data
+    # end
 
     def process_page
       data = []
@@ -36,21 +56,23 @@ module Scrapers::Steam::List
 
         data << game
       end
+      #
+      # pagination = @doc.search('.search_pagination_right')
+      # if pagination.text.strip =~ /^1\b/ # if we are parsing the first page
+      #   last_page_e = pagination.search('a:not(.pagebtn)').last
+      #   if last_page_e
+      #     last_page_link = last_page_e['href'].sub(%r{/search/\?}, '/search/results?')
+      #     last_page_number = Integer(last_page_link.scan(/page=(\d+)/).flatten.first)
+      #     (2..last_page_number).each do |n|
+      #       page_link = @url.sub("page=1", "page=#{n}")
+      #       add_to_queue page_link
+      #     end
+      #   end
+      # else
+      #
+      # end
 
-      pagination = @doc.search('.search_pagination_right')
-      if pagination.text.strip =~ /^1\b/ # if we are parsing the first page
-        last_page_e = pagination.search('a:not(.pagebtn)').last
-        if last_page_e
-          last_page_link = last_page_e['href'].sub(%r{/search/\?}, '/search/results?')
-          last_page_number = Integer(last_page_link.scan(/page=(\d+)/).flatten.first)
-          (2..last_page_number).each do |n|
-            page_link = @url.sub("page=1", "page=#{n}")
-            add_to_queue page_link
-          end
-        end
-      end
-
-      data
+      yield data
     end
 
     def read_id(a)

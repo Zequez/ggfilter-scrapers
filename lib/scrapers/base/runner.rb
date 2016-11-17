@@ -71,12 +71,12 @@ module Scrapers
         )
       end
 
-      def scrap(options = {}, &block)
-        loader.scrap(options) do |scrap_request|
+      def scrap(&block)
+        loader.scrap do |output, url|
           if @options[:resources]
-            block.call(scrap_request, resource_from_url(scrap_request.url))
+            block.call(output, resource_from_url(url))
           else
-            block.call(scrap_request)
+            block.call(output)
           end
         end
       end

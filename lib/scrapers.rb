@@ -36,6 +36,7 @@ require 'scrapers/custom_logger'
 require 'scrapers/scrap_request'
 require 'scrapers/root_scrap_request'
 require 'scrapers/loader'
+require 'scrapers/true_loader'
 
 require 'scrapers/base/page_processor'
 require 'scrapers/base/data_processor'

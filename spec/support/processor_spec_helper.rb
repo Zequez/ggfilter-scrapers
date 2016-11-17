@@ -1,15 +1,25 @@
 module ProcessorSpecHelper
-  def scrap(page_url, headers = {}, &add_to_queue)
-    response = Typhoeus.get(page_url, headers: headers)
-    add_to_queue ||= lambda{|url|}
-    scrap_request = Scrapers::RootScrapRequest.new(page_url, lambda{ |all_data, data| })
-    scrap_request.set_response response
-    processor_class.new(scrap_request, &add_to_queue).process_page
+  def vcr_processor_request(processor_class, url, loader_options = {}, &cb)
+    loader = Scrapers::TrueLoader.new(loader_options)
+    processor = processor_class.new(url, loader)
+    cb ||= proc{}
+    result = nil
+    processor.load do |output|
+      cb.call(output)
+      result = output
+    end
+    loader.run{} # blocking
+    return result
   end
 
-  def page_processor_for_html(html, url = 'http://google.com')
-    scrap_request = Scrapers::RootScrapRequest.new(url, lambda{ |all_data, data| })
-    scrap_request.set_response OpenStruct.new(body: html, request: {}, )
-    return processor_class.new(scrap_request)
+  def page_processor_for_html(processor_class, html, url = 'http://google.com')
+    Typhoeus.stub(url).and_return(Typhoeus::Response.new(code: 200, body: html))
+    loader = Scrapers::TrueLoader.new
+    processor = processor_class.new(url, loader)
+    result = nil
+    processor.load do |output|
+      result = output
+    end
+    loader.run{} # blocking
   end
 end

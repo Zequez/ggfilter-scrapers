@@ -18,15 +18,15 @@ module Scrapers
         end
 
         def urls
-          sale? ? options[:on_sale_url] : options[:all_games_url]
+          [sale? ? options[:on_sale_url] : options[:all_games_url]]
         end
 
         def run!
           Scrapers.logger.info "For " + (sale? ? 'games on sale' : 'all games')
 
           @on_sale_ids = []
-          scrap do |scrap_request|
-            scrap_request.output.each do |game_data|
+          scrap do |games_data|
+            games_data.each do |game_data|
               game = SteamGame.find_by_steam_id(game_data[:id])
               data_process(game_data, game)
             end

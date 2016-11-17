@@ -16,7 +16,7 @@ module Scrapers::Steam
         it 'should scrap with the Loader and save all new games' do
           runner = klass.new(all_games_url: steam_list_url('k'))
           runner.run
-          expect(SteamGame.all.count).to eq 237
+          expect(SteamGame.all.count).to eq 249
           game = SteamGame.find_by_name('XCOM: Enemy Unknown')
           expect(game).to_not eq nil
           expect(game.platforms).to match_array [:mac, :win, :linux]
@@ -34,7 +34,7 @@ module Scrapers::Steam
           game = SteamGame.create steam_id: 200510, name: 'Potato Simulator 2015', released_at: 1.month.ago
           runner = klass.new(all_games_url: steam_list_url('k'))
           runner.run
-          expect(SteamGame.all.count).to eq 237
+          expect(SteamGame.all.count).to eq 249
           game.reload
           expect(game.name).to eq 'XCOM: Enemy Unknown'
           expect(game.released_at).to be_within(1.day).of Time.parse('8 Oct, 2012')
@@ -47,7 +47,7 @@ module Scrapers::Steam
           game = SteamGame.create steam_id: 123123, sale_price: 123, price: 300
           runner = klass.new(on_sale_url: steam_list_url('p', 1, true), all_games_url: '', on_sale: true)
           runner.run
-          expect(SteamGame.all.count).to eq 28
+          expect(SteamGame.all.count).to eq 12
           game.reload
           expect(game.sale_price).to eq nil
         end

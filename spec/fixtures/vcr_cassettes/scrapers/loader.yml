@@ -403,4 +403,258 @@ http_interactions:
       base64_string: ''
     http_version: 
   recorded_at: Sat, 22 Oct 2016 13:38:55 GMT
+- request:
+    method: get
+    uri: http://www.example.com
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=604800
+      Content-Type:
+      - text/html
+      Date:
+      - Thu, 17 Nov 2016 06:49:32 GMT
+      Etag:
+      - '"359670651+gzip+ident"'
+      Expires:
+      - Thu, 24 Nov 2016 06:49:32 GMT
+      Last-Modified:
+      - Fri, 09 Aug 2013 23:54:35 GMT
+      Server:
+      - ECS (bos/F56E)
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - HIT
+      x-ec-custom-error:
+      - '1'
+      Content-Length:
+      - '1270'
+    body:
+      encoding: UTF-8
+      base64_string: |
+        PCFkb2N0eXBlIGh0bWw+CjxodG1sPgo8aGVhZD4KICAgIDx0aXRsZT5FeGFt
+        cGxlIERvbWFpbjwvdGl0bGU+CgogICAgPG1ldGEgY2hhcnNldD0idXRmLTgi
+        IC8+CiAgICA8bWV0YSBodHRwLWVxdWl2PSJDb250ZW50LXR5cGUiIGNvbnRl
+        bnQ9InRleHQvaHRtbDsgY2hhcnNldD11dGYtOCIgLz4KICAgIDxtZXRhIG5h
+        bWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGlu
+        aXRpYWwtc2NhbGU9MSIgLz4KICAgIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+
+        CiAgICBib2R5IHsKICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjBmMGYy
+        OwogICAgICAgIG1hcmdpbjogMDsKICAgICAgICBwYWRkaW5nOiAwOwogICAg
+        ICAgIGZvbnQtZmFtaWx5OiAiT3BlbiBTYW5zIiwgIkhlbHZldGljYSBOZXVl
+        IiwgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZjsKICAgICAgICAKICAg
+        IH0KICAgIGRpdiB7CiAgICAgICAgd2lkdGg6IDYwMHB4OwogICAgICAgIG1h
+        cmdpbjogNWVtIGF1dG87CiAgICAgICAgcGFkZGluZzogNTBweDsKICAgICAg
+        ICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmOwogICAgICAgIGJvcmRlci1yYWRp
+        dXM6IDFlbTsKICAgIH0KICAgIGE6bGluaywgYTp2aXNpdGVkIHsKICAgICAg
+        ICBjb2xvcjogIzM4NDg4ZjsKICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5v
+        bmU7CiAgICB9CiAgICBAbWVkaWEgKG1heC13aWR0aDogNzAwcHgpIHsKICAg
+        ICAgICBib2R5IHsKICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2Zm
+        ZjsKICAgICAgICB9CiAgICAgICAgZGl2IHsKICAgICAgICAgICAgd2lkdGg6
+        IGF1dG87CiAgICAgICAgICAgIG1hcmdpbjogMCBhdXRvOwogICAgICAgICAg
+        ICBib3JkZXItcmFkaXVzOiAwOwogICAgICAgICAgICBwYWRkaW5nOiAxZW07
+        CiAgICAgICAgfQogICAgfQogICAgPC9zdHlsZT4gICAgCjwvaGVhZD4KCjxi
+        b2R5Pgo8ZGl2PgogICAgPGgxPkV4YW1wbGUgRG9tYWluPC9oMT4KICAgIDxw
+        PlRoaXMgZG9tYWluIGlzIGVzdGFibGlzaGVkIHRvIGJlIHVzZWQgZm9yIGls
+        bHVzdHJhdGl2ZSBleGFtcGxlcyBpbiBkb2N1bWVudHMuIFlvdSBtYXkgdXNl
+        IHRoaXMKICAgIGRvbWFpbiBpbiBleGFtcGxlcyB3aXRob3V0IHByaW9yIGNv
+        b3JkaW5hdGlvbiBvciBhc2tpbmcgZm9yIHBlcm1pc3Npb24uPC9wPgogICAg
+        PHA+PGEgaHJlZj0iaHR0cDovL3d3dy5pYW5hLm9yZy9kb21haW5zL2V4YW1w
+        bGUiPk1vcmUgaW5mb3JtYXRpb24uLi48L2E+PC9wPgo8L2Rpdj4KPC9ib2R5
+        Pgo8L2h0bWw+Cg==
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: http://www.example.com/
+  recorded_at: Thu, 17 Nov 2016 06:49:32 GMT
+- request:
+    method: get
+    uri: http://www.purple.com
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 17 Nov 2016 06:49:32 GMT
+      Server:
+      - Chaos
+      Last-Modified:
+      - Fri, 19 Aug 2016 18:53:53 GMT
+      ETag:
+      - '"502-53a7138487d59"'
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '1282'
+      Content-Type:
+      - text/html
+    body:
+      encoding: UTF-8
+      base64_string: |
+        PGh0bWw+CiAgICA8aGVhZD4KCTxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQt
+        dHlwZSIgY29udGVudD0idGV4dC9odG1sO2NoYXJzZXQ9VVRGLTgiPgoJPG1l
+        dGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0
+        aCwgaW5pdGlhbC1zY2FsZT0xIj4KCQoJPE1FVEEgSFRUUC1FUVVJVj0iUmVm
+        cmVzaCIgQ09OVEVOVD0iMzsgVVJMPXB1cnBsZS5odG1sIj4KCQoJPGxpbmsg
+        cmVsPSJzdHlsZXNoZWV0IiB0eXBlPSJ0ZXh0L2NzcyIgaHJlZj0iaHR0cDov
+        L3d3dy5wdXJwbGUuY29tL2luZGV4LmNzcyI+CgkKCQoJPHRpdGxlPnB1cnBs
+        ZS5jb208L3RpdGxlPgoJPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQi
+        PgoJIAoJIHZhciBfZ2FxID0gX2dhcSB8fCBbXTsKCSBfZ2FxLnB1c2goWydf
+        c2V0QWNjb3VudCcsICdVQS0yNzMxODAyMi0xJ10pOwoJIF9nYXEucHVzaChb
+        J19zZXREb21haW5OYW1lJywgJ3B1cnBsZS5jb20nXSk7CgkgX2dhcS5wdXNo
+        KFsnX3RyYWNrUGFnZXZpZXcnXSk7CgkgCgkgKGZ1bmN0aW9uKCkgewoJICAg
+        ICB2YXIgZ2EgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsg
+        Z2EudHlwZSA9ICd0ZXh0L2phdmFzY3JpcHQnOyBnYS5hc3luYyA9IHRydWU7
+        CgkgICAgIGdhLnNyYyA9ICgnaHR0cHM6JyA9PSBkb2N1bWVudC5sb2NhdGlv
+        bi5wcm90b2NvbCA/ICdodHRwczovL3NzbCcgOiAnaHR0cDovL3d3dycpICsg
+        Jy5nb29nbGUtYW5hbHl0aWNzLmNvbS9nYS5qcyc7CgkgICAgIHZhciBzID0g
+        ZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOyBz
+        LnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGdhLCBzKTsKCSB9KSgpOwoJIAoJ
+        PC9zY3JpcHQ+CgkKCTxzdHlsZT4KCSAgICBib2R5IHsgYmFja2dyb3VuZC1j
+        b2xvcjogIzdEMjZDRDsgfQpheyBjb2xvcjojQUFBQTAwOyB0ZXh0LWRlY29y
+        YXRpb246IG5vbmU7IHBhZGRpbmc6IDRweDsgfQphOmxpbmsgeyBjb2xvcjoj
+        QUFBQTAwOyB9CmE6dmlzaXRlZCB7IGNvbG9yOiM5OTk5MDA7IH0KYTpob3Zl
+        ciB7IGNvbG9yOiM2NjAwMDA7IGJhY2tncm91bmQ6ICM5RDQ2REQ7IH0KYTph
+        Y3RpdmUgeyBjb2xvcjojNjY2NjAwOyB9Cgk8L3N0eWxlPgoJCiAgICA8L2hl
+        YWQ+CiAgICA8Ym9keT4KCTx1bD4KICA8bGk+IDxhIGhyZWY9ImZhcS5odG1s
+        Ij5GQVE8L2E+PC9saT4KICA8bGk+Jm5ic3A7PC9saT4KICA8bGk+IDxhIGhy
+        ZWY9ImFkdmVydGlzZS5odG1sIj5Zb3VyIGFkIGhlcmU8L2E+PC9saT4KPC91
+        bD4KICAgIDwvYm9keT4KPC9odG1sPg==
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: http://www.purple.com/
+  recorded_at: Thu, 17 Nov 2016 06:49:32 GMT
+- request:
+    method: get
+    uri: http://www.zombo.com
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 17 Nov 2016 06:49:32 GMT
+      Server:
+      - Apache
+      Last-Modified:
+      - Tue, 23 Apr 2002 05:19:28 GMT
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '758'
+      Content-Type:
+      - text/html
+    body:
+      encoding: UTF-8
+      base64_string: |
+        PGh0bWw+CjxoZWFkPgo8dGl0bGU+Wk9NQk88L3RpdGxlPgo8bWV0YSBodHRw
+        LWVxdWl2PSJDb250ZW50LVR5cGUiIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hh
+        cnNldD1pc28tODg1OS0xIj4KPCEtLVBsZWFzZSBWaXNpdCAxNWZvb3RzdGlj
+        ay5jb20gb3VyIG90aGVyIHdlYnNpdGUuIFRoYW5rWiAtLT4KPC9oZWFkPgoK
+        PGJvZHkgYmdjb2xvcj0iI0ZGRkZGRiI+CjxvYmplY3QgY2xhc3NpZD0iY2xz
+        aWQ6RDI3Q0RCNkUtQUU2RC0xMWNmLTk2QjgtNDQ0NTUzNTQwMDAwIgoKIGNv
+        ZGViYXNlPSJodHRwOi8vYWN0aXZlLm1hY3JvbWVkaWEuY29tL2ZsYXNoMi9j
+        YWJzL3N3Zmxhc2guY2FiI3ZlcnNpb249NCwwLDAsMCIKCiBpZD1pbnJvenhh
+        IHdpZHRoPTEwMCUgaGVpZ2h0PTEwMCU+CiAgPHBhcmFtIG5hbWU9bW92aWUg
+        dmFsdWU9IndlbGNvbWVuZXc2LnN3ZiI+CiAgPHBhcmFtIG5hbWU9cXVhbGl0
+        eSB2YWx1ZT1oaWdoPgogIDxwYXJhbSBuYW1lPWJnY29sb3IgdmFsdWU9I0ZG
+        RkZGRj4KICA8ZW1iZWQgc3JjPSJpbnJvenhhLnN3ZiIgcXVhbGl0eT1oaWdo
+        IGJnY29sb3I9I0ZGRkZGRiAgd2lkdGg9MTAwJSBoZWlnaHQ9MTAwJSB0eXBl
+        PSJhcHBsaWNhdGlvbi94LXNob2Nrd2F2ZS1mbGFzaCIgcGx1Z2luc3BhZ2U9
+        Imh0dHA6Ly93d3cubWFjcm9tZWRpYS5jb20vc2hvY2t3YXZlL2Rvd25sb2Fk
+        L2luZGV4LmNnaT9QMV9Qcm9kX1ZlcnNpb249U2hvY2t3YXZlRmxhc2giPgog
+        IDwvZW1iZWQ+IAo8L29iamVjdD4gCjwvYm9keT4KPC9odG1sPgo=
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: http://www.zombo.com/
+  recorded_at: Thu, 17 Nov 2016 06:49:32 GMT
+- request:
+    method: get
+    uri: http://www.purple.com/404
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Thu, 17 Nov 2016 06:49:32 GMT
+      Server:
+      - Chaos
+      Content-Length:
+      - '201'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+    body:
+      encoding: UTF-8
+      base64_string: |
+        PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9JRVRGLy9EVEQgSFRNTCAyLjAv
+        L0VOIj4KPGh0bWw+PGhlYWQ+Cjx0aXRsZT40MDQgTm90IEZvdW5kPC90aXRs
+        ZT4KPC9oZWFkPjxib2R5Pgo8aDE+Tm90IEZvdW5kPC9oMT4KPHA+VGhlIHJl
+        cXVlc3RlZCBVUkwgLzQwNCB3YXMgbm90IGZvdW5kIG9uIHRoaXMgc2VydmVy
+        LjwvcD4KPC9ib2R5PjwvaHRtbD4K
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: http://www.purple.com/404
+  recorded_at: Thu, 17 Nov 2016 06:49:32 GMT
+- request:
+    method: get
+    uri: http://www.purple.com/404
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Thu, 17 Nov 2016 06:49:32 GMT
+      Server:
+      - Chaos
+      Content-Length:
+      - '201'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+    body:
+      encoding: UTF-8
+      base64_string: |
+        PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9JRVRGLy9EVEQgSFRNTCAyLjAv
+        L0VOIj4KPGh0bWw+PGhlYWQ+Cjx0aXRsZT40MDQgTm90IEZvdW5kPC90aXRs
+        ZT4KPC9oZWFkPjxib2R5Pgo8aDE+Tm90IEZvdW5kPC9oMT4KPHA+VGhlIHJl
+        cXVlc3RlZCBVUkwgLzQwNCB3YXMgbm90IGZvdW5kIG9uIHRoaXMgc2VydmVy
+        LjwvcD4KPC9ib2R5PjwvaHRtbD4K
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: http://www.purple.com/404
+  recorded_at: Thu, 17 Nov 2016 06:49:32 GMT
 recorded_with: VCR 2.9.3

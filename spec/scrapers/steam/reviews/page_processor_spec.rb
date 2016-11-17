@@ -4,27 +4,14 @@ describe Scrapers::Steam::Reviews::PageProcessor, cassette: true do
   def self.game_cassette_subject(app_id, name)
     before_all_cassette(name) do
       url = processor_class.generate_url(app_id)
-      loader = Scrapers::Loader.new(processor_class, url)
-      @result = loader.scrap
+      @result = vcr_processor_request(processor_class, url)
     end
     subject{ @result }
   end
 
-  describe 'URL detection' do
-    it 'should not detect and app alone' do
-      url = 'http://steamcommunity.com/app/1234'
-      expect(url).to_not match processor_class.regexp
-    end
-
-    it 'should detect a review page' do
-      url = processor_class.generate_url(12345, page: 3)
-      expect(url).to match processor_class.regexp
-    end
-  end
-
   describe 'error handling' do
     it 'should raise an InvalidPageError if the page is invalid' do
-      expect { page_processor_for_html('<html></html>').process_page }
+      expect { page_processor_for_html(processor_class, '<html></html>').process_page }
       .to raise_error(Scrapers::InvalidPageError)
     end
   end
@@ -32,8 +19,8 @@ describe Scrapers::Steam::Reviews::PageProcessor, cassette: true do
   describe 'loading a game with a single page of reviews' do
     game_cassette_subject 498680, 'shadows-of-truth'
 
-    its([:positive]){ is_expected.to eq [0.1, 9.1, 0.5] }
-    its([:negative]){ is_expected.to eq [0.8, 2.5, 0.3, 0.9] }
+    its([:positive]){ is_expected.to eq [9.6, 0.5, 0.3] }
+    its([:negative]){ is_expected.to eq [0.8, 3.0, 3.5] }
   end
 
   describe 'loading a game with multiple pages of reviews' do

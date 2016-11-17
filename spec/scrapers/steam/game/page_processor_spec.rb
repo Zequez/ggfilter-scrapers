@@ -8,26 +8,18 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
   def self.cassette_subject(app_id, name = 'game')
     before_all_cassette(name) do
       url = steam_game_url(app_id)
-      @result = scrap(url, 'Cookie' => 'birthtime=724320001; fakeCC=US')
+      vcr_processor_request(processor_class, url, { headers: {
+        'Cookie' => 'birthtime=724320001; fakeCC=US'
+      }}) do |output|
+        @result = output
+      end
     end
     subject{ @result }
   end
 
-  describe 'URL detection' do
-    it 'should detect the Steam search result URLs' do
-      url = steam_game_url(1)
-      expect(url).to match processor_class.regexp
-    end
-
-    it 'should not detect non-steam search result URLs' do
-      url = "http://store.steampowered.com/banana/123456"
-      expect(url).to_not match processor_class.regexp
-    end
-  end
-
   describe 'error handling' do
     it 'should raise an InvalidPageError if the page is invalid' do
-      expect { page_processor_for_html('<html></html>').process_page }
+      expect { page_processor_for_html(processor_class, '<html></html>').process_page }
       .to raise_error(Scrapers::InvalidPageError)
     end
   end

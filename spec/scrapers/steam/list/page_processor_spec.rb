@@ -1,55 +1,50 @@
 describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list do
-  def processor_class; Scrapers::Steam::List::PageProcessor end
+  def processor_class; Scrapers::Steam::List::EachPageProcessor end
 
-  def self.attributes_subject(page, name)
+  def self.attributes_subject(page_or_query, attribute_name)
     subject do
-      scrap(steam_list_url(page)).map do |h|
-        if name.kind_of? Array
-          name.map{|n| h[n]}
+      url = steam_list_url(page_or_query)
+      @result = vcr_processor_request(processor_class, url)
+      @result.map do |h|
+        if attribute_name.kind_of? Array
+          attribute_name.map{|n| h[n]}
         else
-          h[name]
+          h[attribute_name]
         end
       end
     end
   end
 
-  def self.specific_subject(page, options = {})
-    group_run = options[:group] || false
-    game_number = options[:n] || 0
-    group_result = nil
+  def self.specific_subject(query, options = {})
     subject do
-      group_result = nil unless group_run
-      group_result ||= scrap(steam_list_url(page))[game_number]
-    end
-  end
-
-  describe 'URL detection' do
-    it 'should detect the Steam search result URLs' do
-      url = steam_list_url(1)
-      expect(url).to match processor_class.regexp
-    end
-
-    it 'should not detect non-steam search result URLs' do
-      url = "http://store.steampowered.com/search"
-      expect(url).to_not match processor_class.regexp
+      url = steam_list_url(query)
+      vcr_processor_request(processor_class, url)[0]
     end
   end
 
   describe 'error handling' do
     it 'should raise an InvalidPageError if the page is invalid' do
-      expect { page_processor_for_html('<html></html>').process_page }
+      expect { page_processor_for_html(processor_class, '<html></html>').process_page }
       .to raise_error(Scrapers::InvalidPageError)
     end
   end
 
-  describe 'loading multiple pages' do
-    it 'should call the block given with all the next pages' do
-      url1 = steam_list_url('civilization', 1)
-      add_to_queue = lambda {|url|}
-      (2..16).each do |n|
-        expect(add_to_queue).to receive(:call).with(steam_list_url('civilization', n))
+  describe 'PageProcessor' do
+    describe 'loading multiple pages' do
+      it 'should call the block given with all the next pages' do
+        loader = Scrapers::TrueLoader.new
+
+        url = steam_list_url('civilization', 1)
+        processor = Scrapers::Steam::List::PageProcessor.new(url, loader)
+
+        processor.load{}
+
+        (1..16).each do |n|
+          expect(loader).to receive(:queue).with(steam_list_url('civilization', n))
+        end
+
+        loader.run{}
       end
-      scrap(url1, &add_to_queue)
     end
   end
 
@@ -81,6 +76,7 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
         ".EXE",
         "//N.P.P.D. RUSH//- The milk of Ultraviolet",
         "//SNOWFLAKE TATTOO//",
+        "0 Day",
         "0RBITALIS",
         "1 Moment Of Time: Silentville",
         "1,000 Heads Among the Trees",
@@ -92,8 +88,7 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
         "10 Years After",
         "10,000,000",
         "100% Orange Juice",
-        "1000 Amps",
-        "1001 Spikes"
+        "1000 Amps"
       ] }
     end
   end
@@ -115,6 +110,7 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
         599,
         399,
         499,
+        699,
         999,
         99,
         699,
@@ -127,14 +123,13 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
         499,
         699,
         499,
-        1499,
       ]}
     end
 
     context 'page with items on sale' do
-      specific_subject('Tabletop Simulator', group: true)
-      its([:price]) { is_expected.to eq 1999 }
-      its([:sale_price]) { is_expected.to eq 999 }
+      specific_subject('Doom & Destiny Advanced', group: true)
+      its([:price]) { is_expected.to eq 999 }
+      its([:sale_price]) { is_expected.to eq 799 }
     end
 
     context 'empty price' do
@@ -151,7 +146,7 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
     end
 
     context 'empty release date' do
-      specific_subject('WinKings')
+      specific_subject('Depression vive')
       its([:released_at]) { is_expected.to eq nil }
     end
 
@@ -173,12 +168,7 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
       attributes_subject('race the sun', [:reviews_count, :reviews_ratio])
 
       it { is_expected.to eq [
-        [4668, 93],
-        [326, 22],
-        [13, 69],
-        [35, 65],
-        [0, 50],
-        [204, 68]
+        [4685, 93], [327, 22], [35, 65], [13, 69], [0, 50], [204, 68], [0, 50]
       ] }
     end
   end
@@ -190,11 +180,12 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
       it { is_expected.to eq [
         "http://cdn.akamai.steamstatic.com/steam/apps/253030/capsule_sm_120.jpg?t=1447358697",
         "http://cdn.akamai.steamstatic.com/steam/apps/246940/capsule_sm_120.jpg?t=1447358349",
+        "http://cdn.akamai.steamstatic.com/steam/apps/336630/capsule_sm_120.jpg?t=1478620773",
         "http://cdn.akamai.steamstatic.com/steam/apps/444550/capsule_sm_120.jpg?t=1462350363",
-        "http://cdn.akamai.steamstatic.com/steam/apps/336630/capsule_sm_120.jpg?t=1447365695",
         "http://cdn.akamai.steamstatic.com/steam/apps/427570/capsule_sm_120.jpg?t=1476961171",
-        "http://cdn.akamai.steamstatic.com/steam/apps/253880/capsule_sm_120.jpg?t=1450522565"
-      ] }
+        "http://cdn.akamai.steamstatic.com/steam/apps/253880/capsule_sm_120.jpg?t=1450522565",
+        "http://cdn.akamai.steamstatic.com/steam/apps/467570/capsule_sm_120.jpg?t=1478615119"]
+      }
     end
   end
 end

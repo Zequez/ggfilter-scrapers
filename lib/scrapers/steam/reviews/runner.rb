@@ -5,18 +5,17 @@ module Scrapers::Steam
 
       def self.options
         super.merge({
-          resources: [],
-          reviews_url: 'http://steamcommunity.com/app/%s/homecontent/?l=english&userreviewsoffset=0&p=1&itemspage=2&screenshotspage=2&videospage=2&artpage=2&allguidepage=2&webguidepage=2&integratedguidepage=2&discussionspage=2&appHubSubSection=10&browsefilter=toprated&filterLanguage=all&searchText='
+          resources: []
         })
       end
 
       def urls
-        resources.map{ |g| options[:reviews_url] % g.steam_id }
+        resources.map{ |g| processor.generate_url(g.steam_id) }
       end
 
       def run!
-        scrap(yield_type: :group) do |scrap_request, resource|
-          data_process(scrap_request.consolidated_output, resource)
+        scrap do |data, resource|
+          data_process(data, resource)
         end
       end
 
