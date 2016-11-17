@@ -30,9 +30,12 @@ module Scrapers
         else
           retry_count -= 1
           if retry_count == 0
-            raise LoadingError.new("Could not load the page #{response.status} status code | #{url}")
+            raise LoadingError.new("Could not load the page #{response.code} status code | #{url}")
           else
-            # sleep(@options[:request_retry_delay])
+            # We want to pause Hydra here for a few seconds, but I don't
+            # know how to do it, once it starts you either stop it, or finish it
+            # I need to dig deeper.
+            # And no, sleeping here doesn't do anything, hydra ain't waiting for noone
             queue(url, retry_count, &cb)
           end
         end
