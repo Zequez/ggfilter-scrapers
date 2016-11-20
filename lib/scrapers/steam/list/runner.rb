@@ -43,7 +43,7 @@ module Scrapers
         private
 
         def data_process(data, game)
-          processor = DataProcessor.new(data, game)
+          processor = DataProcessor.new(data, game, resource_class)
           game = processor.process
           was_new = game.new_record?
           game.list_scraped_at = Time.now

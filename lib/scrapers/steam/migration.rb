@@ -9,6 +9,7 @@ module Scrapers::Steam
         t.string :genre
         t.text :summary
         t.datetime :released_at
+        t.string :text_release_date
 
         # Media
         t.string :thumbnail

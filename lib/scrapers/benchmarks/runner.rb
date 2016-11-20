@@ -19,7 +19,7 @@ module Scrapers::Benchmarks
     def run!
       scrap do |output|
         output.each do |gpu_data|
-          data_process(gpu_data, Gpu.find_by_name(gpu_data[:name]) || Gpu.new)
+          data_process(gpu_data, resource_class.find_by_name(gpu_data[:name]) || resource_class.new)
         end
       end
     end

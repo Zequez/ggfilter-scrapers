@@ -159,6 +159,13 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
     context 'non-date release date' do
       specific_subject('SAVAGE: The Shard of Gosen')
       its([:released_at]) { is_expected.to eq nil }
+      its([:text_release_date]) { is_expected.to eq 'Coming Soon' }
+    end
+
+    context 'general date release date' do
+      specific_subject('Drift King: Survival')
+      its([:released_at]) { is_expected.to eq nil }
+      its([:text_release_date]) { is_expected.to eq 'Nov 2016' }
     end
   end
 

@@ -50,11 +50,12 @@ module Scrapers::Steam::List
         game[:name] = read_name(a)
         game[:price], game[:sale_price] = read_prices(a)
         game[:released_at] = read_released_at(a)
+        game[:text_release_date] = read_text_release_date(a)
         game[:platforms] = read_platforms(a)
         game[:reviews_count], game[:reviews_ratio] = read_reviews(a)
         game[:thumbnail] = read_thumbnail(a)
 
-        if game[:price] || read_text_release_date(a)
+        if game[:price] || game[:text_release_date] || game[:released_at]
           data << game
         end
       end
@@ -109,7 +110,7 @@ module Scrapers::Steam::List
 
     def read_released_at(a)
       date = read_text_release_date(a)
-      if date
+      if date =~ /[a-z]{3} [0-9]{1,2}, [0-9]{4}/i
         begin
           Time.parse(date)
         rescue ArgumentError
