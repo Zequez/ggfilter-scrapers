@@ -54,7 +54,9 @@ module Scrapers::Steam::List
         game[:reviews_count], game[:reviews_ratio] = read_reviews(a)
         game[:thumbnail] = read_thumbnail(a)
 
-        data << game
+        if game[:price] || read_text_release_date(a)
+          data << game
+        end
       end
       #
       # pagination = @doc.search('.search_pagination_right')
@@ -96,16 +98,25 @@ module Scrapers::Steam::List
       end
     end
 
-    def read_released_at(a)
+    def read_text_release_date(a)
       date = css!('.search_released', a).text
       if date.blank?
         nil
       else
+        date
+      end
+    end
+
+    def read_released_at(a)
+      date = read_text_release_date(a)
+      if date
         begin
-          Time.parse(a.search('.search_released').text)
+          Time.parse(date)
         rescue ArgumentError
           nil
         end
+      else
+        nil
       end
     end
 

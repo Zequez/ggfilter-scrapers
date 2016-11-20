@@ -48,6 +48,12 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
     end
   end
 
+  describe 'games with neither price AND release date' do
+    attributes_subject('canyon capers', :name)
+
+    it{ is_expected.to eq ['Canyon Capers'] }
+  end
+
   describe ':id' do
     context 'regular page' do
       attributes_subject('potatoman', :id)
@@ -132,8 +138,8 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
       its([:sale_price]) { is_expected.to eq 799 }
     end
 
-    context 'empty price' do
-      specific_subject('Trainz: Murchison 2', group: true)
+    context 'empty price but with release date' do
+      specific_subject('Drift King: Survival', group: true)
       its([:price]) { is_expected.to eq nil }
       its([:sale_price]) { is_expected.to eq nil }
     end
@@ -145,9 +151,9 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
       its([:released_at]) { is_expected.to be_within(1.hour).of Time.parse('Mar 11, 2014') }
     end
 
-    context 'empty release date' do
-      specific_subject('Depression vive')
-      its([:released_at]) { is_expected.to eq nil }
+    context 'empty release date (and price)' do
+      attributes_subject('Depression vive', :name)
+      it { is_expected.to eq [] }
     end
 
     context 'non-date release date' do
