@@ -7,7 +7,8 @@ module Scrapers::Benchmarks
         high_url: 'http://www.videocardbenchmark.net/high_end_gpus.html',
         mid_url: 'http://www.videocardbenchmark.net/mid_range_gpus.html',
         midlow_url: 'http://www.videocardbenchmark.net/midlow_range_gpus.html',
-        low_url: 'http://www.videocardbenchmark.net/low_end_gpus.html'
+        low_url: 'http://www.videocardbenchmark.net/low_end_gpus.html',
+        resource_class: Gpu
       })
     end
 

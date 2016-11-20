@@ -5,7 +5,8 @@ module Scrapers
         {
           continue_with_errors: false,
           headers: {},
-          resources: nil
+          resources: nil,
+          resource_class: nil
         }
       end
 
@@ -39,6 +40,10 @@ module Scrapers
 
       def options
         @options
+      end
+
+      def resource_class
+        @options[:resource_class]
       end
 
       protected

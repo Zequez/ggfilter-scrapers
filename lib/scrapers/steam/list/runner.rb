@@ -13,7 +13,8 @@ module Scrapers
           super.merge({
             on_sale: false,
             all_games_url: 'http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1',
-            on_sale_url: 'http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1&specials=1'
+            on_sale_url: 'http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1&specials=1',
+            resource_class: SteamGame
           })
         end
 
@@ -27,13 +28,13 @@ module Scrapers
           @on_sale_ids = []
           scrap do |games_data|
             games_data.each do |game_data|
-              game = SteamGame.find_by_steam_id(game_data[:id])
+              game = resource_class.find_by_steam_id(game_data[:id])
               data_process(game_data, game)
             end
           end
 
           if sale?
-            updated_count = SteamGame.where.not(id: @on_sale_ids).update_all(sale_price: nil)
+            updated_count = resource_class.where.not(id: @on_sale_ids).update_all(sale_price: nil)
             on_sale_count = @on_sale_ids.size
             Scrapers.logger.info "SteamList #{updated_count} items no longer on sale! #{on_sale_count} on sale!"
           end
