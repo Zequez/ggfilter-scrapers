@@ -131,4 +131,8 @@ RSpec.configure do |config|
   def response_json
     JSON.parse(response.body)
   end
+
+  def stub_url(url, status, body, headers = {})
+    Typhoeus.stub(url).and_return(Typhoeus::Response.new(code: status, body: body, headers: headers))
+  end
 end

@@ -33,8 +33,8 @@ end
 
 require 'scrapers/version'
 require 'scrapers/custom_logger'
-require 'scrapers/scrap_request'
-require 'scrapers/root_scrap_request'
+require 'scrapers/errors'
+require 'scrapers/error_reporter'
 require 'scrapers/loader'
 require 'scrapers/true_loader'
 

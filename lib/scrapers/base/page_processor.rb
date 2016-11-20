@@ -1,8 +1,4 @@
 module Scrapers
-  class InvalidPageError < StandardError
-
-  end
-
   module Base
     class PageProcessor
       def initialize(url, loader)
@@ -17,6 +13,7 @@ module Scrapers
           @queued -= 1
           @response = response
           @doc = Nokogiri::HTML(response.body)
+
           process_page do |output|
             cb.call(output)
           end
@@ -34,7 +31,7 @@ module Scrapers
       def css!(matcher, parent = @doc)
         result = css(matcher, parent)
         if result.empty?
-          raise Scrapers::InvalidPageError.new('Could not find ' + matcher)
+          raise Scrapers::Errors::InvalidPageError.new('Could not find ' + matcher, @response)
         end
         return result
       end

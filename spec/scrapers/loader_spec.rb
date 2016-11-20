@@ -28,8 +28,8 @@ module Scrapers
         loader = Loader.new(StubProcessor, [url])
         stub_page(url, 401, '')
         expect{loader.scrap{}}.to raise_error { |error|
-          expect(error).to be_a(ScrapAbortError)
-          expect(error.cause).to be_a(LoadingError)
+          expect(error).to be_a(Errors::ScrapAbortError)
+          expect(error.cause).to be_a(Errors::LoadingError)
         }
       end
 
@@ -46,7 +46,7 @@ module Scrapers
         url = 'http://www.example.com'
         loader = Loader.new(StubProcessor, [url])
         stub_page(url, 302, '')
-        expect{loader.scrap{}}.to raise_error(ScrapAbortError)
+        expect{loader.scrap{}}.to raise_error(Errors::ScrapAbortError)
       end
 
       it 'should treat timeouts as errors' do
@@ -65,8 +65,8 @@ module Scrapers
         loader = Loader.new(ErrorProcessor, [url])
         stub_page(url, 200, '<html></html>')
         expect{loader.scrap{}}.to raise_error{ |error|
-          expect(error).to be_a(ScrapAbortError)
-          expect(error.cause).to be_a(InvalidPageError)
+          expect(error).to be_a(Errors::ScrapAbortError)
+          expect(error.cause).to be_a(Errors::InvalidPageError)
         }
       end
     end

@@ -25,7 +25,7 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
   describe 'error handling' do
     it 'should raise an InvalidPageError if the page is invalid' do
       expect { page_processor_for_html(processor_class, '<html></html>').process_page }
-      .to raise_error(Scrapers::InvalidPageError)
+      .to raise_error(Scrapers::Errors::InvalidPageError)
     end
   end
 

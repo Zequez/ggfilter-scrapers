@@ -1,8 +1,4 @@
 module Scrapers
-  class LoadingError < StandardError
-
-  end
-
   class TrueLoader
     def initialize(options = {})
       @options = {
@@ -30,7 +26,9 @@ module Scrapers
         else
           retry_count -= 1
           if retry_count == 0
-            raise LoadingError.new("Could not load the page #{response.code} status code | #{url}")
+            raise Scrapers::Errors::LoadingError.new(
+              "Could not load the page #{response.code} status code | #{url}", response
+            )
           else
             # We want to pause Hydra here for a few seconds, but I don't
             # know how to do it, once it starts you either stop it, or finish it

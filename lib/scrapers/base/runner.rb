@@ -9,6 +9,8 @@ module Scrapers
         }
       end
 
+      attr_reader :error
+
       def initialize(options = {})
         @options = self.class.options.merge(options)
       end
@@ -42,7 +44,9 @@ module Scrapers
       protected
 
       def run!
-        raise 'Virtual method Runner#run!'
+        scrap do |output|
+
+        end
       end
 
       def processor
@@ -72,12 +76,19 @@ module Scrapers
       end
 
       def scrap(&block)
-        loader.scrap do |output, url|
-          if @options[:resources]
-            block.call(output, resource_from_url(url))
-          else
-            block.call(output)
+        begin
+          loader.scrap do |output, url|
+            if @options[:resources]
+              block.call(output, resource_from_url(url))
+            else
+              block.call(output)
+            end
           end
+          true
+        rescue Scrapers::Errors::ScrapAbortError => e
+          Scrapers.logger.error 'Error scraping: ' + e.message
+          @error = Scrapers::ErrorReporter.new(e, name).commit
+          false
         end
       end
 

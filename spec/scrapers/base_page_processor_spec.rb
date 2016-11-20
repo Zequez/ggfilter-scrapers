@@ -1,8 +1,4 @@
 describe Scrapers::Base::PageProcessor, cassette: true do
-  def stub_url(url, status, body)
-    Typhoeus.stub(url).and_return(Typhoeus::Response.new(code: status, body: body))
-  end
-
   it 'should yield the output of the page processing' do
     stub_url('www.purple.com', 200, '<html></html>')
 
@@ -72,7 +68,7 @@ describe Scrapers::Base::PageProcessor, cassette: true do
         pl.load{}
         loader.run{}
         pl.css!('#foo')
-      }.to raise_error Scrapers::InvalidPageError
+      }.to raise_error Scrapers::Errors::InvalidPageError
     end
 
     it 'should not raise an InvalidPageError if the match is found' do

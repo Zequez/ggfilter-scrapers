@@ -1,13 +1,4 @@
 module Scrapers
-  class ScrapAbortError < StandardError
-    def initialize(cause)
-      @message = 'Scrap aborted: ' + cause.message
-      @cause = cause
-    end
-
-    attr_accessor :cause
-  end
-
   class Loader
     def initialize(processor_class, urls = [], loader_options = {})
       @processor_class = processor_class
@@ -28,10 +19,8 @@ module Scrapers
         @loader.run do |response|
           Scrapers.logger.info 'Request finished'
         end
-      rescue LoadingError => e
-        raise ScrapAbortError.new(e)
-      rescue InvalidPageError => e
-        raise ScrapAbortError.new(e)
+      rescue Scrapers::Errors::LoadingError, Scrapers::Errors::InvalidPageError => e
+        raise Scrapers::Errors::ScrapAbortError.new(e)
       end
     end
   end
