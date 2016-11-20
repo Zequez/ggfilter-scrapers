@@ -20,12 +20,13 @@ module Scrapers
     end
 
     class ScrapError < StandardError
-      def initialize(message, response)
+      def initialize(message, response, original_e = nil)
         @message = message
         @response = response
+        @original_e = original_e
       end
 
-      attr_accessor :message, :response
+      attr_accessor :message, :response, :original_e
     end
 
     class LoadingError < ScrapError

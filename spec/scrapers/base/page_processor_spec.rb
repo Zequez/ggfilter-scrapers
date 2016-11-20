@@ -82,4 +82,26 @@ describe Scrapers::Base::PageProcessor, cassette: true do
       }.to_not raise_error
     end
   end
+
+  describe '#process_page' do
+    it 'should raise an InvalidPageError if any exception is raised on #process_page' do
+      class MockPageProcessor < Scrapers::Base::PageProcessor
+        def process_page
+          Integer('WAT')
+        end
+      end
+
+      loader = double
+      response = instance_double('Response', body: '<html></html>')
+      pp = MockPageProcessor.new('http://www.example.com', loader)
+
+      expect{
+        pp.process_response(response)
+      }.to raise_error do |e|
+        expect(e).to be_kind_of(Scrapers::Errors::InvalidPageError)
+        expect(e.message).to match(/invalid value for Integer/)
+        LA e.backtrace
+      end
+    end
+  end
 end

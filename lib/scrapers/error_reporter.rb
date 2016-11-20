@@ -32,13 +32,19 @@ module Scrapers
 
     end
 
+    def source_backtrace
+      bt = @error.cause.original_e ? @error.cause.original_e.backtrace : @error.cause.backtrace
+      bt ? bt.join("\n") : nil
+    end
+
     def report_object
       {
         url: @error.url,
         code: @error.response.code,
         time: @time,
         message: @error.message,
-        backtrace: @error.cause.backtrace.join("\n"),
+        original_message: @error.cause.original_e && @error.cause.original_e.message,
+        backtrace: source_backtrace,
         request_headers: @error.request.options[:headers],
         response_headers: @error.response.headers
       }

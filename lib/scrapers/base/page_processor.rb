@@ -11,12 +11,20 @@ module Scrapers
         @queued += 1
         @loader.queue(@url) do |response|
           @queued -= 1
-          @response = response
-          @doc = Nokogiri::HTML(response.body)
+          process_response(response, &cb)
+        end
+      end
 
+      def process_response(response, &cb)
+        @response = response
+        @doc = Nokogiri::HTML(response.body)
+
+        begin
           process_page do |output|
-            cb.call(output)
+            cb.call(output) if cb
           end
+        rescue StandardError => e
+          raise Scrapers::Errors::InvalidPageError.new("Error inside #process_page: #{e.message}", @response, e)
         end
       end
 
