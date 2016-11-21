@@ -271,4 +271,10 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     its([:positive_reviews_count]){ is_expected.to eq 0 }
     its([:negative_reviews_count]){ is_expected.to eq 0 }
   end
+
+  describe 'game with no developer' do
+    cassette_subject(33730, '18_wheel')
+    its([:developer]){ is_expected.to eq nil }
+    its([:publisher]){ is_expected.to eq 'ValuSoft'}
+  end
 end

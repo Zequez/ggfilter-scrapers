@@ -110,8 +110,8 @@ module Scrapers::Steam::Game
 
       game[:system_requirements] = read_system_requirements
 
-      game[:developer] = css('a[href*="developer="]').first.text
-      game[:publisher] = css('a[href*="publisher="]').first.text
+      game[:developer] = link_text('developer=')
+      game[:publisher] = link_text('publisher=')
 
       yield game
     end
@@ -189,6 +189,11 @@ module Scrapers::Steam::Game
 
     def detect_vr_features(list)
       detect_features(list, vr_features)
+    end
+
+    def link_text(link_match)
+      a = css("a[href*=\"#{link_match}\"]").first
+      a && a.text
     end
   end
 end
