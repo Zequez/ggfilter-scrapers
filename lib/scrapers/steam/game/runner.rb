@@ -1,6 +1,7 @@
 module Scrapers::Steam::Game
   class Runner < Scrapers::Base::Runner
     def processor; PageProcessor end
+    def name; 'steam_game' end
 
     def self.options
       super.merge({

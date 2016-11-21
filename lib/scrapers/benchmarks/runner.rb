@@ -1,6 +1,7 @@
 module Scrapers::Benchmarks
   class Runner < Scrapers::Base::Runner
     def processor; PageProcessor end
+    def name; 'benchmark' end
 
     def self.options
       super.merge({

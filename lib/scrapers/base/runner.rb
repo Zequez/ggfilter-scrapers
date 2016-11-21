@@ -46,6 +46,10 @@ module Scrapers
         @options[:resource_class]
       end
 
+      def name
+        'base_runner'
+      end
+
       protected
 
       def run!

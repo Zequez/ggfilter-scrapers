@@ -17,6 +17,7 @@ module Scrapers
             resource_class: SteamGame
           })
         end
+        def name; 'steam_list' end
 
         def urls
           [sale? ? options[:on_sale_url] : options[:all_games_url]]

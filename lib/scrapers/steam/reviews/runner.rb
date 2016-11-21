@@ -2,6 +2,7 @@ module Scrapers::Steam
   module Reviews
     class Runner < Scrapers::Base::Runner
       def processor; PageProcessor end
+      def name; 'steam_reviews' end
 
       def self.options
         super.merge({
