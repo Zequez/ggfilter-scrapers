@@ -10,7 +10,6 @@ module Scrapers
       @urls.each do |url|
         processor = @processor_class.new(url, @loader)
         processor.load do |output|
-          Scrapers.logger.info 'Yielding to runner'
           block.call(output, url)
         end
       end
