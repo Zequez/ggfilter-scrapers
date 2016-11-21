@@ -132,6 +132,9 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
       :steam_trading_cards,
       :steam_cloud
     ])}
+
+    its([:developer]) { is_expected.to eq 'Irrational Games' }
+    its([:publisher]) { is_expected.to eq '2K Games' }
   end
 
   describe 'game with VR support && no recommended requirements && !metacritic && !esrb' do
@@ -168,6 +171,9 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
         disk_space: nil
       }
     })}
+
+    its([:developer]) { is_expected.to eq 'Nival VR' }
+    its([:publisher]) { is_expected.to eq 'Nival' }
   end
 
   describe 'game with advanced VR support' do

@@ -10,6 +10,8 @@ module Scrapers::Steam
         t.text :summary
         t.datetime :released_at
         t.string :text_release_date
+        t.string :developer
+        t.string :publisher
 
         # Media
         t.string :thumbnail
@@ -53,6 +55,8 @@ module Scrapers::Steam
         t.datetime :list_scraped_at
         t.datetime :reviews_scraped_at
       end
+
+      add_index :steam_games, :steam_id, unique: true
     end
   end
 end

@@ -110,6 +110,9 @@ module Scrapers::Steam::Game
 
       game[:system_requirements] = read_system_requirements
 
+      game[:developer] = css('a[href*="developer="]').first.text
+      game[:publisher] = css('a[href*="publisher="]').first.text
+
       yield game
     end
 

@@ -42,7 +42,9 @@ module Scrapers::Steam
           features: [:steam_achievements, :steam_cloud],
           vr_mode: [:seated],
           vr_platforms: [:rift],
-          vr_controllers: [:tracked, :gamepad]
+          vr_controllers: [:tracked, :gamepad],
+          developer: 'Potato',
+          publisher: 'Salad'
         }
 
         processor = DataProcessor.new(data, game)
@@ -89,6 +91,8 @@ module Scrapers::Steam
         expect(game.vr_platforms).to match_array [:rift]
         expect(game.vr_mode).to match_array [:seated]
         expect(game.vr_controllers).to match_array [:tracked, :gamepad]
+        expect(game.developer).to eq 'Potato'
+        expect(game.publisher).to eq 'Salad'
       end
 
       it 'should work with non-standard languages' do
