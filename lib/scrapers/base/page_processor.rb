@@ -4,13 +4,10 @@ module Scrapers
       def initialize(url, loader)
         @url = url
         @loader = loader
-        @queued = 0
       end
 
       def load(&cb)
-        @queued += 1
         @loader.queue(@url) do |response|
-          @queued -= 1
           process_response(response, &cb)
         end
       end

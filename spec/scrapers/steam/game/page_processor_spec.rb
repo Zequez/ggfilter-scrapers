@@ -277,4 +277,9 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     its([:developer]){ is_expected.to eq nil }
     its([:publisher]){ is_expected.to eq 'ValuSoft'}
   end
+
+  describe 'game with no genre' do
+    cassette_subject(55020, 'air_forte')
+    its([:genre]){ is_expected.to eq nil }
+  end
 end

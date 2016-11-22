@@ -48,13 +48,6 @@ module Scrapers::Steam::Reviews
 
     MAX_PAGES = 100
 
-    def self.inject(all_data, data)
-      all_data ||= { positive: [], negative: [] }
-      all_data[:positive] += data[:positive]
-      all_data[:negative] += data[:negative]
-      all_data
-    end
-
     def process_page
       data = {
         positive: [],
@@ -80,6 +73,9 @@ module Scrapers::Steam::Reviews
         #   add_to_queue generate_url(current_page + 2)
         # end
 
+        # url = generate_url(current_page + 1)
+        app_id = @url.match(/\/app\/(\d+)/)[1]
+        Scrapers.logger.ln "Loading #{app_id} page #{current_page + 1}"
         add(generate_url(current_page + 1)) do |output|
           data[:positive] += output[:positive]
           data[:negative] += output[:negative]
@@ -87,6 +83,13 @@ module Scrapers::Steam::Reviews
         end
       else
         yield(data)
+      end
+    end
+
+    # Quick ugly fix
+    def load(&cb)
+      @loader.queue_front(@url) do |response|
+        process_response(response, &cb)
       end
     end
 

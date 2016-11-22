@@ -47,8 +47,7 @@ module Scrapers::Steam::Game
     def process_page
       game = {}
 
-      game[:tags] = css!('.popular_tags a').map{ |a| a.text.strip }
-      game[:genre] = css!('.details_block b + a[href*="genre"]').text
+      game[:tags] = css('.popular_tags a').map{ |a| a.text.strip }
       game[:dlc_count] = css('.game_area_dlc_name').size
       game[:achievements_count] = if ( sac = css('#achievement_block .block_title').first )
         Integer(sac.text.scan(/\d+/).flatten.first)
@@ -60,7 +59,7 @@ module Scrapers::Steam::Game
       game[:early_access] = !css('.early_access_header').empty?
       game[:audio_languages], game[:subtitles_languages] = read_languages
       game[:videos] = read_videos
-      game[:images] = css!('.highlight_strip_screenshot img').map{ |i| i['src'].sub(/.\d+x\d+\.jpg/, '.jpg') }
+      game[:images] = css('.highlight_strip_screenshot img').map{ |i| i['src'].sub(/.\d+x\d+\.jpg/, '.jpg') }
       game[:summary] = css!('.game_description_snippet').text.strip
 
       if not css('.noReviewsYetTitle').empty?
@@ -110,8 +109,9 @@ module Scrapers::Steam::Game
 
       game[:system_requirements] = read_system_requirements
 
-      game[:developer] = link_text('developer=')
-      game[:publisher] = link_text('publisher=')
+      game[:genre] = game_link_text('/genre/')
+      game[:developer] = game_link_text('developer=')
+      game[:publisher] = game_link_text('publisher=')
 
       yield game
     end
@@ -191,8 +191,8 @@ module Scrapers::Steam::Game
       detect_features(list, vr_features)
     end
 
-    def link_text(link_match)
-      a = css("a[href*=\"#{link_match}\"]").first
+    def game_link_text(link_match)
+      a = css(".game_details a[href*=\"#{link_match}\"]").first
       a && a.text
     end
   end

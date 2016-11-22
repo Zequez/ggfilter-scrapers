@@ -16,7 +16,7 @@ module Scrapers
 
       begin
         @loader.run do |response|
-          Scrapers.logger.info 'Request finished'
+          # Any request finished
         end
       rescue Scrapers::Errors::LoadingError, Scrapers::Errors::InvalidPageError => e
         raise Scrapers::Errors::ScrapAbortError.new(e)
