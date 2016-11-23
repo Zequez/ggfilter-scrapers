@@ -83,9 +83,9 @@ module Scrapers::Steam::Reviews
 
     # Quick ugly fix
     def load(&cb)
-      app_id = @url.match(/\/app\/(\d+)/)[1]
-      Scrapers.logger.ln "Loading #{app_id} page #{current_page}"
       @loader.queue_front(@url) do |response|
+        app_id = @url.match(/\/app\/(\d+)/)
+        Scrapers.logger.ln "Loaded #{app_id[1]} page #{current_page}" if app_id
         process_response(response, &cb)
       end
     end
