@@ -54,7 +54,10 @@ module Scrapers::Steam::Reviews
         negative: []
       }
 
-      return data if @response.body.empty?
+      if @response.body.empty?
+        yield(data)
+        return
+      end
 
       cards = css!('.apphub_Card')
 
@@ -68,14 +71,6 @@ module Scrapers::Steam::Reviews
       end
 
       if cards.size == 10 and current_page < MAX_PAGES
-        # if current_page == 1
-        #   add_to_queue generate_url(current_page + 1)
-        #   add_to_queue generate_url(current_page + 2)
-        # end
-
-        # url = generate_url(current_page + 1)
-        app_id = @url.match(/\/app\/(\d+)/)[1]
-        Scrapers.logger.ln "Loading #{app_id} page #{current_page + 1}"
         add(generate_url(current_page + 1)) do |output|
           data[:positive] += output[:positive]
           data[:negative] += output[:negative]
@@ -88,6 +83,8 @@ module Scrapers::Steam::Reviews
 
     # Quick ugly fix
     def load(&cb)
+      app_id = @url.match(/\/app\/(\d+)/)[1]
+      Scrapers.logger.ln "Loading #{app_id} page #{current_page}"
       @loader.queue_front(@url) do |response|
         process_response(response, &cb)
       end
