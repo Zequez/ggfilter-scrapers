@@ -100,7 +100,6 @@ describe Scrapers::Base::PageProcessor, cassette: true do
       }.to raise_error do |e|
         expect(e).to be_kind_of(Scrapers::Errors::InvalidPageError)
         expect(e.message).to match(/invalid value for Integer/)
-        LA e.backtrace
       end
     end
   end
