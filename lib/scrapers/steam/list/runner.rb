@@ -37,7 +37,7 @@ module Scrapers
           if sale?
             updated_count = resource_class.where.not(id: @on_sale_ids).update_all(sale_price: nil)
             on_sale_count = @on_sale_ids.size
-            Scrapers.logger.info "SteamList #{updated_count} items no longer on sale! #{on_sale_count} on sale!"
+            Scrapers.logger.info "SteamList #{updated_count} items not on sale! #{on_sale_count} on sale!"
           end
         end
 
