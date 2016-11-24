@@ -4,6 +4,7 @@ module Scrapers::Steam
       create_table :steam_games do |t|
         # Game data
         t.integer :steam_id, null: false
+        t.integer :community_hub_id
         t.string :name
         t.string :tags, default: '[]', null: false
         t.string :genre

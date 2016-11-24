@@ -35,6 +35,7 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     its([:early_access]){             is_expected.to eq false }
     its([:positive_reviews_count]){   is_expected.to eq 53994 }
     its([:negative_reviews_count]){   is_expected.to eq 2647 }
+    its([:community_hub_id]) { is_expected.to eq nil }
 
     its([:tags]){ are_expected.to eq([
       "FPS",
@@ -281,5 +282,10 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
   describe 'game with no genre' do
     cassette_subject(55020, 'air_forte')
     its([:genre]){ is_expected.to eq nil }
+  end
+
+  describe 'game with a a different ID for the community hub (and thus reviews)' do
+    cassette_subject(2028016, 'fallout_new_vegas_ue')
+    its([:community_hub_id]){ is_expected.to eq 22380 }
   end
 end

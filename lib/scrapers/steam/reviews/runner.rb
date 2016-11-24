@@ -11,7 +11,7 @@ module Scrapers::Steam
       end
 
       def urls
-        resources.map{ |g| processor.generate_url(g.steam_id) }
+        resources.map{ |g| processor.generate_url(g.community_hub_id || g.steam_id) }
       end
 
       def run!

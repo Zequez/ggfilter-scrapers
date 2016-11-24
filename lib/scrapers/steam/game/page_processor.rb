@@ -62,6 +62,10 @@ module Scrapers::Steam::Game
       game[:images] = css('.highlight_strip_screenshot img').map{ |i| i['src'].sub(/.\d+x\d+\.jpg/, '.jpg') }
       game[:summary] = css!('.game_description_snippet').text.strip
 
+      app_id = Integer(@url.scan(/app\/(\d+)/).flatten.first)
+      community_hub_id = Integer(css!('.apphub_OtherSiteInfo a').first['href'].scan(/app\/(\d+)/).flatten.first)
+      game[:community_hub_id] = community_hub_id if community_hub_id != app_id
+
       if not css('.noReviewsYetTitle').empty?
         game[:positive_reviews_count] = 0
         game[:negative_reviews_count] = 0

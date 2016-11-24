@@ -15,6 +15,12 @@ module Scrapers::Steam
         expect(game2.negative_reviews).to eq [0.7, 0.1, 1.2]
         expect(game2.reviews_scraped_at).to be_within(1.minute).of(Time.now)
       end
+
+      it 'should use the #community_hub_id instead of the #steam_id if available' do
+        game = SteamGame.create steam_id: 12345, community_hub_id: 54321
+        runner = Runner.new(resources: [game])
+        expect(runner.urls).to eq [PageProcessor.generate_url(54321)]
+      end
     end
   end
 end
