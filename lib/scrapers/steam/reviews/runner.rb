@@ -15,7 +15,6 @@ module Scrapers::Steam
       end
 
       def run!
-        @total = @count = resources.size
         scrap do |data, resource|
           data_process(data, resource)
         end
@@ -34,11 +33,8 @@ module Scrapers::Steam
       def log_game(game)
         positive = game.positive_reviews.size
         negative = game.negative_reviews.size
-
-        @count -= 1
-        left = "#{@count} / #{@total} left!"
-
-        Scrapers.logger.ln "#{game_log_text(game)} Reviews: [#{positive}/#{negative}] | #{left}"
+        
+        Scrapers.logger.ln "#{game_log_text(game)} Reviews: [#{positive}/#{negative}]"
       end
     end
   end

@@ -16,6 +16,11 @@ module Scrapers
         @options = self.class.options.merge(options)
       end
 
+
+      def total_count
+        @total_count ||= resources && resources.size
+      end
+
       def run
         log_text = "#{self.class} running!"
           .colorize(:color => :black, :background => :yellow)
@@ -85,8 +90,10 @@ module Scrapers
       end
 
       def scrap(&block)
+        @left_count = total_count
         begin
           loader.scrap do |output, url|
+            @left_count -= 1 if total_count
             if @options[:resources]
               block.call(output, resource_from_url(url))
             else
@@ -102,9 +109,10 @@ module Scrapers
       end
 
       def game_log_text(game)
+        left = total_count ? " | #{@left_count} / #{total_count}" : ''
         log_id = game.steam_id.to_s.ljust(10)
         name = game.name.blank? ? '<No name>' : game.name
-        "#{log_id} #{name}"
+        "#{log_id} #{name} #{left}"
       end
     end
   end
