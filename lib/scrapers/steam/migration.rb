@@ -5,7 +5,7 @@ module Scrapers::Steam
         # Game data
         t.integer :steam_id, null: false
         t.string :name
-        t.string :tags
+        t.string :tags, default: '[]', null: false
         t.string :genre
         t.text :summary
         t.datetime :released_at
@@ -15,8 +15,8 @@ module Scrapers::Steam
 
         # Media
         t.string :thumbnail
-        t.text :videos
-        t.text :images
+        t.text :videos, default: '[]', null: false
+        t.text :images, default: '[]', null: false
 
         # Price
         t.integer :price
@@ -27,15 +27,15 @@ module Scrapers::Steam
         t.integer :reviews_count
         t.integer :positive_reviews_count
         t.integer :negative_reviews_count
-        t.text :positive_reviews
-        t.text :negative_reviews
+        t.text :positive_reviews, default: '[]', null: false
+        t.text :negative_reviews, default: '[]', null: false
 
 
         # Other data
         t.integer :dlc_count
         t.integer :achievements_count
-        t.string :audio_languages
-        t.string :subtitles_languages
+        t.string :audio_languages, default: '[]', null: false
+        t.string :subtitles_languages, default: '[]', null: false
         t.integer :metacritic
         t.string :esrb_rating
         t.boolean :early_access

@@ -1,6 +1,16 @@
 require 'simple_flaggable_column'
 
 module Scrapers::Steam
+  class JSONWithSymbolsSerializer
+    def self.load(str)
+      str.nil? ? nil : JSON.parse(str, symbolize_names: true)
+    end
+
+    def self.dump(data)
+      JSON.dump(data)
+    end
+  end
+
   class SteamGame < ActiveRecord::Base
     include SimpleFlaggableColumn
 
@@ -58,12 +68,12 @@ module Scrapers::Steam
     }
 
     serialize :tags, JSON
-    serialize :audio_languages
-    serialize :subtitles_languages
-    serialize :videos
-    serialize :images
-    serialize :system_requirements
-    serialize :positive_reviews
-    serialize :negative_reviews
+    serialize :audio_languages, JSON
+    serialize :subtitles_languages, JSON
+    serialize :videos, JSON
+    serialize :images, JSON
+    serialize :system_requirements, JSONWithSymbolsSerializer
+    serialize :positive_reviews, JSON
+    serialize :negative_reviews, JSON
   end
 end
