@@ -24,9 +24,11 @@ module Scrapers
     end
 
     @logger ||= begin
-      logfile = File.open("#{app_root}/log/scrapers.log", 'a')  # create log file
-      logfile.sync = true  # automatically flushes data to file
-      CustomLogger.new(logfile)
+      # logfile = File.open("#{app_root}/log/scrapers.log", 'a')  # create log file
+      # logfile.sync = true  # automatically flushes data to file
+      # CustomLogger.new(logfile)
+      $stdout.sync = true
+      CustomLogger.new(STDOUT)
     end
   end
 end
