@@ -55,6 +55,9 @@ module Scrapers::Steam
         t.datetime :game_scraped_at
         t.datetime :list_scraped_at
         t.datetime :reviews_scraped_at
+
+        # Blacklist so it doesn't get scraped
+        t.boolean :blacklist, null: false, default: false
       end
 
       add_index :steam_games, :steam_id, unique: true
