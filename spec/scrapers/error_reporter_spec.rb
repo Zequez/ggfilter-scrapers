@@ -47,8 +47,8 @@ describe Scrapers::ErrorReporter do
   end
 
   describe 'email' do
-    before(:each){ WebMock.allow_net_connect! }
-    after(:each){ WebMock.disable_net_connect! }
+    # before(:each){ WebMock.allow_net_connect! }
+    # after(:each){ WebMock.disable_net_connect! }
 
     it 'should send an email with the report on the body and the attached HTML document' do
       stub_request(:post, 'https://api.sendgrid.com/v3/mail/send')
