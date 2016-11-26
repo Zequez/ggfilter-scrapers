@@ -14,7 +14,7 @@ describe Scrapers::ErrorReporter do
     end
 
     scrap_abort_error = Scrapers::Errors::ScrapAbortError.new(scrap_error)
-    reporter = Scrapers::ErrorReporter.new(scrap_abort_error, 'potato', filesystem: 'tmp/log/scrap_errors')
+    reporter = Scrapers::ErrorReporter.new(scrap_abort_error, 'potato', options)
     reporter.commit
     @commit_time = Time.now
   end
@@ -46,9 +46,15 @@ describe Scrapers::ErrorReporter do
     match_report(report, html)
   end
 
-  it 'should send an email with the report on the body and the attached HTML document' do
-    create_error_report(filesystem: nil, email: 'zequez@gmail.com')
+  describe 'email' do
+    # before(:each){ WebMock.allow_net_connect! }
+    # after(:each){ WebMock.disable_net_connect! }
 
-    # Yeah, not really sure how this will work, I'll do it later.
+    fit 'should send an email with the report on the body and the attached HTML document' do
+      stub_request(:post, 'https://api.sendgrid.com/v3/mail/send')
+      create_error_report(filesystem: nil, email: 'zequez@gmail.com')
+      assert_requested :post, 'https://api.sendgrid.com/v3/mail/send', body: /zequez@gmail\.com/
+    end
   end
+
 end

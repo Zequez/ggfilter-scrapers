@@ -1,4 +1,6 @@
 require 'yaml'
+require 'sendgrid-ruby'
+require "base64"
 
 module Scrapers
   class ErrorReporter
@@ -8,7 +10,8 @@ module Scrapers
       @scraper_name = scraper_name
       @options = {
         filesystem: 'log/scrap_errors',
-        email: nil
+        email: nil,
+        email_from: 'noreply@ggfilter.com'
       }.merge(options)
       @time = Time.now
     end
@@ -19,6 +22,10 @@ module Scrapers
     end
 
     private
+
+    def is_loading_error
+      @error.cause.kind_of? Errors::LoadingError
+    end
 
     def timestamp
       @time.strftime('%Y%m%d-%H%M%S')
@@ -50,18 +57,44 @@ module Scrapers
       }
     end
 
+    def report_page
+      @error.html.force_encoding('utf-8')
+    end
+
+    def file_name
+      "#{timestamp}_#{@scraper_name}_#{simplified_url}"
+    end
+
     def save
-      file_name = "#{timestamp}_#{@scraper_name}_#{simplified_url}"
       file_path = "#{Scrapers.app_root}/#{@options[:filesystem]}"
 
       FileUtils.mkdir_p file_path
 
       File.write("#{file_path}/#{file_name}.yml", YAML.dump(report_object))
-      File.write("#{file_path}/#{file_name}.html", @error.html.force_encoding('utf-8'))
+      File.write("#{file_path}/#{file_name}.html", report_page)
     end
 
     def email
+      sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
 
+      error_source = is_loading_error ? 'Loading error' : 'Processor error'
+      time = @time.strftime('%Y-%m-%d %H:%M:%S')
+
+      subject = "Error report #{@scraper_name} #{time} | #{error_source}"
+
+      from = SendGrid::Email.new(email: @options[:email_from])
+      to = SendGrid::Email.new(email: @options[:email])
+      content = SendGrid::Content.new(type: 'text/plain', value: YAML.dump(report_object))
+      mail = SendGrid::Mail.new(from, subject, to, content)
+
+      attachment = SendGrid::Attachment.new
+      attachment.content = Base64.encode64(report_page)
+      attachment.type = 'text/html'
+      attachment.filename = "#{file_name}.html"
+
+      mail.attachments = attachment
+
+      sg.client.mail._('send').post(request_body: mail.to_json)
     end
   end
 end

@@ -4,6 +4,9 @@ require 'vcr'
 require 'rspec/its'
 require 'database_cleaner'
 require 'pathname'
+require 'dotenv'
+
+Dotenv.load
 
 Dir[Scrapers::ROOT.join("spec/support/**/*.rb")].each { |f| require f }
 

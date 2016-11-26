@@ -24,6 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "simple_flaggable_column", ">= 0.0.2"
   spec.add_dependency "awesome_print", "~> 1.6"
   spec.add_dependency "i18n_data", "~> 0.7"
+  spec.add_dependency "sendgrid-ruby", "~> 4.0"
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
@@ -38,4 +39,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "database_cleaner", "~> 1.4"
   spec.add_development_dependency "sqlite3", "~> 1.3"
   spec.add_development_dependency "byebug", "~> 6"
+  spec.add_development_dependency "dotenv", "~> 2.1"
 end
