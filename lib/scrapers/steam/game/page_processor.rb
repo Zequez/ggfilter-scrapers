@@ -79,7 +79,8 @@ module Scrapers::Steam::Game
       game[:players] = detect_features(
         1 => :multi_player,
         2 => :single_player,
-        9 => :co_op
+        9 => :co_op,
+        24 => :local_co_op
       )
       game[:controller_support] = detect_features(
         28 => :full,
