@@ -10,7 +10,7 @@ module Scrapers
       @scraper_name = scraper_name
       @options = {
         filesystem: 'log/scrap_errors',
-        email: nil,
+        email: ENV['ERROR_REPORT_EMAIL'],
         email_from: 'noreply@ggfilter.com'
       }.merge(options)
       @time = Time.now
