@@ -47,6 +47,8 @@ module Scrapers::Steam::Game
     def process_page
       game = {}
 
+      return if css('#error_box .error').text =~ /unavailable in your region/
+
       game[:tags] = css('.popular_tags a').map{ |a| a.text.strip }
       game[:dlc_count] = css('.game_area_dlc_name').size
       game[:achievements_count] = if ( sac = css('#achievement_block .block_title').first )

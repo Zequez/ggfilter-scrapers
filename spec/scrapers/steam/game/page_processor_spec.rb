@@ -22,6 +22,14 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
       expect { page_processor_for_html(processor_class, '<html></html>').process_page }
       .to raise_error(Scrapers::Errors::InvalidPageError)
     end
+
+    describe 'game unavailable in the region' do
+      cassette_subject(386180, 'unavailable_game_in_the_region')
+
+      it 'should be quietly ignored, because steams return 200-success header' do
+        expect(@result).to eq nil
+      end
+    end
   end
 
   describe 'loading a regular game like Bioshock Infinite' do
