@@ -22,16 +22,16 @@ module Scrapers
       end
 
       def run
-        report = Scrapers::ScrapReport.new name
-        report.start
+        @report = Scrapers::ScrapReport.new name
+        @report.start
         log_start
 
         run!
 
-        report.finish
-        report.scraper_report = self.report_msg
-        log_end(report)
-        report
+        @report.finish
+        @report.scraper_report = self.report_msg unless @report.error?
+        log_end(@report)
+        @report
       end
 
       def options
@@ -94,7 +94,7 @@ module Scrapers
           true
         rescue Scrapers::Errors::ScrapError => e
           Scrapers.logger.error 'Error scraping: ' + e.message
-          @error = Scrapers::ErrorReporter.new(e, name).commit
+          @report.error! e
           false
         end
       end
