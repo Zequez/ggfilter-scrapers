@@ -22,25 +22,16 @@ module Scrapers
       end
 
       def run
-        log_text = "#{self.class} running!"
-          .colorize(:color => :black, :background => :yellow)
-        Scrapers.logger.info log_text
-
-        if resources
-          Scrapers.logger.info "#{resources.size} to scrap!"
-        end
-
-        start_time = Time.now
+        report = Scrapers::ScrapReport.new name
+        report.start
+        log_start
 
         run!
 
-        elapsed_time = (Time.now - start_time)
-        elapsed_minutes = (elapsed_time / 60).floor
-        elapsed_seconds = (elapsed_time % 60).floor
-
-        log_text = "#{self.class} finished! Time elapsed: #{elapsed_minutes}m #{elapsed_seconds}s"
-          .colorize(:color => :black, :background => :light_yellow)
-        Scrapers.logger.info log_text
+        report.finish
+        report.scraper_report = self.report_msg
+        log_end(report)
+        report
       end
 
       def options
@@ -101,11 +92,15 @@ module Scrapers
             end
           end
           true
-        rescue Scrapers::Errors::ScrapAbortError => e
+        rescue Scrapers::Errors::ScrapError => e
           Scrapers.logger.error 'Error scraping: ' + e.message
           @error = Scrapers::ErrorReporter.new(e, name).commit
           false
         end
+      end
+
+      def report_msg
+        ''
       end
 
       def game_log_text(game)
@@ -113,6 +108,22 @@ module Scrapers
         log_id = game.steam_id.to_s.ljust(10)
         name = game.name.blank? ? '<No name>' : game.name
         "#{log_id} #{name} #{left}"
+      end
+
+      def log_start
+        log_text = "#{self.name} running!"
+          .colorize(:color => :black, :background => :yellow)
+        Scrapers.logger.info log_text
+
+        if resources
+          Scrapers.logger.info "#{resources.size} to scrap!"
+        end
+      end
+
+      def log_end(report)
+        log_text = "#{self.name} finished! Time elapsed: #{report.elapsed_time_human}"
+          .colorize(:color => :black, :background => :light_yellow)
+        Scrapers.logger.info log_text
       end
     end
   end

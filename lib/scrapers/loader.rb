@@ -19,7 +19,8 @@ module Scrapers
           # Any request finished
         end
       rescue Scrapers::Errors::LoadingError, Scrapers::Errors::InvalidPageError => e
-        raise Scrapers::Errors::ScrapAbortError.new(e)
+        # Here we should try to continue with errors or something
+        raise e
       end
     end
   end

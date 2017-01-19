@@ -92,7 +92,9 @@ describe Scrapers::Base::PageProcessor, cassette: true do
       end
 
       loader = double
-      response = instance_double('Response', body: '<html></html>')
+      response = instance_double('Response', body: '<html></html>',
+        request: instance_double('Request', url: 'http://example.com')
+      )
       pp = MockPageProcessor.new('http://www.example.com', loader)
 
       expect{

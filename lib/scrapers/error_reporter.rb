@@ -5,7 +5,7 @@ require "base64"
 module Scrapers
   class ErrorReporter
     def initialize(scrap_abort_error, scraper_name, options = {})
-      raise ArgumentError unless scrap_abort_error.is_a? Errors::ScrapAbortError
+      raise ArgumentError unless scrap_abort_error.kind_of? Errors::ScrapError
       @error = scrap_abort_error
       @scraper_name = scraper_name
       @options = {
@@ -40,7 +40,7 @@ module Scrapers
     end
 
     def source_backtrace
-      bt = @error.cause.original_e ? @error.cause.original_e.backtrace : @error.cause.backtrace
+      bt = @error.original_e ? @error.original_e.backtrace : @error.backtrace
       bt ? bt.join("\n") : nil
     end
 
@@ -50,7 +50,7 @@ module Scrapers
         code: @error.response.code,
         time: @time,
         message: @error.message,
-        original_message: @error.cause.original_e && @error.cause.original_e.message,
+        original_message: @error.original_e && @error.original_e.message,
         backtrace: source_backtrace,
         request_headers: @error.request.options[:headers],
         response_headers: @error.response.headers
@@ -88,10 +88,9 @@ module Scrapers
       mail = SendGrid::Mail.new(from, subject, to, content)
 
       attachment = SendGrid::Attachment.new
-      attachment.content = Base64.encode64(report_page)
+      attachment.content = Base64.strict_encode64(report_page)
       attachment.type = 'text/html'
       attachment.filename = "#{file_name}.html"
-
       mail.attachments = attachment
 
       sg.client.mail._('send').post(request_body: mail.to_json)

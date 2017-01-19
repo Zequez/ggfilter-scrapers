@@ -1,29 +1,35 @@
 describe Scrapers::Base::Runner do
-  it 'should catch any scraping abort from the Loader and create an error reporter' do
-    stub_url('http://www.example.com', 403, '')
-
-    class MockRunner < Scrapers::Base::Runner
-      def name
-        'mock_runner'
-      end
-
-      def processor
-        Scrapers::Base::PageProcessor
-      end
-
-      def urls
-        ['http://www.example.com']
-      end
+  describe 'return value' do
+    after do
+      Timecop.return
     end
 
-    runner = MockRunner.new
+    it 'should return a ScrapReport after running with the correct data' do
+      stub_url('http://www.example.com', 200, '')
 
-    reporter_double = double
-    expect(Scrapers::ErrorReporter).to receive(:new)
-      .with(kind_of(Scrapers::Errors::ScrapAbortError), 'mock_runner')
-      .and_return(reporter_double)
-    expect(reporter_double).to receive(:commit)
+      class MockProcessor < Scrapers::Base::PageProcessor
+        def process_page
+          Timecop.travel(5.seconds.from_now)
+        end
+      end
 
-    runner.run
+      class MockRunner < Scrapers::Base::Runner
+        def name; 'mock_runner' end
+        def processor; MockProcessor end
+        def urls; ['http://www.example.com'] end
+
+        def report_msg
+          '10 new games found or something'
+        end
+      end
+
+      runner = MockRunner.new
+      report = runner.run
+      expect(report).to be_kind_of Scrapers::ScrapReport
+      expect(report.scraper_name).to eq 'mock_runner'
+      expect(report.scraper_report).to eq '10 new games found or something'
+      expect(report.elapsed_time).to eq 5.seconds
+      expect(report.error?).to eq false
+    end
   end
 end

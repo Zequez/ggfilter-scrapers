@@ -13,8 +13,7 @@ describe Scrapers::ErrorReporter do
       scrap_error = e
     end
 
-    scrap_abort_error = Scrapers::Errors::ScrapAbortError.new(scrap_error)
-    reporter = Scrapers::ErrorReporter.new(scrap_abort_error, 'potato', options)
+    reporter = Scrapers::ErrorReporter.new(scrap_error, 'potato', options)
     reporter.commit
     @commit_time = Time.now
   end
@@ -56,5 +55,4 @@ describe Scrapers::ErrorReporter do
       assert_requested :post, 'https://api.sendgrid.com/v3/mail/send', body: /zequez@gmail\.com/
     end
   end
-
 end
