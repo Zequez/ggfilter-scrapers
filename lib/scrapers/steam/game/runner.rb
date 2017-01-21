@@ -23,6 +23,10 @@ module Scrapers::Steam::Game
       end
     end
 
+    def report_msg
+      "#{resources.size} games processed"
+    end
+
     private
 
     def data_process(data, game)

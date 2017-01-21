@@ -20,6 +20,10 @@ module Scrapers::Steam
         end
       end
 
+      def report_msg
+        "#{resources.size} games processed"
+      end
+
       private
 
       def data_process(data, game)
@@ -33,7 +37,7 @@ module Scrapers::Steam
       def log_game(game)
         positive = game.positive_reviews.size
         negative = game.negative_reviews.size
-        
+
         Scrapers.logger.ln "#{game_log_text(game)} Reviews: [#{positive}/#{negative}]"
       end
     end

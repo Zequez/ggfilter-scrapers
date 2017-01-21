@@ -26,6 +26,8 @@ module Scrapers
         def run!
           Scrapers.logger.info "For " + (sale? ? 'games on sale' : 'all games')
 
+          @new_games = 0
+          @found_games = 0
           @on_sale_ids = []
           scrap do |games_data|
             games_data.each do |game_data|
@@ -37,7 +39,15 @@ module Scrapers
           if sale?
             updated_count = resource_class.where.not(id: @on_sale_ids).update_all(sale_price: nil)
             on_sale_count = @on_sale_ids.size
-            Scrapers.logger.info "SteamList #{updated_count} items not on sale! #{on_sale_count} on sale!"
+            Scrapers.logger.info "SteamList #{on_sale_count}/#{on_sale_count + updated_count} items on sale!"
+          end
+        end
+
+        def report_msg
+          if sale?
+            "#{@new_games} new games | #{@found_games} games on sale"
+          else
+            "#{@new_games} new games | #{@found_games} games found"
           end
         end
 
@@ -47,6 +57,8 @@ module Scrapers
           processor = DataProcessor.new(data, game, resource_class)
           game = processor.process
           was_new = game.new_record?
+          @found_games += 1
+          @new_games += 1 if was_new
           game.list_scraped_at = Time.now
           game.save!
           log_game(game, was_new)
