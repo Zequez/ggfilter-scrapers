@@ -11,6 +11,8 @@
 
 module Scrapers::Steam::Reviews
   class PageProcessor < Scrapers::Base::PageProcessor
+    def front_load; true end
+
     def self.generate_url(app_id, options = {})
       options = {
         page: 1,
@@ -70,6 +72,9 @@ module Scrapers::Steam::Reviews
         data[type].push hours
       end
 
+      app_id = @url.match(/\/app\/(\d+)/)
+      Scrapers.logger.ln "Loaded #{app_id[1]} page #{current_page}" if app_id
+
       if cards.size == 10 and current_page < MAX_PAGES
         add(generate_url(current_page + 1)) do |output|
           data[:positive] += output[:positive]
@@ -82,13 +87,13 @@ module Scrapers::Steam::Reviews
     end
 
     # Quick ugly fix
-    def load(&cb)
-      @loader.queue_front(@url) do |response|
-        app_id = @url.match(/\/app\/(\d+)/)
-        Scrapers.logger.ln "Loaded #{app_id[1]} page #{current_page}" if app_id
-        process_response(response, &cb)
-      end
-    end
+    # def load(&cb)
+    #   @loader.queue_front(@url) do |response|
+    #     app_id = @url.match(/\/app\/(\d+)/)
+    #     Scrapers.logger.ln "Loaded #{app_id[1]} page #{current_page}" if app_id
+    #     process_response(response, &cb)
+    #   end
+    # end
 
     def current_page
       @current_page ||= Integer(@url.scan(/p=(\d+)/).flatten.first)

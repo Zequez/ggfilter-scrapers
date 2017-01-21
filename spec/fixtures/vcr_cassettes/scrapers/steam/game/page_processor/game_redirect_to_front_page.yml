@@ -1,0 +1,168 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://store.steampowered.com/app/474780
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Cookie:
+      - birthtime=724320001; fakeCC=US
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      Server:
+      - Apache
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      Location:
+      - http://store.steampowered.com/
+      Content-Encoding:
+      - gzip
+      Vary:
+      - Accept-Encoding
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '26'
+      X-Varnish:
+      - '4016638718'
+      Date:
+      - Sat, 21 Jan 2017 03:15:00 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - steamCountry=AR%7C34e26c2a2766d38fa1726fc5c27ef748; path=/
+      - browserid=1278294992855795856; expires=Sun, 21-Jan-2018 03:14:59 GMT; path=/
+      - recentapps=%7B%22474780%22%3A1484968499%7D; expires=Fri, 21-Apr-2017 03:14:59
+        GMT; path=/
+      - sessionid=2be9a076d7ef4e0d570c0a2c; path=/
+    body:
+      encoding: UTF-8
+      base64_string: 'H4sIAAAAAAAAAwIAAAD//wMAAAAAAAAAAAA=
+
+'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: http://store.steampowered.com/app/474780
+  recorded_at: Sat, 21 Jan 2017 03:15:00 GMT
+- request:
+    method: get
+    uri: http://store.steampowered.com/app/474780
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Cookie:
+      - birthtime=724320001; fakeCC=US
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      Server:
+      - Apache
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      Location:
+      - http://store.steampowered.com/
+      Content-Encoding:
+      - gzip
+      Vary:
+      - Accept-Encoding
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '26'
+      X-Varnish:
+      - '3273117693'
+      Date:
+      - Sat, 21 Jan 2017 03:15:00 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - steamCountry=AR%7C34e26c2a2766d38fa1726fc5c27ef748; path=/
+      - browserid=1281672692576293596; expires=Sun, 21-Jan-2018 03:15:00 GMT; path=/
+      - recentapps=%7B%22474780%22%3A1484968500%7D; expires=Fri, 21-Apr-2017 03:15:00
+        GMT; path=/
+      - sessionid=e7e2a860438045ce9008ed71; path=/
+    body:
+      encoding: UTF-8
+      base64_string: 'H4sIAAAAAAAAAwIAAAD//wMAAAAAAAAAAAA=
+
+'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: http://store.steampowered.com/app/474780
+  recorded_at: Sat, 21 Jan 2017 03:15:00 GMT
+- request:
+    method: get
+    uri: http://store.steampowered.com/app/474780
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Cookie:
+      - birthtime=724320001; fakeCC=US
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      Server:
+      - Apache
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      Location:
+      - http://store.steampowered.com/
+      Content-Encoding:
+      - gzip
+      Vary:
+      - Accept-Encoding
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '26'
+      X-Varnish:
+      - '4016639062'
+      Date:
+      - Sat, 21 Jan 2017 03:15:00 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - steamCountry=AR%7C34e26c2a2766d38fa1726fc5c27ef748; path=/
+      - browserid=1331212288477412117; expires=Sun, 21-Jan-2018 03:15:00 GMT; path=/
+      - recentapps=%7B%22474780%22%3A1484968500%7D; expires=Fri, 21-Apr-2017 03:15:00
+        GMT; path=/
+      - sessionid=d4fb9fcc02d9316f3762676a; path=/
+    body:
+      encoding: UTF-8
+      base64_string: 'H4sIAAAAAAAAAwIAAAD//wMAAAAAAAAAAAA=
+
+'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: http://store.steampowered.com/app/474780
+  recorded_at: Sat, 21 Jan 2017 03:15:00 GMT
+recorded_with: VCR 2.9.3

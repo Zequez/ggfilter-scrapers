@@ -91,14 +91,12 @@ describe Scrapers::Base::PageProcessor, cassette: true do
         end
       end
 
-      loader = double
-      response = instance_double('Response', body: '<html></html>',
-        request: instance_double('Request', url: 'http://example.com')
-      )
-      pp = MockPageProcessor.new('http://www.example.com', loader)
-
+      stub_url('www.example.com', 200, '<html></html>')
       expect{
-        pp.process_response(response)
+        loader = Scrapers::TrueLoader.new
+        pl = MockPageProcessor.new('www.example.com', loader)
+        pl.load{}
+        loader.run{}
       }.to raise_error do |e|
         expect(e).to be_kind_of(Scrapers::Errors::InvalidPageError)
         expect(e.message).to match(/invalid value for Integer/)

@@ -40,7 +40,7 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
         processor.load{}
 
         (1..16).each do |n|
-          expect(loader).to receive(:queue).with(steam_list_url('civilization', n))
+          expect(loader).to receive(:queue).with(steam_list_url('civilization', n), false)
         end
 
         loader.run{}

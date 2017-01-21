@@ -44,6 +44,8 @@
 
 module Scrapers::Steam::Game
   class PageProcessor < Scrapers::Base::PageProcessor
+    def error_on_redirect; false end
+
     def process_page
       game = {}
 

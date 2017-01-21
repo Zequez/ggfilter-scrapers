@@ -30,6 +30,14 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
         expect(@result).to eq nil
       end
     end
+
+    describe 'redirects' do
+      cassette_subject(474780, 'game_redirect_to_front_page')
+
+      it 'should quietly ignore redirects' do
+        expect(@result).to eq nil
+      end
+    end
   end
 
   describe 'loading a regular game like Bioshock Infinite' do
