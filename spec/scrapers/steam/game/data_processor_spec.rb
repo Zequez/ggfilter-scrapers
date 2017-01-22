@@ -44,7 +44,8 @@ module Scrapers::Steam
           vr_platforms: [:rift],
           vr_controllers: [:tracked, :gamepad],
           developer: 'Potato',
-          publisher: 'Salad'
+          publisher: 'Salad',
+          released_at: Time.parse('20 Dec, 2015')
         }
 
         processor = DataProcessor.new(data, game)
@@ -93,6 +94,7 @@ module Scrapers::Steam
         expect(game.vr_controllers).to match_array [:tracked, :gamepad]
         expect(game.developer).to eq 'Potato'
         expect(game.publisher).to eq 'Salad'
+        expect(game.released_at).to be_within(1.minute).of(Time.parse('20 Dec, 2015'))
       end
 
       it 'should work with non-standard languages' do

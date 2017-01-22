@@ -15,7 +15,7 @@ module Scrapers
           @game.name          = @data[:name]
           @game.price         = @data[:price]
           @game.sale_price    = @data[:sale_price]
-          @game.released_at   = @data[:released_at]
+          @game.steam_published_at   = @data[:steam_published_at]
           @game.text_release_date = @data[:text_release_date]
           @game.platforms     = @data[:platforms]
           @game.reviews_count = @data[:reviews_count]

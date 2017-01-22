@@ -10,6 +10,7 @@ module Scrapers::Steam
         t.string :genre
         t.text :summary
         t.datetime :released_at
+        t.datetime :steam_published_at
         t.string :text_release_date
         t.string :developer
         t.string :publisher

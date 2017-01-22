@@ -9,7 +9,7 @@ module Scrapers::Steam
           name: 'Potato',
           price: 123,
           sale_price: 50,
-          released_at: 1.week.ago,
+          steam_published_at: 1.week.ago,
           text_release_date: 'This fall!',
           platforms: [:win, :mac, :linux],
           reviews_count: 1111,
@@ -24,7 +24,7 @@ module Scrapers::Steam
         expect(game.name).to eq 'Potato'
         expect(game.price).to eq 123
         expect(game.sale_price).to eq 50
-        expect(game.released_at).to be_within(1.minute).of(1.week.ago)
+        expect(game.steam_published_at).to be_within(1.minute).of(1.week.ago)
         expect(game.text_release_date).to eq 'This fall!'
         expect(game.platforms).to match_array [:win, :mac, :linux]
         expect(game.reviews_count).to eq 1111
@@ -40,7 +40,7 @@ module Scrapers::Steam
           name: 'Potato',
           price: 123,
           sale_price: 50,
-          released_at: 1.week.ago,
+          steam_published_at: 1.week.ago,
           text_release_date: 'This fall!',
           platforms: [:win, :mac, :linux],
           reviews_count: 1111,
@@ -55,7 +55,7 @@ module Scrapers::Steam
         expect(game.name).to eq 'Potato'
         expect(game.price).to eq 123
         expect(game.sale_price).to eq 50
-        expect(game.released_at).to be_within(1.minute).of(1.week.ago)
+        expect(game.steam_published_at).to be_within(1.minute).of(1.week.ago)
         expect(game.text_release_date).to eq 'This fall!'
         expect(game.platforms).to match_array [:win, :mac, :linux]
         expect(game.reviews_count).to eq 1111

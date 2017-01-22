@@ -4,7 +4,7 @@
 #  :name
 #  :price
 #  :sale_price
-#  :released_at
+#  :steam_published_at
 #  :platforms
 #  :reviews_count
 #  :reviews_ratio
@@ -49,13 +49,13 @@ module Scrapers::Steam::List
         game[:id] = read_id(a)
         game[:name] = read_name(a)
         game[:price], game[:sale_price] = read_prices(a)
-        game[:released_at] = read_released_at(a)
+        game[:steam_published_at] = read_released_at(a)
         game[:text_release_date] = read_text_release_date(a)
         game[:platforms] = read_platforms(a)
         game[:reviews_count], game[:reviews_ratio] = read_reviews(a)
         game[:thumbnail] = read_thumbnail(a)
 
-        if game[:price] || game[:text_release_date] || game[:released_at]
+        if game[:price] || game[:text_release_date] || game[:steam_published_at]
           data << game
         end
       end

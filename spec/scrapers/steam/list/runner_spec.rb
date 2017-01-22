@@ -20,7 +20,7 @@ module Scrapers::Steam
           game = SteamGame.find_by_name('XCOM: Enemy Unknown')
           expect(game).to_not eq nil
           expect(game.platforms).to match_array [:mac, :win, :linux]
-          expect(game.released_at).to be_within(1.day).of Time.parse('8 Oct, 2012')
+          expect(game.steam_published_at).to be_within(1.day).of Time.parse('8 Oct, 2012')
           expect(game.reviews_count).to be_within(100).of 30195
           expect(game.reviews_ratio).to eq 95
           expect(game.thumbnail).to eq 'http://cdn.akamai.steamstatic.com/steam/apps/200510/capsule_sm_120.jpg?t=1447366133'
@@ -37,7 +37,7 @@ module Scrapers::Steam
           expect(SteamGame.all.count).to eq 248
           game.reload
           expect(game.name).to eq 'XCOM: Enemy Unknown'
-          expect(game.released_at).to be_within(1.day).of Time.parse('8 Oct, 2012')
+          expect(game.steam_published_at).to be_within(1.day).of Time.parse('8 Oct, 2012')
           expect(game.list_scraped_at).to be_within(1.minute).of(Time.now)
         end
       end

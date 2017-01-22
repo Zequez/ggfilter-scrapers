@@ -122,7 +122,22 @@ module Scrapers::Steam::Game
       game[:developer] = game_link_text('developer=')
       game[:publisher] = game_link_text('publisher=')
 
+      game[:released_at] = read_released_at
+
       yield game
+    end
+
+    def read_released_at
+      date = css('.release_date .date').text()
+      if date =~ /[0-9]{1,2} [a-z]{3}, [0-9]{4}/i
+        begin
+          Time.parse(date)
+        rescue ArgumentError
+          nil
+        end
+      else
+        nil
+      end
     end
 
     def read_videos

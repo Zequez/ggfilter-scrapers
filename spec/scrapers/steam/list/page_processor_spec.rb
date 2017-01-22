@@ -145,10 +145,10 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
     end
   end
 
-  describe ':released_at' do
+  describe ':steam_published_at' do
     context 'regular release date' do
       specific_subject('1954 Alcatraz')
-      its([:released_at]) { is_expected.to be_within(1.hour).of Time.parse('Mar 11, 2014') }
+      its([:steam_published_at]) { is_expected.to be_within(1.hour).of Time.parse('Mar 11, 2014') }
     end
 
     context 'empty release date (and price)' do
@@ -158,13 +158,13 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
 
     context 'non-date release date' do
       specific_subject('SAVAGE: The Shard of Gosen')
-      its([:released_at]) { is_expected.to eq nil }
+      its([:steam_published_at]) { is_expected.to eq nil }
       its([:text_release_date]) { is_expected.to eq 'Coming Soon' }
     end
 
     context 'general date release date' do
       specific_subject('Drift King: Survival')
-      its([:released_at]) { is_expected.to eq nil }
+      its([:steam_published_at]) { is_expected.to eq nil }
       its([:text_release_date]) { is_expected.to eq 'Nov 2016' }
     end
   end

@@ -1,0 +1,1408 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://store.steampowered.com/app/6910
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Cookie:
+      - birthtime=724320001; fakeCC=US
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - text/html; charset=UTF-8
+      X-Varnish:
+      - '3910113625'
+      Date:
+      - Sun, 22 Jan 2017 04:57:12 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      - Transfer-Encoding
+      Set-Cookie:
+      - steamCountry=AR%7C34e26c2a2766d38fa1726fc5c27ef748; path=/
+      - browserid=1331212288488269774; expires=Mon, 22-Jan-2018 04:57:11 GMT; path=/
+      - recentapps=%7B%226910%22%3A1485061031%7D; expires=Sat, 22-Apr-2017 04:57:11
+        GMT; path=/
+      - sessionid=95119cc77e78befde7653006; path=/
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\r\n<html class=\" responsive\" lang=\"en\">\r\n<head>\r\n\t<meta
+        http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n\t\t\t<meta
+        name=\"viewport\" content=\"width=device-width,initial-scale=1\">\r\n\t\t<meta
+        name=\"theme-color\" content=\"#171a21\">\r\n\t\t<title>Deus Ex: Game of the
+        Year Edition on Steam</title>\r\n\t<link rel=\"shortcut icon\" href=\"/favicon.ico\"
+        type=\"image/x-icon\">\r\n\r\n\t<link href=\"http://store.edgecast.steamstatic.com/public/shared/css/motiva_sans.css?v=Sd0odMs2NjL1\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.edgecast.steamstatic.com/public/shared/css/shared_global.css?v=qUauRjAB6F_h\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.edgecast.steamstatic.com/public/shared/css/buttons.css?v=FMXZx9fv9yp_\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.edgecast.steamstatic.com/public/css/v6/store.css?v=Ut0JarhsaWdU\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.edgecast.steamstatic.com/public/shared/css/user_reviews.css?v=VhQeI8cMkn9t\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.edgecast.steamstatic.com/public/shared/css/store_game_shared.css?v=JivU3bgEI1XA\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.edgecast.steamstatic.com/public/css/v6/game.css?v=MAcFD0Vgzrdm\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.edgecast.steamstatic.com/public/css/v6/recommended.css?v=-rR9vga1k-jI\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.edgecast.steamstatic.com/public/shared/css/apphub.css?v=DzqCiCjyS0fo\"
+        rel=\"stylesheet\" type=\"text/css\" >\n<link href=\"http://store.edgecast.steamstatic.com/public/shared/css/shared_responsive.css?v=Dm6dKxyudx2Y\"
+        rel=\"stylesheet\" type=\"text/css\" >\n\t\t\t<script>\r\n\t\t\t\t(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\r\n\t\t\t\t\t\t(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+        Date();a=s.createElement(o),\r\n\t\t\t\t\tm=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\r\n\t\t\t\t})(window,document,'script','//www.google-analytics.com/analytics.js','ga');\r\n\r\n\t\t\t\tga('create',
+        'UA-33786258-1', 'auto', {\r\n\t\t\t\t\t'sampleRate': 0.4\t\t\t\t});\r\n\t\t\t\tga('set',
+        'dimension1', false );\r\n\t\t\t\tga('set', 'dimension2', 'External' );\r\n\t\t\t\tga('set',
+        'dimension3', 'application' );\r\n\t\t\t\tga('set', 'dimension4', \"application\\/app\"
+        );\r\n\t\t\t\tga('send', 'pageview');\r\n\r\n\t\t\t</script>\r\n\t\t\t<script
+        type=\"text/javascript\" src=\"http://store.edgecast.steamstatic.com/public/shared/javascript/jquery-1.8.3.min.js?v=.TZ2NKhB-nliU\"></script>\n<script
+        type=\"text/javascript\">$J = jQuery.noConflict();</script><script type=\"text/javascript\"
+        src=\"http://store.edgecast.steamstatic.com/public/shared/javascript/tooltip.js?v=.gcRSUfx-SLlh\"></script>\n\n<script
+        type=\"text/javascript\" src=\"http://store.edgecast.steamstatic.com/public/shared/javascript/shared_global.js?v=OW58g-W0-ysH&amp;l=english\"></script>\n\n<script
+        type=\"text/javascript\" src=\"http://store.edgecast.steamstatic.com/public/javascript/main.js?v=XL_FcrG3EWgu&amp;l=english\"></script>\n\n<script
+        type=\"text/javascript\" src=\"http://store.edgecast.steamstatic.com/public/javascript/dynamicstore.js?v=4GafvBBQ4pE4&amp;l=english\"></script>\n\n<script
+        type=\"text/javascript\">\njQuery(document).ready(function($) { $J.data( document,
+        'x_readytime', new Date().getTime() ); \n$J.data( document, 'x_oldref', GetNavCookie()
+        ); \n$('.tooltip').v_tooltip();\nwindow.BindStoreTooltip = function( $Selector
+        ) { $Selector.v_tooltip( {'tooltipClass': 'store_tooltip', 'dataName': 'storeTooltip'
+        } ); };\nBindStoreTooltip( $('[data-store-tooltip]') ); \n});</script><script
+        type=\"text/javascript\" src=\"http://store.edgecast.steamstatic.com/public/javascript/gamehighlightplayer.js?v=qnLwX-4mhRfU&amp;l=english\"></script>\n<script
+        type=\"text/javascript\" src=\"http://store.edgecast.steamstatic.com/public/shared/javascript/user_reviews.js?v=dzEr6H6MxNOU&amp;l=english\"></script>\n<script
+        type=\"text/javascript\" src=\"http://store.edgecast.steamstatic.com/public/shared/javascript/dselect.js?v=yT8Q5U2-O4wX&amp;l=english\"></script>\n<script
+        type=\"text/javascript\" src=\"http://store.edgecast.steamstatic.com/public/javascript/app_tagging.js?v=9kVGcETDwjpq&amp;l=english\"></script>\n<script
+        type=\"text/javascript\" src=\"http://store.edgecast.steamstatic.com/public/javascript/game.js?v=ZJGR5yfKJt0R&amp;l=english\"></script>\n<script
+        type=\"text/javascript\" src=\"http://store.edgecast.steamstatic.com/public/javascript/swfobject.js?v=.IJPsm1EB98JP\"></script>\n<script
+        type=\"text/javascript\" src=\"http://store.edgecast.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=qLEcRmcHn-kc&amp;l=english\"></script>\n\r\n\t\t\t\t\t\t<meta
+        name=\"Description\" content=\"The year is 2052 and the world is a dangerous
+        and chaotic place. Terrorists operate openly - killing thousands; drugs, disease
+        and pollution kill even more. The world's economies are close to collapse
+        and the gap between the insanely wealthy and the desperately poor grows ever
+        wider.\">\r\n\t\t\t\r\n\t\t\t\t\t\t<meta property=\"fb:app_id\" content=\"105386699540688\">\r\n\t\t\t\t\t<meta
+        property=\"og:site\" content=\"Steam\">\r\n\t\t\t\t\t<meta property=\"og:description\"
+        content=\"The year is 2052 and the world is a dangerous and chaotic place.
+        Terrorists operate openly - killing thousands; drugs, disease and pollution
+        kill even more. The world's economies are close to collapse and the gap between
+        the insanely wealthy and the desperately poor grows ever wider.\">\r\n\t\t\t\r\n\t\t\t<link
+        rel=\"canonical\" href=\"http://store.steampowered.com/app/6910/\">\r\n\t\r\n\t\t\t<link
+        rel=\"image_src\" href=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/header.jpg?t=1478811896\">\r\n\t\t<meta
+        property=\"og:image\" content=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/header.jpg?t=1478811896\">\r\n\t\t\t\r\n\t\r\n\t\r\n\t</head>\r\n<body
+        class=\"v6 app game_bg responsive_page\">\r\n\r\n<div class=\"responsive_page_frame
+        with_header\">\r\n\r\n\t\t\t\t\t\t<div class=\"responsive_page_menu_ctn mainmenu\">\r\n\t\t\t\t<div
+        class=\"responsive_page_menu\"  id=\"responsive_page_menu\">\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"mainmenu_contents\">\r\n\t\t\t\t\t\t<div class=\"mainmenu_contents_items\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"menuitem\" href=\"https://store.steampowered.com//login/?redir=app%2F6910\">\r\n\t\t\t\t\t\t\t\t\tLogin\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t<a
+        class=\"menuitem supernav\" href=\"http://store.steampowered.com/\" data-tooltip-type=\"selector\"
+        data-tooltip-content=\".submenu_store\">\r\n\t\tStore\t</a>\r\n\t<div class=\"submenu_store\"
+        style=\"display: none;\" data-submenuid=\"store\">\r\n\t\t<a class=\"submenuitem\"
+        href=\"http://store.steampowered.com/\">Featured</a>\r\n\t\t<a class=\"submenuitem\"
+        href=\"http://store.steampowered.com/explore/\">Explore</a>\r\n\t\t<a class=\"submenuitem\"
+        href=\"http://store.steampowered.com/curators/\">Curators</a>\r\n\t\t<a class=\"submenuitem\"
+        href=\"http://steamcommunity.com/my/wishlist/\">Wishlist</a>\r\n\t\t<a class=\"submenuitem\"
+        href=\"http://store.steampowered.com/news/\">News</a>\r\n\t\t<a class=\"submenuitem\"
+        href=\"http://store.steampowered.com/stats/\">Stats</a>\r\n\t</div>\r\n\r\n\r\n\t<a
+        class=\"menuitem supernav\" style=\"display: block\" href=\"http://steamcommunity.com/\"
+        data-tooltip-type=\"selector\" data-tooltip-content=\".submenu_community\">\r\n\t\tCommunity\t</a>\r\n\t<div
+        class=\"submenu_community\" style=\"display: none;\" data-submenuid=\"community\">\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/\">Home</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/discussions/\">Discussions</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/workshop/\">Workshop</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/greenlight/\">Greenlight</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/market/\">Market</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/?subsection=broadcasts\">Broadcasts</a>\r\n\t\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\r\n\t\r\n\t<a
+        class=\"menuitem\" href=\"https://help.steampowered.com/en/\">\r\n\t\tSupport\t</a>\r\n\r\n\t\t\t\t\t\t\t<div
+        class=\"minor_menu_items\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"menuitem
+        change_language_action\">\r\n\t\t\t\t\t\t\t\t\tChange language\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"menuitem\" onclick=\"Responsive_RequestDesktopView();\">\r\n\t\t\t\t\t\t\t\t\t\tView
+        desktop website\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div
+        class=\"mainmenu_footer_spacer\"></div>\r\n\t\t\t\t\t\t<div class=\"mainmenu_footer\">\r\n\t\t\t\t\t\t\t<div
+        class=\"mainmenu_footer_logo\"><img src=\"http://store.edgecast.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png\"></div>\r\n\t\t\t\t\t\t\t©
+        Valve Corporation. All rights reserved. All trademarks are property of their
+        respective owners in the US and other countries.\t\t\t\t\t\t\t<span class=\"mainmenu_valve_links\">\r\n\t\t\t\t\t\t\t\t<a
+        href=\"http://store.steampowered.com/privacy_agreement/\" target=\"_blank\">Privacy
+        Policy</a>\r\n\t\t\t\t\t\t\t\t&nbsp;| &nbsp;<a href=\"http://www.valvesoftware.com/legal.htm\"
+        target=\"_blank\">Legal</a>\r\n\t\t\t\t\t\t\t\t&nbsp;| &nbsp;<a href=\"http://store.steampowered.com/subscriber_agreement/\"
+        target=\"_blank\">Steam Subscriber Agreement</a>\r\n\t\t\t\t\t\t\t\t&nbsp;|
+        &nbsp;<a href=\"http://store.steampowered.com/steam_refunds/\" target=\"_blank\">Refunds</a>\r\n\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\r\n\t\t<div
+        class=\"responsive_local_menu_tab\">\r\n\r\n\t\t</div>\r\n\r\n\t\t<div class=\"responsive_page_menu_ctn
+        localmenu\">\r\n\t\t\t<div class=\"responsive_page_menu\"  id=\"responsive_page_local_menu\">\r\n\t\t\t\t<div
+        class=\"localmenu_content\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\r\n\r\n\t\t\t\t\t<div
+        class=\"responsive_header\">\r\n\t\t\t\t<div class=\"responsive_header_content\">\r\n\t\t\t\t\t<div
+        id=\"responsive_menu_logo\">\r\n\t\t\t\t\t\t<img src=\"http://store.edgecast.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png\"
+        height=\"100%\">\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"responsive_header_logo\">\r\n\t\t\t\t\t\t<img
+        src=\"http://store.edgecast.steamstatic.com/public/shared/images/responsive/header_logo.png\"
+        height=\"36\" border=\"0\" alt=\"STEAM\">\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\r\n\t\t<div
+        class=\"responsive_page_content_overlay\">\r\n\r\n\t\t</div>\r\n\r\n\t\t<div
+        class=\"responsive_fixonscroll_ctn nonresponsive_hidden \">\r\n\t\t</div>\r\n\t\r\n\t<div
+        class=\"responsive_page_content\">\r\n\r\n\t\t<div id=\"global_header\">\r\n\t<div
+        class=\"content\">\r\n\r\n\t\t<div class=\"logo\">\r\n\t\t\t<span id=\"logo_holder\">\r\n\t\t\t\t<a
+        href=\"http://store.steampowered.com/\">\r\n\t\t\t\t\t<img src=\"http://store.edgecast.steamstatic.com/public/shared/images/header/globalheader_logo.png?t=962016\"
+        width=\"176\" height=\"44\">\r\n\t\t\t\t</a>\r\n\t\t\t</span>\r\n\t\t\t<!--[if
+        lt IE 7]>\r\n\t\t\t<style type=\"text/css\">\r\n\t\t\t\t#logo_holder img {
+        filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }\r\n\t\t\t\t#logo_holder
+        { display: inline-block; width: 176px; height: 44px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://store.edgecast.steamstatic.com/public/images/v5/globalheader_logo.png');
+        }\r\n\t\t\t</style>\r\n\t\t\t<![endif]-->\r\n\t\t</div>\r\n\r\n\t\t\t<div
+        class=\"supernav_container\">\r\n\t<a class=\"menuitem supernav\" href=\"http://store.steampowered.com/\"
+        data-tooltip-type=\"selector\" data-tooltip-content=\".submenu_store\">\r\n\t\tSTORE\t</a>\r\n\t<div
+        class=\"submenu_store\" style=\"display: none;\" data-submenuid=\"store\">\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://store.steampowered.com/\">Featured</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://store.steampowered.com/explore/\">Explore</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://store.steampowered.com/curators/\">Curators</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/my/wishlist/\">Wishlist</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://store.steampowered.com/news/\">News</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://store.steampowered.com/stats/\">Stats</a>\r\n\t</div>\r\n\r\n\r\n\t<a
+        class=\"menuitem supernav\" style=\"display: block\" href=\"http://steamcommunity.com/\"
+        data-tooltip-type=\"selector\" data-tooltip-content=\".submenu_community\">\r\n\t\tCOMMUNITY\t</a>\r\n\t<div
+        class=\"submenu_community\" style=\"display: none;\" data-submenuid=\"community\">\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/\">Home</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/discussions/\">Discussions</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/workshop/\">Workshop</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/greenlight/\">Greenlight</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/market/\">Market</a>\r\n\t\t<a
+        class=\"submenuitem\" href=\"http://steamcommunity.com/?subsection=broadcasts\">Broadcasts</a>\r\n\t\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\r\n\t\t\t<a
+        class=\"menuitem\" href=\"http://store.steampowered.com/about/\">\r\n\t\t\tABOUT\t\t</a>\r\n\t\r\n\t<a
+        class=\"menuitem\" href=\"https://help.steampowered.com/en/\">\r\n\t\tSUPPORT\t</a>\r\n\t</div>\r\n\t<script
+        type=\"text/javascript\">\r\n\t\tjQuery(function($) {\r\n\t\t\t$('.tooltip').v_tooltip();\r\n\t\t\t$('#global_header
+        .supernav').v_tooltip({'location':'bottom', 'tooltipClass': 'supernav_content',
+        'offsetY':-4, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header
+        .supernav_container', 'correctForScreenSize': false});\r\n\t\t});\r\n\t</script>\r\n\r\n\t\t<div
+        id=\"global_actions\">\r\n\t\t\t<div id=\"global_action_menu\">\r\n\t\t\t\t<div
+        class=\"header_installsteam_btn header_installsteam_btn_green\">\r\n\t\t\t\t\t<div
+        class=\"header_installsteam_btn_leftcap\"></div>\r\n\t\t\t\t\t<div class=\"header_installsteam_btn_rightcap\"></div>\r\n\t\t\t\t\t<a
+        class=\"header_installsteam_btn_content\" href=\"http://store.steampowered.com/about/\">\r\n\t\t\t\t\t\tInstall
+        Steam\t\t\t\t\t</a>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<a
+        class=\"global_action_link\" href=\"https://store.steampowered.com//login/?redir=app%2F6910\">login</a>\r\n\t\t\t\t\t&nbsp;|&nbsp;\r\n\t\t\t\t\t<span
+        class=\"pulldown global_action_link\" id=\"language_pulldown\" onclick=\"ShowMenu(
+        this, 'language_dropdown', 'right' );\">language</span>\r\n\t\t\t\t\t<div
+        class=\"popup_block_new\" id=\"language_dropdown\" style=\"display: none;\">\r\n\t\t\t\t\t\t<div
+        class=\"popup_body popup_menu\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=bulgarian\" onclick=\"ChangeLanguage(
+        'bulgarian' ); return false;\">Български (Bulgarian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=czech\" onclick=\"ChangeLanguage(
+        'czech' ); return false;\">čeština (Czech)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=danish\" onclick=\"ChangeLanguage(
+        'danish' ); return false;\">Dansk (Danish)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=dutch\" onclick=\"ChangeLanguage(
+        'dutch' ); return false;\">Nederlands (Dutch)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=finnish\" onclick=\"ChangeLanguage(
+        'finnish' ); return false;\">Suomi (Finnish)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=french\" onclick=\"ChangeLanguage(
+        'french' ); return false;\">Français (French)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=greek\" onclick=\"ChangeLanguage(
+        'greek' ); return false;\">Ελληνικά (Greek)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=german\" onclick=\"ChangeLanguage(
+        'german' ); return false;\">Deutsch (German)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=hungarian\" onclick=\"ChangeLanguage(
+        'hungarian' ); return false;\">Magyar (Hungarian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=italian\" onclick=\"ChangeLanguage(
+        'italian' ); return false;\">Italiano (Italian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=japanese\" onclick=\"ChangeLanguage(
+        'japanese' ); return false;\">日本語 (Japanese)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=koreana\" onclick=\"ChangeLanguage(
+        'koreana' ); return false;\">한국어 (Korean)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=norwegian\" onclick=\"ChangeLanguage(
+        'norwegian' ); return false;\">Norsk (Norwegian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=polish\" onclick=\"ChangeLanguage(
+        'polish' ); return false;\">Polski (Polish)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=portuguese\" onclick=\"ChangeLanguage(
+        'portuguese' ); return false;\">Português (Portuguese)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=brazilian\" onclick=\"ChangeLanguage(
+        'brazilian' ); return false;\">Português-Brasil (Portuguese-Brazil)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=russian\" onclick=\"ChangeLanguage(
+        'russian' ); return false;\">Русский (Russian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=romanian\" onclick=\"ChangeLanguage(
+        'romanian' ); return false;\">Română (Romanian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=schinese\" onclick=\"ChangeLanguage(
+        'schinese' ); return false;\">简体中文 (Simplified Chinese)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=spanish\" onclick=\"ChangeLanguage(
+        'spanish' ); return false;\">Español (Spanish)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=swedish\" onclick=\"ChangeLanguage(
+        'swedish' ); return false;\">Svenska (Swedish)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=tchinese\" onclick=\"ChangeLanguage(
+        'tchinese' ); return false;\">繁體中文 (Traditional Chinese)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=thai\" onclick=\"ChangeLanguage(
+        'thai' ); return false;\">ไทย (Thai)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=turkish\" onclick=\"ChangeLanguage(
+        'turkish' ); return false;\">Türkçe (Turkish)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"?l=ukrainian\" onclick=\"ChangeLanguage(
+        'ukrainian' ); return false;\">Українська (Ukrainian)</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item tight\" href=\"http://translation.steampowered.com\"
+        target=\"_blank\">Help us translate Steam</a>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t</div>\r\n</div>\r\n<div
+        id=\"responsive_store_nav_ctn\"></div>\r\n\t\t<div class=\"responsive_page_template_content\">\r\n\r\n\t\t\t<script
+        type=\"text/javascript\">\r\n\r\n\tvar g_eDiscoveryQueueType = 0;\r\n\r\n\tGStoreItemData.AddStoreItemData(\r\n\t\t{\"238010\":{\"name\":\"Deus
+        Ex: Human Revolution - Director's Cut\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$19.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/238010\\/capsule_184x69.jpg?t=1478806360\",\"os_windows\":true,\"os_macos\":true,\"localized\":true},\"238210\":{\"name\":\"System
+        Shock 2\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$9.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/238210\\/capsule_184x69.jpg?t=1466791175\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"localized\":true},\"337000\":{\"name\":\"Deus
+        Ex: Mankind Divided\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$59.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/337000\\/capsule_184x69.jpg?t=1484153363\",\"os_windows\":true,\"os_linux\":true,\"localized\":true,\"status_string\":\"Now
+        Available on SteamOS!\"},\"6920\":{\"name\":\"Deus Ex: Invisible War\",\"discount_block\":\"<div
+        class=\\\"discount_block  no_discount\\\"> <div class=\\\"discount_prices\\\"><div
+        class=\\\"discount_final_price\\\">$6.99 USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6920\\/capsule_184x69.jpg?t=1471975319\",\"os_windows\":true,\"localized\":true},\"258180\":{\"name\":\"Deus
+        Ex: The Fall\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$9.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/258180\\/capsule_184x69.jpg?t=1480615891\",\"os_windows\":true,\"localized\":true},\"410710\":{\"name\":\"System
+        Shock: Enhanced Edition\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$9.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/410710\\/capsule_184x69.jpg?t=1466791206\",\"os_windows\":true,\"localized\":true},\"482400\":{\"name\":\"System
+        Shock\",\"discount_block\":\"<div class=\\\"discount_block empty \\\"><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/482400\\/capsule_184x69.jpg?t=1482522263\",\"os_windows\":true,\"os_linux\":true,\"coming_soon\":true,\"localized\":true},\"15130\":{\"name\":\"Beyond
+        Good and Evil&trade;\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$9.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/15130\\/capsule_184x69.jpg?t=1447351297\",\"os_windows\":true,\"localized\":true},\"7670\":{\"name\":\"BioShock\\u2122\",\"discount_block\":\"<div
+        class=\\\"discount_block empty \\\"><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/7670\\/capsule_184x69.jpg?t=1474048228\",\"os_windows\":true,\"localized\":true},\"233270\":{\"name\":\"Far
+        Cry 3 - Blood Dragon\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$14.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/233270\\/capsule_184x69.jpg?t=1452181577\",\"os_windows\":true,\"localized\":true},\"220\":{\"name\":\"Half-Life
+        2\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\"> <div
+        class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$7.49
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/220\\/capsule_184x69.jpg?t=1456860366\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"localized\":true},\"420\":{\"name\":\"Half-Life
+        2: Episode Two\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$5.99
+        USD<\\/div><\\/div><\\/div>\",\"small_capsulev5\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/420\\/capsule_184x69.jpg?t=1456867684\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"localized\":true}},\r\n\t\t{\"280\":{\"name\":\"Hitman:
+        Codename 47\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6900\\/capsule_sm_120.jpg?t=1457718464\",\"os_windows\":true,\"appids\":[6900],\"localized\":true},\"281\":{\"name\":\"Hitman
+        2: Silent Assassin\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6850\\/capsule_sm_120.jpg?t=1457718666\",\"os_windows\":true,\"appids\":[6850],\"localized\":true},\"282\":{\"name\":\"Hitman:
+        Blood Money\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$8.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6860\\/capsule_sm_120.jpg?t=1457719166\",\"os_windows\":true,\"appids\":[6860],\"localized\":true},\"284\":{\"name\":\"Battlestations:
+        Midway\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6870\\/capsule_sm_120.jpg?t=1447350979\",\"os_windows\":true,\"appids\":[6870],\"localized\":true},\"285\":{\"name\":\"Just
+        Cause\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6880\\/capsule_sm_120.jpg?t=1455040223\",\"os_windows\":true,\"appids\":[6880],\"localized\":true},\"294\":{\"name\":\"Deus
+        Ex: Game of the Year Edition\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6910\\/capsule_sm_120.jpg?t=1478811896\",\"os_windows\":true,\"appids\":[6910],\"localized\":true},\"295\":{\"name\":\"Deus
+        Ex: Invisible War\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6920\\/capsule_sm_120.jpg?t=1471975319\",\"os_windows\":true,\"appids\":[6920],\"localized\":true},\"297\":{\"name\":\"Thief:
+        Deadly Shadows\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$8.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6980\\/capsule_sm_120.jpg?t=1447350999\",\"os_windows\":true,\"appids\":[6980],\"localized\":true},\"298\":{\"name\":\"Tomb
+        Raider: Legend\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/7000\\/capsule_sm_120.jpg?t=1447351003\",\"os_windows\":true,\"appids\":[7000],\"localized\":true},\"340\":{\"name\":\"Tomb
+        Raider: Anniversary\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$8.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/8000\\/capsule_sm_120.jpg?t=1449850141\",\"os_windows\":true,\"os_macos\":true,\"appids\":[8000],\"localized\":true},\"574\":{\"name\":\"Kane
+        & Lynch: Dead Men&trade;\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/8080\\/capsule_sm_120.jpg?t=1478892530\",\"os_windows\":true,\"appids\":[8080],\"localized\":true},\"1176\":{\"name\":\"Tomb
+        Raider: Underworld\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$8.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/8140\\/capsule_sm_120.jpg?t=1447351497\",\"os_windows\":true,\"appids\":[8140],\"localized\":true},\"1619\":{\"name\":\"Battlestations
+        Pacific\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$8.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/8170\\/capsule_sm_120.jpg?t=1478798895\",\"os_windows\":true,\"appids\":[8170],\"localized\":true},\"4097\":{\"name\":\"Just
+        Cause 2\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$14.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/8190\\/capsule_sm_120.jpg?t=1455040113\",\"os_windows\":true,\"appids\":[8190],\"localized\":true},\"4275\":{\"name\":\"JC2
+        DLC: Black Market Aerial Pack\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$1.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/35101\\/capsule_sm_120.jpg?t=1478820707\",\"os_windows\":true,\"appids\":[35101],\"localized\":true},\"4418\":{\"name\":\"Just
+        Cause 2 - Black Market 'Boom' Pack DLC\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$1.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/35102\\/capsule_sm_120.jpg?t=1478820788\",\"os_windows\":true,\"appids\":[35102],\"localized\":true},\"4564\":{\"name\":\"JC2
+        DLC - Bull's Eye Assault Rifle\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/35080\\/capsule_sm_120.jpg?t=1478820849\",\"os_windows\":true,\"appids\":[35080],\"localized\":true},\"4565\":{\"name\":\"JC2
+        DLC - Rico's Signature Gun\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/35083\\/capsule_sm_120.jpg?t=1478821642\",\"os_windows\":true,\"appids\":[35083],\"localized\":true},\"4566\":{\"name\":\"JC2
+        DLC - Chevalier Classic\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/35089\\/capsule_sm_120.jpg?t=1478821265\",\"os_windows\":true,\"appids\":[35089],\"localized\":true},\"4567\":{\"name\":\"JC2
+        DLC - Agency Hovercraft\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/35090\\/capsule_sm_120.jpg?t=1478820320\",\"os_windows\":true,\"appids\":[35090],\"localized\":true},\"4568\":{\"name\":\"Just
+        Cause 2 DLC - Monster Truck\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/35091\\/capsule_sm_120.jpg?t=1478821495\",\"os_windows\":true,\"appids\":[35091],\"localized\":true},\"6064\":{\"name\":\"Kane
+        & Lynch 2 DLC - Doggie Bag\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$5.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/28010\\/capsule_sm_120.jpg?t=1447353495\",\"os_windows\":true,\"appids\":[28010],\"localized\":true},\"6065\":{\"name\":\"Kane
+        & Lynch 2 DLC - Alliance Weapon Pack\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$2.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/28011\\/capsule_sm_120.jpg?t=1447353496\",\"os_windows\":true,\"appids\":[28011],\"localized\":true},\"6066\":{\"name\":\"Kane
+        & Lynch 2 DLC - Multiplayer Masks Pack\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$1.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/28012\\/capsule_sm_120.jpg?t=1447353496\",\"os_windows\":true,\"appids\":[28012],\"localized\":true},\"7029\":{\"name\":\"Lara
+        Croft GoL: Raziel and Kain Character Pack\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$3.49
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/35135\\/capsule_sm_120.jpg?t=1478893716\",\"os_windows\":true,\"appids\":[35135],\"localized\":true},\"7030\":{\"name\":\"Lara
+        Croft GoL: All the Trappings - Challenge Pack 1\",\"discount_block\":\"<div
+        class=\\\"discount_block  no_discount\\\"> <div class=\\\"discount_prices\\\"><div
+        class=\\\"discount_final_price\\\">$3.49 USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/35136\\/capsule_sm_120.jpg?t=1478893245\",\"os_windows\":true,\"appids\":[35136],\"localized\":true},\"7031\":{\"name\":\"Lara
+        Croft GoL: Things that Go Boom - Challenge Pack 2\",\"discount_block\":\"<div
+        class=\\\"discount_block  no_discount\\\"> <div class=\\\"discount_prices\\\"><div
+        class=\\\"discount_final_price\\\">$3.49 USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/35137\\/capsule_sm_120.jpg?t=1478893870\",\"os_windows\":true,\"appids\":[35137]},\"7032\":{\"name\":\"Lara
+        Croft GoL: Hazardous Reunion - Challenge Pack 3\",\"discount_block\":\"<div
+        class=\\\"discount_block  no_discount\\\"> <div class=\\\"discount_prices\\\"><div
+        class=\\\"discount_final_price\\\">$3.49 USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/35138\\/capsule_sm_120.jpg?t=1478893551\",\"os_windows\":true,\"appids\":[35138],\"localized\":true},\"7035\":{\"name\":\"Lara
+        Croft and the Guardian of Light\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$9.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/35130\\/capsule_sm_120.jpg?t=1447353139\",\"os_windows\":true,\"appids\":[35130],\"localized\":true},\"14557\":{\"name\":\"Thief
+        Gold\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/211600\\/capsule_sm_120.jpg?t=1453241644\",\"os_windows\":true,\"appids\":[211600],\"localized\":true},\"14558\":{\"name\":\"Thief
+        II: The Metal Age\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/211740\\/capsule_sm_120.jpg?t=1447355802\",\"os_windows\":true,\"appids\":[211740],\"localized\":true},\"18148\":{\"name\":\"Hitman
+        Absolution Agency Jagd P22G\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/216411\\/capsule_sm_120.jpg?t=1478814453\",\"os_windows\":true,\"os_macos\":true,\"appids\":[216411],\"localized\":true},\"18149\":{\"name\":\"Hitman
+        Absolution Agency SPS 12\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/216412\\/capsule_sm_120.jpg?t=1478814409\",\"os_windows\":true,\"os_macos\":true,\"appids\":[216412],\"localized\":true},\"18150\":{\"name\":\"Hitman
+        Absolution Agency HX UMP\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/216413\\/capsule_sm_120.jpg?t=1478814246\",\"os_windows\":true,\"os_macos\":true,\"appids\":[216413],\"localized\":true},\"18151\":{\"name\":\"Hitman
+        Absolution Bartoli Custom Gun\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/216414\\/capsule_sm_120.jpg?t=1478814583\",\"os_windows\":true,\"os_macos\":true,\"appids\":[216414],\"localized\":true},\"18152\":{\"name\":\"Hitman
+        Absolution Krugermeier 2-2 Gun\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/216415\\/capsule_sm_120.jpg?t=1478815853\",\"os_windows\":true,\"os_macos\":true,\"appids\":[216415],\"localized\":true},\"18153\":{\"name\":\"Hitman
+        Absolution Bronson M1928 Gun\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/216416\\/capsule_sm_120.jpg?t=1478815092\",\"os_windows\":true,\"os_macos\":true,\"appids\":[216416],\"localized\":true},\"18154\":{\"name\":\"Hitman
+        Absolution High Tech Disguise\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/216417\\/capsule_sm_120.jpg?t=1478815971\",\"os_windows\":true,\"os_macos\":true,\"appids\":[216417],\"localized\":true},\"18155\":{\"name\":\"Hitman
+        Absolution High Roller Disguise\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/216418\\/capsule_sm_120.jpg?t=1478815785\",\"os_windows\":true,\"os_macos\":true,\"appids\":[216418],\"localized\":true},\"18156\":{\"name\":\"Hitman
+        Absolution Public Enemy Disguise\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/216419\\/capsule_sm_120.jpg?t=1478815973\",\"os_windows\":true,\"os_macos\":true,\"appids\":[216419],\"localized\":true},\"18157\":{\"name\":\"Hitman
+        Absolution Deus Ex (Adam Jensen) Disguise\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/216420\\/capsule_sm_120.jpg?t=1478815585\",\"os_windows\":true,\"os_macos\":true,\"appids\":[216420],\"localized\":true},\"18158\":{\"name\":\"Hitman
+        Absolution Deus Ex (Adam Jensen) Handgun\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/216421\\/capsule_sm_120.jpg?t=1478815657\",\"os_windows\":true,\"os_macos\":true,\"appids\":[216421],\"localized\":true},\"18181\":{\"name\":\"Hitman:
+        Absolution\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$19.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/203140\\/capsule_sm_120.jpg?t=1457719222\",\"os_windows\":true,\"os_macos\":true,\"appids\":[203140],\"localized\":true},\"18300\":{\"name\":\"Legacy
+        of Kain: Defiance\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/224300\\/capsule_sm_120.jpg?t=1478895731\",\"os_windows\":true,\"appids\":[224300],\"localized\":true},\"18301\":{\"name\":\"Legacy
+        of Kain: Soul Reaver\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/224920\\/capsule_sm_120.jpg?t=1478895963\",\"os_windows\":true,\"appids\":[224920],\"localized\":true},\"18303\":{\"name\":\"Legacy
+        of Kain: Soul Reaver 2\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/224940\\/capsule_sm_120.jpg?t=1478900999\",\"os_windows\":true,\"appids\":[224940],\"localized\":true},\"18304\":{\"name\":\"Tomb
+        Raider I\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/224960\\/capsule_sm_120.jpg?t=1447356979\",\"os_windows\":true,\"appids\":[224960],\"localized\":true},\"18305\":{\"name\":\"Tomb
+        Raider II\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/225300\\/capsule_sm_120.jpg?t=1447356999\",\"os_windows\":true,\"appids\":[225300],\"localized\":true},\"18306\":{\"name\":\"Tomb
+        Raider III\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/225320\\/capsule_sm_120.jpg?t=1447357000\",\"os_windows\":true,\"appids\":[225320],\"localized\":true},\"18307\":{\"name\":\"Tomb
+        Raider IV: The Last Revelation\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/224980\\/capsule_sm_120.jpg?t=1447356980\",\"os_windows\":true,\"appids\":[224980],\"localized\":true},\"18308\":{\"name\":\"Tomb
+        Raider V: Chronicles\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/225000\\/capsule_sm_120.jpg?t=1447356981\",\"os_windows\":true,\"appids\":[225000],\"localized\":true},\"18309\":{\"name\":\"Tomb
+        Raider VI: Angel of Darkness\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/225020\\/capsule_sm_120.jpg?t=1447356981\",\"os_windows\":true,\"appids\":[225020],\"localized\":true},\"26016\":{\"name\":\"Tomb
+        Raider\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$19.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/203160\\/capsule_sm_120.jpg?t=1478567638\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[203160],\"localized\":true},\"26600\":{\"name\":\"Tomb
+        Raider: Silverballer\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208795\\/capsule_sm_120.jpg?t=1479341958\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208795],\"localized\":true},\"26601\":{\"name\":\"Tomb
+        Raider: Fisherman\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208793\\/capsule_sm_120.jpg?t=1479340916\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208793],\"localized\":true},\"26602\":{\"name\":\"Tomb
+        Raider: Scavenger Bandit\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208792\\/capsule_sm_120.jpg?t=1479342484\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208792],\"localized\":true},\"26603\":{\"name\":\"Tomb
+        Raider: Scavenger Scout\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208790\\/capsule_sm_120.jpg?t=1479342551\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208790],\"localized\":true},\"26606\":{\"name\":\"Tomb
+        Raider: Hunter Skin\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208806\\/capsule_sm_120.jpg?t=1479341987\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208806],\"localized\":true},\"26607\":{\"name\":\"Tomb
+        Raider: Aviatrix Skin\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208807\\/capsule_sm_120.jpg?t=1479340206\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208807],\"localized\":true},\"26608\":{\"name\":\"Tomb
+        Raider: Guerilla Skin\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208808\\/capsule_sm_120.jpg?t=1479340943\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208808],\"localized\":true},\"26609\":{\"name\":\"Tomb
+        Raider: Shanty Town\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$2.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208810\\/capsule_sm_120.jpg?t=1479342271\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208810],\"localized\":true},\"26610\":{\"name\":\"Tomb
+        Raider: Tomb of Lost Adventurer\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$2.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208812\\/capsule_sm_120.jpg?t=1479342640\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208812],\"localized\":true},\"26611\":{\"name\":\"Tomb
+        Raider: Agency SPS 12\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208796\\/capsule_sm_120.jpg?t=1479341446\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208796],\"localized\":true},\"26612\":{\"name\":\"Tomb
+        Raider: JAGD P22G\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208798\\/capsule_sm_120.jpg?t=1479341645\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208798],\"localized\":true},\"26613\":{\"name\":\"Tomb
+        Raider: M590 12ga\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208799\\/capsule_sm_120.jpg?t=1479341897\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208799],\"localized\":true},\"26614\":{\"name\":\"Tomb
+        Raider: HX AP-15\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208797\\/capsule_sm_120.jpg?t=1479341474\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208797],\"localized\":true},\"26615\":{\"name\":\"Tomb
+        Raider: STG 58 Elite\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208800\\/capsule_sm_120.jpg?t=1479341929\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208800],\"localized\":true},\"26777\":{\"name\":\"Tomb
+        Raider 1939 Multiplayer Map Pack\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$3.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208814\\/capsule_sm_120.jpg?t=1479340008\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208814],\"localized\":true},\"27211\":{\"name\":\"Tomb
+        Raider: Caves and Cliffs Multiplayer Map Pack\",\"discount_block\":\"<div
+        class=\\\"discount_block  no_discount\\\"> <div class=\\\"discount_prices\\\"><div
+        class=\\\"discount_final_price\\\">$4.99 USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208811\\/capsule_sm_120.jpg?t=1479340260\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208811],\"localized\":true},\"27537\":{\"name\":\"Tomb
+        Raider: Mountaineer Skin\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208809\\/capsule_sm_120.jpg?t=1479342328\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208809],\"localized\":true},\"27538\":{\"name\":\"Tomb
+        Raider: Sure-Shot Skin\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208818\\/capsule_sm_120.jpg?t=1479342609\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208818],\"localized\":true},\"27539\":{\"name\":\"Tomb
+        Raider: Demolition Skin\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208817\\/capsule_sm_120.jpg?t=1479340876\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208817],\"localized\":true},\"27540\":{\"name\":\"Tomb
+        Raider: Shipwrecked Multiplayer Map Pack\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$3.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208813\\/capsule_sm_120.jpg?t=1479342578\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208813],\"localized\":true},\"28253\":{\"name\":\"Tomb
+        Raider: Scavenger Executioner\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/208791\\/capsule_sm_120.jpg?t=1479342517\",\"os_windows\":true,\"os_macos\":true,\"os_linux\":true,\"appids\":[208791],\"localized\":true},\"31672\":{\"name\":\"Blood
+        Omen 2: Legacy of Kain\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/242960\\/capsule_sm_120.jpg?t=1478799232\",\"os_windows\":true,\"appids\":[242960],\"localized\":true},\"31675\":{\"name\":\"Hitman
+        Contracts\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$6.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/247430\\/capsule_sm_120.jpg?t=1457718993\",\"os_windows\":true,\"appids\":[247430],\"localized\":true},\"33136\":{\"name\":\"Thief:
+        The Bank Heist\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$4.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/259900\\/capsule_sm_120.jpg?t=1479338793\",\"os_windows\":true,\"os_macos\":true,\"appids\":[259900],\"localized\":true},\"34585\":{\"name\":\"Thief
+        DLC: Opportunist\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/265191\\/capsule_sm_120.jpg?t=1479338678\",\"os_windows\":true,\"os_macos\":true,\"appids\":[265191],\"localized\":true},\"34587\":{\"name\":\"Thief
+        DLC: Predator\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/265192\\/capsule_sm_120.jpg?t=1479338725\",\"os_windows\":true,\"os_macos\":true,\"appids\":[265192],\"localized\":true},\"34589\":{\"name\":\"Thief
+        DLC: Ghost\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$0.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/265193\\/capsule_sm_120.jpg?t=1479338638\",\"os_windows\":true,\"os_macos\":true,\"appids\":[265193],\"localized\":true},\"37997\":{\"name\":\"Thief\",\"discount_block\":\"<div
+        class=\\\"discount_block  no_discount\\\"> <div class=\\\"discount_prices\\\"><div
+        class=\\\"discount_final_price\\\">$29.99 USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/239160\\/capsule_sm_120.jpg?t=1448387500\",\"os_windows\":true,\"os_macos\":true,\"appids\":[239160],\"localized\":true},\"40047\":{\"name\":\"Deus
+        Ex: The Fall\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$9.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/258180\\/capsule_sm_120.jpg?t=1480615891\",\"os_windows\":true,\"appids\":[258180],\"localized\":true},\"49369\":{\"name\":\"Lara
+        Croft and the Temple of Osiris - Deus Ex Pack\",\"discount_block\":\"<div
+        class=\\\"discount_block  no_discount\\\"> <div class=\\\"discount_prices\\\"><div
+        class=\\\"discount_final_price\\\">$1.99 USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/318870\\/capsule_sm_120.jpg?t=1447363209\",\"os_windows\":true,\"appids\":[318870],\"localized\":true},\"49371\":{\"name\":\"Lara
+        Croft and the Temple of Osiris - Hitman Pack\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$1.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/318871\\/capsule_sm_120.jpg?t=1447363210\",\"os_windows\":true,\"appids\":[318871],\"localized\":true},\"49373\":{\"name\":\"Lara
+        Croft and the Temple of Osiris - Legend Pack\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$1.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/318872\\/capsule_sm_120.jpg?t=1447363211\",\"os_windows\":true,\"appids\":[318872],\"localized\":true},\"49780\":{\"name\":\"Deus
+        Ex: Human Revolution - Director's Cut\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$19.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/238010\\/capsule_sm_120.jpg?t=1478806360\",\"os_windows\":true,\"os_macos\":true,\"appids\":[238010],\"localized\":true},\"53985\":{\"name\":\"Lara
+        Croft and the Temple of Osiris\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$19.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/289690\\/capsule_sm_120.jpg?t=1478894295\",\"os_windows\":true,\"appids\":[289690],\"localized\":true},\"58375\":{\"name\":\"Lara
+        Croft and the Temple of Osiris - Season Pass Only\",\"discount_block\":\"<div
+        class=\\\"discount_block  no_discount\\\"> <div class=\\\"discount_prices\\\"><div
+        class=\\\"discount_final_price\\\">$9.99 USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/subs\\/58375\\/capsule_sm_120.jpg?t=1477428651\",\"os_windows\":true,\"appids\":[318873,318874,318875],\"localized\":true},\"66700\":{\"name\":\"Kane
+        and Lynch 2 - Dog Days\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$9.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/28000\\/capsule_sm_120.jpg?t=1478892197\",\"os_windows\":true,\"appids\":[28000],\"localized\":true},\"103881\":{\"name\":\"Deus
+        Ex: Mankind Divided\\u2122 DLC - Season Pass\",\"discount_block\":\"<div class=\\\"discount_block
+        \ no_discount\\\"> <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$29.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/470070\\/capsule_sm_120.jpg?t=1479987676\",\"os_windows\":true,\"os_linux\":true,\"appids\":[470070],\"localized\":true},\"123614\":{\"name\":\"Deus
+        Ex: Mankind Divided\",\"discount_block\":\"<div class=\\\"discount_block  no_discount\\\">
+        <div class=\\\"discount_prices\\\"><div class=\\\"discount_final_price\\\">$59.99
+        USD<\\/div><\\/div><\\/div>\",\"tiny_capsule\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/337000\\/capsule_sm_120.jpg?t=1484153363\",\"os_windows\":true,\"os_linux\":true,\"appids\":[337000],\"localized\":true}}\t);\r\n\tGStoreItemData.AddNavParams(
+        {\r\n\t\trecommended: \"1_5_9__300\",\r\n\t\tbundle_component_preview: \"1_5_9__412\"\t}
+        );\r\n\r\n\t$J( function() {\r\n\t\tvar $Expander = $J('#devnotes_expander');\r\n\t\tif(
+        $Expander.length && $Expander.height() < parseInt( $Expander.css('max-height')
+        ) ) {\r\n\t\t\t$J('#devnotes_more').hide();\r\n\t\t}\r\n\r\n\t\t\t\tInitAutocollapse();\r\n\t\tInitHorizontalAutoSliders();\r\n\r\n\t\tResponsive_ReparentItemsInResponsiveMode(
+        '.responsive_apppage_details_right', $J('#responsive_apppage_details_right_ctn')
+        );\r\n\t\tResponsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_left',
+        $J('#responsive_apppage_details_left_ctn') );\r\n\t\tResponsive_ReparentItemsInResponsiveMode(
+        '.responsive_apppage_reviewblock', $J('#responsive_apppage_reviewblock_ctn')
+        );\r\n\r\n\t\t//hack to workaround chrome bug\r\n\t\t$J('#responsive_apppage_reviewblock_ctn'
+        ).css('width', '100%' );\r\n\t\twindow.setTimeout( function() { $J('#responsive_apppage_reviewblock_ctn').css('width',
+        '' ); }, 1 );\r\n\r\n\t\t\t} );\r\n\tGDynamicStore.OnReady( function() {\r\n\t\tRenderMoreLikeThisBlock(
+        [\"238010\",\"238210\",\"337000\",\"6920\",\"258180\",\"410710\",\"482400\",\"15130\",\"7670\",\"233270\",\"220\",\"420\"]
+        );\r\n\t\t\t});\r\n\r\n\t\r\n\t\r\n</script>\r\n\r\n<div class=\"game_page_background
+        game\" style=\"background-image: url('http://cdn.edgecast.steamstatic.com/steam/apps/6910/page_bg_generated_v6b.jpg?t=1478811896');\">\r\n\r\n\t\r\n\r\n\t\t<div
+        id=\"store_header\" class=\"\">\r\n\t\t<div class=\"content\">\r\n\t\t\t<div
+        id=\"store_controls\">\r\n\t\t\t\t<div id=\"cart_status_data\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"store_header_btn_green store_header_btn\" id=\"store_header_cart_btn\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t<div class=\"store_header_btn_caps
+        store_header_btn_leftcap\"></div>\r\n\t\t\t\t\t\t\t<div class=\"store_header_btn_caps
+        store_header_btn_rightcap\"></div>\r\n\t\t\t\t\t\t\t<a id=\"cart_link\" class=\"store_header_btn_content\"
+        href=\"http://store.steampowered.com/cart/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\tCart\t\t\t\t\t\t\t\t(<span
+        id=\"cart_item_count_value\">0</span>)\r\n\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\t\t\t\t<div
+        id=\"store_nav_area\">\r\n\t\t\t\t\t<div class=\"store_nav_leftcap\"></div>\r\n\t\t\t\t\t<div
+        class=\"store_nav_bg\">\r\n\t\t\t\t\t\t<div class=\"store_nav\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"tab  flyout_tab \" id=\"foryou_tab\" data-flyout=\"foryou_flyout\"
+        data-flyout-align=\"left\" data-flyout-valign=\"bottom\" onmouseover=\"EnsureStoreMenuTagsLoaded(
+        '#foryou_yourtags' );\">\r\n\t\t\t\t\t\t\t\t<span class=\"pulldown\">\r\n\t\t\t\t\t\t\t\t\t<a
+        class=\"pulldown_desktop\" href=\"http://store.steampowered.com/?snr=1_5_9__12\">Your
+        Store</a>\r\n\t\t\t\t\t\t\t\t\t<span></span>\r\n\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div
+        class=\"popup_block_new flyout_tab_flyout responsive_slidedown\" id=\"foryou_flyout\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t<div class=\"popup_body popup_menu\">\r\n\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\tStore
+        Home\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t<div class=\"hr\"></div>\r\n\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/recommended/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\tRecently
+        viewed\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"http://store.steampowered.com/curators/topcurators/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\tSteam
+        Curators\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"http://store.steampowered.com/updated/all/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\tRecently
+        updated\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"tab  flyout_tab \" id=\"genre_tab\" data-flyout=\"genre_flyout\" data-flyout-align=\"left\"
+        data-flyout-valign=\"bottom\">\r\n\t\t\t\t\t\t\t\t\t<span class=\"pulldown\">\r\n\t\t\t\t\t\t\t\t\t\t<a
+        class=\"pulldown_desktop\" href=\"http://store.steampowered.com/games/?snr=1_5_9__12\">Games</a>\r\n\t\t\t\t\t\t\t\t\t\t<a
+        class=\"pulldown_mobile\" href=\"#\">Games</a>\r\n\t\t\t\t\t\t\t\t\t\t<span></span>\r\n\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div
+        class=\"popup_block_new flyout_tab_flyout responsive_slidedown\" id=\"genre_flyout\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"popup_body popup_menu\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/genre/Free%20to%20Play/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tFree
+        to Play\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/genre/Early%20Access/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tEarly
+        Access\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/freestuff/demos/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t<span>Demos</span>\r\n\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/vr/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t<span>Virtual
+        Reality</span>\r\n\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"http://store.steampowered.com/controller/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t<span>Steam
+        Controller</span>\r\n\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hr\"></div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"popup_menu_subheader\">Browse
+        by genre:</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Action/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tAction\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Adventure/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tAdventure\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Casual/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tCasual\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Indie/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tIndie\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Massively%20Multiplayer/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tMassively
+        Multiplayer\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Racing/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tRacing\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/RPG/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tRPG\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Simulation/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tSimulation\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Sports/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tSports\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Strategy/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tStrategy\t\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"hr\"></div>\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/browse/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tSee
+        popular tags\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"hr\"></div>\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"popup_menu_subheader\">Browse by platform:</div>\r\n\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/macos?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tMac
+        OS X\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"http://store.steampowered.com/linux?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tSteamOS
+        + Linux\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<div
+        class=\"tab  flyout_tab \" id=\"software_tab\" data-flyout=\"software_flyout\"
+        data-flyout-align=\"left\" data-flyout-valign=\"bottom\">\r\n\t\t\t\t\t\t\t\t<span
+        class=\"pulldown\">\r\n\t\t\t\t\t\t\t\t\t<a class=\"pulldown_desktop\" href=\"http://store.steampowered.com/software/?snr=1_5_9__12\">Software</a>\r\n\t\t\t\t\t\t\t\t\t<a
+        class=\"pulldown_mobile\" href=\"#\">Software</a>\r\n\t\t\t\t\t\t\t\t\t<span></span>\r\n\t\t\t\t\t\t\t\t</span>\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div
+        class=\"popup_block_new flyout_tab_flyout responsive_slidedown\" id=\"software_flyout\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t<div class=\"popup_body popup_menu\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Animation%20%26%20Modeling/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tAnimation
+        & Modeling\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Audio%20Production/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tAudio
+        Production\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Design%20%26%20Illustration/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tDesign
+        & Illustration\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Education/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tEducation\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Game%20Development/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tGame
+        Development\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Photo%20Editing/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tPhoto
+        Editing\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Utilities/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tUtilities\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Video%20Production/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tVideo
+        Production\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/tag/en/Web%20Publishing/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\t\tWeb
+        Publishing\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div
+        class=\"tab  flyout_tab \" id=\"hardware_tab\" data-flyout=\"hardware_flyout\"
+        data-flyout-align=\"left\" data-flyout-valign=\"bottom\">\r\n\t\t\t\t\t\t\t\t<span
+        class=\"pulldown\">\r\n\t\t\t\t\t\t\t\t\t<a class=\"pulldown_desktop\" href=\"http://store.steampowered.com/hardware/?snr=1_5_9__12\">Hardware</a>\r\n\t\t\t\t\t\t\t\t\t<a
+        class=\"pulldown_mobile\" href=\"#\">Hardware</a>\r\n\t\t\t\t\t\t\t\t\t<span></span>\r\n\t\t\t\t\t\t\t\t</span>\r\n\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div
+        class=\"popup_block_new flyout_tab_flyout responsive_slidedown\" id=\"hardware_flyout\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t<div class=\"popup_body popup_menu\">\r\n\t\t\t\t\t\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/app/353370/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\tSteam
+        Controller\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"http://store.steampowered.com/app/353380/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\tSteam
+        Link\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"http://store.steampowered.com/hardware/?snr=1_5_9__12#Machines\">\r\n\t\t\t\t\t\t\t\t\t\tSteam
+        Machines\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"http://store.steampowered.com/app/358040/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t\t\tHTC
+        Vive\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<a
+        class=\"tab  \" href=\"http://store.steampowered.com/videos/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t<span>Videos</span>\r\n\t\t\t\t\t\t\t</a>\r\n\r\n\t\t\t\t\t\t\t<a
+        class=\"tab  \" href=\"http://store.steampowered.com/news/?snr=1_5_9__12\">\r\n\t\t\t\t\t\t\t\t<span>News</span>\r\n\t\t\t\t\t\t\t</a>\r\n\r\n\t\t\t\t\t\t\t<div
+        class=\"search_area\">\r\n\t\t\t\t\t\t\t\t<div id=\"store_search\">\r\n\t\t\t\t\t\t\t\t\t<form
+        id=\"searchform\" name=\"searchform\" method=\"get\" action=\"http://store.steampowered.com/search/\"
+        onsubmit=\"return SearchSuggestCheckTerm(this);\">\r\n\t\t\t\t\t\t\t\t\t\t<input
+        type=\"hidden\" name=\"snr\" value=\"1_5_9__12\" >\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"searchbox\">\r\n\t\t\t\t\t\t\t\t\t\t\t<input id=\"store_nav_search_term\"
+        name=\"term\" type=\"text\" class=\"default\" value=\"search the store\" size=\"22\"
+        autocomplete=\"off\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"#\" id=\"store_search_link\"
+        onclick=\"var $Form = $J(this).parents('form'); $Form.submit(); return false;\"><img
+        src=\"http://store.edgecast.steamstatic.com/public/images/blank.gif\"></a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</form>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div
+        id=\"searchterm_options\" class=\"search_suggest popup_block_new\" style=\"display:
+        none;\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"popup_body\" style=\"border-top:
+        none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div id=\"search_suggestion_contents\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div
+        class=\"store_nav_rightcap\"></div>\r\n\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\t\t\t\t<script
+        type=\"text/javascript\">\r\n\t\t\t$J( function() {\r\n\t\t\t\tBindAutoFlyoutEvents();\r\n\r\n\t\t\t\tvar
+        $Window = $J(window);\r\n\t\t\t\tvar $Header = $J('#store_header');\r\n\t\t\t\tvar
+        $ResponsiveNavCtn = $J('#responsive_store_nav_ctn');\r\n\t\t\t\tvar $HeaderWrapper;\r\n\t\t\t\t$Window.on('Responsive_SmallScreenModeToggled.StoreMenu',
+        function() {\r\n\t\t\t\t\tvar bUseSmallScreenMode =window.UseSmallScreenMode
+        && window.UseSmallScreenMode();\r\n\r\n\t\t\t\t\tif ( !$HeaderWrapper )\r\n\t\t\t\t\t\t$HeaderWrapper
+        = $Header.wrap( $J('<div/>', {'class': 'responsive_store_nav_ctn_spacer'}
+        ) ).parent();\r\n\r\n\t\t\t\t\tif ( bUseSmallScreenMode )\r\n\t\t\t\t\t\t$ResponsiveNavCtn.append(
+        $Header );\r\n\t\t\t\t\telse\r\n\t\t\t\t\t\t$HeaderWrapper.append( $Header
+        );\r\n\r\n\r\n\t\t\t\t\tif ( bUseSmallScreenMode )\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t$Header.css(
+        'visibility', 'hidden' );\r\n\t\t\t\t\t\t$Header.show();\r\n\t\t\t\t\t\tvar
+        nMenuHeight = $J('#store_header' ).height() + $J('#store_header' ).offset().top;\r\n\t\t\t\t\t\tif
+        ( $Window.scrollTop() < nMenuHeight )\r\n\t\t\t\t\t\t\t$Window.scrollTop(
+        nMenuHeight - GetResponsiveHeaderFixedOffsetAdjustment() );\r\n\r\n\t\t\t\t\t\t$Header.css('visibility',
+        'visible');\r\n\t\t\t\t\t}\r\n\t\t\t\t} ).trigger('Responsive_SmallScreenModeToggled.StoreMenu');\r\n\r\n\t\t\t\tEnableSearchSuggestions(
+        $J('#searchform')[0].elements['term'], '1_5_9_', 'AR', 'english', '0', '0',
+        '2633464' );\r\n\t\t\t} );\r\n\t\t</script>\r\n\t<script type=\"text/javascript\">\r\n\tvar
+        g_AccountID = 0;\r\n\tvar g_sessionID = \"95119cc77e78befde7653006\";\r\n\tvar
+        g_ServerTime = 1485061032;\r\n\r\n\t$J( InitMiniprofileHovers );\r\n\r\n\t\t\tGDynamicStore.Init(
+        0, false, \"\" );\r\n\t\tGStoreItemData.SetCurrencyFormatter( function( nValueInCents,
+        bWholeUnitsOnly ) { var fnBase = function( nValueInCents, bWholeUnitsOnly
+        ) { var fmt = function( nValueInCents, bWholeUnitsOnly ) {\tvar format = v_numberformat(
+        nValueInCents / 100, bWholeUnitsOnly ? 0 : 2, \".\", \",\"); return format;
+        };var strNegativeSymbol = '';\tif ( nValueInCents < 0 ) { strNegativeSymbol
+        = '-'; nValueInCents = -nValueInCents; }return strNegativeSymbol + \"$\" +
+        fmt( nValueInCents, bWholeUnitsOnly );}; return fnBase( nValueInCents, bWholeUnitsOnly
+        ) + ' USD'; } );\r\n\t\tGStoreItemData.SetCurrencyMinPriceIncrement( 1 );\r\n\t</script>\r\n\t<div
+        class=\"page_content_ctn\" itemscope itemtype=\"http://schema.org/Product\">\r\n\r\n\t\t<meta
+        itemprop=\"image\" content=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/capsule_231x87.jpg?t=1478811896\">\r\n\t\t\t\t\t<div
+        itemprop=\"offers\" itemscope itemtype=\"http://schema.org/Offer\" style=\"display:
+        none;\">\r\n\t\t\t\t<meta itemprop=\"priceCurrency\" content=\"USD\">\r\n\t\t\t\t<meta
+        itemprop=\"price\" content=\"6.99\">\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t<div
+        class=\"page_title_area game_title_area page_content\">\r\n\t\t\t<div class=\"breadcrumbs\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"blockbg\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"http://store.steampowered.com/search/?term=&snr=1_5_9__205\">All
+        Games</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&gt; <a href=\"http://store.steampowered.com/genre/Action/?snr=1_5_9__205\">Action
+        Games</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t&gt; <a href=\"http://store.steampowered.com/app/6910/?snr=1_5_9__205\"><span
+        itemprop=\"name\">Deus Ex: Game of the Year Edition</span></a>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t\t<div
+        style=\"clear: left;\"></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t<div class=\"apphub_HomeHeaderContent\">\r\n\r\n\t<div
+        class=\"apphub_HeaderStandardTop\">\r\n\t\t\t\t<div class=\"apphub_OtherSiteInfo\">\r\n\t\t\t<a
+        class=\"btnv6_blue_hoverfade btn_medium\" href=\"http://steamcommunity.com/app/6910\">\r\n\t\t\t\t<span>Community
+        Hub</span>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div class=\"apphub_AppIcon\"><img
+        src=\"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/6910/03c8e5e89d83c536b44798e77ead5d813103991f.jpg\"><div
+        class=\"overlay\"></div></div>\r\n\t\t<div class=\"apphub_AppName\">Deus Ex:
+        Game of the Year Edition</div>\r\n\t\t<div style=\"clear: both\"></div>\r\n\t</div>\r\n\r\n</div>\r\n\r\n\t\t</div>\r\n\t\t<div
+        style=\"clear: left;\"></div>\r\n\r\n\t\t<div class=\"block\">\r\n\t\t\t\t\t\t<script
+        type=\"text/javascript\">\r\n\t\t\t\tvar strRequiredVersion = \"9\";\r\n\t\t\t\tif
+        ( typeof( g_bIsOnMac ) != 'undefined' && g_bIsOnMac )\r\n\t\t\t\t\tstrRequiredVersion
+        = \"10.1.0\";\r\n\r\n\t\t\t\t\r\n\t\t\t\tvar bShouldUseHTML5 = BCanPlayWebm()
+        || BDoesUserPreferHTML5() || !swfobject.hasFlashPlayerVersion(strRequiredVersion);\r\n\t\t\t</script>\r\n\t\t\t<div
+        class=\"game_background_glow\">\r\n\t\t\t<div class=\"block_content page_content\"
+        id=\"game_highlights\">\r\n\r\n\t\t\t\t<div class=\"rightcol\">\r\n\t\t\t\t\t<div
+        class=\"glance_ctn\">\r\n\t\t\t\t\t\t<div class=\"game_header_image_ctn\">\r\n\t\t\t\t\t\t\t<img
+        class=\"game_header_image_full\" src=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/header.jpg?t=1478811896\">\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"game_description_snippet\">\r\n\t\t\t\t\t\t\t\tThe year is 2052 and
+        the world is a dangerous and chaotic place. Terrorists operate openly - killing
+        thousands; drugs, disease and pollution kill even more. The world's economies
+        are close to collapse and the gap between the insanely wealthy and the desperately
+        poor grows ever wider.\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t<div
+        class=\"glance_ctn_responsive_left\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"user_reviews\" onclick=\"window.location='#app_reviews_hash'\" style=\"cursor:
+        pointer;\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"title\">User reviews:</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"user_reviews_summary_row\" data-store-tooltip=\"87% of the 103 user
+        reviews in the last 30 days are positive.\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"subtitle
+        column\">Recent:</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"summary column\">\r\n\t\t\t\t\t\t\t\t\t\t\t<span
+        class=\"game_review_summary positive\">Very Positive</span>\r\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"responsive_hidden\">\r\n\t\t\t\t\t\t\t\t\t\t\t(103 reviews)\r\n\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"nonresponsive_hidden responsive_reviewdesc\">\r\n\t\t\t\t\t\t\t\t\t\t\t-
+        87% of the 103 user reviews in the last 30 days are positive.\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<div
+        class=\"user_reviews_summary_row\" data-store-tooltip=\"95% of the 4,511 user
+        reviews for this game are positive.\" itemprop=\"aggregateRating\" itemscope
+        itemtype=\"http://schema.org/AggregateRating\">\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"subtitle column\">Overall:</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"summary
+        column\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"game_review_summary
+        positive\" itemprop=\"description\">Overwhelmingly Positive</span>\r\n\t\t\t\t\t\t\t\t\t\t\t<span
+        class=\"responsive_hidden\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t(4,511 reviews)\r\n\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\t\t\t\t\t\t\t\t\t\t\t<span
+        class=\"nonresponsive_hidden responsive_reviewdesc\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t-
+        95% of the 4,511 user reviews for this game are positive.\t\t\t\t\t\t\t\t\t\t\t</span>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t<!--
+        microdata -->\r\n\t\t\t\t\t\t\t\t\t\t\t<meta itemprop=\"reviewCount\" content=\"4511\">\r\n\t\t\t\t\t\t\t\t\t\t\t<meta
+        itemprop=\"ratingValue\" content=\"10\">\r\n\t\t\t\t\t\t\t\t\t\t\t<meta itemprop=\"bestRating\"
+        content=\"10\">\r\n\t\t\t\t\t\t\t\t\t\t\t<meta itemprop=\"worstRating\" content=\"1\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\r\n\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"release_date\">\r\n\t\t\t\t\t\t\t\t\tRelease Date: <span class=\"date\">22
+        Jun, 2000</span>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t<div
+        class=\"glance_ctn_responsive_right\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<!--
+        when the javascript runs, it will set these visible or not depending on what
+        fits in the area -->\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"glance_tags_ctn
+        popular_tags_ctn\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"glance_tags_label\">Popular
+        user-defined tags for this product:</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"glance_tags
+        popular_tags\" data-appid=\"6910\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"http://store.steampowered.com/tag/en/Cyberpunk/?snr=1_5_9__409\"
+        class=\"app_tag\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tCyberpunk\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/RPG/?snr=1_5_9__409\" class=\"app_tag\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tRPG\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/Stealth/?snr=1_5_9__409\" class=\"app_tag\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tStealth\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/Classic/?snr=1_5_9__409\" class=\"app_tag\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tClassic\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/FPS/?snr=1_5_9__409\" class=\"app_tag\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tFPS\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/Sci-fi/?snr=1_5_9__409\" class=\"app_tag\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tSci-fi\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/Action/?snr=1_5_9__409\" class=\"app_tag\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tAction\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/Cult%20Classic/?snr=1_5_9__409\"
+        class=\"app_tag\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tCult
+        Classic\t\t\t\t\t\t\t\t\t\t\t\t</a><a href=\"http://store.steampowered.com/tag/en/Singleplayer/?snr=1_5_9__409\"
+        class=\"app_tag\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tSingleplayer\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/Dystopian%20/?snr=1_5_9__409\"
+        class=\"app_tag\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tDystopian
+        \t\t\t\t\t\t\t\t\t\t\t\t</a><a href=\"http://store.steampowered.com/tag/en/Inventory%20Management/?snr=1_5_9__409\"
+        class=\"app_tag\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tInventory
+        Management\t\t\t\t\t\t\t\t\t\t\t\t</a><a href=\"http://store.steampowered.com/tag/en/Story%20Rich/?snr=1_5_9__409\"
+        class=\"app_tag\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tStory
+        Rich\t\t\t\t\t\t\t\t\t\t\t\t</a><a href=\"http://store.steampowered.com/tag/en/Great%20Soundtrack/?snr=1_5_9__409\"
+        class=\"app_tag\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tGreat
+        Soundtrack\t\t\t\t\t\t\t\t\t\t\t\t</a><a href=\"http://store.steampowered.com/tag/en/Moddable/?snr=1_5_9__409\"
+        class=\"app_tag\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tModdable\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/First-Person/?snr=1_5_9__409\"
+        class=\"app_tag\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tFirst-Person\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/Atmospheric/?snr=1_5_9__409\"
+        class=\"app_tag\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tAtmospheric\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/Conspiracy/?snr=1_5_9__409\" class=\"app_tag\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tConspiracy\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/Action%20RPG/?snr=1_5_9__409\"
+        class=\"app_tag\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tAction
+        RPG\t\t\t\t\t\t\t\t\t\t\t\t</a><a href=\"http://store.steampowered.com/tag/en/Shooter/?snr=1_5_9__409\"
+        class=\"app_tag\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tShooter\t\t\t\t\t\t\t\t\t\t\t\t</a><a
+        href=\"http://store.steampowered.com/tag/en/Adventure/?snr=1_5_9__409\" class=\"app_tag\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\tAdventure\t\t\t\t\t\t\t\t\t\t\t\t</a><div
+        class=\"app_tag add_button\" onclick=\"ShowAppTagModal( 6910 )\">+</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div
+        style=\"clear: both;\"></div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div
+        class=\"leftcol\">\r\n\t\t\t\t\t<div class=\"highlight_ctn\">\r\n\t\t\t\t\t\t<div
+        class=\"highlight_overflow\">\r\n\t\t\t\t\t\t\t<div id=\"highlight_player_area\"
+        >\r\n\t\t\t\t\t\t\t\t<div class=\"highlight_player_area_spacer\">\r\n\t\t\t\t\t\t\t\t\t<img
+        src=\"http://store.edgecast.steamstatic.com/public/images/game/game_highlight_image_spacer.gif\">\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_0000001631.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"0000001631.jpg\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001631.1920x1080.jpg?t=1478811896\"
+        target=\"_blank\" rel=\"noopener\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://store.edgecast.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_0000001632.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"0000001632.jpg\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001632.1920x1080.jpg?t=1478811896\"
+        target=\"_blank\" rel=\"noopener\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://store.edgecast.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_0000001633.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"0000001633.jpg\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001633.1920x1080.jpg?t=1478811896\"
+        target=\"_blank\" rel=\"noopener\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://store.edgecast.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_0000001634.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"0000001634.jpg\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001634.1920x1080.jpg?t=1478811896\"
+        target=\"_blank\" rel=\"noopener\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://store.edgecast.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_0000001635.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"0000001635.jpg\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001635.1920x1080.jpg?t=1478811896\"
+        target=\"_blank\" rel=\"noopener\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://store.edgecast.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_0000001636.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"0000001636.jpg\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001636.1920x1080.jpg?t=1478811896\"
+        target=\"_blank\" rel=\"noopener\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://store.edgecast.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_0000001637.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"0000001637.jpg\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001637.1920x1080.jpg?t=1478811896\"
+        target=\"_blank\" rel=\"noopener\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://store.edgecast.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_0000001638.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"0000001638.jpg\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001638.1920x1080.jpg?t=1478811896\"
+        target=\"_blank\" rel=\"noopener\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://store.edgecast.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_0000001639.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"0000001639.jpg\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001639.1920x1080.jpg?t=1478811896\"
+        target=\"_blank\" rel=\"noopener\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://store.edgecast.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_0000001640.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"0000001640.jpg\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001640.1920x1080.jpg?t=1478811896\"
+        target=\"_blank\" rel=\"noopener\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://store.edgecast.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_player_item highlight_screenshot\" id=\"highlight_screenshot_0000001641.jpg\"
+        style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"screenshot_holder\">\r\n\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"highlight_screenshot_link\" data-screenshotid=\"0000001641.jpg\" href=\"https://steamcommunity.com/linkfilter/?url=http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001641.1920x1080.jpg?t=1478811896\"
+        target=\"_blank\" rel=\"noopener\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://store.edgecast.steamstatic.com/public/images/blank.gif\">\r\n\t\t\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<script
+        type=\"text/javascript\">\r\n\t\t\t\t\t\t\t\t\tvar rgMovieFlashvars = {\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t''
+        : ''\r\n\t\t\t\t\t\t\t\t\t};\r\n\t\t\t\t\t\t\t\t\tvar rgCommonFlashVars =
+        {\r\n\t\t\t\t\t\t\t\t\t\t\tclientLanguage: \"english\",\r\n\t\t\t\t\t\t\t\t\t\t\tcapsuleSize:
+        \"huge\",\r\n\t\t\t\t\t\t\t\t\t\t\tSTAGE_WIDTH: 600,\r\n\t\t\t\t\t\t\t\t\t\t\tSTAGE_HEIGHT:
+        338,\r\n\t\t\t\t\t\t\t\t\t\t\tAUTO_PLAY: \"true\",\r\n\t\t\t\t\t\t\t\t\t\t\tALLOW_JSPAUSE:
+        \"true\",\r\n\t\t\t\t\t\t\t\t\t\t\tTRACK_MUTE: \"true\",\r\n\t\t\t\t\t\t\t\t\t\t\tCHECKBOX_AUTOPLAY_SHOW:
+        \"true\",\r\n\t\t\t\t\t\t\t\t\t\t\tCHECKBOX_AUTOPLAY_TEXT: \"Autoplay+videos\"\r\n\t\t\t\t\t\t\t\t\t};\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tvar
+        rgScreenshotURLs = {\"0000001631.jpg\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6910\\/0000001631_SIZE_.jpg?t=1478811896\",\"0000001632.jpg\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6910\\/0000001632_SIZE_.jpg?t=1478811896\",\"0000001633.jpg\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6910\\/0000001633_SIZE_.jpg?t=1478811896\",\"0000001634.jpg\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6910\\/0000001634_SIZE_.jpg?t=1478811896\",\"0000001635.jpg\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6910\\/0000001635_SIZE_.jpg?t=1478811896\",\"0000001636.jpg\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6910\\/0000001636_SIZE_.jpg?t=1478811896\",\"0000001637.jpg\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6910\\/0000001637_SIZE_.jpg?t=1478811896\",\"0000001638.jpg\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6910\\/0000001638_SIZE_.jpg?t=1478811896\",\"0000001639.jpg\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6910\\/0000001639_SIZE_.jpg?t=1478811896\",\"0000001640.jpg\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6910\\/0000001640_SIZE_.jpg?t=1478811896\",\"0000001641.jpg\":\"http:\\/\\/cdn.edgecast.steamstatic.com\\/steam\\/apps\\/6910\\/0000001641_SIZE_.jpg?t=1478811896\"};\r\n\t\t\t\t\t\t\t\t</script>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        id=\"highlight_strip\">\r\n\t\t\t\t\t\t\t\t<div id=\"highlight_strip_scroll\"
+        style=\"width: 1322px;\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"highlight_selector\"></div>\r\n\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_0000001631.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001631.116x65.jpg?t=1478811896\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_0000001632.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001632.116x65.jpg?t=1478811896\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_0000001633.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001633.116x65.jpg?t=1478811896\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_0000001634.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001634.116x65.jpg?t=1478811896\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_0000001635.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001635.116x65.jpg?t=1478811896\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_0000001636.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001636.116x65.jpg?t=1478811896\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_0000001637.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001637.116x65.jpg?t=1478811896\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_0000001638.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001638.116x65.jpg?t=1478811896\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_0000001639.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001639.116x65.jpg?t=1478811896\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_0000001640.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001640.116x65.jpg?t=1478811896\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"highlight_strip_item highlight_strip_screenshot\" id=\"thumb_screenshot_0000001641.jpg\"
+        >\r\n\t\t\t\t\t\t\t\t\t\t\t<img src=\"http://cdn.edgecast.steamstatic.com/steam/apps/6910/0000001641.116x65.jpg?t=1478811896\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"slider_ctn\">\r\n\t\t\t\t\t\t\t\t\t<div id=\"highlight_slider_left\"
+        class=\"slider_left\"><span></span></div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"slider\"
+        id=\"highlight_slider\" >\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"slider_bg\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"handle\">\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div
+        id=\"highlight_slider_right\" class=\"slider_right\"><span></span></div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<script
+        type=\"text/javascript\">\r\n\t\t\t\t\t\t\t\t\t$J( function() {\r\n\t\t\t\t\t\t\t\t\t\tvar
+        player = new HighlightPlayer( {\r\n\t\t\t\t\t\t\t\t\t\t\telemPlayerArea: 'highlight_player_area',\r\n\t\t\t\t\t\t\t\t\t\t\telemStrip:
+        'highlight_strip',\r\n\t\t\t\t\t\t\t\t\t\t\telemStripScroll: 'highlight_strip_scroll',\r\n\t\t\t\t\t\t\t\t\t\t\telemSlider:
+        'highlight_slider',\r\n\t\t\t\t\t\t\t\t\t\t\trgMovieFlashvars: rgMovieFlashvars,\r\n\t\t\t\t\t\t\t\t\t\t\trgScreenshotURLs:
+        rgScreenshotURLs,\r\n\t\t\t\t\t\t\t\t\t\t\trgDefaultMovieFlashvars: rgCommonFlashVars,\r\n\t\t\t\t\t\t\t\t\t\t\tbUseHTMLPlayer:
+        bShouldUseHTML5\r\n\t\t\t\t\t\t\t\t\t\t} );\r\n\t\t\t\t\t\t\t\t\t\t$J('#highlight_slider_right').click(
+        function() {\r\n\t\t\t\t\t\t\t\t\t\t\tplayer.Transition( true );\r\n\t\t\t\t\t\t\t\t\t\t});\r\n\t\t\t\t\t\t\t\t\t\t$J('#highlight_slider_left').click(
+        function() {\r\n\t\t\t\t\t\t\t\t\t\t\tplayer.TransitionBack( true );\r\n\t\t\t\t\t\t\t\t\t\t});\r\n\r\n\t\t\t\t\t\t\t\t\t\tif(
+        window.location.hash )\r\n\t\t\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\t\tvar
+        ssid = window.location.hash.substr(1);\r\n\t\t\t\t\t\t\t\t\t\t\tplayer.HighlightScreenshot(ssid);\r\n\t\t\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t\t\t}
+        );\r\n\t\t\t\t\t\t\t\t</script>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div
+        style=\"clear: both;\"></div>\r\n\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t\r\n\t\t\t<div
+        class=\"queue_overflow_ctn\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"queue_ctn\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"queue_actions_ctn\">\r\n\t\t\t\t\t\t\t<p><a href=\"http://store.steampowered.com/login/?redir=app%2F6910\">Sign
+        in</a> to add this item to your wishlist, follow it, or mark it as not interested</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\r\n\r\n\t\t\t\r\n\t\t\t\r\n\t\t</div>\r\n\r\n\t\t\r\n\t\t\t<div
+        class=\"page_content\">\r\n\r\n\t\t\t\t<!-- Right Column -->\r\n\t\t\t\t<div
+        class=\"rightcol game_meta_data\">\r\n\t\t\t\t\t<div id=\"responsive_apppage_details_left_ctn\"></div>\r\n\t\t\t\t\t<div
+        id=\"responsive_apppage_details_right_ctn\"></div>\r\n\t\t\t\t\t<div style=\"clear:
+        both;\"></div>\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\r\n\t\t\t\t\t\r\n\r\n\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"block responsive_apppage_details_left\" id=\"category_block\">\r\n\r\n\t\t\t\t\t\t\t<div
+        class=\"game_area_details_specs\"><div class=\"icon\"><a href=\"http://store.steampowered.com/search/?category2=2&snr=1_5_9__423\"><img
+        class=\"category_icon\" src=\"http://store.edgecast.steamstatic.com/public/images/v6/ico/ico_singlePlayer.png\"></a></div><a
+        class=\"name\" href=\"http://store.steampowered.com/search/?category2=2&snr=1_5_9__423\">Single-player</a></div><div
+        class=\"game_area_details_specs\"><div class=\"icon\"><a href=\"http://store.steampowered.com/search/?category2=1&snr=1_5_9__423\"><img
+        class=\"category_icon\" src=\"http://store.edgecast.steamstatic.com/public/images/v6/ico/ico_multiPlayer.png\"></a></div><a
+        class=\"name\" href=\"http://store.steampowered.com/search/?category2=1&snr=1_5_9__423\">Multi-player</a></div>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"DRM_notice\">\r\n\t\t\t\t\t\t\t\t\t<div>Requires agreement to a 3rd-party
+        EULA</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div><a href=\"http://store.steampowered.com/eula/eula_eidos\"
+        onclick=\"ShowEULA( this ); return false;\">eula_eidos</a></div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"block responsive_apppage_details_right\">\r\n\t\t\t\t\t\t\t<div class=\"block_title\">\r\n\t\t\t\t\t\t\t\tLanguages:\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\r\n<table
+        \ class=\"game_language_options\" cellpadding=\"0\" cellspacing=\"0\">\r\n\t<tr>\r\n\t\t<th
+        style=\"width: 94px;\"></th>\r\n\t\t\t\t<th class=\"checkcol\">Interface</th>\r\n\t\t<th
+        class=\"checkcol\">Full Audio</th>\r\n\t\t<th class=\"checkcol\">Subtitles</th>\r\n\t</tr>\r\n\r\n\t\t\t<tr
+        style=\"\" class=\"\">\r\n\t\t\t<td style=\"width: 94px; text-align: left\"
+        class=\"ellipsis\">\r\n\t\t\t\tEnglish\t\t\t</td>\r\n\t\t\t\t\t\t\t<td class=\"checkcol\">\r\n\t\t\t\t\t
+        <img src=\"http://store.edgecast.steamstatic.com/public/images/v6/ico/ico_bluecheck.png\"/>
+        \t\t\t\t</td>\r\n\t\t\t\t<td class=\"checkcol\">\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t<td
+        class=\"checkcol\">\r\n\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t</tr>\r\n\t</table>\r\n\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"block responsive_apppage_details_right\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<table
+        cellpadding=\"0\" cellspacing=\"0\">\r\n\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t<td
+        valign=\"top\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p><img src=\"http://store.edgecast.steamstatic.com/public/images/ratings/esrb_m.gif\"></p>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t\t\t<td
+        width=\"10\"></td>\r\n\t\t\t\t\t\t\t\t\t\t<td valign=\"top\"><p id=\"descriptorText\">Animated
+        Blood<br />\r\n<br />\r\nAnimated Violence</p></td>\r\n\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\r\n\t\t\t\t\t<div
+        class=\"block responsive_apppage_details_left game_details underlined_links\">\r\n\t\t\t\t\t\t<div
+        class=\"block_content\">\r\n\t\t\t\t\t\t\t<div class=\"block_content_inner\">\r\n\t\t\t\t\t\t\t\t<div
+        class=\"details_block\">\r\n\t<b>Title:</b> Deus Ex: Game of the Year Edition<br>\r\n\r\n\t\t\t\t<b>Genre:</b>
+        <a href=\"http://store.steampowered.com/genre/Action/?snr=1_5_9__408\">Action</a><br>\r\n\t\t\t\r\n\t\t\t<b>Developer:</b>\r\n\t\t\t\t\t\t\t\t<a
+        href=\"http://store.steampowered.com/search/?developer=Ion%20Storm&snr=1_5_9__408\">Ion
+        Storm</a>\r\n\t\t\t\t<br>\r\n\t\r\n\t\t\t<b>Publisher:</b>\r\n\t\t<a href=\"http://store.steampowered.com/search/?publisher=Square
+        Enix\">Square Enix</a>\t\t<br>\r\n\t\r\n\t\r\n\t\t\t<b>Release Date:</b> 22
+        Jun, 2000<br>\r\n\t\r\n\t</div>\r\n\r\n\r\n<div class=\"details_block\">\r\n\t<br>\r\n\r\n\t\t\r\n\t\r\n\t\r\n\t\t\t<a
+        class=\"linkbar\" href=\"http://store.steampowered.com/manual/6910\" target=\"_blank\"
+        rel=\"noreferrer\">\r\n\t\t\tView the manual <img src=\"http://store.edgecast.steamstatic.com/public/images/v5/ico_external_link.gif\"
+        border=\"0\" align=\"bottom\">\r\n\t\t</a>\r\n\t\r\n\t\r\n\t\r\n\t\r\n\t\t\t<a
+        class=\"linkbar\" href=\"http://store.steampowered.com/news/?appids=6910\">\r\n\t\t\tView
+        update history\t\t</a>\r\n\t\t<a class=\"linkbar\" href=\"http://store.steampowered.com/news/?appids=6910\">\r\n\t\t\tRead
+        related news\t\t</a>\r\n\t\r\n\t\t\t<a class=\"linkbar\" href=\"http://steamcommunity.com/app/6910/discussions/\">\r\n\t\t\tView
+        discussions\t\t</a>\r\n\t\t\r\n\t\t<a class=\"linkbar\" href=\"http://steamcommunity.com/actions/Search?T=ClanAccount&K=Deus%20Ex%3A%20Game%20of%20the%20Year%20Edition\">\r\n\t\tFind
+        Community Groups\t</a>\r\n</div>\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div
+        class=\"block responsive_apppage_details_left\">\r\n\t\t\t\t\t\t<a class=\"btnv6_blue_hoverfade
+        btn_medium\" href=\"#\" onclick=\"ShowShareDialog(); return false;\"><span>Share</span></a>\r\n\t\t\t\t\t\t<a
+        class=\"btnv6_blue_hoverfade btn_medium\" href=\"#\" onclick=\"ShowEmbedWidget(6910);
+        return false;\"><span>Embed</span></a>\r\n\t\t\t\t\t\t<a id=\"ReportAppBtn\"
+        class=\"btnv6_blue_hoverfade btn_medium\" href=\"javascript:void(0)\" onclick=\"ShowReportDialog(6910)\"><span
+        data-store-tooltip=\"Report this Product\"><i class=\"ico16 reportv6\"></i>&nbsp;</span></a>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"block responsive_apppage_reviewblock\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        id=\"game_area_metascore\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"score high\">\r\n\t\t\t\t\t\t\t\t\t\t90\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div
+        class=\"logo\"></div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"wordmark\">\r\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"metacritic\">metacritic</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        id=\"game_area_metalink\"><a href=\"http://www.metacritic.com/game/pc/deus-ex?ftag=MCD-06-10aaa1f\"
+        target=\"_blank\">Read Critic Reviews</a> <img src=\"http://store.edgecast.steamstatic.com/public/images/ico/iconExternalLink.gif\"
+        border=\"0\" align=\"bottom\"></div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        style=\"clear: both\"></div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t\t<!--
+        End Right Column -->\r\n\r\n\r\n\t\t\t\t<div class=\"leftcol game_description_column\">\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<div
+        id=\"game_area_purchase\">\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\r\n\r\n\t\t\t\t\t\t<!--[if
+        lte IE 7]>\r\n<style type=\"text/css\">\r\n.game_area_purchase_game_dropdown_right_panel
+        .btn_addtocart { float: none; }\r\n</style>\r\n<![endif]-->\r\n<div class=\"game_area_purchase_game_wrapper\">\r\n\t\t<div
+        class=\"game_area_purchase_game\">\r\n\t\t<form name=\"add_to_cart_294\" action=\"http://store.steampowered.com/cart/\"
+        method=\"POST\">\r\n\t\t\t<input type=\"hidden\" name=\"snr\" value=\"1_5_9__403\">\r\n\t\t\t<input
+        type=\"hidden\" name=\"action\" value=\"add_to_cart\">\r\n\t\t\t<input type=\"hidden\"
+        name=\"sessionid\" value=\"95119cc77e78befde7653006\">\r\n\t\t\t<input type=\"hidden\"
+        name=\"subid\" value=\"294\">\r\n\t\t</form>\r\n\t\t<div class=\"game_area_purchase_platform\"><span
+        class=\"platform_img win\"></span></div>\r\n\t\t<h1>Buy Deus Ex: Game of the
+        Year Edition</h1>\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t<div class=\"game_purchase_action\">\r\n\t\t\t\t\t\t<div
+        class=\"game_purchase_action_bg\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"game_purchase_price
+        price\">\r\n\t\t\t\t\t\t\t$6.99 USD\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"btn_addtocart\">\r\n\r\n\t\t\t\t\t \r\n\t\t\t\t\t\t\t\t\t\t\t\t<a
+        class=\"btnv6_green_white_innerfade btn_medium\" href=\"javascript:addToCart(294);\">\r\n\t\t\t\t\t\t\t<span>Add
+        to Cart</span>\r\n\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\t\t\r\n\t</div>\r\n<div
+        class=\"game_area_purchase_game_wrapper dynamic_bundle_description ds_no_flags\"
+        \ data-ds-bundleid=\"362\" data-ds-bundle-data=\"{&quot;m_nDiscountPct&quot;:&quot;50&quot;,&quot;m_bMustPurchaseAsSet&quot;:0,&quot;m_rgItems&quot;:[{&quot;m_nPackageID&quot;:280,&quot;m_rgIncludedAppIDs&quot;:[6900],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:281,&quot;m_rgIncludedAppIDs&quot;:[6850],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:282,&quot;m_rgIncludedAppIDs&quot;:[6860],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:899,&quot;m_nFinalPriceInCents&quot;:899,&quot;m_nFinalPriceWithBundleDiscount&quot;:449},{&quot;m_nPackageID&quot;:284,&quot;m_rgIncludedAppIDs&quot;:[6870],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:285,&quot;m_rgIncludedAppIDs&quot;:[6880],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:294,&quot;m_rgIncludedAppIDs&quot;:[6910],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:295,&quot;m_rgIncludedAppIDs&quot;:[6920],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:297,&quot;m_rgIncludedAppIDs&quot;:[6980],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:899,&quot;m_nFinalPriceInCents&quot;:899,&quot;m_nFinalPriceWithBundleDiscount&quot;:449},{&quot;m_nPackageID&quot;:298,&quot;m_rgIncludedAppIDs&quot;:[7000],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:340,&quot;m_rgIncludedAppIDs&quot;:[8000],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:899,&quot;m_nFinalPriceInCents&quot;:899,&quot;m_nFinalPriceWithBundleDiscount&quot;:449},{&quot;m_nPackageID&quot;:574,&quot;m_rgIncludedAppIDs&quot;:[8080],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:1176,&quot;m_rgIncludedAppIDs&quot;:[8140],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:899,&quot;m_nFinalPriceInCents&quot;:899,&quot;m_nFinalPriceWithBundleDiscount&quot;:449},{&quot;m_nPackageID&quot;:1619,&quot;m_rgIncludedAppIDs&quot;:[8170],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:899,&quot;m_nFinalPriceInCents&quot;:899,&quot;m_nFinalPriceWithBundleDiscount&quot;:449},{&quot;m_nPackageID&quot;:4097,&quot;m_rgIncludedAppIDs&quot;:[8190],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:1499,&quot;m_nFinalPriceInCents&quot;:1499,&quot;m_nFinalPriceWithBundleDiscount&quot;:749},{&quot;m_nPackageID&quot;:4275,&quot;m_rgIncludedAppIDs&quot;:[35101],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:199,&quot;m_nFinalPriceInCents&quot;:199,&quot;m_nFinalPriceWithBundleDiscount&quot;:99},{&quot;m_nPackageID&quot;:4418,&quot;m_rgIncludedAppIDs&quot;:[35102],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:199,&quot;m_nFinalPriceInCents&quot;:199,&quot;m_nFinalPriceWithBundleDiscount&quot;:99},{&quot;m_nPackageID&quot;:4564,&quot;m_rgIncludedAppIDs&quot;:[35080],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:4565,&quot;m_rgIncludedAppIDs&quot;:[35083],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:4566,&quot;m_rgIncludedAppIDs&quot;:[35089],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:4567,&quot;m_rgIncludedAppIDs&quot;:[35090],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:4568,&quot;m_rgIncludedAppIDs&quot;:[35091],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:6064,&quot;m_rgIncludedAppIDs&quot;:[28010],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:599,&quot;m_nFinalPriceInCents&quot;:599,&quot;m_nFinalPriceWithBundleDiscount&quot;:299},{&quot;m_nPackageID&quot;:6065,&quot;m_rgIncludedAppIDs&quot;:[28011],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:299,&quot;m_nFinalPriceInCents&quot;:299,&quot;m_nFinalPriceWithBundleDiscount&quot;:149},{&quot;m_nPackageID&quot;:6066,&quot;m_rgIncludedAppIDs&quot;:[28012],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:199,&quot;m_nFinalPriceInCents&quot;:199,&quot;m_nFinalPriceWithBundleDiscount&quot;:99},{&quot;m_nPackageID&quot;:7029,&quot;m_rgIncludedAppIDs&quot;:[35135],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:349,&quot;m_nFinalPriceInCents&quot;:349,&quot;m_nFinalPriceWithBundleDiscount&quot;:174},{&quot;m_nPackageID&quot;:7030,&quot;m_rgIncludedAppIDs&quot;:[35136],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:349,&quot;m_nFinalPriceInCents&quot;:349,&quot;m_nFinalPriceWithBundleDiscount&quot;:174},{&quot;m_nPackageID&quot;:7031,&quot;m_rgIncludedAppIDs&quot;:[35137],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:349,&quot;m_nFinalPriceInCents&quot;:349,&quot;m_nFinalPriceWithBundleDiscount&quot;:174},{&quot;m_nPackageID&quot;:7032,&quot;m_rgIncludedAppIDs&quot;:[35138],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:349,&quot;m_nFinalPriceInCents&quot;:349,&quot;m_nFinalPriceWithBundleDiscount&quot;:174},{&quot;m_nPackageID&quot;:7035,&quot;m_rgIncludedAppIDs&quot;:[35130],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:999,&quot;m_nFinalPriceInCents&quot;:999,&quot;m_nFinalPriceWithBundleDiscount&quot;:499},{&quot;m_nPackageID&quot;:14557,&quot;m_rgIncludedAppIDs&quot;:[211600],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:14558,&quot;m_rgIncludedAppIDs&quot;:[211740],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:18148,&quot;m_rgIncludedAppIDs&quot;:[216411],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:18149,&quot;m_rgIncludedAppIDs&quot;:[216412],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:18150,&quot;m_rgIncludedAppIDs&quot;:[216413],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:18151,&quot;m_rgIncludedAppIDs&quot;:[216414],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:18152,&quot;m_rgIncludedAppIDs&quot;:[216415],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:18153,&quot;m_rgIncludedAppIDs&quot;:[216416],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:18154,&quot;m_rgIncludedAppIDs&quot;:[216417],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:18155,&quot;m_rgIncludedAppIDs&quot;:[216418],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:18156,&quot;m_rgIncludedAppIDs&quot;:[216419],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:18157,&quot;m_rgIncludedAppIDs&quot;:[216420],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:18158,&quot;m_rgIncludedAppIDs&quot;:[216421],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:18181,&quot;m_rgIncludedAppIDs&quot;:[203140],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:1999,&quot;m_nFinalPriceInCents&quot;:1999,&quot;m_nFinalPriceWithBundleDiscount&quot;:999},{&quot;m_nPackageID&quot;:18300,&quot;m_rgIncludedAppIDs&quot;:[224300],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:18301,&quot;m_rgIncludedAppIDs&quot;:[224920],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:18303,&quot;m_rgIncludedAppIDs&quot;:[224940],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:18304,&quot;m_rgIncludedAppIDs&quot;:[224960],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:18305,&quot;m_rgIncludedAppIDs&quot;:[225300],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:18306,&quot;m_rgIncludedAppIDs&quot;:[225320],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:18307,&quot;m_rgIncludedAppIDs&quot;:[224980],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:18308,&quot;m_rgIncludedAppIDs&quot;:[225000],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:18309,&quot;m_rgIncludedAppIDs&quot;:[225020],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:26016,&quot;m_rgIncludedAppIDs&quot;:[203160],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:1999,&quot;m_nFinalPriceInCents&quot;:1999,&quot;m_nFinalPriceWithBundleDiscount&quot;:999},{&quot;m_nPackageID&quot;:26600,&quot;m_rgIncludedAppIDs&quot;:[208795],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:26601,&quot;m_rgIncludedAppIDs&quot;:[208793],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:26602,&quot;m_rgIncludedAppIDs&quot;:[208792],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:26603,&quot;m_rgIncludedAppIDs&quot;:[208790],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:26606,&quot;m_rgIncludedAppIDs&quot;:[208806],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:26607,&quot;m_rgIncludedAppIDs&quot;:[208807],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:26608,&quot;m_rgIncludedAppIDs&quot;:[208808],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:26609,&quot;m_rgIncludedAppIDs&quot;:[208810],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:299,&quot;m_nFinalPriceInCents&quot;:299,&quot;m_nFinalPriceWithBundleDiscount&quot;:149},{&quot;m_nPackageID&quot;:26610,&quot;m_rgIncludedAppIDs&quot;:[208812],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:299,&quot;m_nFinalPriceInCents&quot;:299,&quot;m_nFinalPriceWithBundleDiscount&quot;:149},{&quot;m_nPackageID&quot;:26611,&quot;m_rgIncludedAppIDs&quot;:[208796],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:26612,&quot;m_rgIncludedAppIDs&quot;:[208798],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:26613,&quot;m_rgIncludedAppIDs&quot;:[208799],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:26614,&quot;m_rgIncludedAppIDs&quot;:[208797],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:26615,&quot;m_rgIncludedAppIDs&quot;:[208800],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:26777,&quot;m_rgIncludedAppIDs&quot;:[208814],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:399,&quot;m_nFinalPriceInCents&quot;:399,&quot;m_nFinalPriceWithBundleDiscount&quot;:199},{&quot;m_nPackageID&quot;:27211,&quot;m_rgIncludedAppIDs&quot;:[208811],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:499,&quot;m_nFinalPriceInCents&quot;:499,&quot;m_nFinalPriceWithBundleDiscount&quot;:249},{&quot;m_nPackageID&quot;:27537,&quot;m_rgIncludedAppIDs&quot;:[208809],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:27538,&quot;m_rgIncludedAppIDs&quot;:[208818],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:27539,&quot;m_rgIncludedAppIDs&quot;:[208817],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:27540,&quot;m_rgIncludedAppIDs&quot;:[208813],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:399,&quot;m_nFinalPriceInCents&quot;:399,&quot;m_nFinalPriceWithBundleDiscount&quot;:199},{&quot;m_nPackageID&quot;:28253,&quot;m_rgIncludedAppIDs&quot;:[208791],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:31672,&quot;m_rgIncludedAppIDs&quot;:[242960],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:31675,&quot;m_rgIncludedAppIDs&quot;:[247430],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:349},{&quot;m_nPackageID&quot;:33136,&quot;m_rgIncludedAppIDs&quot;:[259900],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:499,&quot;m_nFinalPriceInCents&quot;:499,&quot;m_nFinalPriceWithBundleDiscount&quot;:249},{&quot;m_nPackageID&quot;:34585,&quot;m_rgIncludedAppIDs&quot;:[265191],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:34587,&quot;m_rgIncludedAppIDs&quot;:[265192],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:34589,&quot;m_rgIncludedAppIDs&quot;:[265193],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:99,&quot;m_nFinalPriceInCents&quot;:99,&quot;m_nFinalPriceWithBundleDiscount&quot;:49},{&quot;m_nPackageID&quot;:37997,&quot;m_rgIncludedAppIDs&quot;:[239160],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:2999,&quot;m_nFinalPriceInCents&quot;:2999,&quot;m_nFinalPriceWithBundleDiscount&quot;:1499},{&quot;m_nPackageID&quot;:40047,&quot;m_rgIncludedAppIDs&quot;:[258180],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:999,&quot;m_nFinalPriceInCents&quot;:999,&quot;m_nFinalPriceWithBundleDiscount&quot;:499},{&quot;m_nPackageID&quot;:49369,&quot;m_rgIncludedAppIDs&quot;:[318870],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:199,&quot;m_nFinalPriceInCents&quot;:199,&quot;m_nFinalPriceWithBundleDiscount&quot;:99},{&quot;m_nPackageID&quot;:49371,&quot;m_rgIncludedAppIDs&quot;:[318871],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:199,&quot;m_nFinalPriceInCents&quot;:199,&quot;m_nFinalPriceWithBundleDiscount&quot;:99},{&quot;m_nPackageID&quot;:49373,&quot;m_rgIncludedAppIDs&quot;:[318872],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:199,&quot;m_nFinalPriceInCents&quot;:199,&quot;m_nFinalPriceWithBundleDiscount&quot;:99},{&quot;m_nPackageID&quot;:49780,&quot;m_rgIncludedAppIDs&quot;:[238010],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:1999,&quot;m_nFinalPriceInCents&quot;:1999,&quot;m_nFinalPriceWithBundleDiscount&quot;:999},{&quot;m_nPackageID&quot;:53985,&quot;m_rgIncludedAppIDs&quot;:[289690],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:1999,&quot;m_nFinalPriceInCents&quot;:1999,&quot;m_nFinalPriceWithBundleDiscount&quot;:999},{&quot;m_nPackageID&quot;:58375,&quot;m_rgIncludedAppIDs&quot;:[318874,318875],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:999,&quot;m_nFinalPriceInCents&quot;:999,&quot;m_nFinalPriceWithBundleDiscount&quot;:499},{&quot;m_nPackageID&quot;:66700,&quot;m_rgIncludedAppIDs&quot;:[28000],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:999,&quot;m_nFinalPriceInCents&quot;:999,&quot;m_nFinalPriceWithBundleDiscount&quot;:499}]}\"
+        >\r\n\r\n\t<div class=\"game_area_purchase_game_dropdown_subscription game_area_purchase_game\">\r\n\t\t<form
+        name=\"add_bundle_to_cart_362\" action=\"http://store.steampowered.com/cart/?snr=1_5_9_\"
+        method=\"POST\">\r\n\t\t\t<input type=\"hidden\" name=\"snr\" value=\"1_5_9__403\">\r\n\t\t\t<input
+        type=\"hidden\" name=\"action\" value=\"add_to_cart\">\r\n\t\t\t<input type=\"hidden\"
+        name=\"sessionid\" value=\"95119cc77e78befde7653006\">\r\n\t\t\t<input type=\"hidden\"
+        name=\"bundleid\" value=\"362\">\r\n\t\t</form>\r\n\t\t\t\t<div class=\"game_area_purchase_platform\"><span
+        class=\"platform_img win\"></span></div>\r\n\t\t<h1>\r\n\t\t\tBuy Eidos Anthology\t\t\t\t\t\t\t<span
+        class=\"bundle_label\" data-store-tooltip=\"Bundles are a special discount
+        on a set of products.  If you already own some of the products contained in
+        the bundle, purchasing the bundle will allow you to &quot;complete the set&quot;,
+        paying only for the products you don't already own while still receiving the
+        full bundle discount on each of those products.\">\r\n\t\t\t\t\tBUNDLE\t\t\t\t\t<span
+        class=\"bundle_label_tooltip\">(?)</span>\r\n\t\t\t\t</span>\r\n\t\t\t\t\t</h1>\r\n\r\n\t\t\t\t<p
+        class=\"package_contents\">\r\n\t\t\t<b>Includes 89 items:</b>\r\n\t\t\t<a
+        href=\"http://store.steampowered.com/app/6900/\">Hitman: Codename 47</a>,
+        <a href=\"http://store.steampowered.com/app/6850/\">Hitman 2: Silent Assassin</a>,
+        <a href=\"http://store.steampowered.com/app/6860/\">Hitman: Blood Money</a>,
+        <a href=\"http://store.steampowered.com/app/6870/\">Battlestations: Midway</a>,
+        <a href=\"http://store.steampowered.com/app/6880/\">Just Cause</a>, <a href=\"http://store.steampowered.com/app/6910/\">Deus
+        Ex: Game of the Year Edition</a>, <a href=\"http://store.steampowered.com/app/6920/\">Deus
+        Ex: Invisible War</a>, <a href=\"http://store.steampowered.com/app/6980/\">Thief:
+        Deadly Shadows</a>, <a href=\"http://store.steampowered.com/app/7000/\">Tomb
+        Raider: Legend</a>, <a href=\"http://store.steampowered.com/app/8000/\">Tomb
+        Raider: Anniversary</a>, <a href=\"http://store.steampowered.com/app/8080/\">Kane
+        & Lynch: Dead Men&trade;</a>, <a href=\"http://store.steampowered.com/app/8140/\">Tomb
+        Raider: Underworld</a>, <a href=\"http://store.steampowered.com/app/8170/\">Battlestations
+        Pacific</a>, <a href=\"http://store.steampowered.com/app/8190/\">Just Cause
+        2</a>, <a href=\"http://store.steampowered.com/app/35101/\">JC2 DLC: Black
+        Market Aerial Pack</a>, <a href=\"http://store.steampowered.com/app/35102/\">Just
+        Cause 2 - Black Market 'Boom' Pack DLC</a>, <a href=\"http://store.steampowered.com/app/35080/\">JC2
+        DLC - Bull's Eye Assault Rifle</a>, <a href=\"http://store.steampowered.com/app/35083/\">JC2
+        DLC - Rico's Signature Gun</a>, <a href=\"http://store.steampowered.com/app/35089/\">JC2
+        DLC - Chevalier Classic</a>, <a href=\"http://store.steampowered.com/app/35090/\">JC2
+        DLC - Agency Hovercraft</a>, <a href=\"http://store.steampowered.com/app/35091/\">Just
+        Cause 2 DLC - Monster Truck</a>, <a href=\"http://store.steampowered.com/app/28010/\">Kane
+        & Lynch 2 DLC - Doggie Bag</a>, <a href=\"http://store.steampowered.com/app/28011/\">Kane
+        & Lynch 2 DLC - Alliance Weapon Pack</a>, <a href=\"http://store.steampowered.com/app/28012/\">Kane
+        & Lynch 2 DLC - Multiplayer Masks Pack</a>, <a href=\"http://store.steampowered.com/app/35135/\">Lara
+        Croft GoL: Raziel and Kain Character Pack</a>, <a href=\"http://store.steampowered.com/app/35136/\">Lara
+        Croft GoL: All the Trappings - Challenge Pack 1</a>, <a href=\"http://store.steampowered.com/app/35137/\">Lara
+        Croft GoL: Things that Go Boom - Challenge Pack 2</a>, <a href=\"http://store.steampowered.com/app/35138/\">Lara
+        Croft GoL: Hazardous Reunion - Challenge Pack 3</a>, <a href=\"http://store.steampowered.com/app/35130/\">Lara
+        Croft and the Guardian of Light</a>, <a href=\"http://store.steampowered.com/app/211600/\">Thief
+        Gold</a>, <a href=\"http://store.steampowered.com/app/211740/\">Thief II:
+        The Metal Age</a>, <a href=\"http://store.steampowered.com/app/216411/\">Hitman
+        Absolution Agency Jagd P22G</a>, <a href=\"http://store.steampowered.com/app/216412/\">Hitman
+        Absolution Agency SPS 12</a>, <a href=\"http://store.steampowered.com/app/216413/\">Hitman
+        Absolution Agency HX UMP</a>, <a href=\"http://store.steampowered.com/app/216414/\">Hitman
+        Absolution Bartoli Custom Gun</a>, <a href=\"http://store.steampowered.com/app/216415/\">Hitman
+        Absolution Krugermeier 2-2 Gun</a>, <a href=\"http://store.steampowered.com/app/216416/\">Hitman
+        Absolution Bronson M1928 Gun</a>, <a href=\"http://store.steampowered.com/app/216417/\">Hitman
+        Absolution High Tech Disguise</a>, <a href=\"http://store.steampowered.com/app/216418/\">Hitman
+        Absolution High Roller Disguise</a>, <a href=\"http://store.steampowered.com/app/216419/\">Hitman
+        Absolution Public Enemy Disguise</a>, <a href=\"http://store.steampowered.com/app/216420/\">Hitman
+        Absolution Deus Ex (Adam Jensen) Disguise</a>, <a href=\"http://store.steampowered.com/app/216421/\">Hitman
+        Absolution Deus Ex (Adam Jensen) Handgun</a>, <a href=\"http://store.steampowered.com/app/203140/\">Hitman:
+        Absolution</a>, <a href=\"http://store.steampowered.com/app/224300/\">Legacy
+        of Kain: Defiance</a>, <a href=\"http://store.steampowered.com/app/224920/\">Legacy
+        of Kain: Soul Reaver</a>, <a href=\"http://store.steampowered.com/app/224940/\">Legacy
+        of Kain: Soul Reaver 2</a>, <a href=\"http://store.steampowered.com/app/224960/\">Tomb
+        Raider I</a>, <a href=\"http://store.steampowered.com/app/225300/\">Tomb Raider
+        II</a>, <a href=\"http://store.steampowered.com/app/225320/\">Tomb Raider
+        III</a>, <a href=\"http://store.steampowered.com/app/224980/\">Tomb Raider
+        IV: The Last Revelation</a>, <a href=\"http://store.steampowered.com/app/225000/\">Tomb
+        Raider V: Chronicles</a>, <a href=\"http://store.steampowered.com/app/225020/\">Tomb
+        Raider VI: Angel of Darkness</a>, <a href=\"http://store.steampowered.com/app/203160/\">Tomb
+        Raider</a>, <a href=\"http://store.steampowered.com/app/208795/\">Tomb Raider:
+        Silverballer</a>, <a href=\"http://store.steampowered.com/app/208793/\">Tomb
+        Raider: Fisherman</a>, <a href=\"http://store.steampowered.com/app/208792/\">Tomb
+        Raider: Scavenger Bandit</a>, <a href=\"http://store.steampowered.com/app/208790/\">Tomb
+        Raider: Scavenger Scout</a>, <a href=\"http://store.steampowered.com/app/208806/\">Tomb
+        Raider: Hunter Skin</a>, <a href=\"http://store.steampowered.com/app/208807/\">Tomb
+        Raider: Aviatrix Skin</a>, <a href=\"http://store.steampowered.com/app/208808/\">Tomb
+        Raider: Guerilla Skin</a>, <a href=\"http://store.steampowered.com/app/208810/\">Tomb
+        Raider: Shanty Town</a>, <a href=\"http://store.steampowered.com/app/208812/\">Tomb
+        Raider: Tomb of Lost Adventurer</a>, <a href=\"http://store.steampowered.com/app/208796/\">Tomb
+        Raider: Agency SPS 12</a>, <a href=\"http://store.steampowered.com/app/208798/\">Tomb
+        Raider: JAGD P22G</a>, <a href=\"http://store.steampowered.com/app/208799/\">Tomb
+        Raider: M590 12ga</a>, <a href=\"http://store.steampowered.com/app/208797/\">Tomb
+        Raider: HX AP-15</a>, <a href=\"http://store.steampowered.com/app/208800/\">Tomb
+        Raider: STG 58 Elite</a>, <a href=\"http://store.steampowered.com/app/208814/\">Tomb
+        Raider 1939 Multiplayer Map Pack</a>, <a href=\"http://store.steampowered.com/app/208811/\">Tomb
+        Raider: Caves and Cliffs Multiplayer Map Pack</a>, <a href=\"http://store.steampowered.com/app/208809/\">Tomb
+        Raider: Mountaineer Skin</a>, <a href=\"http://store.steampowered.com/app/208818/\">Tomb
+        Raider: Sure-Shot Skin</a>, <a href=\"http://store.steampowered.com/app/208817/\">Tomb
+        Raider: Demolition Skin</a>, <a href=\"http://store.steampowered.com/app/208813/\">Tomb
+        Raider: Shipwrecked Multiplayer Map Pack</a>, <a href=\"http://store.steampowered.com/app/208791/\">Tomb
+        Raider: Scavenger Executioner</a>, <a href=\"http://store.steampowered.com/app/242960/\">Blood
+        Omen 2: Legacy of Kain</a>, <a href=\"http://store.steampowered.com/app/247430/\">Hitman
+        Contracts</a>, <a href=\"http://store.steampowered.com/app/259900/\">Thief:
+        The Bank Heist</a>, <a href=\"http://store.steampowered.com/app/265191/\">Thief
+        DLC: Opportunist</a>, <a href=\"http://store.steampowered.com/app/265192/\">Thief
+        DLC: Predator</a>, <a href=\"http://store.steampowered.com/app/265193/\">Thief
+        DLC: Ghost</a>, <a href=\"http://store.steampowered.com/app/239160/\">Thief</a>,
+        <a href=\"http://store.steampowered.com/app/258180/\">Deus Ex: The Fall</a>,
+        <a href=\"http://store.steampowered.com/app/318870/\">Lara Croft and the Temple
+        of Osiris - Deus Ex Pack</a>, <a href=\"http://store.steampowered.com/app/318871/\">Lara
+        Croft and the Temple of Osiris - Hitman Pack</a>, <a href=\"http://store.steampowered.com/app/318872/\">Lara
+        Croft and the Temple of Osiris - Legend Pack</a>, <a href=\"http://store.steampowered.com/app/238010/\">Deus
+        Ex: Human Revolution - Director's Cut</a>, <a href=\"http://store.steampowered.com/app/289690/\">Lara
+        Croft and the Temple of Osiris</a>, <a href=\"http://store.steampowered.com/sub/58375/\">Lara
+        Croft and the Temple of Osiris - Season Pass Only</a>, <a href=\"http://store.steampowered.com/app/28000/\">Kane
+        and Lynch 2 - Dog Days</a>\t\t</p>\r\n\r\n\t\t<div class=\"game_purchase_action\">\r\n\t\t\t\t\t\t\t<div
+        class=\"game_purchase_action_bg\">\r\n\t\t\t\t\t<div class=\"btn_addtocart
+        btn_packageinfo\">\r\n\t\t\t\t\t\t<a class=\"btnv6_blue_blue_innerfade  btn_medium\"
+        href=\"http://store.steampowered.com/bundle/362/?snr=1_5_9__403\">\r\n\t\t\t\t\t\t\t<span>Bundle
+        info</span>\r\n\t\t\t\t\t\t</a>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t\t\t<div
+        class=\"game_purchase_action_bg\">\r\n\t\t\t\t<div class=\"discount_block
+        game_purchase_discount no_discount\"> <div class=\"bundle_base_discount\">-50%</div><div
+        class=\"discount_prices\"><div class=\"discount_final_price\">$224.61 USD</div></div></div>\r\n\r\n\t\t\t\t<div
+        class=\"btn_addtocart\">\r\n\t\t\t\t\t\t\t\t\t<a class=\"btnv6_green_white_innerfade
+        btn_medium\"\r\n\t\t\t\t\t   href=\"javascript:addBundleToCart( 362);\">\r\n\r\n\t\t\t\t\t\t<span>Add
+        to Cart</span>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\t</div><div
+        class=\"game_area_purchase_game_wrapper dynamic_bundle_description ds_no_flags\"
+        \ data-ds-bundleid=\"2355\" data-ds-bundle-data=\"{&quot;m_nDiscountPct&quot;:&quot;30&quot;,&quot;m_bMustPurchaseAsSet&quot;:0,&quot;m_rgItems&quot;:[{&quot;m_nPackageID&quot;:294,&quot;m_rgIncludedAppIDs&quot;:[6910],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:489},{&quot;m_nPackageID&quot;:295,&quot;m_rgIncludedAppIDs&quot;:[6920],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:699,&quot;m_nFinalPriceInCents&quot;:699,&quot;m_nFinalPriceWithBundleDiscount&quot;:489},{&quot;m_nPackageID&quot;:40047,&quot;m_rgIncludedAppIDs&quot;:[258180],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:999,&quot;m_nFinalPriceInCents&quot;:999,&quot;m_nFinalPriceWithBundleDiscount&quot;:699},{&quot;m_nPackageID&quot;:49780,&quot;m_rgIncludedAppIDs&quot;:[238010],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:1999,&quot;m_nFinalPriceInCents&quot;:1999,&quot;m_nFinalPriceWithBundleDiscount&quot;:1399},{&quot;m_nPackageID&quot;:103881,&quot;m_rgIncludedAppIDs&quot;:[470070],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:2999,&quot;m_nFinalPriceInCents&quot;:2999,&quot;m_nFinalPriceWithBundleDiscount&quot;:2099},{&quot;m_nPackageID&quot;:123614,&quot;m_rgIncludedAppIDs&quot;:[337000],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:5999,&quot;m_nFinalPriceInCents&quot;:5999,&quot;m_nFinalPriceWithBundleDiscount&quot;:4199}]}\"
+        >\r\n\r\n\t<div class=\"game_area_purchase_game_dropdown_subscription game_area_purchase_game\">\r\n\t\t<form
+        name=\"add_bundle_to_cart_2355\" action=\"http://store.steampowered.com/cart/?snr=1_5_9_\"
+        method=\"POST\">\r\n\t\t\t<input type=\"hidden\" name=\"snr\" value=\"1_5_9__403\">\r\n\t\t\t<input
+        type=\"hidden\" name=\"action\" value=\"add_to_cart\">\r\n\t\t\t<input type=\"hidden\"
+        name=\"sessionid\" value=\"95119cc77e78befde7653006\">\r\n\t\t\t<input type=\"hidden\"
+        name=\"bundleid\" value=\"2355\">\r\n\t\t</form>\r\n\t\t\t\t<div class=\"game_area_purchase_platform\"><span
+        class=\"platform_img win\"></span></div>\r\n\t\t<h1>\r\n\t\t\tBuy The Deus
+        Ex Collection\t\t\t\t\t\t\t<span class=\"bundle_label\" data-store-tooltip=\"Bundles
+        are a special discount on a set of products.  If you already own some of the
+        products contained in the bundle, purchasing the bundle will allow you to
+        &quot;complete the set&quot;, paying only for the products you don't already
+        own while still receiving the full bundle discount on each of those products.\">\r\n\t\t\t\t\tBUNDLE\t\t\t\t\t<span
+        class=\"bundle_label_tooltip\">(?)</span>\r\n\t\t\t\t</span>\r\n\t\t\t\t\t</h1>\r\n\r\n\t\t\t\t<p
+        class=\"package_contents\">\r\n\t\t\t<b>Includes 6 items:</b>\r\n\t\t\t<a
+        href=\"http://store.steampowered.com/app/6910/\">Deus Ex: Game of the Year
+        Edition</a>, <a href=\"http://store.steampowered.com/app/6920/\">Deus Ex:
+        Invisible War</a>, <a href=\"http://store.steampowered.com/app/258180/\">Deus
+        Ex: The Fall</a>, <a href=\"http://store.steampowered.com/app/238010/\">Deus
+        Ex: Human Revolution - Director's Cut</a>, <a href=\"http://store.steampowered.com/app/470070/\">Deus
+        Ex: Mankind Divided™ DLC - Season Pass</a>, <a href=\"http://store.steampowered.com/app/337000/\">Deus
+        Ex: Mankind Divided</a>\t\t</p>\r\n\r\n\t\t<div class=\"game_purchase_action\">\r\n\t\t\t\t\t\t\t<div
+        class=\"game_purchase_action_bg\">\r\n\t\t\t\t\t<div class=\"btn_addtocart
+        btn_packageinfo\">\r\n\t\t\t\t\t\t<a class=\"btnv6_blue_blue_innerfade  btn_medium\"
+        href=\"http://store.steampowered.com/bundle/2355/?snr=1_5_9__403\">\r\n\t\t\t\t\t\t\t<span>Bundle
+        info</span>\r\n\t\t\t\t\t\t</a>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t\t\t<div
+        class=\"game_purchase_action_bg\">\r\n\t\t\t\t<div class=\"discount_block
+        game_purchase_discount no_discount\"> <div class=\"bundle_base_discount\">-30%</div><div
+        class=\"discount_prices\"><div class=\"discount_final_price\">$93.74 USD</div></div></div>\r\n\r\n\t\t\t\t<div
+        class=\"btn_addtocart\">\r\n\t\t\t\t\t\t\t\t\t<a class=\"btnv6_green_white_innerfade
+        btn_medium\"\r\n\t\t\t\t\t   href=\"javascript:addBundleToCart( 2355);\">\r\n\r\n\t\t\t\t\t\t<span>Add
+        to Cart</span>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<!--
+        game_area_purchase -->\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t<div class=\"purchase_area_spacer\">&nbsp;</div>\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<div
+        class=\"game_page_autocollapse\" style=\"max-height: 300px;\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"game_area_description\">\r\n\t\t\t\t\t\t\t\t<h2>Available Now!</h2>\t\t\t\t\t\t\t\t\t<p><a
+        href=\"http://store.steampowered.com/app/337000\" target=\"_blank\" rel=\"noreferrer\"
+        \ ><img src=\"http://cdn.akamai.steamstatic.com/steam/apps/6910/extras/DXMD_STEAM_CrossPromo.jpg?t=1478811896\"></a></p>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div
+        class=\"game_page_autocollapse\" style=\"max-height: 850px;\">\r\n\t\t\t\t\t\t<div
+        id=\"game_area_description\" class=\"game_area_description\">\r\n\t\t\t\t\t\t\t<h2>About
+        This Game</h2>\r\n\t\t\t\t\t\t\tThe year is 2052 and the world is a dangerous
+        and chaotic place. Terrorists operate openly - killing thousands; drugs, disease
+        and pollution kill even more. The world's economies are close to collapse
+        and the gap between the insanely wealthy and the desperately poor grows ever
+        wider. Worst of all, an ages old conspiracy bent on world domination has decided
+        that the time is right to emerge from the shadows and take control.<h2 class=\"bb_tag\">Key
+        Features:</h2><br><ul class=\"bb_ul\"><li> Real role-playing from an immersive
+        3D, first-person perspective. The game includes action, character interaction
+        and problem solving.<br></li><li> Realistic, recognizable locations. Many
+        of the locations are built from actual blueprints of real places set in a
+        near future scenario.<br></li><li> A game filled with people rather than monsters.
+        This creates empathy with the game characters and enhances the realism of
+        the game world.<br></li><li> Rich character development systems: Skills, augmentations,
+        weapon and item selections and multiple solutions to problems ensure that
+        no two players will end the game with similar characters.<br></li><li> Multiple
+        solutions to problems and character development choices ensure a varied game
+        experience. Talk, fight or use skills to get past obstacles as the game adapts
+        itself to your style of play.<br></li><li> Strong storyline: Built on &quot;real&quot;
+        conspiracy theories, current events and expected advancements in technology.
+        If it's in the game, someone, somewhere believes</li></ul>\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t<div
+        class=\"game_page_autocollapse sys_req\" style=\"max-height: 300px;\">\r\n\t\t<h2>System
+        Requirements</h2>\r\n\t\t\t\t<div class=\"sysreq_contents\">\r\n\t\t\t\t\t\t\t<div
+        class=\"game_area_sys_req sysreq_content active\" data-os=\"win\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"game_area_sys_req_full\">\r\n\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t<strong>Minimum:
+        </strong>300 MHz Pentium II or equlivalent, Windows 95/98, 64 MB RAM, DirectX
+        7.0a compliant 3D accelerated video card 16MB VRAM, Direct X 7.0a compliant
+        sound card, Direct X 7.0a or higher (included), 150MB uncompressed hard drive
+        space, Keyboard and Mouse\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        style=\"clear: both;\"></div>\r\n\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t</div>\r\n\t<script
+        type=\"text/javascript\">\r\n\t\t$J( function() {\r\n\t\t\tvar $Tabs = $J('.sysreq_tab');\r\n\t\t\tvar
+        $Content = $J('.sysreq_content');\r\n\r\n\t\t\t$Tabs.click( function() {\r\n\t\t\t\tvar
+        $Tab = $J(this);\r\n\t\t\t\t$Tabs.removeClass('active');\r\n\t\t\t\t$Tab.addClass('active');\r\n\r\n\t\t\t\t$Content.removeClass('active');\r\n\t\t\t\t$Content.filter('[data-os='
+        + $Tab.data('os') + ']').addClass('active');\r\n\r\n\t\t\t\t$Content.trigger('gamepage_autocollapse_expand');\r\n\t\t\t});\r\n\t\t}
+        );\r\n\t</script>\r\n\r\n\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"block\" id=\"recommended_block\">\r\n\t\t\t\t\t\t<div class=\"block_header\">\r\n\t\t\t\t\t\t\t<div
+        class=\"right\">\r\n\t\t\t\t\t\t\t\t<a href=\"http://store.steampowered.com/recommended/morelike/app/6910/?snr=1_5_9__300\">See
+        all</a>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<h4>More like this</h4>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div
+        class=\"block_responsive_horizontal_scroll store_horizontal_autoslider block_content
+        nopad\" id=\"recommended_block_content\">\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t<div
+        id=\"responsive_apppage_reviewblock_ctn\" class=\"rightcol game_meta_data\"></div>\r\n\r\n\t\t\t\t\t\t<div
+        class=\"steam_curators_block block responsive_apppage_reviewblock\">\r\n\t\t\t<div
+        class=\"block_header\">\r\n\t\t\t\t<div class=\"right\"><a href=\"http://store.steampowered.com/curators/curatorsreviewing/?appid=6910\">View
+        all</a></div>\r\n\t\t\t\t<h2>What Curators Say</h2>\r\n\t\t\t\t<div class=\"no_curators_followed\">\r\n\t\t\t\t\t395
+        Curators have reviewed this product. Click <a href=\"http://store.steampowered.com/curators/curatorsreviewing/?appid=6910\">here</a>
+        to see them.\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t\r\n\r\n\r\n\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t<div
+        style=\"clear: both;\"></div>\r\n\t\t\t\t\r\n\t\t\t<div id=\"app_reviews_hash\"
+        class=\"app_reviews_area\">\r\n\t\t\t\t<script>\r\n\tjQuery( document ).ready(function(
+        $ ) {\r\n\t\tCollapseLongReviews();\r\n\t\tnew CScrollOffsetWatcher( $J('#app_reviews_hash'),
+        ShowFilteredReviews );\r\n\t});\r\n</script>\r\n\t\t<div class=\"user_reviews_header
+        no_bottom_margin\">\r\n\t\t\tCustomer reviews\r\n\t\t\t<span class=\"right\">\r\n\t\t\t\t<a
+        class=\"btnv6_white_transparent btn_small btn_uppercase\" href=\"http://store.steampowered.com/news/24331/?snr=1_5_9_\"><span>Learn
+        More</span></a>\r\n\t\t\t</span>\r\n\r\n\t\t</div>\r\n\r\n\t\t<input type=\"hidden\"
+        id=\"review_appid\" value=\"6910\">\r\n\t\t<input type=\"hidden\" id=\"review_default_day_range\"
+        value=\"30\">\r\n\r\n\t\t<div class=\"user_reviews_summary_bar new\">\r\n\t\t\t\t\t\t<div
+        class=\"summary_section\">\r\n\t\t\t\t<div class=\"title\">Recent:</div>\r\n\t\t\t\t\t<span
+        class=\"game_review_summary positive\" data-store-tooltip=\"87% of the 103
+        user reviews in the last 30 days are positive.\">Very Positive</span>\r\n\t\t\t\t\t<span>(103
+        reviews)</span>\r\n\t\t\t\t\t<a class=\"tooltip\" data-tooltip-content=\"This
+        summary uses only reviews written by customers that purchased the game directly
+        from Steam.\"><img src=\"http://store.edgecast.steamstatic.com/public/shared/images/ico/icon_questionmark_dark.png\"></a>\r\n\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div
+        class=\"summary_section\" >\r\n\t\t\t\t<div class=\"title\">Overall:</div>\r\n\t\t\t\t<span
+        class=\"game_review_summary positive\" data-store-tooltip=\"95% of the 4,511
+        user reviews for this game are positive.\">Overwhelmingly Positive</span>\r\n\t\t\t\t<span>(4,511
+        reviews)</span>\r\n\t\t\t\t<a class=\"tooltip\" data-tooltip-content=\"This
+        summary uses only reviews written by customers that purchased the game directly
+        from Steam.\"><img src=\"http://store.edgecast.steamstatic.com/public/shared/images/ico/icon_questionmark_dark.png\"></a>\r\n\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t<div
+        class=\"user_reviews_filter_options\">\r\n\r\n\t\t\t<div class=\"user_reviews_filter_section\">\r\n\t\t\t\t<div
+        class=\"title\">Review Type</div>\r\n\t\t\t\t<input type=\"radio\" name=\"review_type\"
+        value=\"all\" id=\"review_type_all\" checked onchange=\"ShowFilteredReviews()\">\r\n\t\t\t\t\t<label
+        for=\"review_type_all\">All&nbsp;<span class=\"user_reviews_count\">(4,599)</span></label><br>\r\n\t\t\t\t<input
+        type=\"radio\" name=\"review_type\" value=\"positive\" id=\"review_type_positive\"
+        onchange=\"ShowFilteredReviews()\">\r\n\t\t\t\t\t<label for=\"review_type_positive\">Positive&nbsp;<span
+        class=\"user_reviews_count\">(4,392)</span></label><br>\r\n\t\t\t\t<input
+        type=\"radio\" name=\"review_type\" value=\"negative\" id=\"review_type_negative\"
+        onchange=\"ShowFilteredReviews()\">\r\n\t\t\t\t\t<label for=\"review_type_negative\">Negative&nbsp;<span
+        class=\"user_reviews_count\">(207)</span></label>\r\n\t\t\t</div>\r\n\t\t\t<div
+        class=\"user_reviews_filter_section\">\r\n\t\t\t\t<div class=\"title\">Purchase
+        Type</div>\r\n\t\t\t\t<input type=\"radio\" name=\"purchase_type\" value=\"all\"
+        id=\"purchase_type_all\" checked onchange=\"ChangeReviewPurchaseTypeFilter()\">\r\n\t\t\t\t\t<label
+        for=\"purchase_type_all\">All&nbsp;<span class=\"user_reviews_count\">(4,599)</span></label><br>\r\n\t\t\t\t<input
+        type=\"radio\" name=\"purchase_type\" value=\"steam\" id=\"purchase_type_steam\"
+        \ onchange=\"ChangeReviewPurchaseTypeFilter()\">\r\n\t\t\t\t\t<label for=\"purchase_type_steam\">Steam
+        Purchasers&nbsp;<span class=\"user_reviews_count\">(4,511)</span> <a class=\"tooltip\"
+        data-tooltip-content=\"These are reviews written by customers that purchased
+        the game directly from Steam.\"><img src=\"http://store.edgecast.steamstatic.com/public/shared/images/ico/icon_questionmark.png\"></a></label><br>\r\n\t\t\t\t<input
+        type=\"radio\" name=\"purchase_type\" value=\"cd_key\" id=\"purchase_type_cd_key\"
+        \ onchange=\"ChangeReviewPurchaseTypeFilter()\">\r\n\t\t\t\t\t<label for=\"purchase_type_cd_key\">Key
+        Activations&nbsp;<span class=\"user_reviews_count\">(88)</span> <a class=\"tooltip\"
+        data-tooltip-content=\"These are reviews written by customers that received
+        the game from a source outside of Steam. (This may include legitimate sources
+        such as other digital stores, retail stores, testing purposes, or press review
+        purposes. Or, from inappropriate sources such as copies given in exchange
+        for reviews.)\"><img src=\"http://store.edgecast.steamstatic.com/public/shared/images/ico/icon_questionmark.png\"></a></label>\r\n\t\t\t</div>\r\n\t\t\t<div
+        class=\"user_reviews_filter_section\">\r\n\t\t\t\t<div class=\"title\">Language</div>\r\n\t\t\t\t<input
+        type=\"radio\" name=\"review_language\" id=\"review_language_all\" value=\"all\"
+        onchange=\"ShowFilteredReviews()\">\r\n\t\t\t\t\t<label for=\"review_language_all\">All
+        Languages&nbsp;<span class=\"user_reviews_count\">(4,599)</span></label><br>\r\n\t\t\t\t<input
+        type=\"radio\" name=\"review_language\" id=\"review_language_mine\" value=\"english\"
+        checked onchange=\"ShowFilteredReviews()\">\r\n\t\t\t\t\t<label for=\"review_language_mine\">Your
+        Languages&nbsp;<span class=\"user_reviews_count\">(3,756)</span> <a class=\"tooltip\"
+        data-tooltip-content=\"Your preferences are currently set to show content
+        authored in these languages: English.<br><br> Click 'customize' below to modify
+        your preferences.\"><img src=\"http://store.edgecast.steamstatic.com/public/shared/images/ico/icon_questionmark.png\"></a></label><br>\r\n\t\t\t\t<div
+        class=\"user_reviews_customize_language\"><a href=\"http://store.steampowered.com//account/preferences\">Customize</a></div>\r\n\t\t\t</div>\r\n\t\t\t<div
+        class=\"user_reviews_filter_section\">\r\n\t\t\t\t<div class=\"title\">Display
+        As: </div>\r\n\t\t\t\t<select id=\"review_context\" onchange=\"ShowFilteredReviews()\">\r\n\t\t\t\t<option
+        value=\"summary\">Summary</option>\r\n\t\t\t\t\t<option value=\"all\">Most
+        Helpful</option>\r\n\t\t\t\t\t<option value=\"recent\">Recent</option>\r\n\t\t\t\t\t<option
+        value=\"funny\">Funny</option>\r\n\t\t\t\t</select>\r\n\r\n\t\t\t\t<div style=\"display:none;\">\r\n\t\t\t\t\t<br>\r\n\t\t\t\t\t<input
+        type=\"checkbox\" id=\"ReviewBetaCheckbox\" value=\"1\"  onchange=\"ChangeReviewBetaFilter()\"><label
+        for=\"ReviewBetaCheckbox\">Enable Reviews Beta</label>\r\n\t\t\t\t\t<br>\r\n\t\t\t\t\t<a
+        href=\"\">(what is this?)</a>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div
+        style=\"clear: left\"></div>\r\n\r\n\t\t\t<div class=\"user_reviews_filter_score
+        visible\" id=\"user_reviews_filter_score\">\t\t<div>\r\n\t\t\t<span>3,686
+        reviews match the filters above</span>\r\n\t\t\t( <span class=\"game_review_summary
+        positive\" data-store-tooltip=\"95% of the 3,686 user reviews for this game
+        are positive.\">Overwhelmingly Positive</span>)\r\n\r\n\t\t</div>\r\n\r\n\t\t</div>\r\n\r\n\t\t</div>\r\n\r\n\t\t<div
+        id=\"LoadingMoreReviewsall\" style=\"display: none\" class=\"loading_more_reviews\">\r\n\t\t\t<img
+        src=\"http://store.edgecast.steamstatic.com/public/shared/images/throbber.gif\"
+        class=\"loading_more_reviews_throbber\">\r\n\t\t\tLoading reviews...\t\t</div>\r\n\t\t<div
+        id=\"LoadingMoreReviewsrecent\" style=\"display: none\" class=\"loading_more_reviews\">\r\n\t\t\t<img
+        src=\"http://store.edgecast.steamstatic.com/public/shared/images/throbber.gif\"
+        class=\"loading_more_reviews_throbber\">\r\n\t\t\tLoading reviews...\t\t</div>\r\n\t\t<div
+        id=\"LoadingMoreReviewspositive\" style=\"display: none\" class=\"loading_more_reviews\">\r\n\t\t\t<img
+        src=\"http://store.edgecast.steamstatic.com/public/shared/images/throbber.gif\"
+        class=\"loading_more_reviews_throbber\">\r\n\t\t\tLoading reviews...\t\t</div>\r\n\t\t<div
+        id=\"LoadingMoreReviewsnegative\" style=\"display: none\" class=\"loading_more_reviews\">\r\n\t\t\t<img
+        src=\"http://store.edgecast.steamstatic.com/public/shared/images/throbber.gif\"
+        class=\"loading_more_reviews_throbber\">\r\n\t\t\tLoading reviews...\t\t</div>\r\n\t\t<div
+        id=\"LoadingMoreReviewsfunny\" style=\"display: none\" class=\"loading_more_reviews\">\r\n\t\t\t<img
+        src=\"http://store.edgecast.steamstatic.com/public/shared/images/throbber.gif\"
+        class=\"loading_more_reviews_throbber\">\r\n\t\t\tLoading reviews...\t\t</div>\r\n\r\n\r\n\t\t<div
+        id=\"Reviews_positive\" style=\"display: none\" class=\"user_reviews_container
+        leftcol\"></div>\r\n\t\t<div id=\"Reviews_negative\" style=\"display: none\"
+        class=\"user_reviews_container leftcol\"></div>\r\n\t\t<div id=\"Reviews_recent\"
+        style=\"display: none\" class=\"user_reviews_container leftcol\"></div>\r\n\t\t<div
+        id=\"Reviews_funny\" style=\"display: none\" class=\"user_reviews_container
+        leftcol\"></div>\r\n\t\t<div id=\"Reviews_all\" style=\"display: none\" class=\"user_reviews_container
+        leftcol\"></div>\r\n\t\t<div id=\"Reviews_summary\" class=\"user_reviews_container\">\r\n\t\t\t<div
+        id=\"Reviewssummary0\">\r\n\r\n\t\t<div class=\"leftcol\">\r\n\t\t\t\t\t</div>\r\n\t\t<div
+        class=\"rightcol recent_reviews\">\r\n\t\t\t\t\t</div>\r\n\t\t<div style=\"clear:left;\"></div>\r\n\r\n\t\t\t\t\t<div
+        id=\"ViewAllReviewssummary\" class=\"view_all_reviews_btn leftcol\">\r\n\t\t\t\t\t\t\t\t\t<div
+        class=\"review_box\">\r\n\t\t\t\t\t\t<div class=\"noReviewsYetTitle\">There
+        are no more reviews that match the filters set above</div>\r\n\t\t\t\t\t\t<div
+        class=\"noReviewsYetSub\">Adjust the filters above to see other reviews</a></div>\r\n\t\t\t\t\t\t<div
+        style=\"clear: left; height: 40px;\"></div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\r\n\t\t<div
+        style=\"clear: both\"></div>\r\n\t\t</div>\r\n\t\t</div>\r\n\t\t<div id=\"Reviews_loading\"
+        class=\"user_reviews_container\">\r\n\t\t\t\t\t<div class=\"LoadingWrapper\">\r\n\t\t\t<div
+        class=\"LoadingThrobber\">\r\n\t\t\t\t<div class=\"Bar Bar1\"></div>\r\n\t\t\t\t<div
+        class=\"Bar Bar2\"></div>\r\n\t\t\t\t<div class=\"Bar Bar3\"></div>\r\n\t\t\t</div>\r\n\t\t\t<div
+        class=\"LoadingText\">Loading reviews...</div>\r\n\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t<div
+        style=\"clear: left\"></div>\r\n\r\n\t\t\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t</div>\r\n</div>\r\n\r\n\t\t<div
+        class=\"hover game_hover\" id=\"global_hover\" style=\"display: none; left:
+        0; top: 0;\">\r\n\t\t\t<div class=\"game_hover_box hover_box\">\r\n\t\t\t\t<div
+        class=\"content\" id=\"global_hover_content\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div
+        class=\"hover_arrow_left\"></div>\r\n\t\t\t<div class=\"hover_arrow_right\"></div>\r\n\t\t</div>\r\n<div
+        id=\"EmbedModal\"  style=\"display: none\">\r\n\t<div id=\"widget_create\">\r\n\t\t<p>You
+        can use this widget-maker to generate a bit of HTML that can be embedded in
+        your website to easily allow customers to purchase this game on Steam.</p>\r\n\r\n\t\t\t\t<p
+        class=\"small\">Enter up to 375 characters to add a description to your widget:</p>\r\n\t\t<textarea
+        name=\"w_text\" placeholder=\"The year is 2052 and the world is a dangerous
+        and chaotic place. Terrorists operate openly - killing thousands; drugs, disease
+        and pollution kill even more. The world's economies are close to collapse
+        and the gap between the insanely wealthy and the desperately poor grows ever
+        wider.\" maxlength=\"375\"></textarea>\r\n\r\n\t\t<div class=\"buttoncontainer\">\r\n\t\t\t<a
+        class=\"btnv6_blue_hoverfade btn_medium \" href=\"#\" onclick=\"CreateWidget(6910);
+        return false;\"><span>Create widget</span></a>\r\n\t\t</div>\r\n\t</div>\r\n\t<div
+        id=\"widget_finished\" style=\"display: none;\">\r\n\t\t<div id=\"widget_container\"></div>\r\n\r\n\t\t<p
+        class=\"small\">Copy and paste the HTML below into your website to make the
+        above widget appear</p>\r\n\t\t<textarea id=\"widget_code\" style=\"\"></textarea>\r\n\t</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"ShareModal\" style=\"display: none\">\r\n\t<div class=\"share\">Share:&nbsp;
+        <a href=\"http://store.steampowered.com/share/facebook/app/6910\" target=\"_blank\"
+        rel=\"noreferrer\" title=\"Share on Facebook\"><img src=\"http://store.edgecast.steamstatic.com/public/images/v5/social/facebook.gif\"></a>&nbsp;
+        <a href=\"http://store.steampowered.com/share/twitter/app/6910\" target=\"_blank\"
+        rel=\"noreferrer\" title=\"Share on Twitter\"><img src=\"http://store.edgecast.steamstatic.com/public/images/v5/social/twitter.gif\"></a>&nbsp;
+        <a href=\"http://store.steampowered.com/share/reddit/app/6910\" target=\"_blank\"
+        rel=\"noreferrer\" title=\"Share on Reddit\"><img src=\"http://store.edgecast.steamstatic.com/public/images/v5/social/reddit.gif\"></a></div></div>\r\n\r\n\t<div
+        id=\"app_tagging_modal\" class=\"app_tag_modal nologin\" style=\"display:
+        none;\">\r\n\t\t<div class=\"app_tag_modal_content\">\r\n\t\t\t<div class=\"app_tag_modal_seperator\"></div>\r\n\t\t\t<div
+        class=\"app_tag_modal_left\">\r\n\t\t\t\t<h2>Popular user-defined tags for
+        this product:<span class=\"app_tag_modal_tooltip\" data-store-tooltip=\"These
+        are tags applied to the product by the most users.  You can click a tag to
+        find other products with that tag applied.  Or, you can hit the plus symbol
+        for any existing tags to increase that tag's popularity on this product.\">(?)</span></h2>\r\n\t\t\t\t<div
+        class=\"app_tags popular_tags\">\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div
+        class=\"app_tag_modal_right\">\r\n\t\t\t\t\t\t\t\t\t<h2>Sign in</h2>\r\n\t\t\t\t\t<p>Sign
+        in to add your own tags to this product.</p>\r\n\t\t\t\t\t<p>\r\n\t\t\t\t\t\t<a
+        class=\"btnv6_blue_hoverfade btn_medium\" href=\"https://store.steampowered.com/login/?redir=app/6910\">\r\n\t\t\t\t\t\t\t<span>Sign
+        in</span>\r\n\t\t\t\t\t\t</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t<div
+        style=\"clear: both;\"></div>\r\n\t\t</div>\r\n\t</div>\r\n\t\t<script type=\"text/javascript\">\r\n\t\t$J(
+        function() {\r\n\t\t\tInitAppTagModal( 6910,\r\n\t\t\t\t[{\"tagid\":4115,\"name\":\"Cyberpunk\",\"count\":716,\"browseable\":true},{\"tagid\":122,\"name\":\"RPG\",\"count\":612,\"browseable\":true},{\"tagid\":1687,\"name\":\"Stealth\",\"count\":523,\"browseable\":true},{\"tagid\":1693,\"name\":\"Classic\",\"count\":483,\"browseable\":true},{\"tagid\":1663,\"name\":\"FPS\",\"count\":468,\"browseable\":true},{\"tagid\":3942,\"name\":\"Sci-fi\",\"count\":418,\"browseable\":true},{\"tagid\":19,\"name\":\"Action\",\"count\":344,\"browseable\":true},{\"tagid\":7782,\"name\":\"Cult
+        Classic\",\"count\":333,\"browseable\":true},{\"tagid\":4182,\"name\":\"Singleplayer\",\"count\":295,\"browseable\":true},{\"tagid\":5030,\"name\":\"Dystopian
+        \",\"count\":264,\"browseable\":true},{\"tagid\":6276,\"name\":\"Inventory
+        Management\",\"count\":237,\"browseable\":true},{\"tagid\":1742,\"name\":\"Story
+        Rich\",\"count\":176,\"browseable\":true},{\"tagid\":1756,\"name\":\"Great
+        Soundtrack\",\"count\":166,\"browseable\":true},{\"tagid\":1669,\"name\":\"Moddable\",\"count\":156,\"browseable\":true},{\"tagid\":3839,\"name\":\"First-Person\",\"count\":146,\"browseable\":true},{\"tagid\":4166,\"name\":\"Atmospheric\",\"count\":118,\"browseable\":true},{\"tagid\":5372,\"name\":\"Conspiracy\",\"count\":98,\"browseable\":true},{\"tagid\":4231,\"name\":\"Action
+        RPG\",\"count\":72,\"browseable\":true},{\"tagid\":1774,\"name\":\"Shooter\",\"count\":72,\"browseable\":true},{\"tagid\":21,\"name\":\"Adventure\",\"count\":63,\"browseable\":true}],\r\n\t\t\t\t[],\r\n\t\t\t\t\"1_5_9__410\",\r\n\t\t\t\t\"1_5_9__411\",\r\n\t\t\t\tnull\t\t\t);\r\n\t\t});\r\n\t</script>\r\n\r\n\t\t</div>\t<!--
+        responsive_page_legacy_content -->\r\n\r\n\t\t<div id=\"footer_spacer\" class=\"\"></div>\r\n<div
+        id=\"footer\"  class=\"\">\r\n<div class=\"footer_content\">\r\n\t<div class=\"rule\"></div>\r\n\r\n\t<div
+        id=\"footer_nav\">\r\n\r\n\t\t\r\n\t\t\r\n\t\t\t<span class=\"pulldown btnv6_blue_hoverfade
+        btn_small\" id=\"footer_steam_pulldown\">\r\n\t\t\t\t<span>ABOUT STEAM</span>\r\n\t\t\t</span>\r\n\t\t<div
+        class=\"popup_block_new\" id=\"footer_steam_dropdown\" style=\"display: none;\">\r\n\t\t\t\t\t\t<div
+        class=\"popup_body popup_menu\">\r\n\t\t\t\t<a class=\"popup_menu_item\" href=\"http://store.steampowered.com/about/?snr=1_44_44__22\">\r\n\t\t\t\t\tWhat
+        is Steam?\t\t\t\t</a>\r\n\t\t\t\t<!--\r\n\t\t\t\t\t<a class=\"popup_menu_item\"
+        href=\"\">\r\n\t\t\t\t\t\tDownload Steam now\t\t\t\t\t</a>\r\n\t\t\t\t\t-->\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"https://support.steampowered.com/kb_article.php?p_faqid=549#gifts\"
+        target=\"_blank\" rel=\"noreferrer\">\r\n\t\t\t\t\tGifting on Steam\t\t\t\t</a>\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"https://steamcommunity.com/?snr=1_44_44__22\">\r\n\t\t\t\t\tThe
+        Steam Community\t\t\t\t</a>\r\n\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\r\n\t\t\t<span
+        class=\"pulldown btnv6_blue_hoverfade btn_small\" id=\"footer_valve_pulldown\">\r\n\t\t\t\t<span>ABOUT
+        VALVE</span>\r\n\t\t\t</span>\r\n\t\t<div class=\"popup_block_new\" id=\"footer_valve_dropdown\"
+        style=\"display: none;\">\r\n\t\t\t<div class=\"popup_body popup_menu\">\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://www.valvesoftware.com/about.html\"
+        target=\"_blank\" rel=\"noreferrer\">\r\n\t\t\t\t\tAbout Valve\t\t\t\t</a>\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://www.valvesoftware.com/business/\"
+        target=\"_blank\" rel=\"noreferrer\">\r\n\t\t\t\t\tBusiness Solutions\t\t\t\t</a>\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://www.steampowered.com/steamworks/\"
+        target=\"_blank\" rel=\"noreferrer\">\r\n\t\t\t\t\tSteamworks\t\t\t\t</a>\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://www.valvesoftware.com/jobs.html\"
+        target=\"_blank\" rel=\"noreferrer\">\r\n\t\t\t\t\tJobs\t\t\t\t</a>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t<span
+        class=\"pulldown btnv6_blue_hoverfade btn_small\" id=\"footer_help_pulldown\">\r\n\t\t\t\t<span>HELP</span>\r\n\t\t\t</span>\r\n\t\t<div
+        class=\"popup_block_new\" id=\"footer_help_dropdown\" style=\"display: none;\">\r\n\t\t\t\t\t\t<div
+        class=\"popup_body popup_menu\">\r\n\t\t\t\t<a class=\"popup_menu_item\" href=\"https://help.steampowered.com/en/?snr=1_44_44__23\">\r\n\t\t\t\t\tSupport\t\t\t\t</a>\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/forums/?snr=1_44_44__23\"
+        target=\"_blank\" rel=\"noreferrer\">\r\n\t\t\t\t\tForums\t\t\t\t</a>\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/stats/?snr=1_44_44__23\"
+        target=\"_blank\" rel=\"noreferrer\">\r\n\t\t\t\t\tStats\t\t\t\t</a>\r\n\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\r\n\t\t\t<span
+        class=\"pulldown btnv6_blue_hoverfade btn_small\" id=\"footer_feeds_pulldown\">\r\n\t\t\t\t<span>NEWS
+        FEEDS</span>\r\n\t\t\t</span>\r\n\t\t<div class=\"popup_block_new\" id=\"footer_feeds_dropdown\"
+        style=\"display: none;\">\r\n\t\t\t<div class=\"popup_body popup_menu\">\r\n\t\t\t\t<a
+        class=\"popup_menu_item\" href=\"http://store.steampowered.com/feeds/news.xml\">\r\n\t\t\t\t\t<img
+        src=\"http://store.edgecast.steamstatic.com/public/images/ico/ico_rss2.gif\"
+        width=\"13\" height=\"13\" border=\"0\" alt=\"\" align=\"top\">&nbsp;&nbsp;Steam
+        News\t\t\t\t</a>\r\n\t\t\t\t<a class=\"popup_menu_item\" href=\"http://store.steampowered.com/feeds/newreleases.xml\">\r\n\t\t\t\t\t<img
+        src=\"http://store.edgecast.steamstatic.com/public/images/ico/ico_rss2.gif\"
+        width=\"13\" height=\"13\" border=\"0\" alt=\"\" align=\"top\">&nbsp;&nbsp;Game
+        Releases\t\t\t\t</a>\r\n\t\t\t\t<a class=\"popup_menu_item\" href=\"http://store.steampowered.com/feeds/daily_deals.xml\">\r\n\t\t\t\t\t<img
+        src=\"http://store.edgecast.steamstatic.com/public/images/ico/ico_rss2.gif\"
+        width=\"13\" height=\"13\" border=\"0\" alt=\"\" align=\"top\">&nbsp;&nbsp;Daily
+        Deals\t\t\t\t</a>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div style=\"clear:
+        left;\"></div>\r\n\r\n\t\t<script type=\"text/javascript\">\r\n\t\t\tRegisterFlyout(
+        'footer_genre_pulldown', 'footer_genre_dropdown', null, null, true );\r\n\t\t\tRegisterFlyout(
+        'footer_steam_pulldown', 'footer_steam_dropdown', null, null, true );\r\n\t\t\tRegisterFlyout(
+        'footer_valve_pulldown', 'footer_valve_dropdown', null, null, true );\r\n\t\t\tRegisterFlyout(
+        'footer_help_pulldown', 'footer_help_dropdown', null, null, true );\r\n\t\t\tRegisterFlyout(
+        'footer_feeds_pulldown', 'footer_feeds_dropdown', null, null, true );\r\n\t\t</script>\r\n\t</div>\r\n\r\n\t<br>\r\n\r\n
+        \   <div class=\"rule\"></div>\r\n    <div id=\"footer_logo\"><a href=\"http://www.valvesoftware.com\"
+        target=\"_blank\" rel=\"noreferrer\"><img src=\"http://store.edgecast.steamstatic.com/public/images/v6/logo_valve_footer.png\"
+        alt=\"Valve Software\" border=\"0\" /></a></div>\r\n    <div id=\"footer_text\">\r\n
+        \       <div>&copy; 2017 Valve Corporation.  All rights reserved.  All trademarks
+        are property of their respective owners in the US and other countries.</div>\r\n
+        \       <div>VAT included in all prices where applicable.&nbsp;&nbsp;\r\n\r\n
+        \           <a href=\"http://store.steampowered.com/privacy_agreement/\" target=\"_blank\"
+        rel=\"noreferrer\">Privacy Policy</a>\r\n            &nbsp; | &nbsp;\r\n            <a
+        href=\"http://store.steampowered.com/legal/\" target=\"_blank\" rel=\"noreferrer\">Legal</a>\r\n
+        \           &nbsp; | &nbsp;\r\n            <a href=\"http://store.steampowered.com/subscriber_agreement/\"
+        target=\"_blank\" rel=\"noreferrer\">Steam Subscriber Agreement</a>\r\n            &nbsp;
+        | &nbsp;\r\n            <a href=\"http://store.steampowered.com/steam_refunds/\"
+        target=\"_blank\" rel=\"noreferrer\">Refunds</a>\r\n\r\n        </div>\r\n\t\t\t\t\t<div
+        class=\"responsive_optin_link\">\r\n\t\t\t\t<div class=\"btn_medium btnv6_grey_black\"
+        onclick=\"Responsive_RequestMobileView()\">\r\n\t\t\t\t\t<span>View mobile
+        website</span>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t    </div>\r\n\r\n\r\n\r\n
+        \   <div style=\"clear: left;\"></div>\r\n\r\n    <div class=\"rule\"></div>\r\n\r\n
+        \   <div class=\"valve_links\">\r\n        <a href=\"http://www.valvesoftware.com/about.html\"
+        target=\"_blank\" rel=\"noreferrer\">About Valve</a>\r\n        &nbsp; | &nbsp;<a
+        href=\"http://www.steampowered.com/steamworks/\" target=\"_blank\" rel=\"noreferrer\">Steamworks</a>\r\n
+        \       &nbsp; | &nbsp;<a href=\"http://www.valvesoftware.com/jobs.html\"
+        target=\"_blank\" rel=\"noreferrer\">Jobs</a>\r\n        &nbsp; | &nbsp;<a
+        href=\"http://steamcommunity.com/greenlight\" target=\"_blank\" rel=\"noreferrer\">Steam
+        Distribution</a>\r\n\t\t&nbsp; | &nbsp;<a href=\"https://store.steampowered.com/account/redeemwalletcode\"
+        target=\"_blank\" rel=\"noreferrer\">Gift Cards</a>\r\n\t\t&nbsp; | &nbsp;<a
+        href=\"http://www.facebook.com/Steam\" target=\"_blank\" rel=\"noreferrer\"><img
+        src=\"http://store.edgecast.steamstatic.com/public/images/ico/ico_facebook.gif\">
+        Steam</a>\r\n\t\t&nbsp; | &nbsp;<a href=\"http://twitter.com/steam_games\"
+        target=\"_blank\" rel=\"noreferrer\"><img src=\"http://store.edgecast.steamstatic.com/public/images/ico/ico_twitter.gif\">
+        @steam_games</a>\r\n    </div>\r\n\r\n</div>\r\n</div>\r\n\t</div>\t<!-- responsive_page_content
+        -->\r\n\r\n</div>\t<!-- responsive_page_frame -->\r\n</body>\r\n</html>"
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: http://store.steampowered.com/app/6910
+  recorded_at: Sun, 22 Jan 2017 04:57:12 GMT
+recorded_with: VCR 2.9.3

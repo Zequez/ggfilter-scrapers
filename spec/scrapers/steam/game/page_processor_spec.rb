@@ -304,4 +304,18 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     cassette_subject(2028016, 'fallout_new_vegas_ue')
     its([:community_hub_id]){ is_expected.to eq 22380 }
   end
+
+  describe 'released_at' do
+    describe 'game with an old release date' do
+      cassette_subject(6910, 'deus_ex_game_of_the_year')
+      its([:released_at]){ is_expected.to be_within(1.minute).of Time.parse('22 Jun, 2000') }
+    end
+
+    describe 'unreleased game' do
+      cassette_subject(508460, 'max_control')
+      its([:released_at]){ is_expected.to be_nil}
+    end
+  end
+
+
 end
