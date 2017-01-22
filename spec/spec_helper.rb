@@ -51,6 +51,12 @@ VCR.configure do |config|
   config.configure_rspec_metadata!
 end
 
+VCR_OPTIONS = {
+  record: :new_episodes,
+  preserve_exact_body_bytes: true,
+  match_requests_on: [:method, :uri, :body]
+}
+
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   config.include SteamListSpecHelpers, type: :steam_list
@@ -115,7 +121,8 @@ RSpec.configure do |config|
 
     if cassette
       path = cassette_name(example.file_path, cassette)
-      VCR.use_cassette(path, record: :new_episodes, preserve_exact_body_bytes: true) do
+
+      VCR.use_cassette(path, VCR_OPTIONS) do
         example.run
       end
     else
@@ -127,7 +134,7 @@ RSpec.configure do |config|
     path = cassette_name(file_path, name)
 
     before :all do
-      VCR.use_cassette(path, record: :new_episodes) do
+      VCR.use_cassette(path, VCR_OPTIONS) do
         self.instance_eval(&block)
       end
     end

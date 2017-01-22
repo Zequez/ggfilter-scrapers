@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Oculus Game",
+  "description": "A game from the Oculus Home store",
+  "type": "object",
+  "properties": {
+    "oculus_id": {
+      "description": "The Oculus ID in the Oculus Store",
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "price_was": {
+      "oneOf": [
+        {"type": "integer", "minimum": 0},
+        {"type": "null"}
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "genres": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "age_rating": {
+      "type": ["string", "null"]
+    },
+    "developer": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "vr_mode": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["SITTING", "STANDING", "ROOM_SCALE"]
+      }
+    },
+    "vr_tracking": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["DEGREE_360", "FRONT_FACING"]
+      }
+    },
+    "vr_controllers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "OCULUS_TOUCH",
+          "OCULUS_REMOTE",
+          "GAMEPAD",
+          "KEYBOARD_MOUSE",
+          "FLIGHT_STICK",
+          "RACING_WHEEL",
+          "HYDRA"
+        ]
+      }
+    },
+    "players": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["SINGLE_USER", "MULTI_USER", "CO_OP"]
+      }
+    },
+    "comfort": {
+      "type": "string",
+      "enum": ["NOT_RATED", "COMFORTABLE_FOR_MOST", "COMFORTABLE_FOR_SOME", "COMFORTABLE_FOR_FEW"]
+    },
+    "internet": {
+      "type": "string",
+      "enum": ["REQUIRED_FOR_DOWNLOAD", "NOT_REQUIRED", "REQUIRED"]
+    },
+    "sysreq_hdd": {
+      "type": "integer"
+    },
+    "sysreq_cpu": {
+      "type": ["string", "null"]
+    },
+    "sysreq_gpu": {
+      "type": ["string", "null"]
+    },
+    "sysreq_ram": {
+      "type": ["integer", "null"]
+    },
+    "website_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "oculus_id",
+    "name",
+    "price"
+  ]
+}

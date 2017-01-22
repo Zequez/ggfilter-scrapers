@@ -1,0 +1,17 @@
+Query Section_react_SectionRelayQL {
+  node(SECTION_ID) { @F0 }
+}
+
+QueryFragment F0 : AppStoreSection {
+  all_items as all_total {
+    count
+  },
+  all_items.first(1000) as all_paged {
+    edges {
+      node { @F1 },
+      cursor
+    },
+    page_info { has_next_page, has_previous_page }
+  },
+  id
+}

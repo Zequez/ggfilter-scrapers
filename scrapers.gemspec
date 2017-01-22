@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "awesome_print", "~> 1.6"
   spec.add_dependency "i18n_data", "~> 0.7"
   spec.add_dependency "sendgrid-ruby", "~> 4.0"
+  spec.add_dependency "recursive-open-struct", "~> 1.0.2"
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
@@ -41,4 +42,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "byebug", "~> 6"
   spec.add_development_dependency "dotenv", "~> 2.1"
   spec.add_development_dependency "timecop", "~> 0.8.0"
+  spec.add_development_dependency "json-schema", "~> 2.7.0"
 end

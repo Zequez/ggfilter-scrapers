@@ -3,7 +3,7 @@ module Scrapers
     @@colors = {
       fatal: :red,
       error: :red,
-      warn: :orange,
+      warn: :red,
       info: :blue
     }
 

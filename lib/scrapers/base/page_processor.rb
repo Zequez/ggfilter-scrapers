@@ -41,6 +41,7 @@ module Scrapers
         if @response.success?
           run_process_page
         elsif @response.headers && @response.headers['Location']
+          Scrapers.logger.warn 'Redirecting...'
           # do nothing
         else
           retry!

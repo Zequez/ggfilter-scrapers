@@ -57,6 +57,8 @@ require 'scrapers/steam/reviews/data_processor'
 require 'scrapers/steam/reviews/page_processor'
 require 'scrapers/steam/reviews/runner'
 
+require 'scrapers/oculus/runner'
+
 require 'scrapers/benchmarks/migration'
 require 'scrapers/benchmarks/gpu'
 require 'scrapers/benchmarks/page_processor'

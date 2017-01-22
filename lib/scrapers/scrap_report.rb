@@ -1,7 +1,7 @@
 module Scrapers
   class ScrapReport
     attr_reader :started_at, :finished_at, :exception, :scraper_name
-    attr_accessor :scraper_report
+    attr_accessor :scraper_report, :output
 
     def initialize(scraper_name)
       @scraper_name = scraper_name
