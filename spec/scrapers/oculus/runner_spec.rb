@@ -25,7 +25,9 @@ describe Scrapers::Oculus::Runner, cassette: true do
     its([:name]){ is_expected.to eq 'SUPERHOT VR' }
     its([:price]){ is_expected.to eq 2499 }
     its([:price_regular]){ is_expected.to eq nil }
-    its([:released_at]){ is_expected.to be_within(24.hour).of(Time.parse('2016-12-05')) }
+    it{ expect(Time.parse(subject[:released_at])).to(
+      be_within(24.hour).of(Time.parse('2016-12-05'))
+    )}
     its([:summary]){ expect(subject[:summary].gsub(/\s/, '')).to eq(
       <<-EOS.gsub(/\s/, '')
         SUPERHOT is the first person shooter where time moves only when you move. No regenerating health bars. No conveniently placed ammo drops. It's just you, outnumbered and outgunned, grabbing the weapons of fallen enemies to shoot, slice, and maneuver through a hurricane of slow-motion bullets.

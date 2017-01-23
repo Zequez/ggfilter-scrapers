@@ -73,7 +73,7 @@ module Scrapers
           category: g.category_name,
           genres: g.genre_names,
           languages: g.supported_in_app_languages.map{|o| o['name']},
-          released_at: Time.at(g.release_date),
+          released_at: Time.at(g.release_date).iso8601,
           age_rating: g.age_rating && g.age_rating.category_name,
           developer: g.developer.name.strip,
           publisher: g.publisher_name.strip,

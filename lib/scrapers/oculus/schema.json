@@ -21,6 +21,10 @@
         {"type": "null"}
       ]
     },
+    "released_at": {
+      "type": "string",
+      "format": "date-time"
+    },
     "summary": {
       "type": "string"
     },
@@ -157,6 +161,7 @@
     "name",
     "price",
     "price_regular",
+    "released_at",
     "summary",
     "version",
     "category",
