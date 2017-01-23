@@ -1,7 +1,7 @@
 require "json-schema"
 
 describe Scrapers::Oculus::Runner, cassette: true do
-  fdescribe 'error handling' do
+  describe 'error handling' do
     it 'should return a report with an error with an invalid token' do
       report = Scrapers::Oculus::Runner.new(access_token: 'ARSARSARS').run
       expect(report.output).to eq nil
@@ -24,7 +24,7 @@ describe Scrapers::Oculus::Runner, cassette: true do
     its([:oculus_id]){ is_expected.to eq  1012593518800648 }
     its([:name]){ is_expected.to eq 'SUPERHOT VR' }
     its([:price]){ is_expected.to eq 2499 }
-    its([:price_was]){ is_expected.to eq nil }
+    its([:price_regular]){ is_expected.to eq nil }
     its([:released_at]){ is_expected.to be_within(24.hour).of(Time.parse('2016-12-05')) }
     its([:summary]){ expect(subject[:summary].gsub(/\s/, '')).to eq(
       <<-EOS.gsub(/\s/, '')
@@ -66,7 +66,7 @@ describe Scrapers::Oculus::Runner, cassette: true do
 
     its([:name]){ is_expected.to eq 'Dragon Front' }
     its([:price]){ is_expected.to eq 0 }
-    its([:price_was]){ is_expected.to eq nil }
+    its([:price_regular]){ is_expected.to eq nil }
     its([:summary]){ expect(subject[:summary].gsub(/\s/, '')).to eq(
       <<-EOS.gsub(/\s/, '')
       Go back in time to rewrite the outcome of the second Great War by achieving total victory over other players in the very first turn-based, collectible miniature-battler in VR!
@@ -113,7 +113,7 @@ describe Scrapers::Oculus::Runner, cassette: true do
 
     its([:name]){ is_expected.to eq 'Space Jones VR' }
     its([:price]){ is_expected.to eq 999 }
-    its([:price_was]){ is_expected.to eq 1599 }
+    its([:price_regular]){ is_expected.to eq 1599 }
   end
 
   describe 'intense comfort && 360 tracking' do

@@ -15,7 +15,7 @@
       "type": "integer",
       "minimum": 0
     },
-    "price_was": {
+    "price_regular": {
       "oneOf": [
         {"type": "integer", "minimum": 0},
         {"type": "null"}
@@ -156,7 +156,7 @@
     "oculus_id",
     "name",
     "price",
-    "price_was",
+    "price_regular",
     "summary",
     "version",
     "category",
