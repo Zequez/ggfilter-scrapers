@@ -1,6 +1,15 @@
 require "json-schema"
 
 describe Scrapers::Oculus::Runner, cassette: true do
+  fdescribe 'error handling' do
+    it 'should return a report with an error with an invalid token' do
+      report = Scrapers::Oculus::Runner.new(access_token: 'ARSARSARS').run
+      expect(report.output).to eq nil
+      expect(report.error?).to eq true
+      expect(report.exception).to be_kind_of Scrapers::Errors::LoadingError
+    end
+  end
+
   def self.single_game(id)
     subject do
       output = Scrapers::Oculus::Runner.new(game_id: id).run.output

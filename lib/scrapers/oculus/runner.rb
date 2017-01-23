@@ -35,19 +35,23 @@ module Scrapers
       def run
         @report.start
 
-
-        if scrap_all?
-          data = request(all_games_query)
-          output = data[@config[:section_id].to_s]['all_paged']['edges'].map do |item|
-            extract_game item['node']
+        begin
+          if scrap_all?
+            data = request(all_games_query)
+            output = data[@config[:section_id].to_s]['all_paged']['edges'].map do |item|
+              extract_game item['node']
+            end
+            @report.scraper_report = "#{output.size} games found in the Oculus Store"
+          else
+            data = request(single_game_query)
+            output = extract_game data[@config[:game_id].to_s]
           end
-        else
-          data = request(single_game_query)
-          output = extract_game data[@config[:game_id].to_s]
+          @report.output = output
+        rescue Scrapers::Errors::LoadingError => e
+          @report.error!(e)
         end
 
         @report.finish
-        @report.output = output
         @report
       end
 
@@ -101,8 +105,14 @@ module Scrapers
           headers: {'Content-Type'=> 'application/x-www-form-urlencoded'},
           body: URI.encode_www_form(payload(query))
         )
+
         result, _ = response.body.split("\n")
-        JSON.parse(result)['q1']['response']
+        result = JSON.parse(result)
+        if result['error']
+          raise Scrapers::Errors::LoadingError.new(result['message'], response)
+        else
+          result['q1']['response']
+        end
       end
 
       def payload(query)

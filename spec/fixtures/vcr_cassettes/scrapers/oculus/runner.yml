@@ -7938,4 +7938,103 @@ http_interactions:
     adapter_metadata:
       effective_url: https://graph.oculus.com/graphqlbatch?forced_locale=en_US
   recorded_at: Sun, 22 Jan 2017 20:57:52 GMT
+- request:
+    method: post
+    uri: https://graph.oculus.com/graphqlbatch?forced_locale=en_US
+    body:
+      encoding: US-ASCII
+      base64_string: |
+        YWNjZXNzX3Rva2VuPUFSU0FSU0FSUyZiYXRjaF9uYW1lPVF1ZXJpZXMmbWV0
+        aG9kPUdFVCZxdWVyaWVzPSU3QiUyMnExJTIyJTNBJTdCJTIycHJpb3JpdHkl
+        MjIlM0EwJTJDJTIycSUyMiUzQSUyMlF1ZXJ5K1NlY3Rpb25fcmVhY3RfU2Vj
+        dGlvblJlbGF5UUwrJTdCJTVDbisrbm9kZSUyODE3MzYyMTAzNTMyODI0NTAl
+        MjkrJTdCKyU0MEYwKyU3RCU1Q24lN0QlNUNuJTVDblF1ZXJ5RnJhZ21lbnQr
+        RjArJTNBK0FwcFN0b3JlU2VjdGlvbislN0IlNUNuKythbGxfaXRlbXMrYXMr
+        YWxsX3RvdGFsKyU3QiU1Q24rKysrY291bnQlNUNuKyslN0QlMkMlNUNuKyth
+        bGxfaXRlbXMuZmlyc3QlMjgxMDAwJTI5K2FzK2FsbF9wYWdlZCslN0IlNUNu
+        KysrK2VkZ2VzKyU3QiU1Q24rKysrKytub2RlKyU3QislNDBGMSslN0QlMkMl
+        NUNuKysrKysrY3Vyc29yJTVDbisrKyslN0QlMkMlNUNuKysrK3BhZ2VfaW5m
+        byslN0IraGFzX25leHRfcGFnZSUyQytoYXNfcHJldmlvdXNfcGFnZSslN0Ql
+        NUNuKyslN0QlMkMlNUNuKytpZCU1Q24lN0QlNUNuUXVlcnlGcmFnbWVudCtG
+        MSslM0ErQXBwbGljYXRpb24rJTdCJTVDbisrZGlzcGxheV9uYW1lJTJDJTVD
+        bisrZGlzcGxheV9zaG9ydF9kZXNjcmlwdGlvbiUyQyU1Q24rK2NvbWZvcnRf
+        cmF0aW5nJTJDJTVDbisrY3VycmVudF9vZmZlcislN0IlNUNuKysrK3ByaWNl
+        KyU3QitvZmZzZXRfYW1vdW50JTJDK2Ftb3VudCUyQytjdXJyZW5jeSslN0Ql
+        MkMlNUNuKysrK3N0cmlrZXRocm91Z2hfcHJpY2UrJTdCK29mZnNldF9hbW91
+        bnQlMkMrYW1vdW50JTJDK2N1cnJlbmN5KyU3RCU1Q24rKyU3RCUyQyU1Q24r
+        K2FnZV9yYXRpbmcrJTdCK2NhdGVnb3J5X25hbWUrJTdEJTJDJTVDbisrY2F0
+        ZWdvcnlfbmFtZSUyQyU1Q24rK2RldmVsb3BlcislN0IrbmFtZSslN0QlMkMl
+        NUNuKytkZXZlbG9wZXJfcHJpdmFjeV9wb2xpY3lfdXJsJTJDJTVDbisrZGV2
+        ZWxvcGVyX3Rlcm1zX29mX3NlcnZpY2VfdXJsJTJDJTVDbisrZ2VucmVfbmFt
+        ZXMlMkMlNUNuKytsYXRlc3Rfc3VwcG9ydGVkX2JpbmFyeSslN0IlNUNuKysr
+        K3JlcXVpcmVkX3NwYWNlJTJDJTVDbisrKyt2ZXJzaW9uJTVDbisrJTdEJTJD
+        JTVDbisrcHVibGlzaGVyX25hbWUlMkMlNUNuKytyZWNvbW1lbmRlZF9ncmFw
+        aGljcyUyQyU1Q24rK3JlY29tbWVuZGVkX21lbW9yeV9nYiUyQyU1Q24rK3Jl
+        Y29tbWVuZGVkX3Byb2Nlc3NvciUyQyU1Q24rK3JlbGVhc2VfZGF0ZSUyQyU1
+        Q24rK3N1cHBvcnRlZF9pbl9hcHBfbGFuZ3VhZ2VzKyU3Qm5hbWUlN0QlMkMl
+        NUNuKytzdXBwb3J0ZWRfaW5wdXRfZGV2aWNlcyUyQyU1Q24rK3N1cHBvcnRl
+        ZF9wbGF5ZXJfbW9kZXMlMkMlNUNuKytzdXBwb3J0ZWRfdHJhY2tpbmdfbW9k
+        ZXMlMkMlNUNuKyt1c2VyX2ludGVyYWN0aW9uX21vZGVzJTJDJTVDbisrd2Vi
+        c2l0ZV91cmwlMkMlNUNuKytpZCUyQyU1Q24rK3F1YWxpdHlfcmF0aW5nX2hp
+        c3RvZ3JhbV9hZ2dyZWdhdGUrJTdCK3N0YXJfcmF0aW5nJTJDK2NvdW50KyU3
+        RCUyQyU1Q24rK2ludGVybmV0X2Nvbm5lY3Rpb24lMkMlNUNuKytjb3Zlcl9s
+        YW5kc2NhcGVfaW1hZ2Uuc2l6ZSUyODcyMHg0MDUlMjkuZW5jb2RlJTI4SlBF
+        RyUyOSthcytjb3Zlcl9sYW5kc2NhcGVfaW1hZ2UrJTdCK3VyaSslN0QlMkMl
+        NUNuKytzY3JlZW5zaG90cy5zaXplJTI4MTQ0MHg4MTAlMjkuZW5jb2RlJTI4
+        SlBFRyUyOSslN0IrdXJpKyU3RCUyQyU1Q24rK3ZpZGVvX3RyYWlsZXIrJTdC
+        K3VyaSUyQyt0aHVtYm5haWwrJTdCK3VyaSslN0QlN0QlNUNuJTdEJTVDbiUy
+        MiU3RCU3RCZyZXNwb25zZV9mb3JtYXQ9anNvbiZzY2hlZHVsZXI9cGhhc2Vk
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Access-Control-Expose-Headers:
+      - X-FB-Debug, X-Loader-Length
+      Access-Control-Allow-Credentials:
+      - 'true'
+      x-fb-rev:
+      - '2789434'
+      x-fb-trace-id:
+      - HgAR+fY2gO2
+      WWW-Authenticate:
+      - OAuth "Facebook Platform" "invalid_token" "Invalid OAuth access token."
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      access-control-allow-method:
+      - OPTIONS
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Vary:
+      - Origin
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - https://graph.oculus.com
+      X-FB-Debug:
+      - GBuWr8qdP277aD46ci7a1ouZ64aMtvfSncAYQqEnpD39RYp7SgLMGhF1Ap9RRA1zXwv2vJ0O/J3ViS30Nah9RA==
+      Date:
+      - Mon, 23 Jan 2017 02:24:27 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '113'
+    body:
+      encoding: UTF-8
+      base64_string: |
+        eyJlcnJvciI6eyJtZXNzYWdlIjoiSW52YWxpZCBPQXV0aCBhY2Nlc3MgdG9r
+        ZW4uIiwidHlwZSI6Ik9BdXRoRXhjZXB0aW9uIiwiY29kZSI6MTkwLCJmYnRy
+        YWNlX2lkIjoiSGdBUitmWTJnTzIifX0=
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://graph.oculus.com/graphqlbatch?forced_locale=en_US
+  recorded_at: Mon, 23 Jan 2017 02:24:27 GMT
 recorded_with: VCR 2.9.3
