@@ -83,7 +83,16 @@ module Scrapers
           sysreq_cpu: g.recommended_processor,
           sysreq_gpu: g.recommended_graphics,
           sysreq_ram: g.recommended_memory_gb,
-          website_url: g.website_url
+          website_url: g.website_url,
+          rating_1: g.quality_rating_histogram_aggregate[0].count,
+          rating_2: g.quality_rating_histogram_aggregate[1].count,
+          rating_3: g.quality_rating_histogram_aggregate[2].count,
+          rating_4: g.quality_rating_histogram_aggregate[3].count,
+          rating_5: g.quality_rating_histogram_aggregate[4].count,
+          thumbnail: g.cover_landscape_image,
+          screenshots: g.screenshots.map{ |s| s['uri'] },
+          trailer_video: g.video_trailer && g.video_trailer.uri,
+          trailer_thumbnail: g.video_trailer && g.video_trailer.thumbnail
         }
       end
 

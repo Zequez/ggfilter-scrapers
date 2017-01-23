@@ -111,11 +111,79 @@
     },
     "website_url": {
       "type": "string"
+    },
+    "rating_1": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rating_1": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rating_2": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rating_3": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rating_4": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rating_5": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "thumbnail": {
+      "type": "uri"
+    },
+    "screenshots": {
+      "type": "array",
+      "items": {
+        "type": "uri"
+      }
+    },
+    "trailer_video": {
+      "type": ["uri", "null"]
+    },
+    "trailer_thumbnail": {
+      "type": ["uri", "null"]
     }
   },
   "required": [
     "oculus_id",
     "name",
-    "price"
+    "price",
+    "price_was",
+    "summary",
+    "version",
+    "category",
+    "genres",
+    "languages",
+    "age_rating",
+    "developer",
+    "publisher",
+    "vr_mode",
+    "vr_tracking",
+    "vr_controllers",
+    "players",
+    "comfort",
+    "internet",
+    "sysreq_hdd",
+    "sysreq_cpu",
+    "sysreq_gpu",
+    "sysreq_ram",
+    "website_url",
+    "rating_1",
+    "rating_2",
+    "rating_3",
+    "rating_4",
+    "rating_5",
+    "thumbnail",
+    "screenshots",
+    "trailer_video",
+    "trailer_thumbnail"
   ]
 }
