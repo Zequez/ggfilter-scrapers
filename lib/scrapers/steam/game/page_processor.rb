@@ -89,7 +89,7 @@ module Scrapers::Steam::Game
         38 => :online_co_op,
         39 => :local_co_op,
         24 => :shared_screen,
-        27 => :cross_platform_multi  
+        27 => :cross_platform_multi
       )
 
       game[:controller_support] = detect_features(
@@ -198,7 +198,7 @@ module Scrapers::Steam::Game
 
     def features
       @features ||= css('.game_area_details_specs .icon a')
-        .map{ |a| a['href'].scan(/category2=(\d+)/).flatten.first }
+        .map{ |a| a['href'].scan(/category[0-9]=(\d+)/).flatten.first }
         .compact
         .map{ |cat| Integer(cat) }
     end
