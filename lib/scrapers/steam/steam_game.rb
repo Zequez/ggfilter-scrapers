@@ -45,8 +45,9 @@ module Scrapers::Steam
     }
 
     flag_column :vr_platforms, {
-      vive:   0b001,
-      rift:   0b010
+      vive:   0b1,
+      rift:   0b10,
+      osvr:   0b100
     }
 
     flag_column :vr_mode, {

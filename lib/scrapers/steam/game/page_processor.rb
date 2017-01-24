@@ -113,7 +113,8 @@ module Scrapers::Steam::Game
 
       game[:vr_platforms] = detect_vr_features(
         101 => :vive,
-        102 => :rift
+        102 => :rift,
+        103 => :osvr
       )
 
       game[:system_requirements] = read_system_requirements
