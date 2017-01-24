@@ -18,6 +18,7 @@ module Scrapers::Steam::Game
     end
 
     def run!
+      @report.output = []
       scrap do |game_data, game|
         data_process game_data, game
       end
@@ -34,6 +35,7 @@ module Scrapers::Steam::Game
       game = processor.process
       game.game_scraped_at = Time.now
       game.save!
+      @report.output.push(game)
       log_game(game)
     end
 

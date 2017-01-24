@@ -26,6 +26,7 @@ module Scrapers
         def run!
           Scrapers.logger.info "For " + (sale? ? 'games on sale' : 'all games')
 
+          @report.output = []
           @new_games = 0
           @found_games = 0
           @on_sale_ids = []
@@ -61,6 +62,7 @@ module Scrapers
           @new_games += 1 if was_new
           game.list_scraped_at = Time.now
           game.save!
+          @report.output.push(game)
           log_game(game, was_new)
           @on_sale_ids.push(game.id) if game.sale_price
         end

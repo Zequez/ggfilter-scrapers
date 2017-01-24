@@ -15,6 +15,7 @@ module Scrapers::Steam
       end
 
       def run!
+        @report.output = []
         scrap do |data, resource|
           data_process(data, resource)
         end
@@ -31,6 +32,7 @@ module Scrapers::Steam
         game = processor.process
         game.reviews_scraped_at = Time.now
         game.save!
+        @report.output.push game
         log_game(game)
       end
 
