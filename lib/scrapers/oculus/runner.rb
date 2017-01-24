@@ -33,7 +33,9 @@ module Scrapers
       end
 
       def run
+        Scrapers.logger.info 'Running the Oculus scraper'
         @report.start
+
 
         begin
           if scrap_all?
@@ -52,6 +54,7 @@ module Scrapers
         end
 
         @report.finish
+        Scrapers.logger.info "Oculus scraper finished, time: #{@report.elapsed_time_human}"
         @report
       end
 

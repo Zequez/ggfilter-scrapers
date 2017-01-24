@@ -82,7 +82,8 @@
           "KEYBOARD_MOUSE",
           "FLIGHT_STICK",
           "RACING_WHEEL",
-          "HYDRA"
+          "HYDRA",
+          "OTHER"
         ]
       }
     },
