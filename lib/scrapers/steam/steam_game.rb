@@ -15,10 +15,15 @@ module Scrapers::Steam
     include SimpleFlaggableColumn
 
     flag_column :players, {
-      single_player:  0b0001,
-      multi_player:   0b0010,
-      co_op:          0b0100,
-      local_co_op:    0b1000
+      single_player:        0b1,
+      multi_player:         0b10,
+      co_op:                0b100,
+      local_co_op:          0b1000,
+      local_multi_player:   0b10000,
+      online_multi_player:  0b100000,
+      online_co_op:         0b1000000,
+      shared_screen:        0b10000000,
+      cross_platform_multi: 0b100000000
     }
 
     def controller_support_enum

@@ -81,11 +81,17 @@ module Scrapers::Steam::Game
       end
 
       game[:players] = detect_features(
-        1 => :multi_player,
         2 => :single_player,
+        1 => :multi_player,
+        36 => :online_multi_player,
+        37 => :local_multi_player,
         9 => :co_op,
-        24 => :local_co_op
+        38 => :online_co_op,
+        39 => :local_co_op,
+        24 => :shared_screen,
+        27 => :cross_platform_multi  
       )
+
       game[:controller_support] = detect_features(
         28 => :full,
         18 => :partial
