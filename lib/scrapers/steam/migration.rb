@@ -51,6 +51,7 @@ module Scrapers::Steam
         t.integer :vr_platforms, default: 0, null: false
         t.integer :vr_mode, default: 0, null: false
         t.integer :vr_controllers, default: 0, null: false
+        t.boolean :vr_only, default: false, null: false
 
         # Scraping dates
         t.datetime :game_scraped_at

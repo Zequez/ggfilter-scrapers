@@ -43,6 +43,7 @@ module Scrapers::Steam
           vr_mode: [:seated],
           vr_platforms: [:rift],
           vr_controllers: [:tracked, :gamepad],
+          vr_only: true,
           developer: 'Potato',
           publisher: 'Salad',
           released_at: Time.parse('20 Dec, 2015')
@@ -92,6 +93,7 @@ module Scrapers::Steam
         expect(game.vr_platforms).to match_array [:rift]
         expect(game.vr_mode).to match_array [:seated]
         expect(game.vr_controllers).to match_array [:tracked, :gamepad]
+        expect(game.vr_only).to eq true
         expect(game.developer).to eq 'Potato'
         expect(game.publisher).to eq 'Salad'
         expect(game.released_at).to be_within(1.minute).of(Time.parse('20 Dec, 2015'))

@@ -149,6 +149,7 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
       :steam_trading_cards,
       :steam_cloud
     ])}
+    its([:vr_only]){ is_expected.to eq false }
 
     its([:developer]) { is_expected.to eq 'Irrational Games' }
     its([:publisher]) { is_expected.to eq '2K Games' }
@@ -317,5 +318,8 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     end
   end
 
-
+  describe 'vr_only game' do
+    cassette_subject(342180, 'arizona_sunshine')
+    its([:vr_only]){ is_expected.to eq true }
+  end
 end

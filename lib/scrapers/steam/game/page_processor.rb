@@ -123,6 +123,8 @@ module Scrapers::Steam::Game
         103 => :osvr
       )
 
+      game[:vr_only] = !!css('.notice_box_content').text.match(/Requires a virtual reality/i)
+
       game[:system_requirements] = read_system_requirements
 
       game[:genre] = game_link_text('/genre/')
