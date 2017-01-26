@@ -1,10 +1,10 @@
-describe Scrapers::TrueLoader do
+describe Scrapers::Loader do
   def stub_page(url, status, body)
     Typhoeus.stub(url).and_return(Typhoeus::Response.new(code: status, body: body))
   end
 
   it 'should allow you to queue pages' do
-    loader = Scrapers::TrueLoader.new
+    loader = Scrapers::Loader.new
     queue1_cb = Proc.new{}
     queue2_cb = Proc.new{}
     loader.queue('http://www.example.com/trueloader', &queue1_cb)

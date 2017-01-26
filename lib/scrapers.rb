@@ -37,7 +37,7 @@ require 'scrapers/version'
 require 'scrapers/custom_logger'
 require 'scrapers/errors'
 require 'scrapers/scrap_report'
-require 'scrapers/true_loader'
+require 'scrapers/loader'
 
 require 'scrapers/basic_runner'
 require 'scrapers/base/page_processor'

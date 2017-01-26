@@ -19,7 +19,7 @@ module Scrapers
     end
 
     def loader
-      @loader ||= TrueLoader.new(loader_options)
+      @loader ||= Loader.new(loader_options)
     end
 
     def run

@@ -1,5 +1,5 @@
 module Scrapers
-  class TrueLoader
+  class Loader
     def initialize(options = {})
       @options = {
         headers: {},
