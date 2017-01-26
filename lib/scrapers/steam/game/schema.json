@@ -1,0 +1,195 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Steam Game",
+  "description": "A game from the Steam store",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "steam_id": {
+      "type": "integer"
+    },
+    "community_hub_id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dlc_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "achievements_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "metacritic": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "esrb_rating": {
+      "type": ["string", "null"]
+    },
+    "early_access": {
+      "type": "boolean"
+    },
+    "audio_languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "subtitles_languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "videos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summary": {
+      "type": "string"
+    },
+    "positive_reviews_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "negative_reviews_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "players": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "single_player",
+          "multi_player",
+          "co_op",
+          "local_co_op",
+          "local_multi_player",
+          "online_multi_player",
+          "online_co_op",
+          "shared_screen",
+          "cross_platform_multi"
+        ]
+      }
+    },
+    "controller_support": {
+      "type": "string",
+      "enum": ["no", "partial", "full"]
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "steam_achievements",
+          "steam_trading_cards",
+          "steam_workshop",
+          "steam_cloud",
+          "valve_anti_cheat"
+        ]
+      }
+    },
+    "vr_mode": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "seated",
+          "standing",
+          "room_scale"
+        ]
+      }
+    },
+    "vr_controllers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "tracked",
+          "gamepad",
+          "keyboard_mouse"
+        ]
+      }
+    },
+    "vr_platforms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "vive",
+          "rift",
+          "osvr"
+        ]
+      }
+    },
+    "vr_only": {
+      "type": "boolean"
+    },
+    "system_requirements": {
+      "type": ["object", "null"],
+      "required": ["minimum", "recommended"]
+    },
+    "genre": {
+      "type": ["string", "null"]
+    },
+    "developer": {
+      "type": ["string", "null"]
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "released_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "steam_id",
+    "community_hub_id",
+    "name",
+    "tags",
+    "dlc_count",
+    "achievements_count",
+    "metacritic",
+    "esrb_rating",
+    "early_access",
+    "audio_languages",
+    "subtitles_languages",
+    "videos",
+    "images",
+    "summary",
+    "positive_reviews_count",
+    "negative_reviews_count",
+    "players",
+    "controller_support",
+    "features",
+    "vr_mode",
+    "vr_controllers",
+    "vr_platforms",
+    "vr_only",
+    "system_requirements",
+    "genre",
+    "developer",
+    "publisher",
+    "released_at"
+  ]
+}

@@ -1,4 +1,8 @@
+require 'json'
+
 module Scrapers::Steam::Game
+  SCHEMA = JSON.parse(File.read("#{__dir__}/schema.json"))
+
   class Runner < Scrapers::BasicRunner
     def loader_options
       {headers: {

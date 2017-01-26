@@ -4,6 +4,7 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
       response = Typhoeus.get steam_list_url(page_or_query)
       @result = Scrapers::Steam::List::PageProcessor.new(response.body).process_page
       @result.map do |h|
+        JSON::Validator.validate! Scrapers::Steam::List::SCHEMA, h
         if attribute_name.kind_of? Array
           attribute_name.map{|n| h[n]}
         else
@@ -17,6 +18,7 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
     subject do
       response = Typhoeus.get steam_list_url(query)
       @result = Scrapers::Steam::List::PageProcessor.new(response.body).process_page
+      JSON::Validator.validate! Scrapers::Steam::List::SCHEMA, @result[0]
       @result[0]
     end
   end
@@ -128,7 +130,7 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
   describe ':steam_published_at' do
     context 'regular release date' do
       specific_subject('1954 Alcatraz')
-      its([:steam_published_at]) { is_expected.to be_within(1.hour).of Time.parse('Mar 11, 2014') }
+      it{ expect(Time.parse(subject[:steam_published_at])).to be_within(1.hour).of Time.parse('Mar 11, 2014') }
     end
 
     context 'empty release date (and price)' do

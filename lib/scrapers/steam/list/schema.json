@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Steam Game",
+  "description": "A game from the Steam store",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "steam_id": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": ["number", "null"]
+    },
+    "sale_price": {
+      "type": ["number", "null"]
+    },
+    "steam_published_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "text_release_date": {
+      "type": ["string", "null"]
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["win", "mac", "linux"]
+      }
+    },
+    "reviews_count": {
+      "type": "integer",
+      "minimum": 0
+
+    },
+    "reviews_ratio": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "thumbnail": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "steam_id",
+    "name",
+    "price",
+    "sale_price",
+    "steam_published_at",
+    "text_release_date",
+    "platforms",
+    "reviews_count",
+    "reviews_ratio",
+    "thumbnail"
+  ]
+}

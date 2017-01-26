@@ -8,9 +8,11 @@ module Scrapers::Steam
         expect(games.size).to eq 249
         game = games.find{ |g| g[:name] == 'XCOM: Enemy Unknown' }
 
+        games.each{ |g| JSON::Validator.validate! List::SCHEMA, g }
+
         expect(game).to_not eq nil
         expect(game[:platforms]).to match_array [:mac, :win, :linux]
-        expect(game[:steam_published_at]).to be_within(1.day).of Time.parse('8 Oct, 2012')
+        expect(Time.parse(game[:steam_published_at])).to be_within(1.day).of Time.parse('8 Oct, 2012')
         expect(game[:reviews_count]).to be_within(100).of 30195
         expect(game[:reviews_ratio]).to eq 95
         expect(game[:thumbnail]).to eq 'http://cdn.akamai.steamstatic.com/steam/apps/200510/capsule_sm_120.jpg?t=1447366133'

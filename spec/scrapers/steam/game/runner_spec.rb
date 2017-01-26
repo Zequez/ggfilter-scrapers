@@ -8,6 +8,8 @@ module Scrapers::Steam
         report = runner.run
         games = report.output
 
+        games.each{ |g| JSON::Validator.validate! Game::SCHEMA, g }
+
         expect(games.size).to eq 2
         expect(games[0][:metacritic]).to eq 94
         expect(games[1][:metacritic]).to eq 90

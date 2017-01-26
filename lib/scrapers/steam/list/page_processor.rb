@@ -59,7 +59,7 @@ module Scrapers::Steam::List
       date = read_text_release_date(a)
       if date =~ /[a-z]{3} [0-9]{1,2}, [0-9]{4}/i
         begin
-          Time.parse(date)
+          Time.parse(date).iso8601
         rescue ArgumentError
           nil
         end

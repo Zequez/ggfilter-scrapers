@@ -1,5 +1,9 @@
+require 'json'
+
 module Scrapers::Steam
   module Reviews
+    SCHEMA = JSON.parse(File.read("#{__dir__}/schema.json"))
+
     class Runner < Scrapers::BasicRunner
       MAX_PAGES = 100
 
@@ -9,7 +13,8 @@ module Scrapers::Steam
       end
 
       def run!
-        @output = {}
+        @output_index = {}
+        @output = []
         @steam_ids.each do |steam_id|
           queue_new_page(steam_id, 1)
         end
@@ -17,18 +22,31 @@ module Scrapers::Steam
         @report.output = @output
       end
 
+      def get_game(steam_id)
+        @output_index[steam_id] ||= begin
+          game = {
+            steam_id: steam_id,
+            positive: [],
+            negative: []
+          }
+          @output.push game
+          game
+        end
+      end
+
       def queue_new_page(steam_id, page)
         url = generate_url(steam_id, page)
         queue(url, front: page > 1) do |response|
-          @output[steam_id] ||= { positive: [], negative: [] }
+          game = get_game(steam_id)
+
           page_data = PageProcessor.new(response.body).process_page
           if page_data && page < MAX_PAGES
             log_page(steam_id, page)
-            @output[steam_id][:positive].concat page_data[:positive]
-            @output[steam_id][:negative].concat page_data[:negative]
+            game[:positive].concat page_data[:positive]
+            game[:negative].concat page_data[:negative]
             queue_new_page(steam_id, page + 1)
           else
-            log_game(steam_id, @output[steam_id])
+            log_game(game)
           end
         end
       end
@@ -43,11 +61,11 @@ module Scrapers::Steam
         Scrapers.logger.ln "#{steam_id} Reviews page #{page}"
       end
 
-      def log_game(steam_id, output)
-        positive = output[:positive].size
-        negative = output[:negative].size
+      def log_game(game)
+        positive = game[:positive].size
+        negative = game[:negative].size
 
-        Scrapers.logger.ln "#{steam_id} Reviews: [#{positive}/#{negative}]"
+        Scrapers.logger.ln "#{game[:steam_id]} Reviews: [#{positive}/#{negative}]"
       end
 
       def generate_url(*args)

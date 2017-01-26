@@ -22,9 +22,10 @@ module Scrapers::Steam::Game
       game[:summary] = css!('.game_description_snippet').text.strip
 
       app_id = Integer(css!('link[rel="canonical"]').first['href'].scan(/app\/(\d+)/).flatten.first)
+      game[:steam_id] = app_id
 
       community_hub_id = Integer(css!('.apphub_OtherSiteInfo a').first['href'].scan(/app\/(\d+)/).flatten.first)
-      game[:community_hub_id] = community_hub_id if community_hub_id != app_id
+      game[:community_hub_id] = community_hub_id # Sometimes is different from steam_id
 
       if not css('.noReviewsYetTitle').empty?
         game[:positive_reviews_count] = 0
@@ -97,7 +98,7 @@ module Scrapers::Steam::Game
       date = css('.release_date .date').text()
       if date =~ /[0-9]{1,2} [a-z]{3}, [0-9]{4}/i
         begin
-          Time.parse(date)
+          Time.parse(date).iso8601
         rescue ArgumentError
           nil
         end

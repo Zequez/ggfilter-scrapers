@@ -14,6 +14,7 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
         }
       })
       @result = Scrapers::Steam::Game::PageProcessor.new(response.body).process_page
+      JSON::Validator.validate! Scrapers::Steam::Game::SCHEMA, @result if @result
     end
     subject{ @result }
   end
@@ -44,7 +45,7 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     its([:early_access]){             is_expected.to eq false }
     its([:positive_reviews_count]){   is_expected.to eq 53994 }
     its([:negative_reviews_count]){   is_expected.to eq 2647 }
-    its([:community_hub_id]) { is_expected.to eq nil }
+    its([:community_hub_id]) {        is_expected.to eq 8870 }
 
     its([:tags]){ are_expected.to eq([
       "FPS",
@@ -302,7 +303,10 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
   describe 'released_at' do
     describe 'game with an old release date' do
       cassette_subject(6910, 'deus_ex_game_of_the_year')
-      its([:released_at]){ is_expected.to be_within(1.minute).of Time.parse('22 Jun, 2000') }
+      it{
+        expect(Time.parse(subject[:released_at]))
+        .to be_within(1.minute).of Time.parse('22 Jun, 2000')
+      }
     end
 
     describe 'unreleased game' do

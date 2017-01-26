@@ -7,6 +7,7 @@ require 'pathname'
 require 'dotenv'
 require 'timecop'
 require 'byebug'
+require "json-schema"
 
 Dotenv.load
 

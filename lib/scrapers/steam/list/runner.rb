@@ -1,20 +1,17 @@
-# Responsabilities:
-#  - Load the required games from the database
-#  - Perform the scraping of the games with the URLs and the processors
-#  - Save the games
-#  - Report any issues like invalid data
-
+require 'json'
 require_relative 'page_processor'
 require_relative 'initial_page_processor'
 
 module Scrapers
   module Steam
     module List
+      SCHEMA = JSON.parse(File.read("#{__dir__}/schema.json"))
+
       URLS = {
         all: 'http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1',
         on_sale: 'http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1&specials=1'
       }
-      
+
       class Runner < Scrapers::BasicRunner
         def initialize(config = {})
           @config = {
