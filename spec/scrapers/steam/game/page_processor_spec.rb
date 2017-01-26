@@ -8,33 +8,26 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
   def self.cassette_subject(app_id, name = 'game')
     before_all_cassette(name) do
       url = steam_game_url(app_id)
-      vcr_processor_request(processor_class, url, { headers: {
-        'Cookie' => 'birthtime=724320001; fakeCC=US'
-      }}) do |output|
-        @result = output
-      end
+      response = Typhoeus.get(url, {
+        headers: {
+          'Cookie' => 'birthtime=724320001; fakeCC=US'
+        }
+      })
+      @result = Scrapers::Steam::Game::PageProcessor.new(response.body).process_page
     end
     subject{ @result }
   end
 
   describe 'error handling' do
-    it 'should raise an InvalidPageError if the page is invalid' do
-      expect { page_processor_for_html(processor_class, '<html></html>').process_page }
-      .to raise_error(Scrapers::Errors::InvalidPageError)
+    it 'should raise an error if the page is invalid' do
+      expect { Scrapers::Steam::Game::PageProcessor.new('<html></html>').process_page }
+      .to raise_error(/Could not find/i)
     end
 
     describe 'game unavailable in the region' do
       cassette_subject(386180, 'unavailable_game_in_the_region')
 
       it 'should be quietly ignored, because steams return 200-success header' do
-        expect(@result).to eq nil
-      end
-    end
-
-    describe 'redirects' do
-      cassette_subject(474780, 'game_redirect_to_front_page')
-
-      it 'should quietly ignore redirects' do
         expect(@result).to eq nil
       end
     end
@@ -143,7 +136,7 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     })}
 
     its([:players]){ is_expected.to match_array [:single_player] }
-    its([:controller_support]){ is_expected.to match_array [:full] }
+    its([:controller_support]){ is_expected.to eq :full }
     its([:features]){ are_expected.to match_array([
       :steam_achievements,
       :steam_trading_cards,
@@ -224,13 +217,13 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
 
     its([:players]){ are_expected.to match_array([:multi_player, :co_op])}
 
-    its([:controller_support]){ is_expected.to match_array [] }
+    its([:controller_support]){ is_expected.to eq :no }
   end
 
   describe 'game with partial controller support' do
     cassette_subject(413150, 'stardew_valley')
 
-    its([:controller_support]){ is_expected.to match_array [:partial] }
+    its([:controller_support]){ is_expected.to eq :partial }
   end
 
   describe 'game with early access' do

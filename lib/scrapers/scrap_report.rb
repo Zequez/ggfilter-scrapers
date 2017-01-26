@@ -1,21 +1,25 @@
 module Scrapers
   class ScrapReport
-    attr_reader :started_at, :finished_at, :exception, :scraper_name
-    attr_accessor :scraper_report, :output
+    attr_reader :started_at, :finished_at, :errors, :warnings
+    attr_accessor :scraper_report, :output, :aborted
 
-    def initialize(scraper_name)
-      @scraper_name = scraper_name
-      @error = false
-      @exception = nil
+    def initialize
+      @errors = []
+      @warnings = []
+      @aborted = false
+      @output = nil
     end
 
-    def error!(exception)
-      @error = true
-      @exception = exception
+    def aborted?
+      aborted
     end
 
-    def error?
-      @error
+    def errors?
+      errors.size > 0
+    end
+
+    def warnings?
+      warnings.size > 0
     end
 
     def start
@@ -35,20 +39,6 @@ module Scrapers
       elapsed_minutes = (et / 60).floor
       elapsed_seconds = (et % 60).floor
       "#{elapsed_minutes}m #{elapsed_seconds}s"
-    end
-
-    def error_reporter(options = {})
-      if error?
-        Scrapers::ErrorReporter.new @exception, @scraper_name, options
-      else
-        nil
-      end
-    end
-
-    def report_errors_if_any(options = {})
-      if error?
-        error_reporter(options).commit
-      end
     end
   end
 end

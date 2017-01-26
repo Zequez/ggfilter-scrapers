@@ -1,15 +1,13 @@
 describe Scrapers::Benchmarks::PageProcessor, cassette: true do
-  def processor_class; Scrapers::Benchmarks::PageProcessor end
-
-  def benchmarks_url(type)
-    "http://www.videocardbenchmark.net/#{type}.html"
-  end
-
-  def self.gpus_listing_cassette_subject(type)
+  def self.cassette_subject(type)
     before_all_cassette do
-      url = benchmarks_url(type)
-      @result = vcr_processor_request(processor_class, url)
+      url = "http://www.videocardbenchmark.net/#{type}.html"
+
+      @result = Scrapers::Benchmarks::PageProcessor
+        .new(Typhoeus.get(url).body)
+        .process_page
     end
+
     subject{ @result }
   end
 
@@ -21,7 +19,7 @@ describe Scrapers::Benchmarks::PageProcessor, cassette: true do
   end
 
   describe 'GPU listings' do
-    gpus_listing_cassette_subject('midlow_range_gpus')
+    cassette_subject('midlow_range_gpus')
 
     its(:size){ is_expected.to eq 337 }
 
@@ -45,7 +43,7 @@ describe Scrapers::Benchmarks::PageProcessor, cassette: true do
   end
 
   describe 'GPU listing with 1000nds' do
-    gpus_listing_cassette_subject('high_end_gpus')
+    cassette_subject('high_end_gpus')
 
     describe '0' do
       subject_n(0)

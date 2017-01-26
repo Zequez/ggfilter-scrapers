@@ -1,14 +1,25 @@
 module Scrapers
   module Errors
     class ScrapError < StandardError
-      def initialize(message, response = nil, original_e = nil)
+      attr_reader :response, :message, :backtrace
+
+      def initialize(original_message, original_backtrace, response)
         @message = message
         @response = response
-        @request = @response && @response.request
-        @original_e = original_e
+        @backtrace = backtrace
       end
 
-      attr_accessor :message, :response, :request, :original_e
+      # def initialize(message, response = nil, original_e = nil)
+      #   @message = message
+      #   # @response = response
+      #   # @request = @response && @response.request
+      #   # @original_e = original_e
+      # end
+      #
+      # attr_accessor :message, :response, :request, :original_e
+      # def set_response(response)
+      #   @response = response
+      # end
 
       def html
         (@response && @response.body) || ''

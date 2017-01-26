@@ -1,10 +1,8 @@
 describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list do
-  def processor_class; Scrapers::Steam::List::EachPageProcessor end
-
   def self.attributes_subject(page_or_query, attribute_name)
     subject do
-      url = steam_list_url(page_or_query)
-      @result = vcr_processor_request(processor_class, url)
+      response = Typhoeus.get steam_list_url(page_or_query)
+      @result = Scrapers::Steam::List::PageProcessor.new(response.body).process_page
       @result.map do |h|
         if attribute_name.kind_of? Array
           attribute_name.map{|n| h[n]}
@@ -15,36 +13,18 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
     end
   end
 
-  def self.specific_subject(query, options = {})
+  def self.specific_subject(query)
     subject do
-      url = steam_list_url(query)
-      vcr_processor_request(processor_class, url)[0]
+      response = Typhoeus.get steam_list_url(query)
+      @result = Scrapers::Steam::List::PageProcessor.new(response.body).process_page
+      @result[0]
     end
   end
 
   describe 'error handling' do
-    it 'should raise an InvalidPageError if the page is invalid' do
-      expect { page_processor_for_html(processor_class, '<html></html>').process_page }
-      .to raise_error(Scrapers::Errors::InvalidPageError)
-    end
-  end
-
-  describe 'PageProcessor' do
-    describe 'loading multiple pages' do
-      it 'should call the block given with all the next pages' do
-        loader = Scrapers::TrueLoader.new
-
-        url = steam_list_url('civilization', 1)
-        processor = Scrapers::Steam::List::PageProcessor.new(url, loader)
-
-        processor.load{}
-
-        (1..16).each do |n|
-          expect(loader).to receive(:queue).with(steam_list_url('civilization', n), false)
-        end
-
-        loader.run{}
-      end
+    it 'should raise an error if the page is invalid' do
+      expect{ Scrapers::Steam::List::PageProcessor.new('<html></html>').process_page }
+        .to raise_error(/Could not find/i)
     end
   end
 
@@ -54,9 +34,9 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
     it{ is_expected.to eq ['Canyon Capers'] }
   end
 
-  describe ':id' do
+  describe ':steam_id' do
     context 'regular page' do
-      attributes_subject('potatoman', :id)
+      attributes_subject('potatoman', :steam_id)
 
       it{ is_expected.to eq [
         328500, 341120
@@ -133,13 +113,13 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
     end
 
     context 'page with items on sale' do
-      specific_subject('Doom & Destiny Advanced', group: true)
+      specific_subject('Doom & Destiny Advanced')
       its([:price]) { is_expected.to eq 999 }
       its([:sale_price]) { is_expected.to eq 799 }
     end
 
     context 'empty price but with release date' do
-      specific_subject('Drift King: Survival', group: true)
+      specific_subject('Drift King: Survival')
       its([:price]) { is_expected.to eq nil }
       its([:sale_price]) { is_expected.to eq nil }
     end

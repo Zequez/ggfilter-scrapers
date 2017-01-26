@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Steam Game",
+  "description": "A game from the Steam store",
+  "type": "object",
+  "properties": {
+
+  },
+  "required": [
+    
+  ]
+}

@@ -1,34 +1,25 @@
 module Scrapers::Benchmarks
-  class Runner < Scrapers::Base::Runner
-    def processor; PageProcessor end
-    def name; 'benchmark' end
-
-    def self.options
-      super.merge({
-        high_url: 'http://www.videocardbenchmark.net/high_end_gpus.html',
-        mid_url: 'http://www.videocardbenchmark.net/mid_range_gpus.html',
-        midlow_url: 'http://www.videocardbenchmark.net/midlow_range_gpus.html',
-        low_url: 'http://www.videocardbenchmark.net/low_end_gpus.html',
-        resource_class: Gpu
-      })
-    end
-
-    def urls
-      [options[:high_url], options[:mid_url], options[:midlow_url], options[:low_url]]
-    end
+  class Runner < Scrapers::BasicRunner
+    URLS = [
+      'http://www.videocardbenchmark.net/high_end_gpus.html',
+      'http://www.videocardbenchmark.net/mid_range_gpus.html',
+      'http://www.videocardbenchmark.net/midlow_range_gpus.html',
+      'http://www.videocardbenchmark.net/low_end_gpus.html'
+    ]
 
     def run!
-      scrap do |output|
-        output.each do |gpu_data|
-          data_process(gpu_data, resource_class.find_by_name(gpu_data[:name]) || resource_class.new)
+      @report.output = []
+
+      self.class::URLS.each do |url|
+        queue(url) do |response|
+          data = PageProcessor.new(response.body).process_page
+          data.each do |gpu_data|
+            @report.output.push(gpu_data)
+          end
         end
       end
-    end
 
-    def data_process(data, gpu)
-      processor = Scrapers::Base::DataProcessor.new(data, gpu)
-      gpu = processor.process
-      gpu.save!
+      loader.run
     end
   end
 end

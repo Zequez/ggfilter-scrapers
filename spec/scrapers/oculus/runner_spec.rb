@@ -2,11 +2,14 @@ require "json-schema"
 
 describe Scrapers::Oculus::Runner, cassette: true do
   describe 'error handling' do
+    before(:each) { Scrapers::Oculus::Runner.instant_raise = false }
+    after(:each) { Scrapers::Oculus::Runner.instant_raise = true }
+
     it 'should return a report with an error with an invalid token' do
       report = Scrapers::Oculus::Runner.new(access_token: 'ARSARSARS').run
       expect(report.output).to eq nil
-      expect(report.error?).to eq true
-      expect(report.exception).to be_kind_of Scrapers::Errors::LoadingError
+      expect(report.errors?).to eq true
+      expect(report.errors[0].message).to match(/oauth/i)
     end
   end
 

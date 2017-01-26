@@ -13,7 +13,7 @@ module Scrapers::Benchmarks
         end
       end
 
-      yield gpus
+      gpus
     end
   end
 end

@@ -11,79 +11,42 @@
 
 module Scrapers::Steam::Reviews
   class PageProcessor < Scrapers::Base::PageProcessor
-    def front_load; true end
-
-    def self.generate_url(app_id, options = {})
-      options = {
-        page: 1,
-        order: 'toprated',
-        language: 'all',
-        search: '',
-        per_page: 10
-      }.merge(options)
-
-      offset = (options[:page] - 1) * 10
-
-      "http://steamcommunity.com/app/#{app_id}/homecontent/?" + URI.encode_www_form(
-        userreviewsoffset: offset,
-        p: options[:page],
-        workshopitemspage: 2,
-        readytouseitemspage: 2,
-        mtxitemspage: 2,
-        itemspage: 2,
-        screenshotspage: 2,
-        videospage: 2,
-        artpage: 2,
-        allguidepage: 2,
-        webguidepage: 2,
-        integratedguidepage: 2,
-        discussionspage: 2,
-        numperpage: options[:per_page],
-        browsefilter: options[:order],
-        l: 'english',
-        appHubSubSection: 10,
-        filterLanguage: options[:language],
-        searchText: options[:search],
-        forceanon: 1
-      )
-    end
-
     MAX_PAGES = 100
 
     def process_page
-      data = {
+      if @html.empty?
+        return nil
+      end
+
+      output = {
         positive: [],
         negative: []
       }
 
-      if @response.body.empty?
-        yield(data)
-        return
-      end
-
       cards = css!('.apphub_Card')
-
       cards.each do |card|
         next unless card.at_css('.UserReviewCardContent_FlaggedByDeveloper').nil?
         next unless hours_e = card.at_css('.hours')
         next unless hours_m = hours_e.content.match(/^[0-9]+(\.[0-9]+)?/)
         hours = Float(hours_m[0])
         type = card.at_css('img[src*="icon_thumbsUp"]') ? :positive : :negative
-        data[type].push hours
+        output[type].push hours
       end
 
-      app_id = @url.match(/\/app\/(\d+)/)
-      Scrapers.logger.ln "Loaded #{app_id[1]} page #{current_page}" if app_id
+      # app_id = @url.match(/\/app\/(\d+)/)
+      # Scrapers.logger.ln "Loaded #{app_id[1]} page #{current_page}" if app_id
 
-      if cards.size == 10 and current_page < MAX_PAGES
-        add(generate_url(current_page + 1)) do |output|
-          data[:positive] += output[:positive]
-          data[:negative] += output[:negative]
-          yield(data)
-        end
-      else
-        yield(data)
-      end
+      output
+      #
+      # if cards.size == 10 and current_page < MAX_PAGES
+      #   add(generate_url(current_page + 1)) do |output|
+      #     data[:positive] += output[:positive]
+      #     data[:negative] += output[:negative]
+      #     yield(data)
+      #   end
+      # else
+      #   yield(data)
+      # end
     end
 
     # Quick ugly fix
@@ -95,15 +58,15 @@ module Scrapers::Steam::Reviews
     #   end
     # end
 
-    def current_page
-      @current_page ||= Integer(@url.scan(/p=(\d+)/).flatten.first)
-    end
-
-    def generate_url(page)
-      offset = (page-1)*10
-      @url
-        .gsub(/userreviewsoffset=\d+/, "userreviewsoffset=#{offset}")
-        .gsub(/p=\d+/, "p=#{page}")
-    end
+    # def current_page
+    #   @current_page ||= Integer(@url.scan(/p=(\d+)/).flatten.first)
+    # end
+    #
+    # def generate_url(page)
+    #   offset = (page-1)*10
+    #   @url
+    #     .gsub(/userreviewsoffset=\d+/, "userreviewsoffset=#{offset}")
+    #     .gsub(/p=\d+/, "p=#{page}")
+    # end
   end
 end

@@ -1,46 +1,58 @@
 module Scrapers::Steam::Game
-  class Runner < Scrapers::Base::Runner
-    def processor; PageProcessor end
-    def name; 'steam_game' end
-
-    def self.options
-      super.merge({
-        game_url: "http://store.steampowered.com/app/%s",
-        resources: [],
-        headers: {
-          'Cookie' => 'birthtime=724320001; mature_content=1; fakeCC=US'
-        }
-      })
+  class Runner < Scrapers::BasicRunner
+    def loader_options
+      {headers: {
+        'Cookie' => 'birthtime=724320001; mature_content=1; fakeCC=US'
+      }}
     end
 
-    def urls
-      resources.map{ |g| options[:game_url] % g.steam_id }
+    def initialize(steam_ids: [])
+      @steam_ids = steam_ids
+    end
+
+    URL = 'http://store.steampowered.com/app/%s'
+
+    def continue_parsing?(response)
+      if response.headers['Location']
+        to = response.headers['Location']
+        @report.warnings.push "Game #{url} got redirected to #{to}"
+        false
+      else
+        super
+      end
     end
 
     def run!
       @report.output = []
-      scrap do |game_data, game|
-        data_process game_data, game
+
+      @steam_ids.each do |steam_id|
+        url = self.class::URL % steam_id
+        queue(url) do |response|
+          data = PageProcessor.new(response.body).process_page
+          data[:steam_id] = steam_id
+          if data
+            @report.output.push data
+            log_game(data)
+          else
+            @report.warnings.push "Page processor couldn't extract data | #{url}"
+          end
+        end
+      end
+
+      loader.run
+    end
+
+    def report_message
+      if @report.output
+        "#{@report.output.size} games processed"
       end
     end
 
-    def report_msg
-      "#{resources.size} games processed"
-    end
-
-    private
-
-    def data_process(data, game)
-      processor = DataProcessor.new(data, game)
-      game = processor.process
-      game.game_scraped_at = Time.now
-      game.save!
-      @report.output.push(game)
-      log_game(game)
-    end
-
     def log_game(game)
-      Scrapers.logger.ln game_log_text(game)
+      left = "#{@report.output.size} / #{@steam_ids.size}"
+      log_id = game[:steam_id].to_s.ljust(10)
+      name = game[:name].blank? ? '<No name>' : game[:name]
+      Scrapers.logger.ln "#{log_id} | #{name} | #{left}"
     end
   end
 end

@@ -1,56 +1,11 @@
-# Output
-# Object of
-#  :tags
-#  :genre
-#  :dlc_count
-#  :steam_achievements_count
-#  :audio_languages
-#  :subtitles_languages
-#  :metacritic
-#  :esrb_rating
-#  :videos
-#  :images
-#  :summary
-#  :early_access
-#  :positive_steam_reviews_count
-#  :negative_steam_reviews_count
-#  :system_requirements
-#    :minimum
-#      :processor
-#      :memory
-#      :video_card
-#      :disk_space
-#    :recommended
-#      :processor
-#      :memory
-#      :video_card
-#      :disk_space
-#  :players
-#    :single_player
-#    :multi_player
-#    :co_op
-#    :local_co_op
-#  :controller_support
-#    :no
-#    :partial
-#    :full
-#  :features
-#    :steam_achievements
-#    :steam_trading_cards
-#    :vr_support
-#    :steam_workshop
-#    :steam_cloud
-#    :valve_anti_cheat
-
 module Scrapers::Steam::Game
   class PageProcessor < Scrapers::Base::PageProcessor
-    def error_on_redirect; false end
-
     def process_page
       game = {}
 
-      return if css('#error_box .error').text =~ /unavailable in your region/
+      return nil if css('#error_box .error').text =~ /unavailable in your region/
 
+      game[:name] = css('.apphub_AppName').text.strip
       game[:tags] = css('.popular_tags a').map{ |a| a.text.strip }
       game[:dlc_count] = css('.game_area_dlc_name').size
       game[:achievements_count] = if ( sac = css('#achievement_block .block_title').first )
@@ -66,7 +21,8 @@ module Scrapers::Steam::Game
       game[:images] = css('.highlight_strip_screenshot img').map{ |i| i['src'].sub(/.\d+x\d+\.jpg/, '.jpg') }
       game[:summary] = css!('.game_description_snippet').text.strip
 
-      app_id = Integer(@url.scan(/app\/(\d+)/).flatten.first)
+      app_id = Integer(css!('link[rel="canonical"]').first['href'].scan(/app\/(\d+)/).flatten.first)
+
       community_hub_id = Integer(css!('.apphub_OtherSiteInfo a').first['href'].scan(/app\/(\d+)/).flatten.first)
       game[:community_hub_id] = community_hub_id if community_hub_id != app_id
 
@@ -95,7 +51,8 @@ module Scrapers::Steam::Game
       game[:controller_support] = detect_features(
         28 => :full,
         18 => :partial
-      )
+      ).first || :no
+
       game[:features] = detect_features(
         22 => :steam_achievements,
         29 => :steam_trading_cards,
@@ -133,7 +90,7 @@ module Scrapers::Steam::Game
 
       game[:released_at] = read_released_at
 
-      yield game
+      game
     end
 
     def read_released_at

@@ -16,8 +16,7 @@ WebMock.disable_net_connect!(allow_localhost: true)
 
 ActiveRecord::Base.establish_connection adapter: 'sqlite3', database: ':memory:'
 ActiveRecord::Migration.verbose = false
-Scrapers::Benchmarks::Migration.new.migrate(:up)
-Scrapers::Steam::Migration.new.migrate(:up)
+Scrapers::BasicRunner.instant_raise = true
 
 # Add a custom logger for debugging
 LL = begin
