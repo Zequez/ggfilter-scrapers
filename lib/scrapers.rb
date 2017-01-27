@@ -18,13 +18,17 @@ module Scrapers
     @app_root ||= defined?(Rails) ? Rails.root : ROOT
   end
 
+  def self.env
+    (defined?(Rails) && Rails.env) || ENV['RAILS_ENV']
+  end
+
   def self.logger
     @error_log ||= begin
 
     end
 
     @logger ||= begin
-      if defined?(RSpec)
+      if Scrapers.env == 'test'
         logfile = File.open("#{app_root}/log/scrapers.log", 'a')  # create log file
         logfile.sync = true  # automatically flushes data to file
         CustomLogger.new(logfile)

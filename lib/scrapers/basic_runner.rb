@@ -1,7 +1,7 @@
 module Scrapers
   class BasicRunner
     class << self
-      @@instant_raise = false
+      @@instant_raise = Scrapers.env == 'test' || Scrapers.env == 'development'
       def instant_raise=(val); @@instant_raise = val end
       def instant_raise; @@instant_raise end
     end
