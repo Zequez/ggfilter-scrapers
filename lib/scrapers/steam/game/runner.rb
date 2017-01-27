@@ -19,7 +19,7 @@ module Scrapers::Steam::Game
     def continue_parsing?(response)
       if response.headers['Location']
         to = response.headers['Location']
-        @report.warnings.push "Game #{url} got redirected to #{to}"
+        @report.warnings.push "Game #{response.request.url} got redirected to #{to}"
         false
       else
         super
