@@ -1,13 +1,9 @@
 module Scrapers
   class BasicRunner
     class << self
-      def instant_raise=(val)
-        @@instant_raise = val
-      end
-
-      def instant_raise
-        @@instant_raise
-      end
+      @@instant_raise = false
+      def instant_raise=(val); @@instant_raise = val end
+      def instant_raise; @@instant_raise end
     end
 
     def report

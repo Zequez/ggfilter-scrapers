@@ -9,6 +9,8 @@ module Scrapers::Steam
 
       def initialize(steam_ids: [])
         @steam_ids = steam_ids
+        @games_count = 0
+        @currently_scraping = {}
         # @community_hubs_ids = community_hubs_ids
       end
 
@@ -41,11 +43,14 @@ module Scrapers::Steam
 
           page_data = PageProcessor.new(response.body).process_page
           if page_data && page < MAX_PAGES
-            log_page(steam_id, page)
+            @currently_scraping[steam_id] = page
+            log_status
             game[:positive].concat page_data[:positive]
             game[:negative].concat page_data[:negative]
             queue_new_page(steam_id, page + 1)
           else
+            @currently_scraping.delete(steam_id)
+            @games_count += 1
             log_game(game)
           end
         end
@@ -57,15 +62,19 @@ module Scrapers::Steam
 
       private
 
-      def log_page(steam_id, page)
-        Scrapers.logger.ln "#{steam_id} Reviews page #{page}"
+      def log_status
+        remaining = "| Remaining: #{@games_count}/#{@steam_ids.size}"
+        text = @currently_scraping
+          .each_pair.map{ |steam_id, page| "#{steam_id}: #{page}" }
+          .join(' | ')
+        print "#{text} | #{remaining}\r"
       end
 
       def log_game(game)
         positive = game[:positive].size
         negative = game[:negative].size
 
-        Scrapers.logger.ln "#{game[:steam_id]} Reviews: [#{positive}/#{negative}]"
+        Scrapers.logger.print "#{game[:steam_id]} done! #{positive}/#{negative} reviews"
       end
 
       def generate_url(*args)

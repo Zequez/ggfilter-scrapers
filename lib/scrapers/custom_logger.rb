@@ -8,7 +8,7 @@ module Scrapers
     }
 
     def format_message(severity, timestamp, progname, msg)
-      output = "#{timestamp.to_formatted_s(:db)} #{severity} #{msg}\n"
+      output = "#{timestamp.iso8601} #{severity} #{msg}\n"
       sev = severity.downcase.to_sym
 
       if !(msg =~ /^\\e\[0;/) and @@colors[sev]
@@ -28,6 +28,10 @@ module Scrapers
 
     def ln(msg)
       self << "#{msg}\n"
+    end
+
+    def print(msg)
+      self << msg
     end
   end
 end
