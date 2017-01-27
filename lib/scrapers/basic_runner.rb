@@ -24,10 +24,12 @@ module Scrapers
 
     def run
       begin
+        Scrapers.logger.info "Scraping started #{self.class.name}"
         report.start
         run!
         report.finish
         report.scraper_report = report_message
+        Scrapers.logger.info "Scraping finished #{self.class.name} | #{report.elapsed_time_human}"
       rescue StandardError => e
         loader.abort
         report.errors.push e

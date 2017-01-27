@@ -22,7 +22,7 @@ module Scrapers
         end
 
         def run!
-          Scrapers.logger.info "For #{@config[:url]}"
+          Scrapers.logger.ln "For #{@config[:url]}"
           @report.output = []
 
           first_page = Typhoeus.get(@url)
@@ -36,7 +36,7 @@ module Scrapers
 
               count += 1
               total_games = @report.output.size
-              Scrapers.logger.info "Page #{count}/#{urls.count} | #{games.size} games in page, #{total_games} total"
+              Scrapers.logger.ln "Page #{count}/#{urls.count} | #{games.size} games in page, #{total_games} total"
             end
           end
 
@@ -48,38 +48,6 @@ module Scrapers
             "#{@report.output.size} games found"
           end
         end
-
-        # def report_msg
-        #   if sale?
-        #     "#{@new_games} new games | #{@found_games} games on sale"
-        #   else
-        #     "#{@new_games} new games | #{@found_games} games found"
-        #   end
-        # end
-
-        # private
-
-        # def data_process(data, game)
-        #   processor = DataProcessor.new(data, game, resource_class)
-        #   game = processor.process
-        #   was_new = game.new_record?
-        #   @found_games += 1
-        #   @new_games += 1 if was_new
-        #   game.list_scraped_at = Time.now
-        #   game.save!
-        #   @report.output.push(game)
-        #   log_game(game, was_new)
-        #   @on_sale_ids.push(game.id) if game.sale_price
-        # end
-        #
-        # def sale?
-        #   @options[:on_sale]
-        # end
-        #
-        # def log_game(game, was_new)
-        #   log_text = game_log_text(game)
-        #   Scrapers.logger.ln was_new ? log_text.green : log_text
-        # end
       end
     end
   end
