@@ -11,6 +11,7 @@ module Scrapers::Steam
         @steam_ids = steam_ids
         @games_count = 0
         @currently_scraping = {}
+        @terminal_size = `tput cols`.to_i
         # @community_hubs_ids = community_hubs_ids
       end
 
@@ -65,16 +66,16 @@ module Scrapers::Steam
       def log_status
         remaining = "| Remaining: #{@games_count}/#{@steam_ids.size}"
         text = @currently_scraping
-          .each_pair.map{ |steam_id, page| "#{steam_id}: #{page}" }
+          .each_pair.map{ |steam_id, page| "#{steam_id}: #{page.to_s.rjust(2)}" }
           .join(' | ')
-        print "#{text} | #{remaining}\r"
+        Scrapers.logger.print "#{text} | #{remaining}".ljust(@terminal_size - 1) + "\r"
       end
 
       def log_game(game)
         positive = game[:positive].size
         negative = game[:negative].size
 
-        Scrapers.logger.print "#{game[:steam_id]} done! #{positive}/#{negative} reviews"
+        Scrapers.logger.ln "#{game[:steam_id]} done! #{positive}/#{negative} reviews"
       end
 
       def generate_url(*args)
