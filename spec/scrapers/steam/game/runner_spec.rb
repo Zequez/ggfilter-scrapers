@@ -22,6 +22,34 @@ module Scrapers::Steam
         expect(game[:positive_reviews_count]).to eq 28728
         expect(game[:negative_reviews_count]).to eq 7166
       end
+
+      it 'should work with the processor returning empty' do
+        runner = Runner.new(steam_ids: [8870])
+
+        pp = double('PageProcessor')
+        expect(Game::PageProcessor).to receive(:new).and_return pp
+        expect(pp).to receive(:process_page).and_return nil
+
+        report = runner.run
+
+        expect(report.warnings.size).to eq 1
+      end
+
+      it 'should add a warning when a game redirects' do
+        runner = Runner.new(steam_ids: [8870])
+
+        Typhoeus.stub("http://store.steampowered.com/app/8870")
+          .and_return(Typhoeus::Response.new(code: 304, body: '', headers: {
+            'Location' => 'http://store.steampowered.com'
+          }))
+
+        expect(Game::PageProcessor).to_not receive(:new)
+
+        report = runner.run
+
+        expect(report.warnings.size).to eq 1
+        expect(report.warnings[0]).to match(/redirect/)
+      end
     end
   end
 end

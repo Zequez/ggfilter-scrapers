@@ -33,8 +33,8 @@ module Scrapers::Steam::Game
         url = self.class::URL % steam_id
         queue(url) do |response|
           data = PageProcessor.new(response.body).process_page
-          data[:steam_id] = steam_id
           if data
+            data[:steam_id] = steam_id
             @report.output.push data
             log_game(data)
           else
