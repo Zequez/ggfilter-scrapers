@@ -43,8 +43,8 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     its([:metacritic]){               is_expected.to eq 94 }
     its([:esrb_rating]){              is_expected.to eq :m }
     its([:early_access]){             is_expected.to eq false }
-    its([:positive_reviews_count]){   is_expected.to eq 53994 }
-    its([:negative_reviews_count]){   is_expected.to eq 2647 }
+    its([:positive_reviews_count]){   is_expected.to be >= 60391 }
+    its([:negative_reviews_count]){   is_expected.to be >= 2758 }
     its([:community_hub_id]) {        is_expected.to eq 8870 }
 
     its([:tags]){ are_expected.to eq([
@@ -92,24 +92,26 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
       "Korean"
     ])}
 
-    it{ expect(@result[:videos].map{|v| v.sub(/\?t=\d+$/, '')}).to eq([
-      "http://cdn.akamai.steamstatic.com/steam/apps/2028092/movie480.webm",
-      "http://cdn.akamai.steamstatic.com/steam/apps/2028471/movie480.webm",
-      "http://cdn.akamai.steamstatic.com/steam/apps/2028345/movie480.webm",
-      "http://cdn.akamai.steamstatic.com/steam/apps/2028377/movie480.webm"
-    ])}
+    it{
+      expect(@result[:videos][0]).to match(/2028092\/movie480\.webm/)
+      expect(@result[:videos][1]).to match(/2028471\/movie480\.webm/)
+      expect(@result[:videos][2]).to match(/2028345\/movie480\.webm/)
+      expect(@result[:videos][3]).to match(/2028377\/movie480\.webm/)
+    }
 
-    it{ expect(@result[:images].map{|v| v.sub(/\?t=\d+$/, '')}).to eq([
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_26e2d983948edfb911db3e0d2c3679900b4ef9fa.jpg",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_c6f3fbf3e9f4cb1777462150203a7174608dfcd9.jpg",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_dc76723504ce89c1ed1f66fd468682ba76548c32.jpg",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_37f25110f8d76335ddbc29a381bc6961e209acf6.jpg",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_d45294620026ff41f7e6b8610c6d60e13645fbf3.jpg",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_fd6f5de55332f6c3cd119a01a9e017e840765c0e.jpg",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_3a364ffdcd2c1eeb3957435c624fc7c383d8cb69.jpg",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_4616da02724c2beaa8afc74a501929d27a65542a.jpg",
-      "http://cdn.akamai.steamstatic.com/steam/apps/8870/ss_e98deaf0e334206b84c2462276aee98107fa20d0.jpg"
-    ])}
+    it{
+      ["26e2d983948edfb911db3e0d2c3679900b4ef9fa.jpg",
+      "c6f3fbf3e9f4cb1777462150203a7174608dfcd9.jpg",
+      "dc76723504ce89c1ed1f66fd468682ba76548c32.jpg",
+      "37f25110f8d76335ddbc29a381bc6961e209acf6.jpg",
+      "d45294620026ff41f7e6b8610c6d60e13645fbf3.jpg",
+      "fd6f5de55332f6c3cd119a01a9e017e840765c0e.jpg",
+      "3a364ffdcd2c1eeb3957435c624fc7c383d8cb69.jpg",
+      "4616da02724c2beaa8afc74a501929d27a65542a.jpg",
+      "e98deaf0e334206b84c2462276aee98107fa20d0.jpg"].each_with_index do |img, i|
+        expect(@result[:images][i]).to match(img)
+      end
+    }
 
     its([:summary]){                  is_expected.to eq(
       <<-EOS.squeeze(' ').strip.gsub("\n", '')

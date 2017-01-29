@@ -11,7 +11,7 @@ module Scrapers::Steam::Game
       game[:achievements_count] = if ( sac = css('#achievement_block .block_title').first )
         Integer(sac.text.scan(/\d+/).flatten.first)
       else 0 end
-      game[:metacritic] = (m = css('#game_area_metascore span').first) ? Integer(m.text) : nil
+      game[:metacritic] = (m = css('#game_area_metascore .score').first) ? Integer(m.text) : nil
       game[:esrb_rating] = if ( esrb = css('img[src*="images/ratings/esrb"]').first )
         esrb['src'].scan(/esrb_(\w+)/).flatten.first.to_sym
       else nil end
@@ -27,7 +27,7 @@ module Scrapers::Steam::Game
       community_hub_id = Integer(css!('.apphub_OtherSiteInfo a').first['href'].scan(/app\/(\d+)/).flatten.first)
       game[:community_hub_id] = community_hub_id # Sometimes is different from steam_id
 
-      if not css('.noReviewsYetTitle').empty?
+      if css('.noReviewsYetTitle').text =~ /no reviews for this product/i
         game[:positive_reviews_count] = 0
         game[:negative_reviews_count] = 0
       else
