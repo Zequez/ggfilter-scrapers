@@ -172,14 +172,16 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
     context 'a simple page' do
       attributes_subject('race the sun', :thumbnail)
 
-      it { is_expected.to eq [
-        "http://cdn.akamai.steamstatic.com/steam/apps/253030/capsule_sm_120.jpg?t=1447358697",
-        "http://cdn.akamai.steamstatic.com/steam/apps/246940/capsule_sm_120.jpg?t=1447358349",
-        "http://cdn.akamai.steamstatic.com/steam/apps/336630/capsule_sm_120.jpg?t=1478620773",
-        "http://cdn.akamai.steamstatic.com/steam/apps/444550/capsule_sm_120.jpg?t=1462350363",
-        "http://cdn.akamai.steamstatic.com/steam/apps/427570/capsule_sm_120.jpg?t=1476961171",
-        "http://cdn.akamai.steamstatic.com/steam/apps/253880/capsule_sm_120.jpg?t=1450522565",
-        "http://cdn.akamai.steamstatic.com/steam/apps/467570/capsule_sm_120.jpg?t=1478615119"]
+      it{
+        ["253030/capsule_sm_120.jpg",
+        "246940/capsule_sm_120.jpg",
+        "336630/capsule_sm_120.jpg",
+        "444550/capsule_sm_120.jpg",
+        "427570/capsule_sm_120.jpg",
+        "253880/capsule_sm_120.jpg",
+        "467570/capsule_sm_120.jpg"].each_with_index do |img, i|
+          expect(subject[i]).to match img
+        end
       }
     end
   end

@@ -19,8 +19,8 @@ module Scrapers::Steam
         # 7 Days To Die
         runner = Runner.new(steam_ids: [251570])
         game = runner.run.output[0]
-        expect(game[:positive_reviews_count]).to eq 28728
-        expect(game[:negative_reviews_count]).to eq 7166
+        expect(game[:positive_reviews_count]).to be >= 28728
+        expect(game[:negative_reviews_count]).to be >= 7166
       end
 
       it 'should work with the processor returning empty' do
