@@ -75,7 +75,7 @@ module Scrapers::Steam
         positive = game[:positive].size
         negative = game[:negative].size
 
-        Scrapers.logger.ln "#{game[:steam_id]} done! #{positive}/#{negative} reviews"
+        Scrapers.logger.ln "\n#{game[:steam_id]} done! #{positive}/#{negative} reviews"
       end
 
       def generate_url(*args)
