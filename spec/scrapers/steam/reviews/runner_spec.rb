@@ -14,6 +14,13 @@ module Scrapers::Steam
         expect(game2[:positive]).to eq [1.4, 1.5, 0.9, 0.3, 3.0, 12.0, 4.0, 6.0, 0.1]
         expect(game2[:negative]).to eq [0.7, 0.1, 1.2]
       end
+
+      it 'should scrap multiple pages of reviews' do
+        runner = Runner.new(steam_ids: [511350])
+        game = runner.run.output[0]
+        expect(game[:positive].size).to eq 35
+        expect(game[:negative].size).to eq 1
+      end
     end
   end
 end
