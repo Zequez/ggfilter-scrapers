@@ -5,7 +5,7 @@ module Scrapers
         headers: {},
         request_timeout: 5000,
         follow_location: false,
-        concurrency: 10, # Don't set this too low or it exits for no reason
+        concurrency: 15, # Don't set this too low or it exits for no reason
         retry_limit: 3
       }.merge(options)
       @hydra = Typhoeus::Hydra.new(max_concurrency: @options[:concurrency])

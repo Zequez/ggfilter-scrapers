@@ -22,6 +22,18 @@ module Scrapers
       warnings.size > 0
     end
 
+    def add_error(error)
+      Scrapers.logger.error error.message
+      Scrapers.logger.error error.backtrace
+      errors.push error
+    end
+
+    def add_warning(warning)
+      Scrapers.logger.warn warning
+
+      warnings.push warning
+    end
+
     def start
       @started_at = Time.now
     end

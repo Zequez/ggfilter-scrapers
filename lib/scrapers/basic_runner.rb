@@ -28,7 +28,7 @@ module Scrapers
         Scrapers.logger.info "Scraping finished #{self.class.name} | #{report.elapsed_time_human}"
       rescue StandardError => e
         loader.abort
-        report.errors.push e
+        report.add_error e
         report.aborted = true
         report.output = nil
         raise if self.class.instant_raise
@@ -48,13 +48,13 @@ module Scrapers
             cb.call(response)
           rescue StandardError => e
             e = decorate_exception(e, response)
-            @report.errors.push e
+            report.add_error e
             raise if self.class.instant_raise
           end
         end
 
-        if @report.errors.size > 10
-          raise 'Too many errors aborting scrap'
+        if report.errors.size > 10
+          raise 'Too many errors, aborting scrap'
         end
       end
     end
@@ -67,7 +67,7 @@ module Scrapers
           loader.retry!(response)
         rescue StandardError => e
           e = decorate_exception(e, response)
-          @report.errors.push e
+          report.add_error e
           raise if self.class.instant_raise
         end
         false
