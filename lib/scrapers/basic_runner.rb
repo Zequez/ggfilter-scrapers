@@ -18,7 +18,9 @@ module Scrapers
       @loader ||= Loader.new(loader_options)
     end
 
-    def run
+    def run(&block_provided)
+      @block_provided = block_provided
+
       begin
         Scrapers.logger.info "Scraping started #{self.class.name}"
         report.start
@@ -79,6 +81,12 @@ module Scrapers
         e = Errors::ScrapError.new(e.message, e.backtrace, response)
       end
       e
+    end
+
+    def partial_output_yield(output)
+      if @block_provided
+        @block_provided.call(output)
+      end
     end
   end
 end

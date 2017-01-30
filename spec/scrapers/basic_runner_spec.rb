@@ -1,4 +1,20 @@
 describe Scrapers::BasicRunner do
+  describe 'partial yielding' do
+    it 'should allow for partial yielding' do
+      class MyRunner < Scrapers::BasicRunner
+        def run!
+          partial_output_yield('potato')
+          partial_output_yield('motato')
+        end
+      end
+
+      block = lambda{}
+      expect(block).to receive(:call).with('potato')
+      expect(block).to receive(:call).with('motato')
+      MyRunner.new.run(&block)
+    end
+  end
+
   describe 'errors handling and reporting' do
     before(:all) { Scrapers::BasicRunner.instant_raise = false }
     after(:all) { Scrapers::BasicRunner.instant_raise = true }
