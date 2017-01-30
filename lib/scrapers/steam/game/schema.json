@@ -155,7 +155,7 @@
       "type": ["string", "null"]
     },
     "publisher": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "released_at": {
       "type": ["string", "null"],

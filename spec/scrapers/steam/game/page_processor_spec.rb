@@ -327,4 +327,9 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     its([:name]){ is_expected.to eq 'Amazing Adventures Around the World' }
     its([:metacritic]){ is_expected.to eq nil }
   end
+
+  describe 'publisher with null value' do
+    cassette_subject(2570, 'vigil_blood_bitterness')
+    its([:publisher]) { is_expected.to eq nil } 
+  end
 end
