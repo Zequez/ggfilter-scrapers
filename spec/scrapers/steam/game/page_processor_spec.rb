@@ -321,4 +321,10 @@ describe Scrapers::Steam::Game::PageProcessor, cassette: true do
     cassette_subject(342180, 'arizona_sunshine')
     its([:vr_only]){ is_expected.to eq true }
   end
+
+  describe 'game with NA metacritic' do
+    cassette_subject(3530, 'amazing_adventures')
+    its([:name]){ is_expected.to eq 'Amazing Adventures Around the World' }
+    its([:metacritic]){ is_expected.to eq nil }
+  end
 end

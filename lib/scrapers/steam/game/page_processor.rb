@@ -11,7 +11,10 @@ module Scrapers::Steam::Game
       game[:achievements_count] = if ( sac = css('#achievement_block .block_title').first )
         Integer(sac.text.scan(/\d+/).flatten.first)
       else 0 end
-      game[:metacritic] = (m = css('#game_area_metascore .score').first) ? Integer(m.text) : nil
+      m = css('#game_area_metascore .score').first
+      game[:metacritic] = (m && m.text && !(m.text =~ /NA/i)) ?
+        Integer(m.text) : nil
+
       game[:esrb_rating] = if ( esrb = css('img[src*="images/ratings/esrb"]').first )
         esrb['src'].scan(/esrb_(\w+)/).flatten.first.to_sym
       else nil end
