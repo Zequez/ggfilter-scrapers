@@ -19,7 +19,7 @@ module Scrapers::Steam
         @output_index = {}
         @output = []
         @steam_ids.each do |steam_id|
-          queue_new_page(steam_id, 1)
+          queue_new_page(steam_id, 1, generate_url(steam_id, 1))
         end
         loader.run
         @report.output = @output
@@ -37,18 +37,20 @@ module Scrapers::Steam
         end
       end
 
-      def queue_new_page(steam_id, page)
-        url = generate_url(steam_id, page)
+      def queue_new_page(steam_id, page, url)
         queue(url, front: page > 1) do |response|
           game = get_game(steam_id)
 
           page_data = PageProcessor.new(response.body).process_page
-          if page_data && page < MAX_PAGES
-            @currently_scraping[steam_id] = page
-            log_status
+          if page_data
             game[:positive].concat page_data[:positive]
             game[:negative].concat page_data[:negative]
-            queue_new_page(steam_id, page + 1)
+          end
+
+          if page_data && page_data[:next_page] && page < MAX_PAGES
+            @currently_scraping[steam_id] = page
+            log_status
+            queue_new_page(steam_id, page + 1, page_data[:next_page])
           else
             @currently_scraping.delete(steam_id)
             @games_count += 1
@@ -95,19 +97,20 @@ module Scrapers::Steam
         "http://steamcommunity.com/app/#{steam_id}/homecontent/?" + URI.encode_www_form(
           userreviewsoffset: offset,
           p: page,
-          workshopitemspage: 2,
-          readytouseitemspage: 2,
-          mtxitemspage: 2,
-          itemspage: 2,
-          screenshotspage: 2,
-          videospage: 2,
-          artpage: 2,
-          allguidepage: 2,
-          webguidepage: 2,
-          integratedguidepage: 2,
-          discussionspage: 2,
+          workshopitemspage: page,
+          readytouseitemspage: page,
+          mtxitemspage: page,
+          itemspage: page,
+          screenshotspage: page,
+          videospage: page,
+          artpage: page,
+          allguidepage: page,
+          webguidepage: page,
+          integratedguidepage: page,
+          discussionspage: page,
           numperpage: options[:per_page],
           browsefilter: options[:order],
+          appid: steam_id,
           l: 'english',
           appHubSubSection: 10,
           filterLanguage: options[:language],

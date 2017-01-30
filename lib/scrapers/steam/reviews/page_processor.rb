@@ -1,14 +1,3 @@
-# Input
-# reviews_count: Integer
-# Output
-# Object of:
-#   positive: [
-#     hours played by each review
-#   ]
-#   negative: [
-#     hours played by each review
-#   ]
-
 module Scrapers::Steam::Reviews
   class PageProcessor < Scrapers::Base::PageProcessor
     MAX_PAGES = 100
@@ -33,40 +22,18 @@ module Scrapers::Steam::Reviews
         output[type].push hours
       end
 
-      # app_id = @url.match(/\/app\/(\d+)/)
-      # Scrapers.logger.ln "Loaded #{app_id[1]} page #{current_page}" if app_id
+      if css('form').first
+        next_page_query = css('form input')
+          .map{ |ie| [ie.attr('name'), ie.attr('value')] }
+        next_page_url = css('form').first.attr('action')
+        query_hash = Hash[next_page_query]
+        if query_hash['userreviewsoffset'].to_i % 10 == 0
+          output[:next_page] =
+            next_page_url + '?' + URI.encode_www_form(Hash[next_page_query])
+        end
+      end
 
       output
-      #
-      # if cards.size == 10 and current_page < MAX_PAGES
-      #   add(generate_url(current_page + 1)) do |output|
-      #     data[:positive] += output[:positive]
-      #     data[:negative] += output[:negative]
-      #     yield(data)
-      #   end
-      # else
-      #   yield(data)
-      # end
     end
-
-    # Quick ugly fix
-    # def load(&cb)
-    #   @loader.queue_front(@url) do |response|
-    #     app_id = @url.match(/\/app\/(\d+)/)
-    #     Scrapers.logger.ln "Loaded #{app_id[1]} page #{current_page}" if app_id
-    #     process_response(response, &cb)
-    #   end
-    # end
-
-    # def current_page
-    #   @current_page ||= Integer(@url.scan(/p=(\d+)/).flatten.first)
-    # end
-    #
-    # def generate_url(page)
-    #   offset = (page-1)*10
-    #   @url
-    #     .gsub(/userreviewsoffset=\d+/, "userreviewsoffset=#{offset}")
-    #     .gsub(/p=\d+/, "p=#{page}")
-    # end
   end
 end

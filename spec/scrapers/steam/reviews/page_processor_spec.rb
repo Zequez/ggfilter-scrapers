@@ -16,7 +16,7 @@ describe Scrapers::Steam::Reviews::PageProcessor, cassette: true do
   describe 'loading a game reviews page' do
     game_cassette_subject 498680, 'shadows-of-truth'
 
-    its([:positive]){ is_expected.to eq [9.6, 0.5, 0.3] }
+    its([:positive]){ is_expected.to eq [4.9, 9.6, 0.9, 0.5, 4.8, 1.3] }
     its([:negative]){ is_expected.to eq [0.8, 3.0, 3.5] }
   end
 end
