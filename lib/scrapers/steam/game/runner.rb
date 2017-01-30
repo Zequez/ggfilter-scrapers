@@ -35,9 +35,9 @@ module Scrapers::Steam::Game
           data = PageProcessor.new(response.body).process_page
           if data
             data[:steam_id] = steam_id
+            log_game(data)
             report.output.push data
             partial_output_yield data
-            log_game(data)
           else
             report.add_warning "Page processor couldn't extract data | #{url}"
           end
