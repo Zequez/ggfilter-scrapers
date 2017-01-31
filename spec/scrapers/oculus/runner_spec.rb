@@ -17,7 +17,6 @@ describe Scrapers::Oculus::Runner, cassette: true do
     subject do
       output = Scrapers::Oculus::Runner.new(game_id: id).run.output
       JSON::Validator.validate!(Scrapers::Oculus::SCHEMA, output)
-      L output[:thumbnail]
       output
     end
   end
@@ -65,6 +64,12 @@ describe Scrapers::Oculus::Runner, cassette: true do
     its([:sysreq_cpu]){ is_expected.to eq 'i5 4590' }
     its([:sysreq_gpu]){ is_expected.to eq 'GTX 970 / Radeon RX 480' }
     its([:sysreq_ram]){ is_expected.to eq 8 }
+
+    its([:rating_1]){ is_expected.to be >= 13 }
+    its([:rating_2]){ is_expected.to be >= 12 }
+    its([:rating_3]){ is_expected.to be >= 24 }
+    its([:rating_4]){ is_expected.to be >= 71 }
+    its([:rating_5]){ is_expected.to be >= 521 }
   end
 
   describe 'Dragon Front' do
