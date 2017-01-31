@@ -41,10 +41,10 @@ module Scrapers
           rating_3: g.quality_rating_histogram_aggregate[2].count,
           rating_4: g.quality_rating_histogram_aggregate[3].count,
           rating_5: g.quality_rating_histogram_aggregate[4].count,
-          thumbnail: g.cover_landscape_image,
+          thumbnail: g.cover_landscape_image.uri,
           screenshots: g.screenshots.map{ |s| s['uri'] },
           trailer_video: g.video_trailer && g.video_trailer.uri,
-          trailer_thumbnail: g.video_trailer && g.video_trailer.thumbnail
+          trailer_thumbnail: g.video_trailer && g.video_trailer.thumbnail.uri
         }
       end
     end

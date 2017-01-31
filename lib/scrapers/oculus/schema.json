@@ -142,19 +142,23 @@
       "minimum": 0
     },
     "thumbnail": {
-      "type": "uri"
+      "type": "string",
+      "format": "uri"
     },
     "screenshots": {
       "type": "array",
       "items": {
-        "type": "uri"
+        "type": "string",
+        "format": "uri"
       }
     },
     "trailer_video": {
-      "type": ["uri", "null"]
+      "type": ["string", "null"],
+      "format": "uri"
     },
     "trailer_thumbnail": {
-      "type": ["uri", "null"]
+      "type": ["string", "null"],
+      "format": "uri"
     }
   },
   "required": [

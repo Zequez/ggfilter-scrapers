@@ -19,6 +19,7 @@ guard :rspec, cmd: "bundle exec rspec" do
   watch(%r{^spec/acceptance/steps/(.+)_steps\.rb$}) do |m|
     Dir[File.join("**/#{m[1]}.feature")][0] || "spec/acceptance"
   end
+  watch(%r{^lib/scrapers/oculus/page_processor\.rb$}){ 'spec/scrapers/oculus' }
   watch(%r{^lib/scrapers/oculus/schema\.json$}){ 'spec/scrapers/oculus' }
   watch(%r{^lib/scrapers/steam/game/schema\.json$}){ 'spec/scrapers/steam/game' }
   watch(%r{^lib/scrapers/steam/list/schema\.json$}){ 'spec/scrapers/steam/list' }

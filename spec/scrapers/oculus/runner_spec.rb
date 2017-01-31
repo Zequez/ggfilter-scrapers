@@ -17,6 +17,7 @@ describe Scrapers::Oculus::Runner, cassette: true do
     subject do
       output = Scrapers::Oculus::Runner.new(game_id: id).run.output
       JSON::Validator.validate!(Scrapers::Oculus::SCHEMA, output)
+      L output[:thumbnail]
       output
     end
   end
