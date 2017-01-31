@@ -24,7 +24,7 @@ module Scrapers
 
     def add_error(error)
       Scrapers.logger.error error.message
-      Scrapers.logger.error error.backtrace
+      Scrapers.logger.ln error.backtrace
       errors.push error
     end
 

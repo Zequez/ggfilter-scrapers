@@ -44,7 +44,7 @@ module Scrapers
           thumbnail: g.cover_landscape_image.uri,
           screenshots: g.screenshots.map{ |s| s['uri'] },
           trailer_video: g.video_trailer && g.video_trailer.uri,
-          trailer_thumbnail: g.video_trailer && g.video_trailer.thumbnail.uri
+          trailer_thumbnail: g.video_trailer && g.video_trailer.thumbnail && g.video_trailer.thumbnail.uri
         }
       end
     end
