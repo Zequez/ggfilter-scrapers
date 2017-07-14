@@ -6,7 +6,7 @@ module Scrapers::Steam::Game
   class Runner < Scrapers::BasicRunner
     def loader_options
       {headers: {
-        'Cookie' => 'birthtime=724320001; mature_content=1; fakeCC=US'
+        'Cookie' => 'birthtime=724320001; mature_content=1; fakeCC=US; Steam_Language=english'
       }}
     end
 

@@ -99,13 +99,9 @@ module Scrapers::Steam::Game
 
     def read_released_at
       date = css('.release_date .date').text()
-      if date =~ /[0-9]{1,2} [a-z]{3}, [0-9]{4}/i
-        begin
-          Time.parse(date).iso8601
-        rescue ArgumentError
-          nil
-        end
-      else
+      begin
+        Time.parse(date).iso8601
+      rescue ArgumentError
         nil
       end
     end
