@@ -3724,4 +3724,168 @@ http_interactions:
     adapter_metadata:
       effective_url: http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1&term=Drift+King%3A+Survival&sort_by=_ASC
   recorded_at: Sun, 20 Nov 2016 19:28:07 GMT
+- request:
+    method: get
+    uri: http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1&term=guns+n+zombies+%2B+aliens+dlc&sort_by=_ASC
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private,max-age=240
+      Content-Security-Policy:
+      - script-src 'self' 'unsafe-inline' 'unsafe-eval' http://store.akamai.steamstatic.com/
+        https://steamstore-a.akamaihd.net/ *.google-analytics.com https://www.gstatic.com;
+        object-src 'none'; connect-src 'self' http://store.steampowered.com https://store.steampowered.com
+        http://localhost:27060 http://steamcommunity.com/ https://steamcommunity.com/;
+        frame-src 'self'  http://www.youtube.com https://www.youtube.com https://www.google.com
+        https://sketchfab.com https://player.vimeo.com;
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - text/html; charset=UTF-8
+      X-Varnish:
+      - '4136482321'
+      Date:
+      - Thu, 27 Jul 2017 22:42:08 GMT
+      Content-Length:
+      - '5154'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - browserid=1224268915372693089; expires=Fri, 27-Jul-2018 22:41:14 GMT; Max-Age=31536000;
+        path=/
+    body:
+      encoding: UTF-8
+      base64_string: |
+        DQo8c2NyaXB0IHR5cGUgPSAidGV4dC9qYXZhc2NyaXB0Ij4NCg0KCWZ1bmN0
+        aW9uIHNoYXJlTGlua0NsaWNrKGxpbmspew0KCQkkKCd1cmxfYm94Jykuc2hv
+        dygpOw0KCQkkKCdzaGFyZWFycm93Jykuc2hvdygpOw0KCQkkKCd1cmxfdGV4
+        dGFyZWEnKS5zZWxlY3QoKTsNCgkJbGluay5zdHlsZS5jb2xvciA9ICIjN2Rh
+        NmM4IjsNCg0KCX0NCg0KPC9zY3JpcHQ+DQo8ZGl2IGlkID0gInNlYXJjaF9y
+        ZXN1bHRfY29udGFpbmVyIj4NCg0KCTxkaXYgY2xhc3M9InNlYXJjaF9ydWxl
+        Ij48L2Rpdj4NCg0KCQ0KDQoJCTwhLS0gTGlzdCBJdGVtcyAtLT4NCgkJPGRp
+        dj4NCgkJCTwhLS0gRXh0cmEgZW1wdHkgZGl2IHRvIGhhY2sgYXJvdW5kIGxh
+        bWUgSUU3IGxheW91dCBidWcgLS0+DQoJCQk8ZGl2PjwvZGl2Pg0KCQkJPCEt
+        LSBFbmQgRXh0cmEgZW1wdHkgZGl2IC0tPg0KCQkJCQkJCTxhIGhyZWY9Imh0
+        dHA6Ly9zdG9yZS5zdGVhbXBvd2VyZWQuY29tL3N1Yi83ODM3Ny8/c25yPTFf
+        N183XzE1MV8xNTBfMSIgIGRhdGEtZHMtcGFja2FnZWlkPSI3ODM3NyIgZGF0
+        YS1kcy1hcHBpZD0iMjY0MzAwLDM2MjExMCJvbm1vdXNlb3Zlcj0iR2FtZUhv
+        dmVyKCB0aGlzLCBldmVudCwgJ2dsb2JhbF9ob3ZlcicsIHsmcXVvdDt0eXBl
+        JnF1b3Q7OiZxdW90O3N1YiZxdW90OywmcXVvdDtpZCZxdW90Ozo3ODM3Nywm
+        cXVvdDtwdWJsaWMmcXVvdDs6MSwmcXVvdDt2NiZxdW90OzoxfSApOyIgb25t
+        b3VzZW91dD0iSGlkZUdhbWVIb3ZlciggdGhpcywgZXZlbnQsICdnbG9iYWxf
+        aG92ZXInICkiIGNsYXNzPSJzZWFyY2hfcmVzdWx0X3JvdyBkc19jb2xsYXBz
+        ZV9mbGFnIiA+DQoJCQkJCTxkaXYgY2xhc3M9ImNvbCBzZWFyY2hfY2Fwc3Vs
+        ZSI+PGltZyBzcmM9Imh0dHA6Ly9jZG4uYWthbWFpLnN0ZWFtc3RhdGljLmNv
+        bS9zdGVhbS9zdWJzLzc4Mzc3L2NhcHN1bGVfc21fMTIwLmpwZz90PTE0NDc0
+        NjE3ODUiPjwvZGl2Pg0KCQkJCQk8ZGl2IGNsYXNzPSJyZXNwb25zaXZlX3Nl
+        YXJjaF9uYW1lX2NvbWJpbmVkIj4NCgkJCQkJCTxkaXYgY2xhc3M9ImNvbCBz
+        ZWFyY2hfbmFtZSBlbGxpcHNpcyI+DQoJCQkJCQkJPHNwYW4gY2xhc3M9InRp
+        dGxlIj5HdW5zJ04nWm9tYmllcyArIE4nQWxpZW5zIERMQzwvc3Bhbj4NCgkJ
+        CQkJCQk8cD4NCgkJCQkJCQkJPHNwYW4gY2xhc3M9InBsYXRmb3JtX2ltZyB3
+        aW4iPjwvc3Bhbj48c3BhbiBjbGFzcz0icGxhdGZvcm1faW1nIG1hYyI+PC9z
+        cGFuPgkJCQkJCQk8L3A+DQoJCQkJCQk8L2Rpdj4NCgkJCQkJCTxkaXYgY2xh
+        c3M9ImNvbCBzZWFyY2hfcmVsZWFzZWQgcmVzcG9uc2l2ZV9zZWNvbmRyb3ci
+        PjwvZGl2Pg0KCQkJCQkJPGRpdiBjbGFzcz0iY29sIHNlYXJjaF9yZXZpZXdz
+        Y29yZSByZXNwb25zaXZlX3NlY29uZHJvdyI+DQoJCQkJCQkJCQkJCQkJCQk8
+        c3BhbiBjbGFzcz0ic2VhcmNoX3Jldmlld19zdW1tYXJ5IHBvc2l0aXZlIiBk
+        YXRhLXN0b3JlLXRvb2x0aXA9Ik1vc3RseSBQb3NpdGl2ZSZsdDticiZndDs3
+        MCUgb2YgdGhlIDcyOSB1c2VyIHJldmlld3MgZm9yIGdhbWVzIGluIHRoaXMg
+        YnVuZGxlIGFyZSBwb3NpdGl2ZS4iPg0KCQkJCQkJCQk8L3NwYW4+DQoJCQkJ
+        CQkJCQkJCQkJPC9kaXY+DQoNCg0KCQkJCQkJPGRpdiBjbGFzcz0iY29sIHNl
+        YXJjaF9wcmljZV9kaXNjb3VudF9jb21iaW5lZCByZXNwb25zaXZlX3NlY29u
+        ZHJvdyI+DQoJCQkJCQkJPGRpdiBjbGFzcz0iY29sIHNlYXJjaF9kaXNjb3Vu
+        dCByZXNwb25zaXZlX3NlY29uZHJvdyI+DQoJCQkJCQkJCTxzcGFuPi05MCU8
+        L3NwYW4+DQoJCQkJCQkJPC9kaXY+DQoJCQkJCQkJPGRpdiBjbGFzcz0iY29s
+        IHNlYXJjaF9wcmljZSBkaXNjb3VudGVkIHJlc3BvbnNpdmVfc2Vjb25kcm93
+        Ij4NCgkJCQkJCQkJPHNwYW4gc3R5bGU9ImNvbG9yOiAjODg4ODg4OyI+PHN0
+        cmlrZT4kOS45OTwvc3RyaWtlPjwvc3Bhbj48YnI+JDAuOTkJCQkJCQkJPC9k
+        aXY+DQoJCQkJCQk8L2Rpdj4NCgkJCQkJPC9kaXY+DQoNCg0KCQkJCQk8ZGl2
+        IHN0eWxlPSJjbGVhcjogbGVmdDsiPjwvZGl2Pg0KCQkJCTwvYT4NCgkJCQkJ
+        CQk8YSBocmVmPSJodHRwOi8vc3RvcmUuc3RlYW1wb3dlcmVkLmNvbS9hcHAv
+        NDI5NDkwL1Jlc2lsaWVuY2VfV2F2ZV9TdXJ2aXZhbC8/c25yPTFfN183XzE1
+        MV8xNTBfMSIgIGRhdGEtZHMtYXBwaWQ9IjQyOTQ5MCJvbm1vdXNlb3Zlcj0i
+        R2FtZUhvdmVyKCB0aGlzLCBldmVudCwgJ2dsb2JhbF9ob3ZlcicsIHsmcXVv
+        dDt0eXBlJnF1b3Q7OiZxdW90O2FwcCZxdW90OywmcXVvdDtpZCZxdW90Ozo0
+        Mjk0OTAsJnF1b3Q7cHVibGljJnF1b3Q7OjEsJnF1b3Q7djYmcXVvdDs6MX0g
+        KTsiIG9ubW91c2VvdXQ9IkhpZGVHYW1lSG92ZXIoIHRoaXMsIGV2ZW50LCAn
+        Z2xvYmFsX2hvdmVyJyApIiBjbGFzcz0ic2VhcmNoX3Jlc3VsdF9yb3cgZHNf
+        Y29sbGFwc2VfZmxhZyIgPg0KCQkJCQk8ZGl2IGNsYXNzPSJjb2wgc2VhcmNo
+        X2NhcHN1bGUiPjxpbWcgc3JjPSJodHRwOi8vY2RuLmFrYW1haS5zdGVhbXN0
+        YXRpYy5jb20vc3RlYW0vYXBwcy80Mjk0OTAvY2Fwc3VsZV9zbV8xMjAuanBn
+        P3Q9MTQ2NTc1ODg3OCI+PC9kaXY+DQoJCQkJCTxkaXYgY2xhc3M9InJlc3Bv
+        bnNpdmVfc2VhcmNoX25hbWVfY29tYmluZWQiPg0KCQkJCQkJPGRpdiBjbGFz
+        cz0iY29sIHNlYXJjaF9uYW1lIGVsbGlwc2lzIj4NCgkJCQkJCQk8c3BhbiBj
+        bGFzcz0idGl0bGUiPlJlc2lsaWVuY2U6IFdhdmUgU3Vydml2YWw8L3NwYW4+
+        DQoJCQkJCQkJPHA+DQoJCQkJCQkJCTxzcGFuIGNsYXNzPSJwbGF0Zm9ybV9p
+        bWcgd2luIj48L3NwYW4+CQkJCQkJCTwvcD4NCgkJCQkJCTwvZGl2Pg0KCQkJ
+        CQkJPGRpdiBjbGFzcz0iY29sIHNlYXJjaF9yZWxlYXNlZCByZXNwb25zaXZl
+        X3NlY29uZHJvdyI+RGVjIDIzLCAyMDE1PC9kaXY+DQoJCQkJCQk8ZGl2IGNs
+        YXNzPSJjb2wgc2VhcmNoX3Jldmlld3Njb3JlIHJlc3BvbnNpdmVfc2Vjb25k
+        cm93Ij4NCgkJCQkJCQkJCQkJCQkJCTxzcGFuIGNsYXNzPSJzZWFyY2hfcmV2
+        aWV3X3N1bW1hcnkgbWl4ZWQiIGRhdGEtc3RvcmUtdG9vbHRpcD0iTWl4ZWQm
+        bHQ7YnImZ3Q7NjYlIG9mIHRoZSAxMzUgdXNlciByZXZpZXdzIGZvciB0aGlz
+        IGdhbWUgYXJlIHBvc2l0aXZlLiI+DQoJCQkJCQkJCTwvc3Bhbj4NCgkJCQkJ
+        CQkJCQkJCQk8L2Rpdj4NCg0KDQoJCQkJCQk8ZGl2IGNsYXNzPSJjb2wgc2Vh
+        cmNoX3ByaWNlX2Rpc2NvdW50X2NvbWJpbmVkIHJlc3BvbnNpdmVfc2Vjb25k
+        cm93Ij4NCgkJCQkJCQk8ZGl2IGNsYXNzPSJjb2wgc2VhcmNoX2Rpc2NvdW50
+        IHJlc3BvbnNpdmVfc2Vjb25kcm93Ij4NCgkJCQkJCQkJDQoJCQkJCQkJPC9k
+        aXY+DQoJCQkJCQkJPGRpdiBjbGFzcz0iY29sIHNlYXJjaF9wcmljZSAgcmVz
+        cG9uc2l2ZV9zZWNvbmRyb3ciPg0KCQkJCQkJCQkkNS45OQkJCQkJCQk8L2Rp
+        dj4NCgkJCQkJCTwvZGl2Pg0KCQkJCQk8L2Rpdj4NCg0KDQoJCQkJCTxkaXYg
+        c3R5bGU9ImNsZWFyOiBsZWZ0OyI+PC9kaXY+DQoJCQkJPC9hPg0KCQkJCQkJ
+        CTxhIGhyZWY9Imh0dHA6Ly9zdG9yZS5zdGVhbXBvd2VyZWQuY29tL2FwcC8y
+        ODA4OTAvR2hvc3RzaGlwX0FmdGVybWF0aC8/c25yPTFfN183XzE1MV8xNTBf
+        MSIgIGRhdGEtZHMtYXBwaWQ9IjI4MDg5MCJvbm1vdXNlb3Zlcj0iR2FtZUhv
+        dmVyKCB0aGlzLCBldmVudCwgJ2dsb2JhbF9ob3ZlcicsIHsmcXVvdDt0eXBl
+        JnF1b3Q7OiZxdW90O2FwcCZxdW90OywmcXVvdDtpZCZxdW90OzoyODA4OTAs
+        JnF1b3Q7cHVibGljJnF1b3Q7OjEsJnF1b3Q7djYmcXVvdDs6MX0gKTsiIG9u
+        bW91c2VvdXQ9IkhpZGVHYW1lSG92ZXIoIHRoaXMsIGV2ZW50LCAnZ2xvYmFs
+        X2hvdmVyJyApIiBjbGFzcz0ic2VhcmNoX3Jlc3VsdF9yb3cgZHNfY29sbGFw
+        c2VfZmxhZyIgPg0KCQkJCQk8ZGl2IGNsYXNzPSJjb2wgc2VhcmNoX2NhcHN1
+        bGUiPjxpbWcgc3JjPSJodHRwOi8vY2RuLmFrYW1haS5zdGVhbXN0YXRpYy5j
+        b20vc3RlYW0vYXBwcy8yODA4OTAvY2Fwc3VsZV9zbV8xMjAuanBnP3Q9MTQ0
+        NzM2MDQ3NSI+PC9kaXY+DQoJCQkJCTxkaXYgY2xhc3M9InJlc3BvbnNpdmVf
+        c2VhcmNoX25hbWVfY29tYmluZWQiPg0KCQkJCQkJPGRpdiBjbGFzcz0iY29s
+        IHNlYXJjaF9uYW1lIGVsbGlwc2lzIj4NCgkJCQkJCQk8c3BhbiBjbGFzcz0i
+        dGl0bGUiPkdob3N0c2hpcCBBZnRlcm1hdGg8L3NwYW4+DQoJCQkJCQkJPHA+
+        DQoJCQkJCQkJCTxzcGFuIGNsYXNzPSJwbGF0Zm9ybV9pbWcgd2luIj48L3Nw
+        YW4+CQkJCQkJCTwvcD4NCgkJCQkJCTwvZGl2Pg0KCQkJCQkJPGRpdiBjbGFz
+        cz0iY29sIHNlYXJjaF9yZWxlYXNlZCByZXNwb25zaXZlX3NlY29uZHJvdyI+
+        SnVsIDE4LCAyMDE0PC9kaXY+DQoJCQkJCQk8ZGl2IGNsYXNzPSJjb2wgc2Vh
+        cmNoX3Jldmlld3Njb3JlIHJlc3BvbnNpdmVfc2Vjb25kcm93Ij4NCgkJCQkJ
+        CQkJCQkJCQkJCTxzcGFuIGNsYXNzPSJzZWFyY2hfcmV2aWV3X3N1bW1hcnkg
+        bWl4ZWQiIGRhdGEtc3RvcmUtdG9vbHRpcD0iTWl4ZWQmbHQ7YnImZ3Q7NDEl
+        IG9mIHRoZSA2MyB1c2VyIHJldmlld3MgZm9yIHRoaXMgZ2FtZSBhcmUgcG9z
+        aXRpdmUuIj4NCgkJCQkJCQkJPC9zcGFuPg0KCQkJCQkJCQkJCQkJCTwvZGl2
+        Pg0KDQoNCgkJCQkJCTxkaXYgY2xhc3M9ImNvbCBzZWFyY2hfcHJpY2VfZGlz
+        Y291bnRfY29tYmluZWQgcmVzcG9uc2l2ZV9zZWNvbmRyb3ciPg0KCQkJCQkJ
+        CTxkaXYgY2xhc3M9ImNvbCBzZWFyY2hfZGlzY291bnQgcmVzcG9uc2l2ZV9z
+        ZWNvbmRyb3ciPg0KCQkJCQkJCQkNCgkJCQkJCQk8L2Rpdj4NCgkJCQkJCQk8
+        ZGl2IGNsYXNzPSJjb2wgc2VhcmNoX3ByaWNlICByZXNwb25zaXZlX3NlY29u
+        ZHJvdyI+DQoJCQkJCQkJCSQ5Ljk5CQkJCQkJCTwvZGl2Pg0KCQkJCQkJPC9k
+        aXY+DQoJCQkJCTwvZGl2Pg0KDQoNCgkJCQkJPGRpdiBzdHlsZT0iY2xlYXI6
+        IGxlZnQ7Ij48L2Rpdj4NCgkJCQk8L2E+DQoJCQkJCQk8IS0tIEVuZCBMaXN0
+        IEl0ZW1zIC0tPg0KCQk8L2Rpdj4NCg0KCQk8ZGl2IGNsYXNzPSJzZWFyY2hf
+        cGFnaW5hdGlvbiI+DQoJCQk8ZGl2IGNsYXNzPSJzZWFyY2hfcGFnaW5hdGlv
+        bl9sZWZ0Ij4NCgkJCQlzaG93aW5nIDEgLSAzIG9mIDMJCQk8L2Rpdj4NCgkJ
+        CTxkaXYgY2xhc3M9InNlYXJjaF9wYWdpbmF0aW9uX3JpZ2h0Ij4NCgkJCQkx
+        CQkJPC9kaXY+DQoJCQk8ZGl2IHN0eWxlPSJjbGVhcjogYm90aDsiPjwvZGl2
+        Pg0KCQk8L2Rpdj4NCgk8L2Rpdj4NCg0K
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1&term=guns+n+zombies+%2B+aliens+dlc&sort_by=_ASC
+  recorded_at: Thu, 27 Jul 2017 22:42:08 GMT
 recorded_with: VCR 2.9.3

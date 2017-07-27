@@ -185,4 +185,12 @@ describe Scrapers::Steam::List::PageProcessor, cassette: true, type: :steam_list
       }
     end
   end
+
+  describe 'should ignore entries that are not games' do
+    specific_subject('guns n zombies + aliens dlc')
+    it{
+        expect(subject[:steam_id]).to_not eq nil
+        expect(subject[:steam_id]).to_not eq 78377
+      }
+  end
 end

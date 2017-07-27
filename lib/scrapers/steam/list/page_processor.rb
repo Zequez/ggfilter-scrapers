@@ -17,7 +17,7 @@ module Scrapers::Steam::List
         game[:reviews_count], game[:reviews_ratio] = read_reviews(a)
         game[:thumbnail] = read_thumbnail(a)
 
-        if game[:price] || game[:text_release_date] || game[:steam_published_at]
+        if game[:steam_id] && (game[:price] || game[:text_release_date] || game[:steam_published_at])
           data << game
         end
       end
