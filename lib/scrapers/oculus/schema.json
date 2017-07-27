@@ -83,7 +83,8 @@
           "FLIGHT_STICK",
           "RACING_WHEEL",
           "HYDRA",
-          "OTHER"
+          "OTHER",
+          "GAMEPAD_VIA_TOUCH"
         ]
       }
     },
