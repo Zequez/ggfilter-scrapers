@@ -13,9 +13,8 @@ module Scrapers
         {
           oculus_id: g.id.to_i,
           name: g.display_name.strip,
-          price: g.current_offer.price.offset_amount.to_i,
-          price_regular: g.current_offer.strikethrough_price &&
-            g.current_offer.strikethrough_price.offset_amount.to_i,
+          price: g.current_offer&.price&.offset_amount&.to_i,
+          price_regular: g.current_offer&.strikethrough_price&.offset_amount&.to_i,
           summary: g.display_short_description,
           version: g.latest_supported_binary.version,
           category: g.category_name,

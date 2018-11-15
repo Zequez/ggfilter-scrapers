@@ -12,8 +12,10 @@
       "type": "string"
     },
     "price": {
-      "type": "integer",
-      "minimum": 0
+      "oneOf": [
+        {"type": "integer", "minimum": 0},
+        {"type": "null"}
+      ]
     },
     "price_regular": {
       "oneOf": [
