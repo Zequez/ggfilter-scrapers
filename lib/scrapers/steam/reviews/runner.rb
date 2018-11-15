@@ -94,7 +94,7 @@ module Scrapers::Steam
 
         offset = (page - 1) * 10
 
-        "http://steamcommunity.com/app/#{steam_id}/homecontent/?" + URI.encode_www_form(
+        "https://steamcommunity.com/app/#{steam_id}/homecontent/?" + URI.encode_www_form(
           userreviewsoffset: offset,
           p: page,
           workshopitemspage: page,

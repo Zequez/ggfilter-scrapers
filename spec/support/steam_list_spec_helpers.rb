@@ -7,10 +7,10 @@ module SteamListSpecHelpers
       page = page_or_query if page_or_query
     end
 
-    query = "term=#{query}&sort_by=_ASC" if query
+    query = "term=#{query}&sort_by=" if query
     page = "page=#{page}"
     specials = on_sale ? '&specials=1' : ''
 
-    "http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&#{page}&#{query}#{specials}"
+    "https://store.steampowered.com/search/results?category1=998&sort_by=Name_ASC&category1=998&cc=us&v5=1&#{page}&#{query}#{specials}"
   end
 end

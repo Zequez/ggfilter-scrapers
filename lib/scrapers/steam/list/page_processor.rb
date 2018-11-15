@@ -80,7 +80,7 @@ module Scrapers::Steam::List
       css!('.search_reviewscore', a)
       reviews_e = css('.search_review_summary', a).first
       if reviews_e
-        tooltip = reviews_e['data-store-tooltip']
+        tooltip = reviews_e['data-tooltip-html']
         tooltip.gsub(',', '').scan(/\d+/).map{|n| Integer(n)}.reverse
       else
         [0, 50]

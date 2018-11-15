@@ -8,8 +8,8 @@ module Scrapers
       SCHEMA = JSON.parse(File.read("#{__dir__}/schema.json"))
 
       URLS = {
-        all: 'http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1',
-        on_sale: 'http://store.steampowered.com/search/results?category1=998&sort_by=Name&sort_order=ASC&category1=998&cc=us&v5=1&page=1&specials=1'
+        all: 'https://store.steampowered.com/search/results?category1=998&sort_by=Released_DESC&category1=998&cc=us&v5=1&page=1',
+        on_sale: 'https://store.steampowered.com/search/results?category1=998&sort_by=Released_DESC&category1=998&cc=us&v5=1&page=1&specials=1'
       }
 
       class Runner < Scrapers::BasicRunner

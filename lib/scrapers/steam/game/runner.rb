@@ -6,7 +6,8 @@ module Scrapers::Steam::Game
   class Runner < Scrapers::BasicRunner
     def loader_options
       {headers: {
-        'Cookie' => 'birthtime=724320001; mature_content=1; fakeCC=US; Steam_Language=english'
+        'Cookie' => 'birthtime=724320001; mature_content=1; fakeCC=US; Steam_Language=english',
+        'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
       }}
     end
 
@@ -14,7 +15,7 @@ module Scrapers::Steam::Game
       @steam_ids = steam_ids
     end
 
-    URL = 'http://store.steampowered.com/app/%s'
+    URL = 'https://store.steampowered.com/app/%s'
 
     def continue_parsing?(response)
       if response.headers['Location']
